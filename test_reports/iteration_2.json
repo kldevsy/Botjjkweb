@@ -1,0 +1,39 @@
+{
+  "summary": "Iteration 2: tested i18n (?lang), Build Planner, Damage Calculator, Detail->Build, Build->Calc. Backend 50/51 pytest pass (new file test_i18n_api.py + existing test_guide_api.py). Frontend: language switch EN/ES refetches with lang param and translates cards, detail description and skill names/descriptions, dashboard, global search ('armor' EN -> 7 armors). Build: 13 slots, slot-type filtering (armadura 25, amuleto_espada 3, extra_2 excludes extra_1 pick 17->16), totals/cost math verified against data (cost 1850, stats summed correctly), localStorage persistence, remove, clear. Detail modal add-to-build routes to correct slot with toast (extra_1 then extra_2, Espada amulet -> amuleto_espada), not shown on bosses. Calculator: Ichigo effDef 22 / effRes 12.5% / red 18.0% / HP 900k; ALUCARD 1200 -> 860 dmg, 1047 hits (with form), 698 hits without form (600k); bonus 5 -> 903/997 (correct); ranking 31 bosses sorted asc, click selects boss; sword mode adds 'Ataque básico' row with correct math; build-test-calc-button -> /calc?build=1 applies tecnica + bonus 5; calc-use-build-button in sword mode applies sword. Mobile 390px: no overflow on /build and /calc. One real bug: long descriptions not translated in list/search/dashboard summaries.",
+  "backend_issues": {
+    "critical": [],
+    "minor": [
+      {"endpoint": "/api/items/{cat}, /api/search, /api/dashboard (lang=en|es)", "issue": "guide_data.summary() truncates descricao to 220 chars BEFORE server.tr() translates; the truncated string is not a key in translations.json, so every item with description >220 chars stays in Portuguese on cards/search/dashboard (30 items: 21 tecnicas e.g. goro_goro_enel, 1 espada, 5 equipamentos, 3 raids). Detail endpoint is fine (full text). Fix: translate the item first then summarise, e.g. in server.py use summary(tr(i, lang), ...) / or truncate after translation."},
+      {"endpoint": "/api/categories", "issue": "No lang param declared, so ?lang=fr isn't rejected with 422 like the other endpoints (it returns only tipos, which stay Portuguese on purpose, so low impact)."}
+    ]
+  },
+  "frontend_issues": {
+    "ui_bugs": [
+      {"component": "Cards / search results in EN/ES", "issue": "Long descriptions show in Portuguese because of the backend truncation bug above", "selector": "[data-testid='item-card-tecnicas-goro_goro_enel']", "priority": "MEDIUM"}
+    ],
+    "integration_issues": [],
+    "design_issues": [
+      {"screen": "Build totals", "issues": ["danoTecnica (e.g. 1200) shares one bar scale with small stats (5-23), so the other bars are almost invisible. Show dano stats separately or scale each bar on its own."]},
+      {"screen": "Detail modal skills (EN/ES)", "issues": ["Skill kv/tag values such as 'aviso: Ichigo combina...' (telegraphed attacks) are not translated; only nome/descricao/text/title are."]}
+    ]
+  },
+  "test_report_links": ["/app/backend/tests/test_i18n_api.py", "/app/backend/tests/test_guide_api.py", "/app/test_reports/pytest/pytest_results.xml"],
+  "action_items": [
+    "Fix summary truncation vs translation order (translate before truncating descricao to 220) so list/search/dashboard descriptions translate for all 30 long-description items",
+    "Optional: add lang param to /api/categories for consistency",
+    "Optional: give stat bars in build totals their own scale so damage doesn't flatten the rest"
+  ],
+  "critical_code_review_comments": [
+    "server.py list_items q-filter: `tr(i['nome'] and {'nome': i['nome']}, lang)['nome']` breaks with TypeError if nome is ever falsy (tr(None) returns None). Use tr({'nome': i['nome'] or ''}, lang).",
+    "build.js useBuild refetches 4 full category lists on every page that uses it (Build + Calc); fine for current data size",
+    "calc.js matches the bot formula exactly; resistencia arrives as a percent (25.0) and is divided by 100. 0 -> 0.05 default, same as the bot's (res||0.05)",
+    "build-total-cost testid shares the build-total-* prefix used for stat rows; selectors that use ^= also match cost"
+  ],
+  "updated_files": ["/app/backend/tests/test_i18n_api.py"],
+  "success_rate": {"backend": "98% (50/51)", "frontend": "95%"},
+  "test_credentials": "none - no auth",
+  "seed_data_creation": "none (build state only in browser localStorage)",
+  "retest_needed": false,
+  "should_main_agent_self_test": true,
+  "context_for_next_testing_agent": "Run: REACT_APP_BACKEND_URL=<url> pytest /app/backend/tests/ . test_list_translated[tecnicas] fails until the summary truncation bug is fixed. Card testids are item-card-{category}-{id}. Formula reference: alucard_rei_mortos skill 1200 vs ichigo -> 860 dmg / 1047 hits (with form). Ignore-defense skills exist on madara_edo, goro_goro_enel, infinito."
+}
