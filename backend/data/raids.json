@@ -1,0 +1,3022 @@
+{
+  "terrenos": [
+    {
+      "id": "floresta",
+      "nome": "Floresta Amaldiçoada",
+      "emoji": "🌳",
+      "descricao": "Uma floresta densa imbuída de energia maldita que dificulta movimentos",
+      "buffs": {
+        "defesa": 1.44,
+        "esquiva": 1.06
+      }
+    },
+    {
+      "id": "deserto",
+      "nome": "Planície Árida",
+      "emoji": "🏜️",
+      "descricao": "Calor intenso que drena energia amaldiçoada mais rápido",
+      "buffs": {
+        "dano": 5,
+        "staminaRegen": 1
+      }
+    },
+    {
+      "id": "montanha",
+      "nome": "Montanha Amaldiçoada",
+      "emoji": "🏔️",
+      "descricao": "Altitude aguça os sentidos espirituais mas consome energia",
+      "buffs": {
+        "critico": 1.5,
+        "stamina": 1.13
+      }
+    },
+    {
+      "id": "praia",
+      "nome": "Litoral do Jogo",
+      "emoji": "🏖️",
+      "descricao": "Ambiente aberto que aumenta regeneração de energia maldita",
+      "buffs": {
+        "vidaRegen": 1.56,
+        "dano": 0
+      }
+    },
+    {
+      "id": "vulcao",
+      "nome": "Zona de Calamidade",
+      "emoji": "🌋",
+      "descricao": "Energia de calamidade amplifica técnicas de fogo e destruição",
+      "buffs": {
+        "danoFruta": 1.63,
+        "defesa": 1.13
+      }
+    },
+    {
+      "id": "ruinas",
+      "nome": "Ruínas do Período Heian",
+      "emoji": "🏛️",
+      "descricao": "Ruínas ancestrais carregadas de energia dos feiticeiros antigos",
+      "buffs": {
+        "defesa": 1.56,
+        "dano": 0
+      }
+    }
+  ],
+  "raids": [
+    {
+      "id": "raid_punho_divergente",
+      "frutaId": "punho_divergente",
+      "ticketId": "ticket_punho_divergente",
+      "ticketNome": "Ticket Punho Divergente",
+      "terrenos": [
+        {
+          "nome": "Floresta Amaldiçoada",
+          "emoji": "🌳",
+          "buffs": {
+            "vida": 0,
+            "defesa": 0.13
+          }
+        },
+        {
+          "nome": "Planície Árida",
+          "emoji": "🏜️",
+          "buffs": {
+            "dano": 0,
+            "critico": 0.13
+          }
+        },
+        {
+          "nome": "Litoral do Jogo",
+          "emoji": "🏖️",
+          "buffs": {
+            "stamina": 0.25,
+            "esquiva": 0.13
+          }
+        },
+        {
+          "nome": "Abismo da Maldição",
+          "emoji": "🌑",
+          "buffs": {
+            "dano": 0,
+            "vida": -1.25
+          }
+        },
+        {
+          "nome": "Fortaleza Espiritual",
+          "emoji": "🏯",
+          "buffs": {
+            "defesa": 0.19,
+            "stamina": 0.19
+          }
+        },
+        {
+          "nome": "Campo do Trovão Amaldiçoado",
+          "emoji": "⚡",
+          "buffs": {
+            "critico": 0.19,
+            "esquiva": 0.13
+          }
+        }
+      ],
+      "nome": "Raid: Punho Divergente - Despertar",
+      "descricao": "Enfrente 5 rodadas de inimigos e derrote o Boss para desbloquear o Flash Negro despertado!",
+      "nivelMinimo": 1,
+      "maxParticipantes": 6,
+      "terrenosDisponiveis": [
+        "floresta",
+        "deserto",
+        "montanha"
+      ],
+      "recompensas": {
+        "fragmentos": 20,
+        "berries": 2700,
+        "xp": 1620,
+        "xpTecnica": 203
+      },
+      "rodadas": [
+        {
+          "numero": 1,
+          "tipo": "inimigos",
+          "quantidade": 5,
+          "inimigo": {
+            "nome": "Espírito Grau 4 Físico",
+            "vida": 62.5,
+            "dano": 11.25,
+            "descricao": "Um espírito de baixo grau que usa força física bruta",
+            "habilidades": [
+              {
+                "nome": "Soco Amaldiçoado",
+                "tipo": "ofensiva",
+                "dano": 11.25,
+                "custoStamina": 10,
+                "cooldown": 1,
+                "stun": 0,
+                "descricao": "Um soco básico com energia maldita"
+              }
+            ]
+          }
+        },
+        {
+          "numero": 2,
+          "tipo": "inimigos",
+          "quantidade": 7,
+          "inimigo": {
+            "nome": "Guerreiro Amaldiçoado",
+            "vida": 78.75,
+            "dano": 15,
+            "descricao": "Espíritos que dominaram técnicas físicas básicas",
+            "habilidades": [
+              {
+                "nome": "Golpe Duplo",
+                "tipo": "ofensiva",
+                "dano": 15,
+                "custoStamina": 12.5,
+                "cooldown": 2,
+                "stun": 0,
+                "descricao": "Dois golpes consecutivos com energia maldita"
+              }
+            ]
+          }
+        },
+        {
+          "numero": 3,
+          "tipo": "inimigos",
+          "quantidade": 5,
+          "inimigo": {
+            "nome": "Elite Espiritual",
+            "vida": 117.5,
+            "dano": 22.5,
+            "descricao": "Espíritos de elite com domínio avançado de energia física",
+            "habilidades": [
+              {
+                "nome": "Sequência Devastadora",
+                "tipo": "ofensiva",
+                "dano": 22.5,
+                "custoStamina": 18.75,
+                "cooldown": 3,
+                "stun": 0,
+                "descricao": "Uma sequência giratória de golpes devastadores"
+              },
+              {
+                "nome": "Rajada de Golpes",
+                "tipo": "ofensiva",
+                "dano": 18.75,
+                "custoStamina": 15,
+                "cooldown": 2,
+                "stun": 0,
+                "descricao": "Múltiplos golpes rápidos em sequência"
+              }
+            ]
+          }
+        },
+        {
+          "numero": 4,
+          "tipo": "inimigos",
+          "quantidade": 5,
+          "inimigo": {
+            "nome": "Comandante Espiritual",
+            "vida": 140,
+            "dano": 26.25,
+            "descricao": "Comandantes com habilidades avançadas de combate espiritual",
+            "habilidades": [
+              {
+                "nome": "Flash Imperfeito",
+                "tipo": "ofensiva",
+                "dano": 26.25,
+                "custoStamina": 22.5,
+                "cooldown": 3,
+                "stun": 1,
+                "descricao": "Uma versão incompleta do Flash Negro"
+              }
+            ]
+          }
+        },
+        {
+          "numero": 5,
+          "tipo": "boss",
+          "quantidade": 1,
+          "boss": {
+            "nome": "Mestre do Flash Negro - Despertar",
+            "vida": 630,
+            "dano": 38.75,
+            "descricao": "Um feiticeiro lendário que dominou completamente o Flash Negro despertado!",
+            "thumbnail": "https://i.pinimg.com/originals/43/7e/3f/437e3f0c8c0c0e0e0e0e0e0e0e0e0e0e.jpg",
+            "anti": "energia",
+            "falaInicio": "Você ousa desafiar o poder do Flash Negro despertado? Mostre-me seu potencial!",
+            "falaDerrota": "Impressionante... você é digno do despertar.",
+            "falaVitoria": "O Flash Negro despertado é invencível! Volte mais forte!",
+            "habilidades": [
+              {
+                "nome": "Flash Negro Múltiplo",
+                "tipo": "ofensiva",
+                "dano": 93.75,
+                "custoStamina": 50,
+                "cooldown": 4,
+                "stun": 0,
+                "descricao": "Uma rajada de Flashes Negros consecutivos",
+                "despertada": true
+              },
+              {
+                "nome": "Flash Negro Colossal",
+                "tipo": "ofensiva",
+                "dano": 117.5,
+                "custoStamina": 75,
+                "cooldown": 6,
+                "stun": 2,
+                "descricao": "O Flash Negro definitivo que destrói tudo no raio de impacto",
+                "despertada": true
+              },
+              {
+                "nome": "Impacto Total Despertado",
+                "tipo": "ofensiva",
+                "dano": 78.75,
+                "custoStamina": 43.75,
+                "cooldown": 3,
+                "stun": 1,
+                "descricao": "Libera toda energia acumulada em um único golpe despertado",
+                "despertada": true
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "raid_infinito_despertar",
+      "frutaId": "infinito",
+      "ticketId": "ticket_infinito",
+      "ticketNome": "Ticket Infinito",
+      "nome": "Raid: O Vazio Ilimitado — Satoru Gojo Despertado",
+      "descricao": "O feiticeiro mais forte da era moderna convoca você para o Vazio Ilimitado. Aqui, o espaço e o tempo se curvam à vontade do Infinito. Nenhuma defesa é suficiente, nenhum ataque é rápido o bastante. Apenas aqueles que transcendem a realidade podem sobreviver ao toque do Intocável.",
+      "nivelMinimo": 15,
+      "maxParticipantes": 6,
+      "terrenosDisponiveis": [
+        "vazio",
+        "espaco_sideral",
+        "ruinas"
+      ],
+      "terrenos": [
+        {
+          "nome": "Câmara do Vazio Absoluto",
+          "emoji": "♾️",
+          "buffs": {
+            "dano": 0.25,
+            "defesa": -0.35
+          }
+        },
+        {
+          "nome": "Espaço Curvado",
+          "emoji": "🌀",
+          "buffs": {
+            "esquiva": 0.2,
+            "stamina": -0.25
+          }
+        },
+        {
+          "nome": "Singularidade Infinita",
+          "emoji": "🔵",
+          "buffs": {
+            "critico": 0.45,
+            "vida": -0.2
+          }
+        }
+      ],
+      "recompensas": {
+        "fragmentos": 131,
+        "berries": 22275,
+        "xp": 20250,
+        "xpTecnica": 1013
+      },
+      "rodadas": [
+        {
+          "numero": 1,
+          "tipo": "inimigos",
+          "quantidade": 6,
+          "inimigo": {
+            "nome": "Espírito Espacial — Servo do Vazio",
+            "vida": 904,
+            "dano": 182,
+            "descricao": "Manifestações menores da energia do Infinito que distorcem o espaço ao seu redor.",
+            "habilidades": [
+              {
+                "nome": "Golpe Espacial",
+                "tipo": "ofensiva",
+                "dano": 190,
+                "custoStamina": 35,
+                "cooldown": 1,
+                "stun": 0,
+                "descricao": "Um golpe que distorce o espaço para atingir o alvo."
+              }
+            ]
+          }
+        },
+        {
+          "numero": 2,
+          "tipo": "inimigos",
+          "quantidade": 8,
+          "inimigo": {
+            "nome": "Guardião do Espaço Curvado",
+            "vida": 1243,
+            "dano": 260,
+            "descricao": "Guerreiros imbuídos com a técnica do Azul, capazes de colapsar o espaço próximo.",
+            "habilidades": [
+              {
+                "nome": "Atração Gravitacional",
+                "tipo": "ofensiva",
+                "dano": 275,
+                "custoStamina": 50,
+                "cooldown": 2,
+                "stun": 1,
+                "descricao": "Atrai o alvo com força centrípeta, esmagando seus ossos."
+              }
+            ]
+          }
+        },
+        {
+          "numero": 3,
+          "tipo": "inimigos",
+          "quantidade": 5,
+          "inimigo": {
+            "nome": "Executor da Singularidade",
+            "vida": 1813,
+            "dano": 371,
+            "descricao": "Executores que dominam a técnica do Vermelho, repelindo toda matéria com força máxima.",
+            "habilidades": [
+              {
+                "nome": "Repulsão Molecular",
+                "tipo": "ofensiva",
+                "dano": 400,
+                "custoStamina": 75,
+                "cooldown": 3,
+                "stun": 0,
+                "descricao": "Uma onda de repulsão que racha a estrutura física do oponente."
+              }
+            ]
+          }
+        },
+        {
+          "numero": 4,
+          "tipo": "inimigos",
+          "quantidade": 6,
+          "inimigo": {
+            "nome": "Avatar do Vazio Ilimitado",
+            "vida": 2465,
+            "dano": 503,
+            "descricao": "Fragmentos da consciência de Gojo manifestados como pura energia espacial.",
+            "habilidades": [
+              {
+                "nome": "Impacto de Massa Imaginária",
+                "tipo": "ofensiva",
+                "dano": 550,
+                "custoStamina": 100,
+                "cooldown": 4,
+                "stun": 2,
+                "descricao": "Uma miniatura do Hollow Purple que apaga a resistência do alvo."
+              }
+            ]
+          }
+        },
+        {
+          "numero": 5,
+          "tipo": "boss",
+          "quantidade": 1,
+          "boss": {
+            "nome": "Satoru Gojo — O Intocável",
+            "vida": 5715,
+            "dano": 568,
+            "descricao": "O feiticeiro mais forte do mundo em seu ápice. Gojo Satoru não pode ser tocado, não pode ser ferido e não pode ser derrotado. Seus Seis Olhos enxergam cada átomo de sua existência.",
+            "thumbnail": "https://static.wikia.nocookie.net/jujutsu-kaisen/images/7/7f/Satoru_Gojo_%28Anime%29.png",
+            "anti": "espaco",
+            "falaInicio": "Está tudo bem. Afinal, vocês são fracos. Vamos ver quanto tempo aguentam no meu Vazio.",
+            "falaDerrota": "Inacreditável... Vocês realmente conseguiram me tocar. Talvez a nova geração realmente tenha me superado.",
+            "falaVitoria": "O infinito é um conceito que vocês ainda não estão prontos para entender. Durmam para sempre no Vazio.",
+            "habilidades": [
+              {
+                "nome": "Azul: Convergência Máxima",
+                "tipo": "ofensiva",
+                "dano": 650,
+                "custoStamina": 120,
+                "cooldown": 2,
+                "stun": 1,
+                "descricao": "Colapsa o espaço ao redor de todos os inimigos simultaneamente.",
+                "despertada": true
+              },
+              {
+                "nome": "Vermelho: Repulsão Divina",
+                "tipo": "ofensiva",
+                "dano": 780,
+                "custoStamina": 150,
+                "cooldown": 3,
+                "stun": 1,
+                "descricao": "Uma explosão de repulsão absoluta que ignora toda defesa.",
+                "despertada": true
+              },
+              {
+                "nome": "Roxo: Vazio Imaginário",
+                "tipo": "ofensiva",
+                "dano": 1100,
+                "custoStamina": 250,
+                "cooldown": 5,
+                "stun": 2,
+                "descricao": "A técnica ápice que apaga tudo o que toca do universo.",
+                "despertada": true
+              },
+              {
+                "nome": "Domínio Expandido: Vazio Ilimitado",
+                "tipo": "ofensiva",
+                "dano": 1500,
+                "custoStamina": 500,
+                "cooldown": 8,
+                "stun": 4,
+                "descricao": "O domínio absoluto onde informação infinita é transmitida instantaneamente. Execução garantida para os despreparados.",
+                "despertada": true
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "raid_chamas_calamidade",
+      "frutaId": "chamas_calamidade",
+      "ticketId": "ticket_chamas",
+      "ticketNome": "Ticket Chamas",
+      "nome": "Raid: Chamas da Calamidade - Despertar",
+      "descricao": "Enfrente 5 rodadas de inimigos ígneos e derrote o Boss para desbloquear o Meteoro Máximo despertado!",
+      "nivelMinimo": 5,
+      "maxParticipantes": 6,
+      "terrenosDisponiveis": [
+        "vulcao",
+        "deserto",
+        "ruinas"
+      ],
+      "recompensas": {
+        "fragmentos": 15,
+        "berries": 3375,
+        "xp": 2025,
+        "xpTecnica": 243
+      },
+      "rodadas": [
+        {
+          "numero": 1,
+          "tipo": "inimigos",
+          "quantidade": 5,
+          "inimigo": {
+            "nome": "Espírito das Chamas",
+            "vida": 157.5,
+            "dano": 33.75,
+            "descricao": "Um espírito nascido de energia de calamidade ígnea",
+            "habilidades": [
+              {
+                "nome": "Projétil Flamejante",
+                "tipo": "ofensiva",
+                "dano": 42.5,
+                "custoStamina": 10,
+                "cooldown": 1,
+                "stun": 0,
+                "descricao": "Dispara um projétil de fogo amaldiçoado"
+              }
+            ]
+          }
+        },
+        {
+          "numero": 2,
+          "tipo": "inimigos",
+          "quantidade": 10,
+          "inimigo": {
+            "nome": "Guerreiro das Chamas",
+            "vida": 196.25,
+            "dano": 50,
+            "descricao": "Espíritos que dominaram técnicas básicas de fogo",
+            "habilidades": [
+              {
+                "nome": "Rajada Dupla",
+                "tipo": "ofensiva",
+                "dano": 62.5,
+                "custoStamina": 12.5,
+                "cooldown": 2,
+                "stun": 0,
+                "descricao": "Dispara duas rajadas de fogo simultaneamente"
+              }
+            ]
+          }
+        },
+        {
+          "numero": 3,
+          "tipo": "inimigos",
+          "quantidade": 5,
+          "inimigo": {
+            "nome": "Elite do Fogo",
+            "vida": 315,
+            "dano": 78.75,
+            "descricao": "Espíritos de elite com domínio avançado das chamas",
+            "habilidades": [
+              {
+                "nome": "Tornado de Chamas",
+                "tipo": "ofensiva",
+                "dano": 180,
+                "custoStamina": 18.75,
+                "cooldown": 3,
+                "stun": 0,
+                "descricao": "Cria um tornado devastador de fogo amaldiçoado"
+              },
+              {
+                "nome": "Temperatura Máxima",
+                "tipo": "ofensiva",
+                "dano": 255,
+                "custoStamina": 15,
+                "cooldown": 2,
+                "stun": 0,
+                "descricao": "Cria uma aura de calor extremo que causa grande dano"
+              }
+            ]
+          }
+        },
+        {
+          "numero": 4,
+          "tipo": "inimigos",
+          "quantidade": 10,
+          "inimigo": {
+            "nome": "Comandante Flamejante",
+            "vida": 393.75,
+            "dano": 157.5,
+            "descricao": "Comandantes com habilidades avançadas de calamidade",
+            "habilidades": [
+              {
+                "nome": "Bola de Fogo",
+                "tipo": "ofensiva",
+                "dano": 291.25,
+                "custoStamina": 22.5,
+                "cooldown": 3,
+                "stun": 1,
+                "descricao": "Lança uma esfera de fogo que cria um círculo de chamas na área"
+              }
+            ]
+          }
+        },
+        {
+          "numero": 5,
+          "tipo": "boss",
+          "quantidade": 1,
+          "boss": {
+            "nome": "Jogo Despertado - Chamas da Calamidade",
+            "vida": 708.75,
+            "dano": 227.5,
+            "descricao": "O espírito íngeo despertado em seu poder máximo, com o Meteoro Máximo liberado!",
+            "thumbnail": "https://i.pinimg.com/originals/43/7e/3f/437e3f0c8c0c0e0e0e0e0e0e0e0e0e0e.jpg",
+            "anti": "energia",
+            "falaInicio": "Você ousa desafiar o Meteoro Máximo despertado? Vou te incinerar!",
+            "falaDerrota": "Impressionante... você é digno do despertar das chamas.",
+            "falaVitoria": "As Chamas da Calamidade despertadas são invencíveis! Volte mais forte!",
+            "habilidades": [
+              {
+                "nome": "Pilar de Fogo Despertado",
+                "tipo": "ofensiva",
+                "dano": 330,
+                "custoStamina": 50,
+                "cooldown": 4,
+                "stun": 0,
+                "descricao": "Cria um pilar de fogo despertado que incendeia tudo",
+                "despertada": true
+              },
+              {
+                "nome": "Meteoro Máximo Despertado",
+                "tipo": "ofensiva",
+                "dano": 510,
+                "custoStamina": 75,
+                "cooldown": 6,
+                "stun": 2,
+                "descricao": "Invoca um meteoro de rocha vulcânica despertada do céu",
+                "despertada": true
+              },
+              {
+                "nome": "Sol Cruel Despertado",
+                "tipo": "ofensiva",
+                "dano": 630,
+                "custoStamina": 43.75,
+                "cooldown": 3,
+                "stun": 1,
+                "descricao": "Cria uma esfera de chamas despertadas tão grande quanto um sol",
+                "despertada": true
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "raid_razao_proporcional",
+      "frutaId": "razao_proporcional",
+      "ticketId": "ticket_razao",
+      "ticketNome": "Ticket Razão",
+      "nome": "Raid: O Executor de Shibuya — Razão Absoluta",
+      "descricao": "Enfrente as forças do Incidente de Shibuya e derrote Nanami Kento em seu estado desperto para desbloquear a Razão Absoluta: Princípio da Divisão Infinita!",
+      "nivelMinimo": 10,
+      "maxParticipantes": 5,
+      "terrenosDisponiveis": [
+        "floresta",
+        "ruinas",
+        "montanha"
+      ],
+      "terrenos": [
+        {
+          "nome": "Shibuya em Chamas",
+          "emoji": "🔥",
+          "buffs": {
+            "dano": 0,
+            "defesa": -0.12
+          }
+        },
+        {
+          "nome": "Domínio das Proporções",
+          "emoji": "📐",
+          "buffs": {
+            "critico": 0.19,
+            "esquiva": -0.12
+          }
+        },
+        {
+          "nome": "Ruínas de Shibuya",
+          "emoji": "🏛️",
+          "buffs": {
+            "defesa": 0.25,
+            "stamina": -0.19
+          }
+        },
+        {
+          "nome": "Abismo da Maldição",
+          "emoji": "🌑",
+          "buffs": {
+            "dano": 0,
+            "vida": -1.25
+          }
+        },
+        {
+          "nome": "Fortaleza Espiritual",
+          "emoji": "🏯",
+          "buffs": {
+            "defesa": 0.19,
+            "stamina": 0.19
+          }
+        },
+        {
+          "nome": "Campo do Trovão Amaldiçoado",
+          "emoji": "⚡",
+          "buffs": {
+            "critico": 0.19,
+            "esquiva": 0.13
+          }
+        }
+      ],
+      "recompensas": {
+        "fragmentos": 25,
+        "berries": 4050,
+        "xp": 2430,
+        "xpTecnica": 317
+      },
+      "rodadas": [
+        {
+          "numero": 1,
+          "tipo": "inimigos",
+          "quantidade": 5,
+          "inimigo": {
+            "nome": "Operário Amaldiçoado Grau 4",
+            "vida": 140,
+            "dano": 22.5,
+            "descricao": "Espíritos de baixo grau liberados durante o Incidente de Shibuya. Atacam sem estratégia.",
+            "habilidades": [
+              {
+                "nome": "Golpe Descuidado",
+                "tipo": "ofensiva",
+                "dano": 22.5,
+                "custoStamina": 10,
+                "cooldown": 1,
+                "stun": 0,
+                "descricao": "Um ataque descontrolado sem técnica definida"
+              }
+            ]
+          }
+        },
+        {
+          "numero": 2,
+          "tipo": "inimigos",
+          "quantidade": 8,
+          "inimigo": {
+            "nome": "Agente de Shibuya Grau 3",
+            "vida": 203.75,
+            "dano": 36.25,
+            "descricao": "Espíritos Grau 3 que imitam brevemente técnicas proporcionais básicas. Mais agressivos.",
+            "habilidades": [
+              {
+                "nome": "Investida Furiosa",
+                "tipo": "ofensiva",
+                "dano": 42.5,
+                "custoStamina": 12.5,
+                "cooldown": 2,
+                "stun": 0,
+                "descricao": "Arremessa o corpo inteiro contra o oponente com força bruta"
+              },
+              {
+                "nome": "Rajada Dupla",
+                "tipo": "ofensiva",
+                "dano": 33.75,
+                "custoStamina": 10,
+                "cooldown": 1,
+                "stun": 0,
+                "descricao": "Dois golpes consecutivos em sequência rápida"
+              }
+            ]
+          }
+        },
+        {
+          "numero": 3,
+          "tipo": "inimigos",
+          "quantidade": 5,
+          "inimigo": {
+            "nome": "Executor Proporcional Grau 2",
+            "vida": 298.75,
+            "dano": 55,
+            "descricao": "Espíritos de elite que dominaram parcialmente a divisão 7:3. Identificam pontos fracos com alguma precisão.",
+            "habilidades": [
+              {
+                "nome": "Corte Proporcional",
+                "tipo": "ofensiva",
+                "dano": 57.5,
+                "custoStamina": 18.75,
+                "cooldown": 2,
+                "stun": 0,
+                "descricao": "Slash calculado baseado em proporções rudimentares do alvo"
+              },
+              {
+                "nome": "Rachadura 7:3",
+                "tipo": "ofensiva",
+                "dano": 68.75,
+                "custoStamina": 25,
+                "cooldown": 3,
+                "stun": 1,
+                "descricao": "Golpe que tenta replicar o ponto fraco 7:3, causando stun parcial"
+              }
+            ]
+          }
+        },
+        {
+          "numero": 4,
+          "tipo": "inimigos",
+          "quantidade": 8,
+          "inimigo": {
+            "nome": "Tenente da Proporção Grau 1",
+            "vida": 432.5,
+            "dano": 73.75,
+            "descricao": "Os tenentes da força proporcional — dominam a técnica 7:3 em alto nível e atacam em ondas coordenadas.",
+            "habilidades": [
+              {
+                "nome": "Sete-Três: Ponto Fraco",
+                "tipo": "ofensiva",
+                "dano": 86.25,
+                "custoStamina": 25,
+                "cooldown": 3,
+                "stun": 1,
+                "descricao": "Acessa o ponto fraco 7:3 do oponente com alta precisão"
+              },
+              {
+                "nome": "Dezenas de Lacunas",
+                "tipo": "ofensiva",
+                "dano": 101.25,
+                "custoStamina": 37.5,
+                "cooldown": 4,
+                "stun": 0,
+                "descricao": "Encadeia 10 golpes em todos os pontos fracionais simultaneamente"
+              },
+              {
+                "nome": "Divisão Cortante",
+                "tipo": "ofensiva",
+                "dano": 73.75,
+                "custoStamina": 18.75,
+                "cooldown": 2,
+                "stun": 0,
+                "descricao": "Série de cortes rápidos que dividem a energia do oponente"
+              }
+            ]
+          }
+        },
+        {
+          "numero": 5,
+          "tipo": "boss",
+          "quantidade": 1,
+          "boss": {
+            "nome": "Nanami Kento — O Executor de Shibuya",
+            "vida": 1022.5,
+            "dano": 110,
+            "descricao": "Nanami Kento em seu ápice como Feiticeiro Grau 1. Domina completamente a Razão Absoluta e cada golpe é matematicamente perfeito. O Executor de Shibuya não hesita.",
+            "thumbnail": "https://static.wikia.nocookie.net/jujutsu-kaisen/images/7/7b/Kento_Nanami_%28Anime%29.png",
+            "anti": "proporcional",
+            "falaInicio": "...Hora extra. Detectei pontos frágeis em sua estrutura. Não vou prolongar isso desnecessariamente — cada golpe meu terá um propósito.",
+            "falaDerrota": "...Hm. Proporções que não consigo calcular. Isso é admirável. Você merece o poder da Razão Absoluta.",
+            "falaVitoria": "Calculei cada ponto fraco seu com precisão matemática. É uma questão de proporções. Prepare-se melhor antes de voltar.",
+            "habilidades": [
+              {
+                "nome": "Golpe de Gravata — Precisão Absoluta",
+                "tipo": "ofensiva",
+                "dano": 121.25,
+                "custoStamina": 25,
+                "cooldown": 2,
+                "stun": 0,
+                "descricao": "Ataque direcionado com gravata imbuída de Razão Absoluta — sempre acerta em proporção crítica"
+              },
+              {
+                "nome": "Sete-Três: Colapso Estrutural",
+                "tipo": "ofensiva",
+                "dano": 165,
+                "custoStamina": 43.75,
+                "cooldown": 3,
+                "stun": 1,
+                "descricao": "O ponto fraco 7:3 identificado e explorado com força máxima, colapsando a estrutura do oponente"
+              },
+              {
+                "nome": "Dezenas de Lacunas: Aprimoradas",
+                "tipo": "ofensiva",
+                "dano": 203.75,
+                "custoStamina": 62.5,
+                "cooldown": 4,
+                "stun": 0,
+                "descricao": "10 cortes simultâneos nos pontos fracionais aprimorados pelo domínio de Nanami"
+              },
+              {
+                "nome": "Técnica Máxima: Cem Lacunas",
+                "tipo": "ofensiva",
+                "dano": 291.25,
+                "custoStamina": 87.5,
+                "cooldown": 6,
+                "stun": 2,
+                "descricao": "100 cortes simultâneos em todos os pontos fracos 7:3 detectados — devastação matemática"
+              },
+              {
+                "nome": "Técnica Absoluta: Princípio da Divisão",
+                "tipo": "ofensiva",
+                "dano": 377.5,
+                "custoStamina": 112.5,
+                "cooldown": 8,
+                "stun": 3,
+                "descricao": "O golpe final de Nanami desperto — expõe todos os pontos fracionais do universo em uma única execução perfeita",
+                "despertada": true
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "raid_fenda_esfacelamento",
+      "frutaId": "fenda_esfacelamento",
+      "ticketId": "ticket_sukuna",
+      "ticketNome": "Ticket Sukuna",
+      "nome": "Raid: O Rei das Maldições — Ryomen Sukuna",
+      "descricao": "Adentre o Santuário Maligno e enfrente Ryomen Sukuna no auge de seu poder despertado. O Rei das Maldições não tem igual — apenas os mais fortes sobreviverão.",
+      "nivelMinimo": 10,
+      "maxParticipantes": 6,
+      "terrenosDisponiveis": [
+        "vulcao",
+        "ruinas",
+        "montanha"
+      ],
+      "terrenos": [
+        {
+          "nome": "Santuário Maligno",
+          "emoji": "🏯",
+          "buffs": {
+            "dano": 0,
+            "defesa": -0.19
+          }
+        },
+        {
+          "nome": "Templo do Caos",
+          "emoji": "🌋",
+          "buffs": {
+            "critico": 0.25,
+            "stamina": -0.19
+          }
+        },
+        {
+          "nome": "Ruínas do Período Heian",
+          "emoji": "🏛️",
+          "buffs": {
+            "defesa": 0.31,
+            "dano": -1.25
+          }
+        },
+        {
+          "nome": "Abismo da Maldição",
+          "emoji": "🌑",
+          "buffs": {
+            "dano": 0,
+            "vida": -1.25
+          }
+        },
+        {
+          "nome": "Fortaleza Espiritual",
+          "emoji": "🏯",
+          "buffs": {
+            "defesa": 0.19,
+            "stamina": 0.19
+          }
+        },
+        {
+          "nome": "Campo do Trovão Amaldiçoado",
+          "emoji": "⚡",
+          "buffs": {
+            "critico": 0.19,
+            "esquiva": 0.13
+          }
+        }
+      ],
+      "recompensas": {
+        "fragmentos": 40,
+        "berries": 6750,
+        "xp": 6075,
+        "xpTecnica": 473
+      },
+      "rodadas": [
+        {
+          "numero": 1,
+          "tipo": "inimigos",
+          "quantidade": 6,
+          "inimigo": {
+            "nome": "Espírito Grau 1 — Servo do Rei",
+            "vida": 273.75,
+            "dano": 55,
+            "descricao": "Espíritos de alto grau que servem a Ryomen Sukuna. Carregam fragmentos de sua energia maldita.",
+            "habilidades": [
+              {
+                "nome": "Corte Maldito",
+                "tipo": "ofensiva",
+                "dano": 57.5,
+                "custoStamina": 15,
+                "cooldown": 1,
+                "stun": 0,
+                "descricao": "Um corte básico imbuído com a energia do Rei"
+              },
+              {
+                "nome": "Fenda Imitada",
+                "tipo": "ofensiva",
+                "dano": 73.75,
+                "custoStamina": 25,
+                "cooldown": 2,
+                "stun": 0,
+                "descricao": "Imita torpemente a Fenda de Sukuna — sem a precisão do Rei, mas ainda letal"
+              }
+            ]
+          }
+        },
+        {
+          "numero": 2,
+          "tipo": "inimigos",
+          "quantidade": 8,
+          "inimigo": {
+            "nome": "Guardião do Santuário Grau Especial",
+            "vida": 377.5,
+            "dano": 78.75,
+            "descricao": "Guardiões criados pelo próprio Sukuna para proteger o Santuário. Atacam em ondas coordenadas com técnicas de corte.",
+            "habilidades": [
+              {
+                "nome": "Rajada de Cortes",
+                "tipo": "ofensiva",
+                "dano": 86.25,
+                "custoStamina": 18.75,
+                "cooldown": 2,
+                "stun": 0,
+                "descricao": "Série de três cortes rápidos com energia do Rei"
+              },
+              {
+                "nome": "Esfacelamento Imitado",
+                "tipo": "ofensiva",
+                "dano": 110,
+                "custoStamina": 31.25,
+                "cooldown": 3,
+                "stun": 1,
+                "descricao": "Cópia do Esfacelamento — tenta escalar com a saúde do alvo mas falha em replicar a perfeição do Rei"
+              }
+            ]
+          }
+        },
+        {
+          "numero": 3,
+          "tipo": "inimigos",
+          "quantidade": 5,
+          "inimigo": {
+            "nome": "Executor Divino do Rei",
+            "vida": 550,
+            "dano": 112.5,
+            "descricao": "Os executores pessoais de Sukuna. Dominam técnicas de fogo e corte com brutalidade sem igual.",
+            "habilidades": [
+              {
+                "nome": "Fogo Divino",
+                "tipo": "ofensiva",
+                "dano": 125,
+                "custoStamina": 37.5,
+                "cooldown": 3,
+                "stun": 0,
+                "descricao": "Chamas divinas do santuário que incendeiam o alvo"
+              },
+              {
+                "nome": "Mundo Cortante",
+                "tipo": "ofensiva",
+                "dano": 148.75,
+                "custoStamina": 50,
+                "cooldown": 4,
+                "stun": 1,
+                "descricao": "Corte omnidirecional que lascera tudo ao redor"
+              },
+              {
+                "nome": "Fenda Executora",
+                "tipo": "ofensiva",
+                "dano": 165,
+                "custoStamina": 62.5,
+                "cooldown": 5,
+                "stun": 0,
+                "descricao": "Versão aperfeiçoada da Fenda, carregada de ódio divino"
+              }
+            ]
+          }
+        },
+        {
+          "numero": 4,
+          "tipo": "inimigos",
+          "quantidade": 6,
+          "inimigo": {
+            "nome": "Avatar do Santuário Maligno",
+            "vida": 747.5,
+            "dano": 152.5,
+            "descricao": "Manifestações da vontade do Santuário Maligno. São partes vivas do domínio de Sukuna que assumem forma física.",
+            "habilidades": [
+              {
+                "nome": "Abertura Parcial do Santuário",
+                "tipo": "ofensiva",
+                "dano": 172.5,
+                "custoStamina": 50,
+                "cooldown": 4,
+                "stun": 1,
+                "descricao": "O Santuário Maligno se abre parcialmente — Fenda e Esfacelamento se combinam num único golpe mortal"
+              },
+              {
+                "nome": "Chamas do Abismo",
+                "tipo": "ofensiva",
+                "dano": 196.25,
+                "custoStamina": 68.75,
+                "cooldown": 5,
+                "stun": 0,
+                "descricao": "O fogo sagrado do Santuário queima tanto a carne quanto a energia maldita"
+              },
+              {
+                "nome": "Corte da Realidade",
+                "tipo": "ofensiva",
+                "dano": 220,
+                "custoStamina": 87.5,
+                "cooldown": 6,
+                "stun": 2,
+                "descricao": "A realidade é rasgada pelo poder absoluto do Rei"
+              }
+            ]
+          }
+        },
+        {
+          "numero": 5,
+          "tipo": "boss",
+          "quantidade": 1,
+          "boss": {
+            "nome": "Ryomen Sukuna — O Rei das Maldições",
+            "vida": 1732.5,
+            "dano": 172.5,
+            "descricao": "Ryomen Sukuna em sua forma completa e despertada. O Feiticeiro mais poderoso de todos os tempos, o Rei das Maldições que nenhuma técnica pode conter. Fenda e Esfacelamento juntos são a lei absoluta do universo.",
+            "thumbnail": "https://static.wikia.nocookie.net/jujutsu-kaisen/images/8/8a/Sukuna_%28Anime%29.png",
+            "anti": "corte",
+            "falaInicio": "...Que decepcionante. Vocês são os mais fortes que este mundo pode oferecer? Então vou me entreter um pouco antes de vos destruir.",
+            "falaDerrota": "...Hm. Força que não consigo calcular. Isso... é interessante. Pelo menos não foi entediante.",
+            "falaVitoria": "Fraco demais. O Santuário Maligno não reconhece a força de vocês. Voltem quando forem dignos de minha atenção.",
+            "habilidades": [
+              {
+                "nome": "Fenda — Lâmina Absoluta",
+                "tipo": "ofensiva",
+                "dano": 220,
+                "custoStamina": 37.5,
+                "cooldown": 2,
+                "stun": 0,
+                "descricao": "A Fenda de Sukuna no auge — um corte perfeito que divide tudo sem deixar rastro",
+                "despertada": true
+              },
+              {
+                "nome": "Esfacelamento — Devastação Total",
+                "tipo": "ofensiva",
+                "dano": 266.25,
+                "custoStamina": 56.25,
+                "cooldown": 3,
+                "stun": 1,
+                "descricao": "Esfacelamento despertado: quanto mais saúde o alvo possui, mais brutal é a destruição",
+                "despertada": true
+              },
+              {
+                "nome": "Fogo Divino: Kaijin",
+                "tipo": "ofensiva",
+                "dano": 298.75,
+                "custoStamina": 75,
+                "cooldown": 4,
+                "stun": 0,
+                "descricao": "Chamas sagradas que consomem a energia de todos simultaneamente",
+                "despertada": true
+              },
+              {
+                "nome": "Mundo Cortante: Abismo Eterno",
+                "tipo": "ofensiva",
+                "dano": 353.75,
+                "custoStamina": 100,
+                "cooldown": 5,
+                "stun": 2,
+                "descricao": "A versão absoluta do Mundo Cortante — o espaço colapsa sob o peso do poder do Rei",
+                "despertada": true
+              },
+              {
+                "nome": "Técnica Máxima: Santuário Maligno",
+                "tipo": "ofensiva",
+                "dano": 472.5,
+                "custoStamina": 150,
+                "cooldown": 8,
+                "stun": 3,
+                "descricao": "O Domínio Expandido de Sukuna em sua plenitude absoluta. Dentro do Santuário Maligno, cada ser é destruído por Fenda e Esfacelamento infalíveis ao mesmo tempo. Ninguém escapa.",
+                "despertada": true
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "raid_jogo_morte_ociosa",
+      "frutaId": "jogo_morte_ociosa",
+      "ticketId": "ticket_hakari",
+      "ticketNome": "Ticket Hakari",
+      "nome": "Raid: O Cassino da Morte — Hakari Kinji",
+      "descricao": "Adentrem o Cassino Amaldiçoado infinito e enfrentem Hakari Kinji em seu auge despertado. A Death Game não possui regras — apenas o Jackpot 777 é certo. Apenas os mais afortunados sobreviverão.",
+      "nivelMinimo": 11,
+      "maxParticipantes": 6,
+      "terrenosDisponiveis": [
+        "cassino",
+        "templo",
+        "ruinas"
+      ],
+      "terrenos": [
+        {
+          "nome": "Cassino Infinito",
+          "emoji": "🎰",
+          "buffs": {
+            "dano": 0.12,
+            "defesa": -0.19
+          }
+        },
+        {
+          "nome": "Sala do Pachinko Amaldiçoado",
+          "emoji": "🎲",
+          "buffs": {
+            "critico": 0.31,
+            "stamina": -0.19
+          }
+        },
+        {
+          "nome": "Domínio do Jogo Expandido",
+          "emoji": "🏛️",
+          "buffs": {
+            "defesa": 0.38,
+            "dano": -1.5
+          }
+        },
+        {
+          "nome": "Vale das Fichas Malditas",
+          "emoji": "💰",
+          "buffs": {
+            "dano": 0.06,
+            "vida": -1.5
+          }
+        },
+        {
+          "nome": "Fortaleza do Apostar Infinito",
+          "emoji": "🏰",
+          "buffs": {
+            "defesa": 0.25,
+            "stamina": 0.25
+          }
+        },
+        {
+          "nome": "Campo da Boa Sorte",
+          "emoji": "✨",
+          "buffs": {
+            "critico": 0.25,
+            "esquiva": 0.19
+          }
+        }
+      ],
+      "recompensas": {
+        "fragmentos": 52,
+        "berries": 8775,
+        "xp": 540,
+        "xpTecnica": 95
+      },
+      "rodadas": [
+        {
+          "numero": 1,
+          "tipo": "inimigos",
+          "quantidade": 6,
+          "inimigo": {
+            "nome": "Espírito Apostador — Servo da Sorte",
+            "vida": 356.375,
+            "dano": 71.5,
+            "descricao": "Espíritos do Cassino que buscam ganhar na morte. Carregam fichas de energia amaldiçoada.",
+            "habilidades": [
+              {
+                "nome": "Golpe da Sorte",
+                "tipo": "ofensiva",
+                "dano": 74.75,
+                "custoStamina": 19.5,
+                "cooldown": 1,
+                "stun": 0,
+                "descricao": "Um golpe carregado com a energia do Cassino"
+              },
+              {
+                "nome": "Deriva da Ganância",
+                "tipo": "ofensiva",
+                "dano": 95.875,
+                "custoStamina": 32.5,
+                "cooldown": 2,
+                "stun": 0,
+                "descricao": "A ganância do Cassino se manifesta em um ataque ganancioso"
+              }
+            ]
+          }
+        },
+        {
+          "numero": 2,
+          "tipo": "inimigos",
+          "quantidade": 8,
+          "inimigo": {
+            "nome": "Guardião do Cassino Grau Especial",
+            "vida": 490.75,
+            "dano": 102.375,
+            "descricao": "Guardiões criados pelo próprio Hakari para proteger o Cassino. Atacam com fichas giratórias e energia maldita coordenada.",
+            "habilidades": [
+              {
+                "nome": "Chuva de Fichas",
+                "tipo": "ofensiva",
+                "dano": 112.125,
+                "custoStamina": 24.375,
+                "cooldown": 2,
+                "stun": 0,
+                "descricao": "Série de fichas malditas disparadas com energia pura"
+              },
+              {
+                "nome": "Corrente da Morte Imitada",
+                "tipo": "ofensiva",
+                "dano": 143,
+                "custoStamina": 40.625,
+                "cooldown": 3,
+                "stun": 1,
+                "descricao": "Cópia das Correntes de Maldição — tenta escalar mas falha em replicar a perfeição de Hakari"
+              }
+            ]
+          }
+        },
+        {
+          "numero": 3,
+          "tipo": "inimigos",
+          "quantidade": 5,
+          "inimigo": {
+            "nome": "Executor do Jackpot",
+            "vida": 715,
+            "dano": 146.25,
+            "descricao": "Os executores pessoais de Hakari. Dominam o pachinko amaldiçoado e os giros da morte com brutalidade absoluta.",
+            "habilidades": [
+              {
+                "nome": "Projétil do Cassino",
+                "tipo": "ofensiva",
+                "dano": 162.5,
+                "custoStamina": 48.75,
+                "cooldown": 3,
+                "stun": 0,
+                "descricao": "Fichas amaldiçoadas disparadas com força divina do Cassino"
+              },
+              {
+                "nome": "Giro Executório",
+                "tipo": "ofensiva",
+                "dano": 193.375,
+                "custoStamina": 65,
+                "cooldown": 4,
+                "stun": 1,
+                "descricao": "Giro do Pachinko com intenção assassina — tenta replicar a Expansão de Domínio"
+              },
+              {
+                "nome": "Tempestade de Fichas",
+                "tipo": "ofensiva",
+                "dano": 286,
+                "custoStamina": 81.25,
+                "cooldown": 5,
+                "stun": 0,
+                "descricao": "Todas as fichas do cassino giram simultaneamente em um ataque devastador"
+              }
+            ]
+          }
+        },
+        {
+          "numero": 4,
+          "tipo": "inimigos",
+          "quantidade": 6,
+          "inimigo": {
+            "nome": "Avatar do Cassino Infinito",
+            "vida": 971.75,
+            "dano": 198.25,
+            "descricao": "Manifestações da vontade do Cassino Amaldiçoado. São partes vivas do domínio de Hakari que assumem forma de fichas e tambores.",
+            "habilidades": [
+              {
+                "nome": "Abertura Parcial do Cassino",
+                "tipo": "ofensiva",
+                "dano": 224.25,
+                "custoStamina": 65,
+                "cooldown": 4,
+                "stun": 1,
+                "descricao": "O Cassino se abre parcialmente — Fichas e Correntes se combinam num único golpe mortal"
+              },
+              {
+                "nome": "Chamas do Vício",
+                "tipo": "ofensiva",
+                "dano": 255.125,
+                "custoStamina": 89.375,
+                "cooldown": 5,
+                "stun": 0,
+                "descricao": "O fogo sagrado do Cassino queima tanto a carne quanto a energia maldita desejosa"
+              },
+              {
+                "nome": "Corte do Acaso",
+                "tipo": "ofensiva",
+                "dano": 286,
+                "custoStamina": 113.75,
+                "cooldown": 6,
+                "stun": 2,
+                "descricao": "O acaso é rasgado pelo poder absoluto da Death Game"
+              }
+            ]
+          }
+        },
+        {
+          "numero": 5,
+          "tipo": "boss",
+          "quantidade": 1,
+          "boss": {
+            "nome": "Hakari Kinji — O Deus do Cassino Infinito",
+            "vida": 2252.25,
+            "dano": 224.25,
+            "descricao": "Hakari Kinji em sua forma completa e despertada. O Mestre do Cassino Amaldiçoado onde o Jackpot 777 é lei absoluta. Fichas, tambores e a morte são o universo dele. Nenhuma técnica pode conter a Death Game.",
+            "thumbnail": "https://static.wikia.nocookie.net/jujutsu-kaisen/images/b/b3/Hakari.png",
+            "anti": "fichas",
+            "falaInicio": "Bem-vindo ao Cassino Infinito... A Death Game não tem perdedores, apenas aqueles que ainda não perceberam que já perderam.",
+            "falaDerrota": "Impossível... O Jackpot não falhou? Vocês realmente... são dignos de meu tempo.",
+            "falaVitoria": "Hehe... Que entediante. Vocês não tinham nem uma moeda para apostar na Death Game. Desapareçam do meu Cassino.",
+            "habilidades": [
+              {
+                "nome": "Fichas do Destino — Múltiplo",
+                "tipo": "ofensiva",
+                "dano": 286,
+                "custoStamina": 48.75,
+                "cooldown": 2,
+                "stun": 0,
+                "descricao": "Fichas amaldiçoadas multiplicadas em projéteis de energia pura — cada uma carrega o peso de uma aposta de vida",
+                "despertada": true
+              },
+              {
+                "nome": "Giro Triple da Morte",
+                "tipo": "ofensiva",
+                "dano": 0,
+                "custoStamina": 78,
+                "cooldown": 3,
+                "stun": 0,
+                "descricao": "Hakari gira os tambores 3 vezes! A chance de Jackpot 777 é inexorável — a fé na Death Game é tudo",
+                "despertada": true
+              },
+              {
+                "nome": "Correntes da Morte Suprema",
+                "tipo": "ofensiva",
+                "dano": 351.75,
+                "custoStamina": 73.25,
+                "cooldown": 3,
+                "stun": 1,
+                "descricao": "Correntes de energia amaldiçoada que prendem e esmagam simultaneamente com a força do Cassino",
+                "despertada": true
+              },
+              {
+                "nome": "Fogo Infinito: Cassino Eterno",
+                "tipo": "ofensiva",
+                "dano": 388.375,
+                "custoStamina": 97.5,
+                "cooldown": 4,
+                "stun": 0,
+                "descricao": "Chamas sagradas do Cassino que consomem a energia de todos simultaneamente sem piedade",
+                "despertada": true
+              },
+              {
+                "nome": "Giro do Pachinko: Abismo Infinito",
+                "tipo": "ofensiva",
+                "dano": 459.875,
+                "custoStamina": 130,
+                "cooldown": 5,
+                "stun": 2,
+                "descricao": "A versão absoluta do Giro do Pachinko — o Cassino colapsa sob o peso do Jackpot garantido",
+                "despertada": true
+              },
+              {
+                "nome": "777 Infinito: Santuário da Morte",
+                "tipo": "ofensiva",
+                "dano": 614.25,
+                "custoStamina": 195,
+                "cooldown": 8,
+                "stun": 3,
+                "descricao": "O Domínio Expandido de Hakari em sua plenitude absoluta. Dentro do Cassino Infinito, cada ser é destruído por Jackpot 777 e Death Game infalíveis ao mesmo tempo. A fé no acaso é sua perdição.",
+                "despertada": true
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "raid_tempestade_primordial",
+      "frutaId": "hajime_kashimo",
+      "ticketId": "ticket_kashimo",
+      "ticketNome": "Ticket Kashimo",
+      "nome": "Raid: A Tempestade Primordial — Kashimo Hajime",
+      "descricao": "Adentrem o caos da Tempestade Primordial e enfrentem Kashimo Hajime em seu pico despertado. A energia elétrica pura que permeia cada golpe pode liquefazer a própria existência. Apenas aqueles tocados pelo relâmpago divino conseguem sobreviver.",
+      "nivelMinimo": 12,
+      "maxParticipantes": 6,
+      "terrenosDisponiveis": [
+        "montanha",
+        "templo",
+        "ruinas"
+      ],
+      "terrenos": [
+        {
+          "nome": "Pico da Tempestade Eterna",
+          "emoji": "⚡",
+          "buffs": {
+            "dano": 0.2,
+            "defesa": -0.3
+          }
+        },
+        {
+          "nome": "Abismo Eletrostático",
+          "emoji": "🌩️",
+          "buffs": {
+            "critico": 0.38,
+            "stamina": -0.25
+          }
+        },
+        {
+          "nome": "Câmara da Natureza Miraculosa",
+          "emoji": "🏛️",
+          "buffs": {
+            "defesa": 0.45,
+            "dano": -0.45
+          }
+        },
+        {
+          "nome": "Vale dos Raios Sagrados",
+          "emoji": "⚡",
+          "buffs": {
+            "dano": 0.09,
+            "vida": -1.8
+          }
+        },
+        {
+          "nome": "Fortaleza do Kami Sagrado",
+          "emoji": "👑",
+          "buffs": {
+            "defesa": 0.2,
+            "stamina": 0.2
+          }
+        },
+        {
+          "nome": "Campo da Sobrecarga Suprema",
+          "emoji": "⚡",
+          "buffs": {
+            "critico": 0.32,
+            "esquiva": 0.25
+          }
+        }
+      ],
+      "recompensas": {
+        "fragmentos": 75,
+        "berries": 12724,
+        "xp": 10334,
+        "xpTecnica": 675
+      },
+      "rodadas": [
+        {
+          "numero": 1,
+          "tipo": "inimigos",
+          "quantidade": 6,
+          "inimigo": {
+            "nome": "Espírito Elemental — Servo da Tempestade",
+            "vida": 516.7,
+            "dano": 103.7,
+            "descricao": "Espíritos carregados de eletricidade primordial. Canalizadores da energia pura do relâmpago divino.",
+            "habilidades": [
+              {
+                "nome": "Golpe Elemental",
+                "tipo": "ofensiva",
+                "dano": 108.4,
+                "custoStamina": 28.3,
+                "cooldown": 1,
+                "stun": 0,
+                "descricao": "Um golpe carregado com energia do relâmpago primordial"
+              },
+              {
+                "nome": "Pulso da Carga",
+                "tipo": "ofensiva",
+                "dano": 138.9,
+                "custoStamina": 47.1,
+                "cooldown": 2,
+                "stun": 0,
+                "descricao": "Uma explosão de carga elétrica concentrada"
+              }
+            ]
+          }
+        },
+        {
+          "numero": 2,
+          "tipo": "inimigos",
+          "quantidade": 8,
+          "inimigo": {
+            "nome": "Guardião da Tempestade Grau Especial",
+            "vida": 710.6,
+            "dano": 148.4,
+            "descricao": "Guardiões criados por Kashimo para proteger seu domínio. Atacam com raios organizados e carga coordenada.",
+            "habilidades": [
+              {
+                "nome": "Chuva de Raios",
+                "tipo": "ofensiva",
+                "dano": 162.3,
+                "custoStamina": 35.3,
+                "cooldown": 2,
+                "stun": 0,
+                "descricao": "Série de raios disparados com energia pura"
+              },
+              {
+                "nome": "Cadeia de Relâmpagos",
+                "tipo": "ofensiva",
+                "dano": 207.3,
+                "custoStamina": 58.9,
+                "cooldown": 3,
+                "stun": 1,
+                "descricao": "Correntes de relâmpagos que saltam e prendem consecutivamente"
+              }
+            ]
+          }
+        },
+        {
+          "numero": 3,
+          "tipo": "inimigos",
+          "quantidade": 5,
+          "inimigo": {
+            "nome": "Executor da Sobrecarga",
+            "vida": 1036.2,
+            "dano": 211.9,
+            "descricao": "Os executores pessoais de Kashimo. Dominam a carga elemental e a sobrecarga com brutalidade absoluta.",
+            "habilidades": [
+              {
+                "nome": "Projétil de Raio Sagrado",
+                "tipo": "ofensiva",
+                "dano": 235.6,
+                "custoStamina": 70.6,
+                "cooldown": 3,
+                "stun": 0,
+                "descricao": "Raios amaldiçoados disparados com força do Kami"
+              },
+              {
+                "nome": "Sobrecarga Relampejante",
+                "tipo": "ofensiva",
+                "dano": 280.3,
+                "custoStamina": 94.2,
+                "cooldown": 4,
+                "stun": 1,
+                "descricao": "Descarga de sobrecarga que amplifica a destruição"
+              },
+              {
+                "nome": "Tempestade de Cargas",
+                "tipo": "ofensiva",
+                "dano": 414.7,
+                "custoStamina": 117.8,
+                "cooldown": 5,
+                "stun": 0,
+                "descricao": "Todas as cargas eletrais giram simultaneamente em um ataque devastador"
+              }
+            ]
+          }
+        },
+        {
+          "numero": 4,
+          "tipo": "inimigos",
+          "quantidade": 6,
+          "inimigo": {
+            "nome": "Avatar da Natureza Miraculosa",
+            "vida": 1409,
+            "dano": 287.4,
+            "descricao": "Encarnação da Natureza Miraculosa de Kashimo. Domina todas as técnicas elementais de forma suprema.",
+            "habilidades": [
+              {
+                "nome": "Relâmpago Primordial",
+                "tipo": "ofensiva",
+                "dano": 245.6,
+                "custoStamina": 39,
+                "cooldown": 1,
+                "stun": 0,
+                "descricao": "Relâmpago puro disparado com intenção divina"
+              },
+              {
+                "nome": "Fogo Elemental Supremo",
+                "tipo": "ofensiva",
+                "dano": 297.8,
+                "custoStamina": 52,
+                "cooldown": 2,
+                "stun": 0,
+                "descricao": "Chamas eletrostáticas que consomem tudo"
+              },
+              {
+                "nome": "Forma Suprema: Kami do Raio",
+                "tipo": "ofensiva",
+                "dano": 351.5,
+                "custoStamina": 65,
+                "cooldown": 2,
+                "stun": 0,
+                "descricao": "Invocação da forma suprema do relâmpago divino"
+              },
+              {
+                "nome": "Implosão Eletrostática",
+                "tipo": "ofensiva",
+                "dano": 423.2,
+                "custoStamina": 164.6,
+                "cooldown": 6,
+                "stun": 2,
+                "descricao": "O universo é rasgado pela sobrecarga suprema"
+              }
+            ]
+          }
+        },
+        {
+          "numero": 5,
+          "tipo": "boss",
+          "quantidade": 1,
+          "boss": {
+            "nome": "Kashimo Hajime — O Kami do Relâmpago Sagrado",
+            "vida": 3265.8,
+            "dano": 324.9,
+            "descricao": "Kashimo Hajime em sua forma completa e despertada. O Mestre da Tempestade Primordial onde a eletricidade pura é lei absoluta. Relâmpagos, cargas e a sobrecarga suprema são o universo dele. Nenhuma técnica pode conter a Natureza Miraculosa.",
+            "thumbnail": "https://static.wikia.nocookie.net/jujutsu-kaisen/images/7/7b/Kashimo.png",
+            "anti": "raios",
+            "falaInicio": "Bem-vindo à Tempestade Primordial... Aqui, apenas a eletricidade reina suprema. Vocês sentem o relâmpago em suas veias?",
+            "falaDerrota": "Impossível... A Natureza Miraculosa falhou? Vocês realmente... merecem ser tocados pelo Kami.",
+            "falaVitoria": "Hehe... Que entediante. Vocês não tinham nem uma centelha para lutar contra a Tempestade. Desapareçam do meu domínio.",
+            "habilidades": [
+              {
+                "nome": "Relâmpago Primordial — Múltiplo",
+                "tipo": "ofensiva",
+                "dano": 414.7,
+                "custoStamina": 70.6,
+                "cooldown": 2,
+                "stun": 0,
+                "descricao": "Relâmpagos sagrados multiplicados em projéteis de energia pura — cada um carrega o peso de uma sobrecarga",
+                "despertada": true
+              },
+              {
+                "nome": "Cadeia de Raios Suprema",
+                "tipo": "ofensiva",
+                "dano": 0,
+                "custoStamina": 113,
+                "cooldown": 3,
+                "stun": 0,
+                "descricao": "Kashimo invoca a Cadeia de Raios suprema! A chance de Natureza Miraculosa é inexorável — a fé na tempestade é tudo",
+                "despertada": true
+              },
+              {
+                "nome": "Correntes da Sobrecarga Suprema",
+                "tipo": "ofensiva",
+                "dano": 509.5,
+                "custoStamina": 106.2,
+                "cooldown": 3,
+                "stun": 1,
+                "descricao": "Correntes de eletricidade sagrada que prendem e sobrecarregam simultaneamente",
+                "despertada": true
+              },
+              {
+                "nome": "Fogo Elemental Infinito",
+                "tipo": "ofensiva",
+                "dano": 562.7,
+                "custoStamina": 141.3,
+                "cooldown": 4,
+                "stun": 0,
+                "descricao": "Chamas eletrostáticas do Kami que consomem a energia de todos simultaneamente",
+                "despertada": true
+              },
+              {
+                "nome": "Forma Suprema: Kami do Raio Absoluto",
+                "tipo": "ofensiva",
+                "dano": 666.8,
+                "custoStamina": 188.5,
+                "cooldown": 5,
+                "stun": 2,
+                "descricao": "A versão absoluta da Forma Suprema — a tempestade colapsa sob o peso da sobrecarga garantida",
+                "despertada": true
+              },
+              {
+                "nome": "Domínio Expandido: Tempestade Primordial",
+                "tipo": "ofensiva",
+                "dano": 890.3,
+                "custoStamina": 282.5,
+                "cooldown": 8,
+                "stun": 3,
+                "descricao": "O Domínio Expandido de Kashimo em sua plenitude absoluta. Dentro da Tempestade Primordial, cada ser é destruído por Natureza Miraculosa e Kami do Raio infalíveis ao mesmo tempo. A fé na eletricidade é sua perdição.",
+                "despertada": true
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "raid_tribunal_supremo",
+      "frutaId": "julgamento",
+      "ticketId": "ticket_julgamento",
+      "ticketNome": "Ticket Julgamento",
+      "nome": "Raid: Tribunal Supremo — Higuruma Hiromi Despertado",
+      "descricao": "O julgador absoluto convoca sua corte suprema. Neste tribunal celestial, cada golpe é uma sentença inquestionável. Aqueles que não conseguem se defender perante a lei suprema serão executados sem apelação. Bem-vindo ao Tribunal Supremo.",
+      "nivelMinimo": 13,
+      "maxParticipantes": 6,
+      "terrenosDisponiveis": [
+        "tribunal",
+        "templo",
+        "castelo"
+      ],
+      "terrenos": [
+        {
+          "nome": "Câmara da Sentença Absoluta",
+          "emoji": "⚖️",
+          "buffs": {
+            "dano": 0.22,
+            "defesa": -0.3
+          }
+        },
+        {
+          "nome": "Salão da Confisco Supremo",
+          "emoji": "🔒",
+          "buffs": {
+            "stamina": -0.32,
+            "defesa": 0.15
+          }
+        },
+        {
+          "nome": "Câmara do Veredicto Divino",
+          "emoji": "👑",
+          "buffs": {
+            "critico": 0.4,
+            "vida": -0.15
+          }
+        },
+        {
+          "nome": "Salão da Hierarquia Celestial",
+          "emoji": "⚖️",
+          "buffs": {
+            "dano": 0.12,
+            "defesa": 0.18
+          }
+        },
+        {
+          "nome": "Tribunal da Execução Instantânea",
+          "emoji": "⚖️",
+          "buffs": {
+            "critico": 0.25,
+            "stamina": -0.18
+          }
+        },
+        {
+          "nome": "Câmara do Promotor Divino",
+          "emoji": "⚖️",
+          "buffs": {
+            "dano": 0.28,
+            "defesa": -0.1
+          }
+        }
+      ],
+      "recompensas": {
+        "fragmentos": 94,
+        "berries": 15904,
+        "xp": 13500,
+        "xpTecnica": 810
+      },
+      "rodadas": [
+        {
+          "numero": 1,
+          "tipo": "inimigos",
+          "quantidade": 6,
+          "inimigo": {
+            "nome": "Espírito da Lei — Guarda Jurídico",
+            "vida": 646,
+            "dano": 130,
+            "descricao": "Espíritos imbuídos na lei absoluta. Guardam o tribunal com sentenças inequívocas.",
+            "habilidades": [
+              {
+                "nome": "Golpe Jurídico",
+                "tipo": "ofensiva",
+                "dano": 135,
+                "custoStamina": 30,
+                "cooldown": 1,
+                "stun": 0,
+                "descricao": "Um golpe de pura condenação jurídica"
+              },
+              {
+                "nome": "Sentença de Culpa",
+                "tipo": "ofensiva",
+                "dano": 173,
+                "custoStamina": 49,
+                "cooldown": 2,
+                "stun": 0,
+                "descricao": "Uma explosão de veredicto absoluto concentrado"
+              }
+            ]
+          }
+        },
+        {
+          "numero": 2,
+          "tipo": "inimigos",
+          "quantidade": 8,
+          "inimigo": {
+            "nome": "Executor Jurídico — Grau Especial",
+            "vida": 888,
+            "dano": 186,
+            "descricao": "Executores da vontade suprema de Higuruma. Dominam confisco e julgamento com precisão letal.",
+            "habilidades": [
+              {
+                "nome": "Confisco da Energia",
+                "tipo": "ofensiva",
+                "dano": 203,
+                "custoStamina": 44,
+                "cooldown": 2,
+                "stun": 0,
+                "descricao": "Rouba a energia vital do alvo com lei implacável"
+              },
+              {
+                "nome": "Cadeia de Julgamentos",
+                "tipo": "ofensiva",
+                "dano": 259,
+                "custoStamina": 73,
+                "cooldown": 3,
+                "stun": 1,
+                "descricao": "Correntes de veredicto que prendem e condenam"
+              }
+            ]
+          }
+        },
+        {
+          "numero": 3,
+          "tipo": "inimigos",
+          "quantidade": 5,
+          "inimigo": {
+            "nome": "Promotor da Perdição",
+            "vida": 1295,
+            "dano": 265,
+            "descricao": "Os promotores divinos de Higuruma. Condenam com bônus de dano devastador e cura suprema.",
+            "habilidades": [
+              {
+                "nome": "Acusação Letal",
+                "tipo": "ofensiva",
+                "dano": 295,
+                "custoStamina": 88,
+                "cooldown": 3,
+                "stun": 0,
+                "descricao": "Uma acusação que amplifica a condenação"
+              },
+              {
+                "nome": "Regeneração da Sentença",
+                "tipo": "defesa",
+                "dano": 0,
+                "custoStamina": 40,
+                "cooldown": 2,
+                "stun": 0,
+                "descricao": "O promotor cura 100 de vida durante julgamento"
+              },
+              {
+                "nome": "Tempestade de Veredictos",
+                "tipo": "ofensiva",
+                "dano": 518,
+                "custoStamina": 147,
+                "cooldown": 5,
+                "stun": 0,
+                "descricao": "Todos os veredictos se explodem simultaneamente em destruição"
+              }
+            ]
+          }
+        },
+        {
+          "numero": 4,
+          "tipo": "inimigos",
+          "quantidade": 6,
+          "inimigo": {
+            "nome": "Avatar da Confisco Absoluta",
+            "vida": 1761,
+            "dano": 359,
+            "descricao": "Encarnação do Confisco Absoluto. Bloqueia buffs e drena toda stamina com poder supremo.",
+            "habilidades": [
+              {
+                "nome": "Relâmpago Jurídico",
+                "tipo": "ofensiva",
+                "dano": 307,
+                "custoStamina": 49,
+                "cooldown": 1,
+                "stun": 0,
+                "descricao": "Relâmpago jurídico disparado com intenção condenatória"
+              },
+              {
+                "nome": "Fogo da Hierarquia",
+                "tipo": "ofensiva",
+                "dano": 372,
+                "custoStamina": 65,
+                "cooldown": 2,
+                "stun": 0,
+                "descricao": "Chamas de hierarquia que consomem toda defesa"
+              },
+              {
+                "nome": "Balança da Culpa",
+                "tipo": "ofensiva",
+                "dano": 439,
+                "custoStamina": 81,
+                "cooldown": 2,
+                "stun": 0,
+                "descricao": "A balança pesa a culpa e condena com força suprema"
+              },
+              {
+                "nome": "Implosão Jurídica",
+                "tipo": "ofensiva",
+                "dano": 529,
+                "custoStamina": 206,
+                "cooldown": 6,
+                "stun": 2,
+                "descricao": "O tribunal explode sob a sentença absoluta"
+              }
+            ]
+          }
+        },
+        {
+          "numero": 5,
+          "tipo": "boss",
+          "quantidade": 1,
+          "boss": {
+            "nome": "Higuruma Hiromi — O Juiz Supremo Despertado",
+            "vida": 4082,
+            "dano": 406,
+            "descricao": "Higuruma Hiromi em sua forma completamente despertada. O Juiz Supremo onde cada golpe é uma sentença executada. Confisco Absoluto, Veredicto Divino, Tribunal Supremo, Hierarquia da Culpa e Promotor Divino são sua lei. Aqui, não há apelação — apenas execução.",
+            "thumbnail": "https://static.wikia.nocookie.net/jujutsu-kaisen/images/8/89/Hiromi_Higuruma.png",
+            "anti": "leis",
+            "falaInicio": "Bem-vindo ao meu tribunal... Aqui, cada um de vocês será julgado por seus crimes. A sentença já foi proferida — vocês simplesmente não sabem ainda.",
+            "falaDerrota": "Impossível... Que injustiça. Meu tribunal foi derrotado? Que lei é essa que não consigo condenar?",
+            "falaVitoria": "Culpados. Todos vocês são culpados. Executem a sentença suprema — desapareçam de meu tribunal.",
+            "habilidades": [
+              {
+                "nome": "Veredicto Supremo",
+                "tipo": "ofensiva",
+                "dano": 518,
+                "custoStamina": 88,
+                "cooldown": 2,
+                "stun": 0,
+                "descricao": "O julgador profere veredicto supremo com 80% chance de CULPADO — drena stamina completa",
+                "despertada": true
+              },
+              {
+                "nome": "Confisco Absoluto — Supremo",
+                "tipo": "ofensiva",
+                "dano": 0,
+                "custoStamina": 141,
+                "cooldown": 3,
+                "stun": 0,
+                "descricao": "Rouba 100% da stamina do alvo e bloqueia recuperação por 4 turnos — nenhuma defesa consegue evitar",
+                "despertada": true
+              },
+              {
+                "nome": "Tribunal Supremo Invocado",
+                "tipo": "ofensiva",
+                "dano": 410,
+                "custoStamina": 133,
+                "cooldown": 3,
+                "stun": 0,
+                "descricao": "Por 4 turnos: +60% dano, -40% dano recebido, inimigos perdem -25 stamina/turno",
+                "despertada": true
+              },
+              {
+                "nome": "Hierarquia da Culpa Suprema",
+                "tipo": "ofensiva",
+                "dano": 365,
+                "custoStamina": 106,
+                "cooldown": 2,
+                "stun": 0,
+                "descricao": "Por 3 turnos: 40% chance Julgamento automático a cada ataque, +30% dano",
+                "despertada": true
+              },
+              {
+                "nome": "Promotor Divino — Executivo",
+                "tipo": "ofensiva",
+                "dano": 543,
+                "custoStamina": 176,
+                "cooldown": 5,
+                "stun": 0,
+                "descricao": "Por 5 turnos: +80% dano, +80 HP/turno, Julgamento automático 100%. Ao expirar: 90×Selos de dano explosivo",
+                "despertada": true
+              },
+              {
+                "nome": "Domínio Expandido: Tribunal do Juiz Supremo",
+                "tipo": "ofensiva",
+                "dano": 1113,
+                "custoStamina": 353,
+                "cooldown": 8,
+                "stun": 3,
+                "descricao": "O Domínio Expandido de Higuruma em sua plenitude suprema. Dentro do tribunal, cada ser é CULPADO. Confisco total, Veredicto infalível e Execução garantida. A justiça é inquestionável.",
+                "despertada": true
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "raid_muichiro_nevoa",
+      "frutaId": "respiracao_nevoa",
+      "ticketId": "ticket_resp_nevoa",
+      "ticketNome": "Ticket Respiração da Névoa",
+      "terrenos": [
+        {
+          "nome": "Reino de Liones",
+          "emoji": "🏰",
+          "buffs": {
+            "defesa": 0.2,
+            "stamina": 0.15
+          }
+        },
+        {
+          "nome": "Floresta das Fadas",
+          "emoji": "🌳",
+          "buffs": {
+            "vida": 0.15,
+            "esquiva": 0.1
+          }
+        },
+        {
+          "nome": "O Purgatório",
+          "emoji": "🔥",
+          "buffs": {
+            "dano": 0.25,
+            "critico": 0.2,
+            "vida": -0.15
+          }
+        }
+      ],
+      "nome": "Raid: Muichiro Tokito — Pilar da Névoa",
+      "descricao": "Atravesse a névoa em 4 rodadas de caçadores e demônios antes de enfrentar Muichiro Tokito, o Pilar da Névoa. 15% mais forte que a antiga Raid Nanatsu.",
+      "nivelMinimo": 22,
+      "maxParticipantes": 6,
+      "terrenosDisponiveis": [
+        "reino_liones",
+        "floresta_fadas",
+        "purgatorio"
+      ],
+      "dropTecnicaChance": 0.03,
+      "recompensas": {
+        "fragmentos": 189,
+        "berries": 32021,
+        "xp": 31632,
+        "xpTecnica": 1164
+      },
+      "rodadas": [
+        {
+          "numero": 1,
+          "tipo": "inimigos",
+          "quantidade": 6,
+          "inimigo": {
+            "nome": "Caçador Aprendiz da Névoa",
+            "vida": 1300,
+            "dano": 262,
+            "descricao": "Um espadachim iniciante que usa passos silenciosos para confundir invasores.",
+            "habilidades": [
+              {
+                "nome": "Corte Nebuloso",
+                "tipo": "ofensiva",
+                "dano": 276,
+                "custoStamina": 30,
+                "cooldown": 1,
+                "stun": 0,
+                "descricao": "Um corte rápido escondido pela bruma."
+              }
+            ]
+          }
+        },
+        {
+          "numero": 2,
+          "tipo": "inimigos",
+          "quantidade": 8,
+          "inimigo": {
+            "nome": "Demônio da Névoa Rastejante",
+            "vida": 1787,
+            "dano": 374,
+            "descricao": "Um demônio envolto por bruma densa e ataques imprevisíveis.",
+            "habilidades": [
+              {
+                "nome": "Garras da Névoa",
+                "tipo": "ofensiva",
+                "dano": 402,
+                "custoStamina": 45,
+                "cooldown": 2,
+                "stun": 0,
+                "descricao": "Golpes sucessivos surgem de vários pontos da névoa."
+              }
+            ]
+          }
+        },
+        {
+          "numero": 3,
+          "tipo": "inimigos",
+          "quantidade": 5,
+          "inimigo": {
+            "nome": "Caçador Tsuguko da Névoa",
+            "vida": 2606,
+            "dano": 534,
+            "descricao": "Discípulo veloz treinado para cortar antes que o alvo perceba.",
+            "habilidades": [
+              {
+                "nome": "Passos Turvos",
+                "tipo": "ofensiva",
+                "dano": 575,
+                "custoStamina": 60,
+                "cooldown": 3,
+                "stun": 1,
+                "descricao": "Sequência ágil que distorce a percepção do alvo."
+              }
+            ]
+          }
+        },
+        {
+          "numero": 4,
+          "tipo": "inimigos",
+          "quantidade": 6,
+          "inimigo": {
+            "nome": "Oni Guardião da Névoa",
+            "vida": 3543,
+            "dano": 723,
+            "descricao": "Um demônio robusto que protege o caminho até o Pilar.",
+            "habilidades": [
+              {
+                "nome": "Bruma Esmagadora",
+                "tipo": "ofensiva",
+                "dano": 805,
+                "custoStamina": 80,
+                "cooldown": 4,
+                "stun": 2,
+                "descricao": "O guardião avança coberto de névoa pesada."
+              }
+            ]
+          }
+        },
+        {
+          "numero": 5,
+          "tipo": "boss",
+          "quantidade": 1,
+          "boss": {
+            "nome": "Muichiro Tokito — Pilar da Névoa",
+            "vida": 8216,
+            "dano": 816,
+            "descricao": "O jovem Hashira da Névoa aparece sereno, mas cada movimento corta como uma ilusão mortal.",
+            "thumbnail": "https://i.pinimg.com/originals/2a/0a/f1/2a0af18ca210a6a26473f65e32c16c35.gif",
+            "anti": "nevoa",
+            "falaInicio": "A névoa já decidiu o caminho de vocês.",
+            "falaDerrota": "Vocês atravessaram a névoa... impressionante.",
+            "falaVitoria": "Perca-se na névoa e esqueça a derrota.",
+            "habilidades": [
+              {
+                "nome": "Quarta Forma: Corte de Maré",
+                "tipo": "ofensiva",
+                "dano": 977,
+                "custoStamina": 120,
+                "cooldown": 2,
+                "stun": 1,
+                "descricao": "Uma investida enevoada que corta em arco.",
+                "despertada": true
+              },
+              {
+                "nome": "Sétima Forma: Nuvens Obscuras",
+                "tipo": "ofensiva",
+                "dano": 1150,
+                "custoStamina": 150,
+                "cooldown": 3,
+                "stun": 1,
+                "descricao": "Muichiro alterna velocidade e silêncio para acertar pontos vitais.",
+                "despertada": true
+              },
+              {
+                "nome": "Mundo Transparente da Névoa",
+                "tipo": "ofensiva",
+                "dano": 1610,
+                "custoStamina": 250,
+                "cooldown": 5,
+                "stun": 2,
+                "descricao": "A névoa se fecha e todos os cortes parecem vir de lugar nenhum.",
+                "despertada": true
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "raid_tanjiro_sol",
+      "frutaId": "respiracao_sol_tanjiro",
+      "ticketId": "ticket_resp_sol_tanjiro",
+      "ticketNome": "Ticket Respiração do Sol (Tanjiro)",
+      "terrenos": [
+        {
+          "nome": "Reino de Liones",
+          "emoji": "🏰",
+          "buffs": {
+            "defesa": 0.2,
+            "stamina": 0.15
+          }
+        },
+        {
+          "nome": "Floresta das Fadas",
+          "emoji": "🌳",
+          "buffs": {
+            "vida": 0.15,
+            "esquiva": 0.1
+          }
+        },
+        {
+          "nome": "O Purgatório",
+          "emoji": "🔥",
+          "buffs": {
+            "dano": 0.25,
+            "critico": 0.2,
+            "vida": -0.15
+          }
+        }
+      ],
+      "nome": "Raid: Tanjiro Kamado — Respiração do Sol",
+      "descricao": "Sobreviva a 4 rodadas contra demônios e caçadores antes de enfrentar Tanjiro usando a Dança do Deus do Fogo. 30% mais forte que a Raid do Pilar da Névoa.",
+      "nivelMinimo": 25,
+      "maxParticipantes": 6,
+      "terrenosDisponiveis": [
+        "reino_liones",
+        "floresta_fadas",
+        "purgatorio"
+      ],
+      "dropTecnicaChance": 0.01,
+      "recompensas": {
+        "fragmentos": 221,
+        "berries": 37589,
+        "xp": 37133,
+        "xpTecnica": 1368
+      },
+      "rodadas": [
+        {
+          "numero": 1,
+          "tipo": "inimigos",
+          "quantidade": 6,
+          "inimigo": {
+            "nome": "Caçador da Montanha Natagumo",
+            "vida": 1689,
+            "dano": 341,
+            "descricao": "Um caçador resistente treinado em batalhas contra onis.",
+            "habilidades": [
+              {
+                "nome": "Corte da Montanha",
+                "tipo": "ofensiva",
+                "dano": 359,
+                "custoStamina": 30,
+                "cooldown": 1,
+                "stun": 0,
+                "descricao": "Um golpe firme aprendido em terrenos hostis."
+              }
+            ]
+          }
+        },
+        {
+          "numero": 2,
+          "tipo": "inimigos",
+          "quantidade": 8,
+          "inimigo": {
+            "nome": "Demônio do Fio Ardente",
+            "vida": 2323,
+            "dano": 486,
+            "descricao": "Um demônio que combina velocidade com sangue aquecido.",
+            "habilidades": [
+              {
+                "nome": "Fios Incandescentes",
+                "tipo": "ofensiva",
+                "dano": 523,
+                "custoStamina": 45,
+                "cooldown": 2,
+                "stun": 0,
+                "descricao": "Fios cortantes aquecidos rasgam a guarda."
+              }
+            ]
+          }
+        },
+        {
+          "numero": 3,
+          "tipo": "inimigos",
+          "quantidade": 5,
+          "inimigo": {
+            "nome": "Espadachim Hinokami",
+            "vida": 3388,
+            "dano": 694,
+            "descricao": "Um espadachim que imita passos flamejantes da Kagura.",
+            "habilidades": [
+              {
+                "nome": "Passo Hinokami",
+                "tipo": "ofensiva",
+                "dano": 747,
+                "custoStamina": 60,
+                "cooldown": 3,
+                "stun": 1,
+                "descricao": "Movimento circular com calor crescente."
+              }
+            ]
+          }
+        },
+        {
+          "numero": 4,
+          "tipo": "inimigos",
+          "quantidade": 6,
+          "inimigo": {
+            "nome": "Oni da Chama Carmesim",
+            "vida": 4606,
+            "dano": 940,
+            "descricao": "Um demônio protegido por chamas de sangue demoníaco.",
+            "habilidades": [
+              {
+                "nome": "Chamas Carmesim",
+                "tipo": "ofensiva",
+                "dano": 1047,
+                "custoStamina": 80,
+                "cooldown": 4,
+                "stun": 2,
+                "descricao": "Labaredas demoníacas pressionam toda a linha de frente."
+              }
+            ]
+          }
+        },
+        {
+          "numero": 5,
+          "tipo": "boss",
+          "quantidade": 1,
+          "boss": {
+            "nome": "Tanjiro Kamado — Respiração do Sol",
+            "vida": 10680,
+            "dano": 1061,
+            "descricao": "Tanjiro avança com a Kagura Hinokami em seu auge, unindo determinação, fogo e cortes precisos.",
+            "thumbnail": "https://i.pinimg.com/originals/c4/d7/e1/c4d7e1d6d7c1f02bc9ac5a07950ddc42.gif",
+            "anti": "sol",
+            "falaInicio": "Eu vou proteger todos. Preparem-se!",
+            "falaDerrota": "Vocês também carregam uma vontade ardente...",
+            "falaVitoria": "A chama do sol não se apagou.",
+            "habilidades": [
+              {
+                "nome": "Hinokami Kagura: Sol Poente",
+                "tipo": "ofensiva",
+                "dano": 1271,
+                "custoStamina": 120,
+                "cooldown": 2,
+                "stun": 1,
+                "descricao": "Tanjiro gira e desfere um corte flamejante.",
+                "despertada": true
+              },
+              {
+                "nome": "Dança do Deus do Fogo",
+                "tipo": "ofensiva",
+                "dano": 1495,
+                "custoStamina": 150,
+                "cooldown": 3,
+                "stun": 1,
+                "descricao": "Uma sequência contínua de cortes solares.",
+                "despertada": true
+              },
+              {
+                "nome": "Décima Terceira Forma",
+                "tipo": "ofensiva",
+                "dano": 2093,
+                "custoStamina": 250,
+                "cooldown": 5,
+                "stun": 2,
+                "descricao": "As formas se conectam em uma investida devastadora.",
+                "despertada": true
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "raid_kokushibo_lua",
+      "frutaId": "lua_crescente",
+      "ticketId": "ticket_lua_crescente",
+      "ticketNome": "Ticket Lua Crescente",
+      "terrenos": [
+        {
+          "nome": "Reino de Liones",
+          "emoji": "🏰",
+          "buffs": {
+            "defesa": 0.2,
+            "stamina": 0.15
+          }
+        },
+        {
+          "nome": "Floresta das Fadas",
+          "emoji": "🌳",
+          "buffs": {
+            "vida": 0.15,
+            "esquiva": 0.1
+          }
+        },
+        {
+          "nome": "O Purgatório",
+          "emoji": "🔥",
+          "buffs": {
+            "dano": 0.25,
+            "critico": 0.2,
+            "vida": -0.15
+          }
+        }
+      ],
+      "nome": "Raid: Kokushibo — Lua Crescente",
+      "descricao": "Enfrente 4 rodadas contra demônios lunares até desafiar Kokushibo. 75% mais forte que a Raid de Tanjiro.",
+      "nivelMinimo": 30,
+      "maxParticipantes": 6,
+      "terrenosDisponiveis": [
+        "reino_liones",
+        "floresta_fadas",
+        "purgatorio"
+      ],
+      "dropTecnicaChance": 0.0001,
+      "recompensas": {
+        "fragmentos": 287,
+        "berries": 48727,
+        "xp": 48136,
+        "xpTecnica": 1773
+      },
+      "rodadas": [
+        {
+          "numero": 1,
+          "tipo": "inimigos",
+          "quantidade": 6,
+          "inimigo": {
+            "nome": "Oni Discípulo da Lua",
+            "vida": 2956,
+            "dano": 597,
+            "descricao": "Um demônio marcado por cortes lunares instáveis.",
+            "habilidades": [
+              {
+                "nome": "Lua Rasteira",
+                "tipo": "ofensiva",
+                "dano": 628,
+                "custoStamina": 30,
+                "cooldown": 1,
+                "stun": 0,
+                "descricao": "Uma lâmina lunar baixa tenta abrir a defesa."
+              }
+            ]
+          }
+        },
+        {
+          "numero": 2,
+          "tipo": "inimigos",
+          "quantidade": 8,
+          "inimigo": {
+            "nome": "Demônio das Lâminas Crescentes",
+            "vida": 4066,
+            "dano": 850,
+            "descricao": "Um oni que projeta pequenas luas cortantes.",
+            "habilidades": [
+              {
+                "nome": "Crescentes Serrilhados",
+                "tipo": "ofensiva",
+                "dano": 916,
+                "custoStamina": 45,
+                "cooldown": 2,
+                "stun": 0,
+                "descricao": "Várias luas cortantes perseguem os alvos."
+              }
+            ]
+          }
+        },
+        {
+          "numero": 3,
+          "tipo": "inimigos",
+          "quantidade": 5,
+          "inimigo": {
+            "nome": "Espadachim Demoníaco da Lua",
+            "vida": 5928,
+            "dano": 1214,
+            "descricao": "Um espadachim que tenta replicar a Respiração da Lua.",
+            "habilidades": [
+              {
+                "nome": "Forma Lunar Instável",
+                "tipo": "ofensiva",
+                "dano": 1308,
+                "custoStamina": 60,
+                "cooldown": 3,
+                "stun": 1,
+                "descricao": "Cortes irregulares surgem em ângulos imprevisíveis."
+              }
+            ]
+          }
+        },
+        {
+          "numero": 4,
+          "tipo": "inimigos",
+          "quantidade": 6,
+          "inimigo": {
+            "nome": "Guardião da Lua Superior",
+            "vida": 8061,
+            "dano": 1646,
+            "descricao": "Um demônio de elite que protege o domínio de Kokushibo.",
+            "habilidades": [
+              {
+                "nome": "Maré de Luas",
+                "tipo": "ofensiva",
+                "dano": 1831,
+                "custoStamina": 80,
+                "cooldown": 4,
+                "stun": 2,
+                "descricao": "O guardião libera ondas sucessivas de luas."
+              }
+            ]
+          }
+        },
+        {
+          "numero": 5,
+          "tipo": "boss",
+          "quantidade": 1,
+          "boss": {
+            "nome": "Kokushibo — Lua Superior Um",
+            "vida": 18690,
+            "dano": 1858,
+            "descricao": "A Lua Superior Um ergue sua lâmina demoníaca e cobre o campo com crescentes fatais.",
+            "thumbnail": "https://i.pinimg.com/originals/2f/99/cc/2f99ccbdccfb72ee2297dbfced68e214.gif",
+            "anti": "lua",
+            "falaInicio": "Mostrem-me se sua técnica merece sobreviver.",
+            "falaDerrota": "Mesmo a lua... pode ser atravessada?",
+            "falaVitoria": "A diferença entre nós era evidente desde o início.",
+            "habilidades": [
+              {
+                "nome": "Respiração da Lua: Primeira Forma",
+                "tipo": "ofensiva",
+                "dano": 2224,
+                "custoStamina": 120,
+                "cooldown": 2,
+                "stun": 1,
+                "descricao": "Um corte horizontal repleto de luas crescentes.",
+                "despertada": true
+              },
+              {
+                "nome": "Respiração da Lua: Quinta Forma",
+                "tipo": "ofensiva",
+                "dano": 2616,
+                "custoStamina": 150,
+                "cooldown": 3,
+                "stun": 1,
+                "descricao": "Uma chuva de lâminas lunares atravessa o campo.",
+                "despertada": true
+              },
+              {
+                "nome": "Respiração da Lua: Décima Sexta Forma",
+                "tipo": "ofensiva",
+                "dano": 3663,
+                "custoStamina": 250,
+                "cooldown": 5,
+                "stun": 2,
+                "descricao": "Crescentes colossais caem como pilares lunares.",
+                "despertada": true
+              }
+            ]
+          }
+        }
+      ],
+      "demonForm": {
+        "voteSeconds": 30,
+        "resourceBonus": 0.6,
+        "dropChanceMultiplier": 2,
+        "prompt": "Kokushibo caiu, mas sua forma demoníaca desperta. Votem para enfrentar a transformação final: se vencerem, a chance da técnica dobra e os recursos da raid aumentam em +60%.",
+        "round": {
+          "numero": 5,
+          "tipo": "boss",
+          "quantidade": 1,
+          "boss": {
+            "nome": "Kokushibo — Forma Demoníaca",
+            "vida": 25232,
+            "dano": 2508,
+            "descricao": "Kokushibo abandona qualquer contenção e assume uma forma monstruosa, criando lâminas lunares em todo o corpo.",
+            "thumbnail": "https://i.pinimg.com/originals/f1/49/ea/f149ea06eb6978bb0b021240076b65f4.gif",
+            "anti": "lua_demonio",
+            "falaInicio": "Então testemunhem... a forma que transcende a humanidade.",
+            "falaDerrota": "Yoriichi... eu ainda...",
+            "falaVitoria": "A lua devora todo brilho restante.",
+            "habilidades": [
+              {
+                "nome": "Catástrofe de Luas Crescentes",
+                "tipo": "ofensiva",
+                "dano": 3002,
+                "custoStamina": 120,
+                "cooldown": 2,
+                "stun": 1,
+                "descricao": "Cortes brotam de todo o corpo demoníaco em uma tempestade lunar.",
+                "despertada": true
+              },
+              {
+                "nome": "Lua Superior Absoluta",
+                "tipo": "ofensiva",
+                "dano": 3532,
+                "custoStamina": 150,
+                "cooldown": 3,
+                "stun": 1,
+                "descricao": "A forma demoníaca multiplica lâminas e pressiona todos os sobreviventes.",
+                "despertada": true
+              },
+              {
+                "nome": "Eclipse Demoníaco",
+                "tipo": "ofensiva",
+                "dano": 4945,
+                "custoStamina": 250,
+                "cooldown": 5,
+                "stun": 2,
+                "descricao": "A arena escurece e uma sequência de luas gigantes cai sobre a raid.",
+                "despertada": true
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "mahoraga_boss",
+      "frutaId": "dez_sombras",
+      "nome": "Subjugação: General Divino Mahoraga",
+      "descricao": "Ritual de subjugação do Shikigami Divino das Oito Arestas. Sobreviva à adaptação infinita de Mahoraga e ganhe a passiva permanente de invocá-lo em combate!",
+      "nivelMinimo": 25,
+      "maxParticipantes": 6,
+      "tipoEspecial": "subjugacao",
+      "terrenosDisponiveis": [
+        "ruinas"
+      ],
+      "recompensas": {
+        "fragmentos": 100,
+        "berries": 270000,
+        "xp": 40500,
+        "xpTecnica": 2970
+      },
+      "rodadas": [
+        {
+          "numero": 1,
+          "tipo": "boss",
+          "quantidade": 1,
+          "boss": {
+            "nome": "Mahoraga (A Roda das Dez Purificações)",
+            "vida": 100000,
+            "dano": 1000,
+            "descricao": "O Shikigami Divino das Oito Arestas. Adapta-se a tudo que sofrer.",
+            "thumbnail": "https://www.desktophut.com/images/mahoraga-jujutsu-kaisen-monochrome-wheel-live-wallpaper-1772535275.webp",
+            "anti": "fisico",
+            "falaInicio": "A Roda gira... Você se atreve a desafiar a divindade?",
+            "falaDerrota": "Impossível... A adaptação... falhou...",
+            "falaVitoria": "A Roda já se adaptou. Vocês nunca poderiam vencer.",
+            "habilidades": [
+              {
+                "nome": "Espada do Extermínio",
+                "tipo": "ofensiva",
+                "dano": 1500,
+                "custoStamina": 60,
+                "cooldown": 2,
+                "stun": 0,
+                "ignoraDefesa": true,
+                "descricao": "Lâmina carregada de energia positiva. Destrói qualquer barreira amaldiçoada."
+              },
+              {
+                "nome": "Ataque Rápido Devastador",
+                "tipo": "ofensiva",
+                "dano": 2100,
+                "custoStamina": 30,
+                "cooldown": 1,
+                "stun": 0,
+                "descricao": "Avanço físico em velocidade absurda."
+              },
+              {
+                "nome": "Giro da Roda (Adaptação)",
+                "tipo": "suporte",
+                "dano": 0,
+                "cura": 25000,
+                "custoStamina": 50,
+                "cooldown": 3,
+                "stun": 0,
+                "descricao": "A roda gira. Mahoraga regenera e ganha resistência massiva."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "raid_goku_black",
+      "frutaId": "saiyajin_divino",
+      "ticketId": "ticket_goku_black",
+      "ticketNome": "Ticket Goku Black",
+      "terrenos": [
+        {
+          "nome": "Reino de Liones",
+          "emoji": "🏰",
+          "buffs": {
+            "defesa": 0.2,
+            "stamina": 0.15
+          }
+        },
+        {
+          "nome": "Floresta das Fadas",
+          "emoji": "🌳",
+          "buffs": {
+            "vida": 0.15,
+            "esquiva": 0.1
+          }
+        },
+        {
+          "nome": "O Purgatório",
+          "emoji": "🔥",
+          "buffs": {
+            "dano": 0.25,
+            "critico": 0.2,
+            "vida": -0.15
+          }
+        }
+      ],
+      "nome": "Raid: Plano Zero Mortais — Zamasu & Goku Black",
+      "descricao": "Enfrente Zamasu e Goku Black. Eles têm chance de fusão! 20% mais fácil que Kokushibo.",
+      "nivelMinimo": 30,
+      "maxParticipantes": 6,
+      "terrenosDisponiveis": [
+        "reino_liones",
+        "floresta_fadas",
+        "purgatorio"
+      ],
+      "dropTecnicaChance": 0.10,
+      "recompensas": {
+        "fragmentos": 229,
+        "berries": 38981,
+        "xp": 38508,
+        "xpTecnica": 1418
+      },
+      "rodadas": [
+        {
+          "numero": 1,
+          "tipo": "inimigos",
+          "quantidade": 6,
+          "inimigo": {
+            "nome": "Clone de Ki (Goku Black)",
+            "vida": 2364,
+            "dano": 477,
+            "descricao": "Um clone de Ki instável, mas poderoso.",
+            "habilidades": [
+              {
+                "nome": "Lua Rasteira",
+                "tipo": "ofensiva",
+                "dano": 502,
+                "custoStamina": 30,
+                "cooldown": 1,
+                "stun": 0,
+                "descricao": "Uma lâmina lunar baixa tenta abrir a defesa."
+              }
+            ]
+          }
+        },
+        {
+          "numero": 2,
+          "tipo": "inimigos",
+          "quantidade": 8,
+          "inimigo": {
+            "nome": "Devoto Zamasu",
+            "vida": 3252,
+            "dano": 680,
+            "descricao": "Adoradores da divindade distorcida.",
+            "habilidades": [
+              {
+                "nome": "Crescentes Serrilhados",
+                "tipo": "ofensiva",
+                "dano": 732,
+                "custoStamina": 45,
+                "cooldown": 2,
+                "stun": 0,
+                "descricao": "Várias luas cortantes perseguem os alvos."
+              }
+            ]
+          }
+        },
+        {
+          "numero": 3,
+          "tipo": "inimigos",
+          "quantidade": 5,
+          "inimigo": {
+            "nome": "Guardião Temporal",
+            "vida": 4742,
+            "dano": 971,
+            "descricao": "Um ser distorcido pelas anomalias no tempo.",
+            "habilidades": [
+              {
+                "nome": "Forma Lunar Instável",
+                "tipo": "ofensiva",
+                "dano": 1046,
+                "custoStamina": 60,
+                "cooldown": 3,
+                "stun": 1,
+                "descricao": "Cortes irregulares surgem em ângulos imprevisíveis."
+              }
+            ]
+          }
+        },
+        {
+          "numero": 4,
+          "tipo": "inimigos",
+          "quantidade": 6,
+          "inimigo": {
+            "nome": "Discípulo do Caos",
+            "vida": 6448,
+            "dano": 1316,
+            "descricao": "O caos incarnado antes dos deuses.",
+            "habilidades": [
+              {
+                "nome": "Maré de Luas",
+                "tipo": "ofensiva",
+                "dano": 1464,
+                "custoStamina": 80,
+                "cooldown": 4,
+                "stun": 2,
+                "descricao": "O guardião libera ondas sucessivas de luas."
+              }
+            ]
+          }
+        },
+        {
+          "numero": 5,
+          "tipo": "boss",
+          "quantidade": 2,
+          "bosses": [
+            {
+              "nome": "Zamasu — Aprendiz de Kaioshin",
+              "vida": 14952,
+              "dano": 1486,
+              "descricao": "O Kaioshin corrupto que almeja a destruição da humanidade.",
+              "thumbnail": "https://media1.tenor.com/m/3Oqf0hR1E2cAAAAd/zamasu-dragon-ball.gif",
+              "falaInicio": "Mortais tolos, vocês não entendem a beleza do universo sem vocês.",
+              "habilidades": [
+                {
+                  "nome": "Corte da Justiça",
+                  "tipo": "ofensiva",
+                  "dano": 1779,
+                  "custoStamina": 100,
+                  "cooldown": 2,
+                  "stun": 1,
+                  "descricao": "Um corte preciso de Ki."
+                },
+                {
+                  "nome": "Luz Divina",
+                  "tipo": "ofensiva",
+                  "dano": 2092,
+                  "custoStamina": 120,
+                  "cooldown": 3,
+                  "stun": 1,
+                  "descricao": "Rajada de luz sagrada que pune mortais."
+                }
+              ]
+            },
+            {
+              "nome": "Goku Black — Super Saiyajin Rosé",
+              "vida": 14952,
+              "dano": 1486,
+              "descricao": "O corpo de Goku habitado pela alma distorcida de Zamasu.",
+              "thumbnail": "https://media1.tenor.com/m/Qe4K8f_R3CgAAAAd/goku-black-dragon-ball-super.gif",
+              "falaInicio": "Admiram esta cor? Não acham bela? Podem me chamar de Super Saiyajin Rosé.",
+              "habilidades": [
+                {
+                  "nome": "Kamehameha Sombrio",
+                  "tipo": "ofensiva",
+                  "dano": 1779,
+                  "custoStamina": 120,
+                  "cooldown": 2,
+                  "stun": 1,
+                  "descricao": "Kamehameha corrompido com Ki maligno."
+                },
+                {
+                  "nome": "Lâmina de Ki",
+                  "tipo": "ofensiva",
+                  "dano": 2092,
+                  "custoStamina": 150,
+                  "cooldown": 3,
+                  "stun": 1,
+                  "descricao": "Um corte feroz com a Lâmina de Ki."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "fusionMechanic": {
+        "triggerHPPercent": 0.3,
+        "chancePerTurn": 0.2,
+        "healPercent": 0.5,
+        "statsBoost": 0.1,
+        "bossFusoes": {
+          "nome": "Zamasu Gattai — A Fusão Divina",
+          "vidaMaximaMult": 1.1,
+          "danoMult": 1.1,
+          "descricao": "A perfeição absoluta! A fusão imortal de Zamasu e Goku Black.",
+          "thumbnail": "https://media1.tenor.com/m/Fms0G-T8V14AAAAd/zamasu-dragon-ball-super.gif",
+          "falaInicio": "Louvai-me! Adorai-me! Zamasu é a justiça e o mundo!",
+          "habilidades": [
+            {
+              "nome": "Relâmpago do Absoluto",
+              "tipo": "ofensiva",
+              "dano": 2400,
+              "custoStamina": 100,
+              "cooldown": 2,
+              "stun": 1,
+              "descricao": "Raios divinos caem dos céus."
+            },
+            {
+              "nome": "Cólera Sagrada",
+              "tipo": "ofensiva",
+              "dano": 3200,
+              "custoStamina": 150,
+              "cooldown": 3,
+              "stun": 2,
+              "descricao": "Uma esfera massiva de energia divina."
+            }
+          ]
+        }
+      },
+      "dropsEspadas": [
+        {
+          "id": "lamina_de_ki",
+          "chance": 0.2
+        },
+        {
+          "id": "foice_de_ki",
+          "chance": 0.05
+        }
+      ],
+      "dropsEquipamentos": [
+        {
+          "id": "brinco_potara",
+          "chance": 0.3
+        }
+      ]
+    }
+  ]
+}

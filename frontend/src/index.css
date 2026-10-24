@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Noto+Serif+JP:wght@700;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 222 31% 4.5%;
+    --foreground: 210 40% 96%;
+    --card: 222 30% 9%;
+    --card-foreground: 210 40% 96%;
+    --popover: 222 30% 9%;
+    --popover-foreground: 210 40% 96%;
+    --primary: 271 91% 65%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 222 25% 14%;
+    --secondary-foreground: 210 40% 96%;
+    --muted: 222 25% 14%;
+    --muted-foreground: 215 20% 62%;
+    --accent: 222 25% 16%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 222 22% 16%;
+    --input: 222 22% 18%;
+    --ring: 271 91% 65%;
+    --radius: 0.75rem;
+    --chart-1: 271 91% 65%;
+    --chart-2: 189 94% 43%;
+    --chart-3: 0 84% 60%;
+    --chart-4: 45 93% 47%;
+    --chart-5: 160 84% 39%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    color-scheme: dark;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Manrope", sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3, h4, .font-display {
+    font-family: "Outfit", sans-serif;
+  }
+  ::selection {
+    background: rgba(168, 85, 247, 0.45);
+    color: #fff;
+  }
+}
+
+.font-mono-g { font-family: "JetBrains Mono", monospace; }
+.font-kanji { font-family: "Noto Serif JP", serif; }
+
+.grain::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0.05;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+.cursed-bg {
+  background:
+    radial-gradient(900px 500px at 85% -10%, rgba(168, 85, 247, 0.10), transparent 60%),
+    radial-gradient(700px 400px at -10% 30%, rgba(6, 182, 212, 0.06), transparent 60%),
+    #080a0f;
+}
+
+.scrollbar-thin::-webkit-scrollbar { width: 6px; height: 6px; }
+.scrollbar-thin::-webkit-scrollbar-thumb { background: #1f2637; border-radius: 99px; }
+.scrollbar-thin::-webkit-scrollbar-track { background: transparent; }
+
+.item-card {
+  --c: #a855f7;
+  position: relative;
+  background: linear-gradient(180deg, rgba(23, 29, 43, 0.85), rgba(16, 20, 30, 0.95));
+  border: 1px solid color-mix(in srgb, var(--c) 28%, transparent);
+  transition: transform 0.35s cubic-bezier(.2,.8,.2,1), box-shadow 0.35s ease, border-color 0.35s ease;
+}
+.item-card:hover {
+  transform: translateY(-6px);
+  border-color: color-mix(in srgb, var(--c) 70%, transparent);
+  box-shadow: 0 18px 50px -18px color-mix(in srgb, var(--c) 60%, transparent), 0 0 0 1px color-mix(in srgb, var(--c) 25%, transparent) inset;
+}
+.item-card .sheen {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(115deg, transparent 35%, rgba(255,255,255,0.09) 50%, transparent 65%);
+  transform: translateX(-120%);
+  transition: transform 0.9s ease;
+  pointer-events: none;
+}
+.item-card:hover .sheen { transform: translateX(120%); }
+
+.aura {
+  animation: aura-pulse 3.2s ease-in-out infinite;
+}
+@keyframes aura-pulse {
+  0%, 100% { opacity: 0.55; transform: scale(1); }
+  50% { opacity: 0.9; transform: scale(1.08); }
+}
+
+.rarity-shimmer {
+  background-size: 200% 100%;
+  animation: shimmer 2.8s linear infinite;
+}
+@keyframes shimmer {
+  from { background-position: 200% 0; }
+  to { background-position: -200% 0; }
+}
+
+.float-glyph { animation: float-y 6s ease-in-out infinite; }
+@keyframes float-y {
+  0%, 100% { transform: translateY(0) rotate(-4deg); }
+  50% { transform: translateY(-8px) rotate(2deg); }
+}
+
+.stat-bar-fill { transition: width 0.9s cubic-bezier(.2,.8,.2,1); }
+
+@media (prefers-reduced-motion: reduce) {
+  .aura, .rarity-shimmer, .float-glyph { animation: none; }
+  .item-card, .item-card:hover { transform: none; }
+}

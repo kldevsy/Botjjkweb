@@ -1,0 +1,354 @@
+{
+  "grimorios": [
+    {
+      "id": "magia_agua",
+      "nome": "Magia de Água",
+      "tipo": "Grimório",
+      "raridade": "comum",
+      "descricao": "Um grimório de trevo de 3 folhas focado na manipulação da água.",
+      "imagem": "https://i.imgur.com/K3v8Q5N.png",
+      "passivas": [
+        {
+          "nome": "Escudo de Água",
+          "nivel": 1,
+          "descricao": "Nos 2 primeiros turnos, reduz 10% do dano sofrido."
+        },
+        {
+          "nome": "Limpeza Pura",
+          "nivel": 10,
+          "descricao": "Seus ataques retiram 1 buff do inimigo."
+        },
+        {
+          "nome": "Escudo de Água Aprimorado",
+          "nivel": 20,
+          "descricao": "Nos 3 primeiros turnos, reduz 15% do dano sofrido."
+        },
+        {
+          "nome": "Limpeza Pura Aprimorada",
+          "nivel": 35,
+          "descricao": "Seus ataques retiram 2 buffs do inimigo."
+        },
+        {
+          "nome": "Lentidão Aquática",
+          "nivel": 50,
+          "descricao": "Seus ataques têm 15% de chance de impedir a esquiva do inimigo."
+        }
+      ]
+    },
+    {
+      "id": "magia_fogo",
+      "nome": "Magia de Fogo",
+      "tipo": "Grimório",
+      "raridade": "raro",
+      "descricao": "Um grimório de trevo de 3 folhas contendo magias de chamas abrasadoras.",
+      "imagem": "https://i.imgur.com/K3v8Q5N.png",
+      "passivas": [
+        {
+          "nome": "Chama Persistente",
+          "nivel": 1,
+          "descricao": "Seus ataques têm 10% de chance de aplicar queimadura leve."
+        },
+        {
+          "nome": "Fervor da Batalha",
+          "nivel": 10,
+          "descricao": "A cada turno passado, ganha 2% de bônus de dano contínuo (máx 10%)."
+        },
+        {
+          "nome": "Chama Persistente Aprimorada",
+          "nivel": 20,
+          "descricao": "Seus ataques têm 20% de chance de aplicar queimadura grave."
+        },
+        {
+          "nome": "Fervor da Batalha Aprimorado",
+          "nivel": 35,
+          "descricao": "A cada turno passado, ganha 3% de bônus de dano contínuo (máx 15%)."
+        },
+        {
+          "nome": "Impacto Explosivo",
+          "nivel": 50,
+          "descricao": "Ao causar crítico, reduz a defesa do inimigo em 10% por 2 turnos."
+        }
+      ]
+    },
+    {
+      "id": "magia_natureza",
+      "nome": "Magia da Natureza",
+      "tipo": "Grimório",
+      "raridade": "epico",
+      "descricao": "Um grimório capaz de invocar raízes e curar feridas.",
+      "imagem": "https://i.imgur.com/K3v8Q5N.png",
+      "passivas": [
+        {
+          "nome": "Raízes Curativas",
+          "nivel": 1,
+          "descricao": "Regenera 2% do HP máximo a cada fim de turno."
+        },
+        {
+          "nome": "Espinhos Defensivos",
+          "nivel": 10,
+          "descricao": "Inimigos que atacam sofrem 5% de reflexão de dano."
+        },
+        {
+          "nome": "Raízes Curativas Aprimoradas",
+          "nivel": 20,
+          "descricao": "Regenera 4% do HP máximo a cada fim de turno."
+        },
+        {
+          "nome": "Espinhos Defensivos Aprimorados",
+          "nivel": 35,
+          "descricao": "Inimigos que atacam sofrem 10% de reflexão de dano e chance de atordoamento."
+        },
+        {
+          "nome": "Bênção da Floresta",
+          "nivel": 50,
+          "descricao": "Se a vida cair abaixo de 30%, recebe um grande escudo uma vez por batalha."
+        }
+      ]
+    },
+    {
+      "id": "anti_magia",
+      "nome": "Anti-Magia",
+      "tipo": "Grimório",
+      "raridade": "lendario",
+      "descricao": "O lendário grimório do trevo de 5 folhas, capaz de anular qualquer feitiço.",
+      "imagem": "https://i.imgur.com/K3v8Q5N.png",
+      "passivas": [
+        {
+          "nome": "Repelir Feitiços",
+          "nivel": 1,
+          "descricao": "10% de chance de ignorar completamente um ataque especial (habilidade) inimigo."
+        },
+        {
+          "nome": "Fluxo Antimagia",
+          "nivel": 10,
+          "descricao": "Cada ataque bem sucedido reduz o dano do próximo ataque do inimigo em 5%."
+        },
+        {
+          "nome": "Repelir Feitiços Aprimorado",
+          "nivel": 20,
+          "descricao": "15% de chance de ignorar completamente um ataque especial inimigo."
+        },
+        {
+          "nome": "Fluxo Antimagia Aprimorado",
+          "nivel": 35,
+          "descricao": "Cada ataque bem sucedido reduz o dano do próximo ataque inimigo em 10% e drena stamina."
+        },
+        {
+          "nome": "Forma Sombria",
+          "nivel": 50,
+          "descricao": "Enquanto tiver mais de 80% de HP, seus ataques ignoram 20% da armadura do inimigo."
+        }
+      ]
+    },
+    {
+      "id": "magia_vento",
+      "nome": "Magia de Vento",
+      "tipo": "Grimório",
+      "raridade": "mitico",
+      "descricao": "Um grimório abençoado de 4 folhas, portando magias poderosas dos ventos.",
+      "imagem": "https://i.imgur.com/K3v8Q5N.png",
+      "passivas": [
+        {
+          "nome": "Passos de Vento",
+          "nivel": 1,
+          "descricao": "Aumenta passivamente a chance de esquiva em 10%."
+        },
+        {
+          "nome": "Lâmina Invisível",
+          "nivel": 10,
+          "descricao": "Seus ataques ignoram 10% da defesa do oponente."
+        },
+        {
+          "nome": "Passos de Vento Aprimorados",
+          "nivel": 20,
+          "descricao": "Aumenta passivamente a chance de esquiva em 15%."
+        },
+        {
+          "nome": "Lâmina Invisível Aprimorada",
+          "nivel": 35,
+          "descricao": "Seus ataques ignoram 15% da defesa do oponente."
+        },
+        {
+          "nome": "Zona de Vento Cortante",
+          "nivel": 50,
+          "descricao": "Ao esquivar, realiza um contra-ataque automático causando 50% do dano base."
+        }
+      ]
+    },
+    {
+      "id": "magia_comida",
+      "nome": "Magia de Comida",
+      "tipo": "Grimório",
+      "raridade": "lendario",
+      "descricao": "Um grimório peculiar que manipula os aspectos da nutrição e vitalidade.",
+      "imagem": "https://i.imgur.com/K3v8Q5N.png",
+      "passivas": [
+        {
+          "nome": "Fome",
+          "nivel": 1,
+          "descricao": "Qualquer fonte de cura é aumentada em 25%."
+        },
+        {
+          "nome": "Comida Saudável",
+          "nivel": 10,
+          "descricao": "A cada turno limpa 1 debuff de si próprio (e aliados em Raid)."
+        },
+        {
+          "nome": "Refeição Completa",
+          "nivel": 20,
+          "descricao": "A cada 5 turnos recupera 30% de stamina (aliados em Raid recuperam 15%)."
+        },
+        {
+          "nome": "Fome Aprimorada",
+          "nivel": 35,
+          "descricao": "Qualquer fonte de cura é aumentada em 40%."
+        },
+        {
+          "nome": "Defesa Nutritiva",
+          "nivel": 50,
+          "descricao": "Sua própria defesa não pode ser ignorada e críticos dos inimigos perdem 30% de dano."
+        }
+      ]
+    },
+    {
+      "id": "magia_relampago",
+      "nome": "Magia de Relâmpago",
+      "tipo": "Grimório",
+      "raridade": "mitico",
+      "descricao": "Um grimório eletrizante focado em velocidade e ataques em área.",
+      "imagem": "https://i.imgur.com/K3v8Q5N.png",
+      "passivas": [
+        {
+          "nome": "Eletricidade",
+          "nivel": 1,
+          "descricao": "Dano em área aumentado em 20%."
+        },
+        {
+          "nome": "Volts Aumentado",
+          "nivel": 10,
+          "descricao": "Skills que não stunam ganham 15% de chance de causar stun."
+        },
+        {
+          "nome": "Refletor",
+          "nivel": 20,
+          "descricao": "A cada 2 turnos reflete 20% do dano tomado."
+        },
+        {
+          "nome": "Eletricidade Aprimorada",
+          "nivel": 35,
+          "descricao": "Dano em área aumentado em 35%."
+        },
+        {
+          "nome": "Tempestade Elétrica",
+          "nivel": 50,
+          "descricao": "Todos os seus ataques causam dano em área."
+        }
+      ]
+    },
+    {
+      "id": "magia_tempo",
+      "nome": "Magia do Tempo",
+      "tipo": "Grimório",
+      "raridade": "lendario",
+      "descricao": "Grimório que dobra as regras temporais durante o combate.",
+      "imagem": "https://i.imgur.com/K3v8Q5N.png",
+      "passivas": [
+        {
+          "nome": "Tempo Moderno",
+          "nivel": 1,
+          "descricao": "30% de chance de não gastar stamina com skills."
+        },
+        {
+          "nome": "Parada no Tempo",
+          "nivel": 10,
+          "descricao": "A cada 3 turnos o stun é garantido no seu ataque."
+        },
+        {
+          "nome": "Rebobinar",
+          "nivel": 20,
+          "descricao": "A cada 2 turnos recupera 40% do HP do último dano tomado."
+        },
+        {
+          "nome": "Tempo Moderno Aprimorado",
+          "nivel": 35,
+          "descricao": "45% de chance de não gastar stamina com skills."
+        },
+        {
+          "nome": "Domínio do Tempo",
+          "nivel": 50,
+          "descricao": "Inimigos não podem esquivar de seus ataques."
+        }
+      ]
+    },
+    {
+      "id": "magia_trevas",
+      "nome": "Magia das Trevas",
+      "tipo": "Grimório",
+      "raridade": "epico",
+      "descricao": "Grimório sombrio, mestre no aprimoramento de habilidades com espadas.",
+      "imagem": "https://i.imgur.com/K3v8Q5N.png",
+      "passivas": [
+        {
+          "nome": "Espada das Trevas",
+          "nivel": 1,
+          "descricao": "Skills de espadas causam 20% de dano a mais."
+        },
+        {
+          "nome": "Corte Dimensional",
+          "nivel": 10,
+          "descricao": "A cada 3 turnos, skills de espadas ignoram a defesa."
+        },
+        {
+          "nome": "Capitão Yami",
+          "nivel": 20,
+          "descricao": "No começo da rodada, aumenta o dano de skills de espadas de aliados em 30% por 2 turnos (Raid)."
+        },
+        {
+          "nome": "Limpeza das Trevas",
+          "nivel": 35,
+          "descricao": "Se acertar uma skill de espada, remove 0.5% de defesa permanente do inimigo no combate."
+        },
+        {
+          "nome": "Corte Mega Dimensional",
+          "nivel": 50,
+          "descricao": "A cada stun sofrido, seu dano de espada aumenta em 10%. Se o inimigo esquivar, seu dano aumenta em 20%."
+        }
+      ]
+    },
+    {
+      "id": "magia_correntes",
+      "nome": "Magia das Correntes",
+      "tipo": "Grimório",
+      "raridade": "comum",
+      "descricao": "Grimório tático que foca em prender o oponente e controle de campo.",
+      "imagem": "https://i.imgur.com/K3v8Q5N.png",
+      "passivas": [
+        {
+          "nome": "Corrente Leve",
+          "nivel": 1,
+          "descricao": "Pequena chance (5%) de reduzir o dano do inimigo em 5% por 1 turno ao atacar."
+        },
+        {
+          "nome": "Elo de Ferro",
+          "nivel": 10,
+          "descricao": "Sua defesa base aumenta em 5%."
+        },
+        {
+          "nome": "Prisão Parcial",
+          "nivel": 20,
+          "descricao": "10% de chance de impedir a esquiva do inimigo no próximo turno ao acertar um ataque."
+        },
+        {
+          "nome": "Corrente Pesada",
+          "nivel": 35,
+          "descricao": "Reflete 10% do dano tomado para o oponente se sofrer crítico."
+        },
+        {
+          "nome": "Acorrentar Drenante",
+          "nivel": 50,
+          "descricao": "Cada ataque seu rouba 2% de stamina do alvo."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2575 @@
+{
+  "espadas": [
+    {
+      "id": "espada_001",
+      "nome": "Ferramenta Amaldiçoada Simples",
+      "categoria": "espada",
+      "raridade": "comum",
+      "rank": "E/F",
+      "dano": 12,
+      "loja": true,
+      "habilidades": [
+        {
+          "nome": "Corte Amaldiçoado",
+          "descricao": "Golpe direto com a ferramenta amaldiçoada causando dano físico amplificado.",
+          "tipo": "ofensiva",
+          "dano": 6,
+          "custoStamina": 15,
+          "cooldown": 2,
+          "stun": false
+        }
+      ],
+      "bonus": {},
+      "descricao": "Uma ferramenta amaldiçoada de grau baixo. Eficaz contra espíritos.",
+      "preco": 50,
+      "durabilidade": 100,
+      "durabilidadeMax": 100,
+      "nivel": 1,
+      "nivelMax": 1,
+      "custo": 35,
+      "weaponType": "sword"
+    },
+    {
+      "id": "pole_v1",
+      "nome": "Nuvem Lúdica",
+      "categoria": "espada",
+      "raridade": "lendária",
+      "rank": "A",
+      "dano": 48,
+      "loja": false,
+      "habilidades": [
+        {
+          "nome": "Golpe Triplo",
+          "descricao": "A Nuvem Lúdica é uma ferramenta de três seções ligadas por correntes. O usuário desencadeia um golpe triplo devastador.",
+          "tipo": "ofensiva",
+          "dano": 96,
+          "custoStamina": 20,
+          "cooldown": 3,
+          "stun": false
+        }
+      ],
+      "bonus": {},
+      "descricao": "A Ferramenta Amaldiçoada Especial de três seções usada por Toji Fushiguro e Maki Zenin.",
+      "preco": 5000,
+      "durabilidade": 300,
+      "durabilidadeMax": 300,
+      "nivel": 1,
+      "nivelmax": 10,
+      "custo": 120,
+      "mecanicaPassiva": "corrente_tripla",
+      "weaponType": "sword"
+    },
+    {
+      "id": "espada_002",
+      "nome": "Machado Amaldiçoado",
+      "categoria": "espada",
+      "raridade": "rara",
+      "rank": "C",
+      "dano": 16,
+      "loja": true,
+      "tipo": "espada",
+      "habilidades": [
+        {
+          "nome": "Fenda de Ar",
+          "descricao": "Balança o machado com força amaldiçoada e lança uma onda de energia cortante.",
+          "tipo": "ofensiva",
+          "dano": 15,
+          "custoStamina": 15,
+          "cooldown": 2,
+          "stun": true
+        }
+      ],
+      "bonus": {},
+      "descricao": "Um machado amaldiçoado com corte elevado.",
+      "preco": 150,
+      "durabilidade": 75,
+      "durabilidadeMax": 75,
+      "nivel": 1,
+      "nivelMax": 5,
+      "custo": 65,
+      "weaponType": "sword"
+    },
+    {
+      "id": "espada_003",
+      "nome": "Lança da Inversão Celestial",
+      "categoria": "espada",
+      "raridade": "comum",
+      "rank": "D",
+      "dano": 22,
+      "loja": true,
+      "habilidades": [
+        {
+          "nome": "Perfuração Silenciosa",
+          "descricao": "A lança traversa as defesas do inimigo sem ele perceber a trajetória.",
+          "tipo": "ofensiva",
+          "dano": 24,
+          "custoStamina": 18,
+          "cooldown": 2,
+          "stun": false
+        },
+        {
+          "nome": "Perfuração Dupla",
+          "descricao": "Desfere dois golpes consecutivos com a mesma perfuração mortal.",
+          "tipo": "ofensiva",
+          "dano": 39,
+          "custoStamina": 18,
+          "cooldown": 2,
+          "stun": false
+        }
+      ],
+      "bonus": {},
+      "descricao": "A Lança que neutraliza qualquer técnica amaldiçoada no ponto de contato.",
+      "preco": 500,
+      "durabilidade": 100,
+      "durabilidadeMax": 100,
+      "nivel": 1,
+      "nivelMax": 7,
+      "custo": 80,
+      "weaponType": "sword"
+    },
+    {
+      "id": "toji_sword",
+      "nome": "Katana de Toji Fushiguro",
+      "categoria": "espada",
+      "raridade": "lendária",
+      "rank": "S",
+      "buildRole": "dano",
+      "dano": 70,
+      "loja": false,
+      "habilidades": [
+        {
+          "nome": "Transcendência Física",
+          "descricao": "Toji canalizou toda sua força física além do limite humano. O golpe atravessa qualquer defesa de Energia Maldita como se não existisse.",
+          "tipo": "espada",
+          "dano": 125,
+          "custoStamina": 25,
+          "cooldown": 4,
+          "stun": false
+        },
+        {
+          "nome": "Ruptura de Alma",
+          "descricao": "Corte preciso que atinge a alma do inimigo, ignorando armaduras e técnicas protetoras.",
+          "tipo": "espada",
+          "dano": 152,
+          "custoStamina": 35,
+          "cooldown": 5,
+          "stun": true
+        }
+      ],
+      "bonus": {
+        "velocidade": 28,
+        "critico": 22
+      },
+      "descricao": "A katana pessoal de Toji Fushiguro, o Assassino de Feiticeiros. Forjada para matar quem usa Energia Maldita, mesmo sem tê-la.",
+      "preco": 0,
+      "durabilidade": 250,
+      "durabilidadeMax": 250,
+      "nivel": 1,
+      "nivelMax": 10,
+      "custo": 0,
+      "mecanicaPassiva": "vazio_maldito",
+      "weaponType": "sword"
+    },
+    {
+      "id": "higuruma_executor",
+      "nome": "Espada do Executor — Higuruma",
+      "categoria": "espada",
+      "raridade": "lendária",
+      "rank": "A",
+      "buildRole": "controle",
+      "dano": 57,
+      "loja": false,
+      "habilidades": [
+        {
+          "nome": "Julgamento",
+          "descricao": "A espada do executor invoca o Domínio Expandido de Higuruma. O réu é julgado e sentenciado — na falha da defesa, recebe dano massivo e perde todas as técnicas por 2 turnos.",
+          "tipo": "espada",
+          "dano": 99,
+          "custoStamina": 30,
+          "cooldown": 5,
+          "stun": true
+        },
+        {
+          "nome": "Confisco",
+          "descricao": "A espada executa o veredicto de confisco, drenando 45% da stamina atual do inimigo. Higuruma recupera 40% da stamina drenada.",
+          "tipo": "ofensiva",
+          "dano": 79,
+          "custoStamina": 20,
+          "cooldown": 3,
+          "stun": false,
+          "confiscaStamina": 0.45,
+          "staminaRecuperada": 0.4
+        }
+      ],
+      "bonus": {
+        "energia_maldita": 15
+      },
+      "descricao": "A espada do executor materializada pelo Domínio de Hiromi Higuruma. Só existe dentro do julgamento — quem é sentenciado à morte a encontra.",
+      "preco": 0,
+      "durabilidade": 300,
+      "durabilidadeMax": 300,
+      "nivel": 1,
+      "nivelMax": 10,
+      "custo": 0,
+      "mecanicaPassiva": "tribunal_pequena_escala",
+      "weaponType": "sword"
+    },
+    {
+      "id": "itadori_gauntlets",
+      "nome": "Braçadeiras de Itadori",
+      "categoria": "espada",
+      "raridade": "épica",
+      "rank": "B",
+      "dano": 41,
+      "loja": true,
+      "habilidades": [
+        {
+          "nome": "Pancada Divergente",
+          "descricao": "Yuji libera Energia Maldita em dois pontos opostos simultaneamente, causando uma explosão interna devastadora.",
+          "tipo": "espada",
+          "dano": 47,
+          "custoStamina": 22,
+          "cooldown": 3,
+          "stun": true
+        },
+        {
+          "nome": "Impacto de Construção",
+          "descricao": "Técnica aprendida ao lutar contra Mahoraga. Inverte o fluxo de Energia Maldita do inimigo causando dano interno.",
+          "tipo": "ofensiva",
+          "dano": 60,
+          "custoStamina": 28,
+          "cooldown": 4,
+          "stun": false
+        }
+      ],
+      "bonus": {
+        "resistencia": 10
+      },
+      "descricao": "As braçadeiras reforçadas com Energia Maldita usadas por Yuji Itadori. Potencializam os golpes físicos com a técnica Divergência.",
+      "preco": 1500,
+      "durabilidade": 200,
+      "durabilidadeMax": 200,
+      "nivel": 5,
+      "nivelMax": 8,
+      "custo": 90,
+      "mecanicaPassiva": "flash_negro",
+      "weaponType": "sword"
+    },
+    {
+      "id": "kashimo_staff",
+      "nome": "Bastão Relampejante de Kashimo",
+      "categoria": "espada",
+      "raridade": "lendária",
+      "rank": "A",
+      "dano": 59,
+      "loja": false,
+      "habilidades": [
+        {
+          "nome": "Descarga de Raios",
+          "descricao": "Hajime Kashimo canaliza toda sua eletricidade amaldiçoada no bastão e libera uma descarga devastadora que paralisa o inimigo.",
+          "tipo": "espada",
+          "dano": 125,
+          "custoStamina": 25,
+          "cooldown": 3,
+          "stun": true
+        },
+        {
+          "nome": "Tempestade Amaldiçoada",
+          "descricao": "O bastão libera uma tempestade elétrica que cobre todo o campo. Técnica aprimorada com 400 anos de experiência de combate.",
+          "tipo": "ofensiva",
+          "dano": 153,
+          "custoStamina": 38,
+          "cooldown": 5,
+          "stun": true
+        }
+      ],
+      "bonus": {
+        "velocidade": 15,
+        "critico": 20
+      },
+      "descricao": "O bastão de Hajime Kashimo, o feiticeiro maldito mais forte da era Heian. Conduz eletricidade amaldiçoada pura com força impossível.",
+      "preco": 0,
+      "durabilidade": 300,
+      "durabilidadeMax": 300,
+      "nivel": 1,
+      "nivelMax": 10,
+      "custo": 0,
+      "mecanicaPassiva": "condutor_eletrico",
+      "weaponType": "sword"
+    },
+    {
+      "id": "nobara_hammer",
+      "nome": "Martelo e Pregos de Nobara",
+      "categoria": "espada",
+      "raridade": "rara",
+      "rank": "C",
+      "dano": 28,
+      "loja": true,
+      "habilidades": [
+        {
+          "nome": "Cravação Amaldiçoada",
+          "descricao": "Nobara crava pregos imbuídos com Energia Maldita no inimigo através de um boneco de palha, transmitindo dano à distância.",
+          "tipo": "espada",
+          "dano": 54,
+          "custoStamina": 18,
+          "cooldown": 2,
+          "stun": false
+        },
+        {
+          "nome": "Técnica do Boneco de Palha",
+          "descricao": "Ativa a Técnica Amaldiçoada: Boneco de Palha, aplicando veneno maldito contínuo por 3 turnos.",
+          "tipo": "ofensiva",
+          "dano": 66,
+          "custoStamina": 25,
+          "cooldown": 4,
+          "stun": false
+        }
+      ],
+      "bonus": {
+        "energia_maldita": 8
+      },
+      "descricao": "O martelo e os pregos de Kugisaki Nobara, usados na Técnica Amaldiçoada: Boneco de Palha. Transmitem dano através de objetos ligados ao alvo.",
+      "preco": 800,
+      "durabilidade": 90,
+      "durabilidadeMax": 90,
+      "nivel": 1,
+      "nivelMax": 6,
+      "custo": 70,
+      "weaponType": "sword"
+    },
+    {
+      "id": "maki_katana",
+      "nome": "Katana da Alma Dividida — Maki",
+      "categoria": "espada",
+      "raridade": "lendária",
+      "rank": "A",
+      "dano": 64,
+      "loja": false,
+      "habilidades": [
+        {
+          "nome": "Corte da Alma Dividida",
+          "descricao": "Maki usa a Katana da Alma Dividida com o Corpo Celestial. O corte atravessa simultaneamente o plano físico e espiritual, sendo impossível de bloquear.",
+          "tipo": "espada",
+          "dano": 138,
+          "custoStamina": 30,
+          "cooldown": 4,
+          "stun": false
+        },
+        {
+          "nome": "Arte Marcial do Clã Zenin",
+          "descricao": "Maki executa a sequência de combate transmitida pelo clã Zenin, acumulando força por cada golpe encadeado.",
+          "tipo": "ofensiva",
+          "dano": 111,
+          "custoStamina": 25,
+          "cooldown": 3,
+          "stun": true
+        }
+      ],
+      "bonus": {
+        "velocidade": 25,
+        "resistencia": 15
+      },
+      "descricao": "A katana de Maki Zenin após despertar o Corpo Celestial. Corta tudo — físico, espiritual e amaldiçoado — sem distinção.",
+      "preco": 0,
+      "durabilidade": 230,
+      "durabilidadeMax": 230,
+      "nivel": 1,
+      "nivelMax": 10,
+      "custo": 0,
+      "mecanicaPassiva": "corpo_celestial",
+      "weaponType": "sword"
+    },
+    {
+      "id": "yuta_katana",
+      "nome": "Katana de Yuta Okkotsu",
+      "categoria": "espada",
+      "raridade": "lendária",
+      "rank": "A",
+      "dano": 67,
+      "loja": false,
+      "habilidades": [
+        {
+          "nome": "Manifestação de Rika",
+          "descricao": "Yuta invoca Rika Orimoto para amplificar cada golpe. Por 2 turnos, todo ataque com a katana recebe bônus massivo de Energia Maldita.",
+          "tipo": "espada",
+          "dano": 116,
+          "custoStamina": 28,
+          "cooldown": 4,
+          "stun": false
+        },
+        {
+          "nome": "Juramento de Sangue",
+          "descricao": "Yuta sela uma promessa com Energia Maldita. Causa dano enorme mas absorve parte do retorno para si mesmo — golpe de alto risco e altíssima recompensa.",
+          "tipo": "ofensiva",
+          "dano": 156,
+          "custoStamina": 40,
+          "cooldown": 6,
+          "stun": true
+        }
+      ],
+      "bonus": {
+        "energia_maldita": 25,
+        "critico": 10
+      },
+      "descricao": "A katana impregnada com a Energia Maldita ilimitada de Rika, usada pelo Especial Grau-0 Yuta Okkotsu. Uma das lâminas mais poderosas já vistas.",
+      "preco": 0,
+      "durabilidade": 300,
+      "durabilidadeMax": 300,
+      "nivel": 1,
+      "nivelMax": 10,
+      "custo": 0,
+      "mecanicaPassiva": "amor_de_rika",
+      "weaponType": "sword"
+    },
+    {
+      "id": "nanami_tool",
+      "nome": "Ferramenta Reforçada de Nanami",
+      "categoria": "espada",
+      "raridade": "épica",
+      "rank": "B",
+      "dano": 38,
+      "loja": true,
+      "habilidades": [
+        {
+          "nome": "Proporção 7:3",
+          "descricao": "Nanami identifica o ponto fraco em qualquer estrutura — o ponto 7:3 — e concentra o golpe nele, ignorando toda defesa.",
+          "tipo": "espada",
+          "dano": 104,
+          "custoStamina": 22,
+          "cooldown": 3,
+          "stun": false
+        },
+        {
+          "nome": "Trabalho Além do Expediente",
+          "descricao": "Além do horário de trabalho, a limitação se quebra. Nanami entra em modo de sobrecarga — todos os golpes causam dano dobrado por 1 turno.",
+          "tipo": "ofensiva",
+          "dano": 131,
+          "custoStamina": 35,
+          "cooldown": 5,
+          "stun": true
+        }
+      ],
+      "bonus": {
+        "resistencia": 12,
+        "energia_maldita": 10
+      },
+      "descricao": "A ferramenta reforçada e enfaixada de Kento Nanami, o Feiticeiro Assalariado de Grau 1. A Técnica Proporção 7:3 é letal em qualquer estrutura.",
+      "preco": 2000,
+      "durabilidade": 200,
+      "durabilidadeMax": 200,
+      "nivel": 1,
+      "nivelMax": 8,
+      "custo": 95,
+      "mecanicaPassiva": "proporcao_7_3",
+      "weaponType": "sword"
+    },
+    {
+      "id": "espada_toji_mitica",
+      "nome": "Catalisador do Inventário Maldito",
+      "categoria": "espada",
+      "raridade": "mítica",
+      "rank": "SS+",
+      "dano": 90,
+      "loja": false,
+      "habilidades": [
+        {
+          "nome": "Fissura Suprema",
+          "descricao": "O golpe definitivo de Toji — força bruta absoluta que rasga qualquer proteção de energia maldita.",
+          "tipo": "espada",
+          "dano": 220,
+          "custoStamina": 25,
+          "cooldown": 3,
+          "stun": false
+        },
+        {
+          "nome": "Corrente do Inventário",
+          "descricao": "A corrente do Inventário Maldito se estende e prende o alvo em uma explosão de força física pura. Atordoa por 1 turno.",
+          "tipo": "espada",
+          "dano": 170,
+          "custoStamina": 20,
+          "cooldown": 2,
+          "stun": true
+        }
+      ],
+      "bonus": {
+        "velocidade": 40,
+        "critico": 28,
+        "resistencia": 15
+      },
+      "descricao": "A ferramenta suprema do Inventário Maldito — a arma definitiva de Toji Fushiguro, recompensa do Evento Restrição Celestial. Rasga qualquer proteção de energia maldita com força bruta absoluta.",
+      "preco": 0,
+      "durabilidade": 500,
+      "durabilidadeMax": 500,
+      "nivel": 1,
+      "nivelMax": 5,
+      "custo": 0,
+      "mecanicaPassiva": "inventario_maldito",
+      "weaponType": "sword"
+    },
+    {
+      "id": "espada_craft_001",
+      "nome": "Lâmina Maldita Forjada",
+      "categoria": "espada",
+      "raridade": "comum",
+      "rank": "E/F",
+      "dano": 14,
+      "loja": false,
+      "habilidades": [
+        {
+          "nome": "Corte Maldito",
+          "descricao": "Um golpe direto imbuído de energia maldita básica.",
+          "tipo": "ofensiva",
+          "dano": 8,
+          "custoStamina": 12,
+          "cooldown": 2,
+          "stun": false
+        },
+        {
+          "nome": "Investida",
+          "descricao": "Avança rapidamente e desfere um golpe rápido.",
+          "tipo": "ofensiva",
+          "dano": 5,
+          "custoStamina": 8,
+          "cooldown": 1,
+          "stun": false
+        }
+      ],
+      "bonus": {},
+      "descricao": "Uma lâmina forjada artesanalmente com metal básico e energia maldita residual. Boa para iniciantes.",
+      "preco": 0,
+      "durabilidade": 90,
+      "durabilidadeMax": 90,
+      "nivel": 1,
+      "nivelMax": 3,
+      "custo": 0,
+      "weaponType": "sword"
+    },
+    {
+      "id": "espada_craft_002",
+      "nome": "Katana do Exorcista",
+      "categoria": "espada",
+      "raridade": "incomum",
+      "rank": "D",
+      "dano": 22,
+      "loja": false,
+      "habilidades": [
+        {
+          "nome": "Corte Veloz",
+          "descricao": "Um corte horizontal extremamente rápido que ignora parte da defesa.",
+          "tipo": "ofensiva",
+          "dano": 14,
+          "custoStamina": 15,
+          "cooldown": 2,
+          "stun": false
+        },
+        {
+          "nome": "Fenda Dupla",
+          "descricao": "Dois cortes consecutivos em diagonal.",
+          "tipo": "ofensiva",
+          "dano": 10,
+          "custoStamina": 18,
+          "cooldown": 3,
+          "stun": false
+        },
+        {
+          "nome": "Postura de Guarda",
+          "descricao": "Adota postura defensiva, reduzindo o dano recebido no próximo golpe.",
+          "tipo": "defensiva",
+          "dano": 0,
+          "custoStamina": 10,
+          "cooldown": 3,
+          "escudo": 20,
+          "stun": false
+        }
+      ],
+      "bonus": {
+        "velocidade": 5
+      },
+      "descricao": "Katana forjada em aço refinado e tratada com energia maldita. Usada por exorcistas de nível médio.",
+      "preco": 0,
+      "durabilidade": 100,
+      "durabilidadeMax": 100,
+      "nivel": 1,
+      "nivelMax": 5,
+      "custo": 0,
+      "weaponType": "sword"
+    },
+    {
+      "id": "espada_craft_003",
+      "nome": "Lança Invertida do Paraíso",
+      "categoria": "espada",
+      "raridade": "lendária",
+      "rank": "A",
+      "dano": 52,
+      "loja": false,
+      "habilidades": [
+        {
+          "nome": "Inversão Maldita",
+          "descricao": "A lança penetra qualquer defesa de energia maldita, anulando escudos e barreiras.",
+          "tipo": "ofensiva",
+          "dano": 45,
+          "custoStamina": 30,
+          "cooldown": 4,
+          "ignoraDefesa": true,
+          "stun": false
+        },
+        {
+          "nome": "Rajada do Caçador",
+          "descricao": "Uma sequência de golpes rápidos da Lança Invertida do Paraíso.",
+          "tipo": "ofensiva",
+          "dano": 28,
+          "custoStamina": 22,
+          "cooldown": 3,
+          "stun": false
+        },
+        {
+          "nome": "Instinto de Toji",
+          "descricao": "Aproveita a ausência de energia maldita para se mover numa velocidade surreal.",
+          "tipo": "ofensiva",
+          "dano": 35,
+          "custoStamina": 20,
+          "cooldown": 3,
+          "esquiva": 30,
+          "stun": true
+        }
+      ],
+      "bonus": {
+        "velocidade": 25,
+        "critico": 20
+      },
+      "descricao": "A arma definitiva de Toji Fushiguro — a Lança Invertida do Paraíso que anula qualquer técnica maldita. Forjada com fragmentos do Inventário Maldito.",
+      "preco": 0,
+      "durabilidade": 100,
+      "durabilidadeMax": 100,
+      "nivel": 1,
+      "nivelMax": 10,
+      "custo": 0,
+      "mecanicaPassiva": "predador",
+      "weaponType": "sword"
+    },
+    {
+      "id": "espada_oito_cabos",
+      "nome": "Espada do Extermínio — Oito Cabos",
+      "categoria": "espada",
+      "raridade": "mitico",
+      "rank": "S",
+      "dano": 72,
+      "loja": false,
+      "habilidades": [
+        {
+          "nome": "Extermínio dos Oito Cabos",
+          "descricao": "Os oito cabos da espada golpeiam o inimigo em sequência devastadora — o impacto destrói não só a carne, mas todos os reforços místicos. Desativa o equipamento e anula todos os buffs do alvo por 2 turnos.",
+          "tipo": "espada",
+          "dano": 130,
+          "custoStamina": 40,
+          "cooldown": 5,
+          "stun": false,
+          "desativaEquipamento": true,
+          "desativaDuracao": 2
+        },
+        {
+          "nome": "Fúria das Oito Cabeças",
+          "descricao": "A espada desencadeia um ataque freneticamente veloz com todos os oito cabos simultaneamente, penetrando qualquer escudo, barreira ou armadura sem redução.",
+          "tipo": "espada",
+          "dano": 200,
+          "custoStamina": 50,
+          "cooldown": 4,
+          "stun": false,
+          "ignoraDefesa": true
+        },
+        {
+          "nome": "Corte do Dragão Destruidor",
+          "descricao": "Um único golpe que condensa todo o poder dos oito cabos em uma fenda singular. A força absurda do impacto lança o inimigo, deixando-o atordoado.",
+          "tipo": "espada",
+          "dano": 260,
+          "custoStamina": 60,
+          "cooldown": 6,
+          "stun": true
+        },
+        {
+          "nome": "Aniquilação Total",
+          "descricao": "O golpe definitivo da Espada de Oito Cabos. Quando o inimigo já está enfraquecido, o poder da espada dobra — como uma fera que se lança sobre a presa moribunda.",
+          "tipo": "espada",
+          "dano": 360,
+          "custoStamina": 80,
+          "cooldown": 8,
+          "stun": false,
+          "dobraDanoHPBaixo": 0.5
+        }
+      ],
+      "bonus": {
+        "velocidade": 25,
+        "critico": 20
+      },
+      "descricao": "A lendária Espada de Oito Cabos — forjada além dos limites humanos. Capaz de desfazer qualquer reforço místico e dobrar seu poder contra inimigos enfraquecidos.",
+      "preco": 0,
+      "durabilidade": 500,
+      "durabilidadeMax": 500,
+      "nivel": 1,
+      "nivelMax": 10,
+      "custo": 0,
+      "weaponType": "sword"
+    },
+    {
+      "id": "desmantelamento_sukuna",
+      "nome": "Desmantelamento — Lâmina do Rei",
+      "categoria": "espada",
+      "raridade": "mitico",
+      "rank": "S+",
+      "dano": 77,
+      "loja": false,
+      "habilidades": [
+        {
+          "nome": "Desmantelamento",
+          "descricao": "O corte mais básico do Rei — mas ainda assim, devastador. Um único movimento que desfaz tudo no caminho.",
+          "tipo": "espada",
+          "dano": 111,
+          "custoStamina": 35,
+          "cooldown": 3,
+          "stun": false
+        },
+        {
+          "nome": "Fenda da Calamidade",
+          "descricao": "Uma técnica de corte que penetra qualquer defesa — barreiras, escudos e armaduras não resistem ao poder do Rei.",
+          "tipo": "espada",
+          "dano": 162,
+          "custoStamina": 45,
+          "cooldown": 4,
+          "ignoraDefesa": true,
+          "stun": false
+        },
+        {
+          "nome": "Esfacelamento",
+          "descricao": "Sukuna desencadeia múltiplos cortes simultâneos que rasgam o espaço. O inimigo não tem para onde correr.",
+          "tipo": "espada",
+          "dano": 204,
+          "custoStamina": 55,
+          "cooldown": 5,
+          "stun": true
+        }
+      ],
+      "bonus": {
+        "velocidade": 20,
+        "critico": 15
+      },
+      "descricao": "A técnica de corte definitiva de Ryomen Sukuna, materializada como uma lâmina sobrenatural. Capaz de rasgar o espaço e destruir qualquer defesa maldita. Espada mítica exclusiva do Evento Receptáculo Perfeito.",
+      "preco": 0,
+      "durabilidade": 200,
+      "durabilidadeMax": 200,
+      "nivel": 1,
+      "nivelMax": 10,
+      "custo": 0,
+      "weaponType": "sword"
+    },
+    {
+      "id": "kunai_evento",
+      "nome": "Kunai",
+      "categoria": "espada",
+      "raridade": "rara",
+      "rank": "C",
+      "dano": 22,
+      "loja": false,
+      "habilidades": [
+        {
+          "nome": "Arremesso Preciso",
+          "descricao": "O ninja lança o Kunai com velocidade e precisão extrema, perfurando a defesa do adversário antes que ele possa reagir.",
+          "tipo": "ofensiva",
+          "dano": 35,
+          "custoStamina": 20,
+          "cooldown": 2,
+          "stun": false
+        }
+      ],
+      "bonus": {},
+      "descricao": "A arma padrão dos shinobis da Aldeia da Folha. Simples, rápida e mortal nas mãos de um ninja experiente.",
+      "preco": 0,
+      "durabilidade": 100,
+      "durabilidadeMax": 100,
+      "nivel": 1,
+      "nivelMax": 5,
+      "custo": 0,
+      "eventoExclusivo": true,
+      "weaponType": "sword"
+    },
+    {
+      "id": "chokuto_sasuke",
+      "nome": "Chokuto de Sasuke",
+      "categoria": "espada",
+      "raridade": "lendária",
+      "rank": "A",
+      "dano": 55,
+      "loja": false,
+      "habilidades": [
+        {
+          "nome": "Chidori Lâmina",
+          "descricao": "Sasuke infunde o raio do Chidori em sua espada e desfere um golpe devastador que paralisa o inimigo com uma descarga elétrica.",
+          "tipo": "ofensiva",
+          "dano": 90,
+          "custoStamina": 40,
+          "cooldown": 3,
+          "stun": true
+        }
+      ],
+      "bonus": {
+        "critico": 15,
+        "velocidade": 10
+      },
+      "descricao": "A espada reta de Sasuke Uchiha, forjada com o chakra do Sharingan. Uma das armas mais temidas na Era dos Shinobis.",
+      "preco": 0,
+      "durabilidade": 100,
+      "durabilidadeMax": 100,
+      "nivel": 1,
+      "nivelMax": 10,
+      "custo": 0,
+      "eventoExclusivo": true,
+      "weaponType": "sword"
+    },
+    {
+      "id": "rhitta",
+      "nome": "Machado Divino Rhitta",
+      "categoria": "espada",
+      "raridade": "limitado",
+      "rank": "SS",
+      "dano": 88,
+      "loja": false,
+      "weaponType": "sword",
+      "habilidades": [
+        {
+          "nome": "Corte do Alvorecer",
+          "descricao": "Um golpe carregado com a energia do sol nascente.",
+          "tipo": "espada",
+          "dano": 130,
+          "custoStamina": 90,
+          "cooldown": 3,
+          "stun": false
+        },
+        {
+          "nome": "Carga Solar",
+          "descricao": "Rhitta absorve o calor emanado pelo usuário para um golpe explosivo futuro.",
+          "tipo": "espada",
+          "dano": 110,
+          "custoStamina": 150,
+          "cooldown": 4,
+          "geraCalor": 20
+        },
+        {
+          "nome": "Liberação Total: Sol Cruel",
+          "descricao": "Libera todo o calor acumulado em uma explosão solar devastadora.",
+          "tipo": "ofensiva",
+          "dano": 210,
+          "custoStamina": 300,
+          "cooldown": 6,
+          "stun": true
+        }
+      ],
+      "bonus": {
+        "forca": 15,
+        "resistencia": 5
+      },
+      "descricao": "O machado de uma mão usado por Escanor. Tão pesado que nem Meliodas conseguia carregar, Rhitta armazena o calor do sol para ser liberado em batalha.",
+      "preco": 0,
+      "durabilidade": 500,
+      "durabilidadeMax": 500,
+      "nivel": 1,
+      "nivelMax": 10,
+      "custo": 0,
+      "mecanicaPassiva": "carga_solar_rhitta"
+    },
+    {
+      "id": "lostvayne",
+      "nome": "Espada Demoníaca Lostvayne",
+      "categoria": "espada",
+      "raridade": "limitado",
+      "rank": "SS",
+      "dano": 82,
+      "loja": false,
+      "habilidades": [
+        {
+          "nome": "Corte de Mil Clones",
+          "descricao": "Desfere múltiplos cortes em conjunto com clones físicos ilusórios.",
+          "tipo": "espada",
+          "dano": 145,
+          "custoStamina": 40,
+          "cooldown": 3,
+          "stun": false
+        },
+        {
+          "nome": "Clone Físico",
+          "descricao": "Cria um clone que reflete o poder do usuário para um ataque extra.",
+          "tipo": "espada",
+          "dano": 120,
+          "custoStamina": 30,
+          "cooldown": 4,
+          "stun": false
+        },
+        {
+          "nome": "Contra-Ataque Pleno",
+          "descricao": "Lostvayne entra em posição defensiva para devolver qualquer técnica mágica.",
+          "tipo": "defensiva",
+          "dano": 0,
+          "custoStamina": 50,
+          "cooldown": 5,
+          "ativaFullCounter": true
+        }
+      ],
+      "bonus": {
+        "velocidade": 25,
+        "critico": 15
+      },
+      "descricao": "O Tesouro Sagrado de Meliodas. Lostvayne permite ao portador criar clones de si mesmo, embora seu poder total seja dividido.",
+      "preco": 0,
+      "durabilidade": 200,
+      "durabilidadeMax": 200,
+      "nivel": 1,
+      "nivelMax": 10,
+      "custo": 0,
+      "mecanicaPassiva": "clones_lostvayne",
+      "weaponType": "sword"
+    },
+    {
+      "id": "courechouse",
+      "nome": "Bastão Sagrado Courechouse",
+      "categoria": "espada",
+      "raridade": "limitado",
+      "rank": "SS",
+      "dano": 85,
+      "loja": false,
+      "habilidades": [
+        {
+          "nome": "Arrebatar: Alcance",
+          "descricao": "O bastão se estende para roubar a força vital e stamina do oponente à distância.",
+          "tipo": "espada",
+          "dano": 115,
+          "custoStamina": 25,
+          "cooldown": 2,
+          "roubaStaminaPct": 0.15
+        },
+        {
+          "nome": "Super Arrebatamento",
+          "descricao": "Uma versão aprimorada da técnica de Ban, drenando energia massiva.",
+          "tipo": "espada",
+          "dano": 150,
+          "custoStamina": 45,
+          "cooldown": 4,
+          "geraArrebatamento": 2
+        },
+        {
+          "nome": "Matança Banida",
+          "descricao": "Uma sequência frenética de golpes que atinge todos os pontos vitais.",
+          "tipo": "ofensiva",
+          "dano": 185,
+          "custoStamina": 55,
+          "cooldown": 5,
+          "stun": true
+        }
+      ],
+      "bonus": {
+        "velocidade": 35,
+        "critico": 20
+      },
+      "descricao": "O Tesouro Sagrado de Ban. Um bastão de quatro seções que amplia enormemente a capacidade de roubar força e a velocidade do usuário.",
+      "preco": 0,
+      "durabilidade": 220,
+      "durabilidadeMax": 220,
+      "nivel": 1,
+      "nivelMax": 10,
+      "custo": 0,
+      "mecanicaPassiva": "arrebatar_courechouse",
+      "weaponType": "sword"
+    },
+    {
+      "id": "chastiefol",
+      "nome": "Lança Espiritual Chastiefol",
+      "categoria": "espada",
+      "raridade": "limitado",
+      "rank": "SS+",
+      "dano": 90,
+      "loja": false,
+      "habilidades": [
+        {
+          "nome": "Forma 1: Chastiefol",
+          "descricao": "A forma base da lança, desferindo uma perfuração poderosa.",
+          "tipo": "espada",
+          "dano": 160,
+          "custoStamina": 150,
+          "cooldown": 2,
+          "stun": false
+        },
+        {
+          "nome": "Forma 2: Guardião",
+          "descricao": "Chastiefol se transforma em um urso de pelúcia gigante para proteger o usuário.",
+          "tipo": "defensiva",
+          "dano": 0,
+          "custoStamina": 220,
+          "cooldown": 4,
+          "escudo": 120
+        },
+        {
+          "nome": "Forma 4: Girassol",
+          "descricao": "Um girassol gigante emerge do solo para disparar um feixe de luz solar.",
+          "tipo": "ofensiva",
+          "dano": 200,
+          "custoStamina": 270,
+          "cooldown": 5,
+          "stun": true
+        },
+        {
+          "nome": "Forma 5: Aumentar",
+          "descricao": "A lança se divide em milhares de pequenas lâminas de kunai que chovem sobre o inimigo.",
+          "tipo": "ofensiva",
+          "dano": 320,
+          "custoStamina": 320,
+          "cooldown": 6,
+          "stun": false
+        },
+        {
+          "nome": "Forma 8: Jardim de Pólen",
+          "descricao": "Uma barreira de pólen envolve o usuário, curando feridas e bloqueando ataques.",
+          "tipo": "defensiva",
+          "dano": 0,
+          "custoStamina": 45,
+          "cooldown": 5,
+          "cura": 25,
+          "escudo": 80
+        }
+      ],
+      "bonus": {
+        "energia_maldita": 40,
+        "velocidade": 15
+      },
+      "descricao": "O Tesouro Sagrado de King, o Rei das Fadas. Feita da Árvore Sagrada, possui diversas formas com propriedades únicas.",
+      "preco": 0,
+      "durabilidade": 700,
+      "durabilidadeMax": 700,
+      "nivel": 1,
+      "nivelMax": 10,
+      "custo": 0,
+      "mecanicaPassiva": "configuracao_chastiefol",
+      "weaponType": "sword"
+    },
+    {
+      "id": "gideon",
+      "nome": "Martelo de Guerra Gideon",
+      "categoria": "espada",
+      "raridade": "limitado",
+      "rank": "SS",
+      "dano": 88,
+      "loja": false,
+      "weaponType": "sword",
+      "habilidades": [
+        {
+          "nome": "Ground Gladius",
+          "descricao": "Cria uma gigantesca lâmina de terra que emerge do solo.",
+          "tipo": "espada",
+          "dano": 135,
+          "custoStamina": 30,
+          "cooldown": 2,
+          "stun": true
+        },
+        {
+          "nome": "Double Hammer",
+          "descricao": "Um golpe duplo esmagador com o Gideon.",
+          "tipo": "espada",
+          "dano": 155,
+          "custoStamina": 40,
+          "cooldown": 3,
+          "stun": false
+        },
+        {
+          "nome": "Mother Earth Catastrophe",
+          "descricao": "Gera uma onda de choque sísmica devastadora que atinge todos os inimigos.",
+          "tipo": "ofensiva",
+          "tipoAlvo": "area",
+          "dano": 190,
+          "custoStamina": 65,
+          "cooldown": 5,
+          "stun": true
+        }
+      ],
+      "bonus": {
+        "forca": 25,
+        "resistencia": 20
+      },
+      "descricao": "O Tesouro Sagrado de Diane. Um martelo gigante que canaliza o poder da terra.",
+      "preco": 0,
+      "durabilidade": 300,
+      "durabilidadeMax": 300,
+      "nivel": 1,
+      "nivelMax": 10,
+      "custo": 0,
+      "mecanicaPassiva": "carga_da_terra"
+    },
+    {
+      "id": "herritt",
+      "nome": "Arco Duplo Herritt",
+      "categoria": "espada",
+      "raridade": "limitado",
+      "rank": "SS",
+      "dano": 82,
+      "loja": false,
+      "habilidades": [
+        {
+          "nome": "Rewrite Light",
+          "descricao": "Dispara flechas de luz que reescrevem as memórias imediatas do alvo, atordoando-o.",
+          "tipo": "espada",
+          "dano": 120,
+          "custoStamina": 25,
+          "cooldown": 2,
+          "stun": true
+        },
+        {
+          "nome": "Hijack",
+          "descricao": "Flechas que permitem assumir o controle dos impulsos nervosos, drenando stamina.",
+          "tipo": "espada",
+          "dano": 110,
+          "custoStamina": 35,
+          "cooldown": 4,
+          "roubaStaminaPct": 0.25
+        },
+        {
+          "nome": "Black Out",
+          "descricao": "Gera um campo de escuridão psíquica que nocauteia múltiplos inimigos.",
+          "tipo": "ofensiva",
+          "tipoAlvo": "area",
+          "dano": 160,
+          "custoStamina": 60,
+          "cooldown": 6,
+          "stun": true
+        }
+      ],
+      "bonus": {
+        "velocidade": 30,
+        "critico": 15
+      },
+      "descricao": "O Tesouro Sagrado de Gowther. Arcos de luz capazes de invadir a mente do inimigo.",
+      "preco": 0,
+      "durabilidade": 200,
+      "durabilidadeMax": 200,
+      "nivel": 1,
+      "nivelMax": 10,
+      "custo": 0,
+      "mecanicaPassiva": "invasao_psiquica",
+      "weaponType": "sword"
+    },
+    {
+      "id": "aldan",
+      "nome": "Estrela da Manhã Aldan",
+      "categoria": "espada",
+      "raridade": "limitado",
+      "rank": "SS",
+      "dano": 80,
+      "loja": false,
+      "habilidades": [
+        {
+          "nome": "Exterminate Ray",
+          "descricao": "Um feixe de luz concentrado que desintegra o inimigo.",
+          "tipo": "espada",
+          "dano": 140,
+          "custoStamina": 30,
+          "cooldown": 2,
+          "burn": {
+            "danoPorTurno": 25,
+            "turnos": 3
+          }
+        },
+        {
+          "nome": "Perfect Cube",
+          "descricao": "Cria uma barreira mágica perfeita que protege e cura.",
+          "tipo": "defensiva",
+          "dano": 0,
+          "custoStamina": 45,
+          "cooldown": 5,
+          "escudo": 150,
+          "cura": 20
+        },
+        {
+          "nome": "Endless Whirl",
+          "descricao": "Um turbilhão mágico que amplifica o poder dos aliados e enfraquece inimigos.",
+          "tipo": "suporte",
+          "dano": 100,
+          "custoStamina": 50,
+          "cooldown": 6,
+          "buffAliadosDano": 0.2
+        }
+      ],
+      "bonus": {
+        "energia_maldita": 50,
+        "resistencia": 15
+      },
+      "descricao": "O Tesouro Sagrado de Merlin. Uma esfera de cristal que permite o uso de magia infinita.",
+      "preco": 0,
+      "durabilidade": 220,
+      "durabilidadeMax": 220,
+      "nivel": 1,
+      "nivelMax": 10,
+      "custo": 0,
+      "mecanicaPassiva": "estrela_do_suporte",
+      "weaponType": "sword"
+    },
+    {
+      "id": "cajado_maga_milenar",
+      "nome": "Cajado da Maga Milenar",
+      "categoria": "espada",
+      "raridade": "exclusivo",
+      "rank": "SS",
+      "dano": 85,
+      "loja": false,
+      "habilidades": [
+        {
+          "nome": "Análise Arcana",
+          "descricao": "Analisa o fluxo mágico do alvo. O inimigo recebe +8% de dano por 2 turnos.",
+          "tipo": "suporte",
+          "dano": 120,
+          "custoStamina": 10,
+          "cooldown": 2
+        },
+        {
+          "nome": "Prisma Hexagonal",
+          "descricao": "Uma pequena contenção mágica que enfraquece a energia do alvo. -10% de regeneração de energia por 2 turnos.",
+          "tipo": "suporte",
+          "dano": 235,
+          "custoStamina": 15,
+          "cooldown": 3
+        },
+        {
+          "nome": "Eco do Grimório",
+          "descricao": "O cajado ressoa com a mana do usuário, recuperando 15 de energia e reduzindo o cooldown de uma skill aleatória em 1 turno.",
+          "tipo": "suporte",
+          "dano": 0,
+          "custoStamina": 20,
+          "cooldown": 4
+        }
+      ],
+      "bonus": {},
+      "descricao": "O cajado complementa o estilo de combate de Frieren com suporte e controle. Oferece utilidade e preparação para o próximo turno, com sua passiva 'Catalisador Milenar' aumentando a eficácia da próxima habilidade mágica.",
+      "preco": 0,
+      "durabilidade": 500,
+      "durabilidadeMax": 500,
+      "weaponType": "sword"
+    },
+    {
+      "id": "kokushibo_blade",
+      "nome": "Lâmina da Respiração da Lua — Kokushibo",
+      "categoria": "espada",
+      "raridade": "limitado",
+      "rank": "SSS",
+      "dano": 95,
+      "loja": false,
+      "habilidades": [
+        {
+          "nome": "Respiração da Lua — Primeira Forma: Crescente",
+          "descricao": "Kokushibo desfere um corte em arco perfeito que segue a curva da lua. A energia demoníaca cria lâminas astrais invisíveis ao olho humano.",
+          "tipo": "espada",
+          "dano": 220,
+          "custoStamina": 150,
+          "cooldown": 3,
+          "stun": false
+        },
+        {
+          "nome": "Respiração da Lua — Décima Sexta Forma: Visão Lunar",
+          "descricao": "Os seis olhos de Kokushibo enxergam além do movimento. Golpe inescapável que ignora completamente as defesas do alvo.",
+          "tipo": "espada",
+          "dano": 325,
+          "custoStamina": 180,
+          "cooldown": 5,
+          "ignoraDefesa": true,
+          "stun": false
+        },
+        {
+          "nome": "Respiração da Lua — Plenilúnio Sanguinário",
+          "descricao": "Kokushibo converte sangue demoníaco em lâminas de lua crescente que cortam a partir de dentro do inimigo, causando hemorragia severa.",
+          "tipo": "ofensiva",
+          "dano": 480,
+          "custoStamina": 230,
+          "cooldown": 6,
+          "stun": true
+        }
+      ],
+      "bonus": {
+        "velocidade": 30,
+        "critico": 25
+      },
+      "descricao": "A lâmina demoníaca de Michikatsu Tsugikuni, o Demônio Lua Superior Um. A espada cresce diretamente de seu corpo, funde-se com sua carne e a Respiração da Lua cria cortes que mudam de ângulo como a própria lua.",
+      "preco": 0,
+      "durabilidade": 500,
+      "durabilidadeMax": 500,
+      "nivel": 1,
+      "nivelMax": 10,
+      "custo": 0,
+      "mecanicaPassiva": "lua_crescente_kokushibo",
+      "weaponType": "sword"
+    },
+    {
+      "id": "yorichi_blade",
+      "nome": "Katana do Sol Nascente — Yorichi",
+      "categoria": "espada",
+      "raridade": "limitado",
+      "rank": "SSS+",
+      "dano": 100,
+      "loja": false,
+      "habilidades": [
+        {
+          "nome": "Respiração do Sol — Dança do Deus do Fogo",
+          "descricao": "Yorichi executa a primeira forma da Respiração do Sol. O golpe incendeia com energia solar que penetra qualquer barreira demoníaca.",
+          "tipo": "espada",
+          "dano": 235,
+          "custoStamina": 150,
+          "cooldown": 3,
+          "stun": false
+        },
+        {
+          "nome": "Respiração do Sol — Claridade do Alvorecer",
+          "descricao": "Ataque de velocidade transcendental que desfere 13 golpes simultâneos, cada um atacando um ponto vital diferente. Criado para destruir Muzan.",
+          "tipo": "espada",
+          "dano": 325,
+          "custoStamina": 250,
+          "cooldown": 5,
+          "stun": true
+        },
+        {
+          "nome": "Ciclo Solar Completo — 12 Formas",
+          "descricao": "Yorichi executa as 12 formas da Respiração do Sol em sequência ininterrupta — a técnica que Muzan passou séculos tentando evitar.",
+          "tipo": "ofensiva",
+          "dano": 500,
+          "custoStamina": 270,
+          "cooldown": 7,
+          "stun": true,
+          "ignoraDefesa": true
+        }
+      ],
+      "bonus": {
+        "velocidade": 40,
+        "critico": 30
+      },
+      "descricao": "A katana de Yorichi Tsugikuni, o mais poderoso Caçador de Demônios de todos os tempos e criador da Respiração do Sol. Forjada para destruir Muzan Kibutsuji, é a arma mais temida da história.",
+      "preco": 0,
+      "durabilidade": 600,
+      "durabilidadeMax": 600,
+      "nivel": 1,
+      "nivelMax": 10,
+      "custo": 0,
+      "mecanicaPassiva": "marca_transparencia_yorichi",
+      "weaponType": "sword"
+    },
+    {
+      "id": "gyomei_flail",
+      "nome": "Correntes Sagradas de Gyomei Himejima",
+      "categoria": "espada",
+      "raridade": "limitado",
+      "rank": "SS+",
+      "dano": 90,
+      "loja": false,
+      "habilidades": [
+        {
+          "nome": "Respiração da Pedra — Quinta Forma: Torrente",
+          "descricao": "Gyomei gira o mangual encadeado em alta velocidade criando uma barreira ofensiva impenetrável que esmaga tudo ao redor.",
+          "tipo": "espada",
+          "dano": 140,
+          "custoStamina": 30,
+          "cooldown": 3,
+          "stun": false
+        },
+        {
+          "nome": "Respiração da Pedra — Quarta Forma: Diamante Inabalável",
+          "descricao": "O corpo de Gyomei atinge a densidade do diamante. O contra-ataque retorna o dano recebido amplificado ao inimigo.",
+          "tipo": "defensiva",
+          "dano": 120,
+          "custoStamina": 40,
+          "cooldown": 4,
+          "stun": false
+        },
+        {
+          "nome": "Respiração da Pedra — Sétima Forma: Tremor Sagrado",
+          "descricao": "Gyomei mergulha a corrente no solo e canaliza energia espiritual pela terra. Uma onda sísmica devastadora erradica o inimigo.",
+          "tipo": "ofensiva",
+          "dano": 210,
+          "custoStamina": 60,
+          "cooldown": 6,
+          "stun": true
+        }
+      ],
+      "bonus": {
+        "forca": 20,
+        "resistencia": 15
+      },
+      "descricao": "O mangual encadeado com machado de ponta de Gyomei Himejima, o Pilar da Pedra e o mais forte dos Hashira. Forjado com metal Nichirin especial, esmagra ossos de Demônios da Lua Superior.",
+      "preco": 0,
+      "durabilidade": 550,
+      "durabilidadeMax": 550,
+      "nivel": 1,
+      "nivelMax": 10,
+      "custo": 0,
+      "mecanicaPassiva": "pele_de_pedra_gyomei",
+      "weaponType": "sword"
+    },
+    {
+      "id": "tengen_blades",
+      "nome": "Lâminas Explosivas de Tengen Uzui",
+      "categoria": "espada",
+      "raridade": "limitado",
+      "rank": "SS",
+      "dano": 85,
+      "loja": false,
+      "habilidades": [
+        {
+          "nome": "Respiração do Som — Primeira Forma: Bomba Sonora",
+          "descricao": "Tengen bate as duas lâminas encadeadas criando uma onda de choque sonora que estoura tímpanos e causa atordoamento.",
+          "tipo": "espada",
+          "dano": 200,
+          "custoStamina": 150,
+          "cooldown": 3,
+          "stun": true
+        },
+        {
+          "nome": "Respiração do Som — Quarta Forma: Onda de Impacto",
+          "descricao": "As correntes vibram em frequência destrutiva, transmitindo ondas de choque internas ao inimigo de dentro para fora.",
+          "tipo": "ofensiva",
+          "dano": 270,
+          "custoStamina": 190,
+          "cooldown": 4,
+          "stun": false
+        },
+        {
+          "nome": "Respiração do Som — Explosivo Máximo",
+          "descricao": "Tengen detona todas as cargas explosivas acumuladas de uma vez em uma única explosão devastadora. Técnica definitiva do Pilar do Som.",
+          "tipo": "ofensiva",
+          "dano": 325,
+          "custoStamina": 235,
+          "cooldown": 6,
+          "stun": true
+        }
+      ],
+      "bonus": {
+        "velocidade": 25,
+        "critico": 20
+      },
+      "descricao": "As lâminas gêmeas encadeadas com explosivos de Tengen Uzui, o Pilar do Som. Cada lâmina é coberta com cargas explosivas que detonam no impacto, amplificando o poder destruidor de cada golpe.",
+      "preco": 0,
+      "durabilidade": 400,
+      "durabilidadeMax": 400,
+      "nivel": 1,
+      "nivelMax": 10,
+      "custo": 0,
+      "mecanicaPassiva": "explosivo_tengen",
+      "weaponType": "sword"
+    },
+    {
+      "id": "gyutaro_kama",
+      "nome": "Foices de Sangue de Gyutaro",
+      "categoria": "espada",
+      "raridade": "limitado",
+      "rank": "SS",
+      "dano": 88,
+      "loja": false,
+      "weaponType": "sword",
+      "habilidades": [
+        {
+          "nome": "Foice de Sangue Demoníaco",
+          "descricao": "Gyutaro projeta foices feitas de seu próprio sangue envenenado que cortam em múltiplas trajetórias, impossíveis de desviar completamente. Rouba 15% do dano causado como vida.",
+          "tipo": "espada",
+          "dano": 135,
+          "custoStamina": 25,
+          "cooldown": 2,
+          "stun": false
+        },
+        {
+          "nome": "Técnica do Demônio — Rotação Infernal",
+          "descricao": "Gyutaro gira os dois kamas em alta velocidade criando um redemoinho de cortes envenenados que laceram a vítima por todos os ângulos. Rouba 15% do dano causado como vida.",
+          "tipo": "ofensiva",
+          "dano": 165,
+          "custoStamina": 40,
+          "cooldown": 4,
+          "stun": true
+        },
+        {
+          "nome": "Sangue Venenoso — Explosão Hemorrágica",
+          "descricao": "Gyutaro força o veneno no inimigo a explodir de dentro. Quanto mais veneno acumulado, maior o dano da explosão. Rouba 15% do dano causado como vida.",
+          "tipo": "espada",
+          "dano": 190,
+          "custoStamina": 55,
+          "cooldown": 6,
+          "stun": true
+        }
+      ],
+      "bonus": {
+        "velocidade": 20,
+        "critico": 15
+      },
+      "descricao": "As foices gêmeas de Gyutaro, Demônio da Lua Superior Seis. Forjadas de seu próprio sangue demoníaco solidificado, carregam veneno mortífero que se acumula no corpo da vítima a cada corte. Todas as skills roubam 15% do dano causado como vida.",
+      "preco": 0,
+      "durabilidade": 400,
+      "durabilidadeMax": 400,
+      "nivel": 1,
+      "nivelMax": 10,
+      "custo": 0,
+      "mecanicaPassiva": "sangue_venenoso_gyutaro"
+    },
+    {
+      "id": "douma_fans",
+      "nome": "Leques de Gelo de Douma",
+      "categoria": "espada",
+      "raridade": "limitado",
+      "rank": "SS+",
+      "dano": 92,
+      "loja": false,
+      "habilidades": [
+        {
+          "nome": "Respiração do Gelo — Ventania Congelante",
+          "descricao": "Douma maneja os leques em alta velocidade gerando uma blizzard de cristais de gelo afiados que perfuram a carne e congela os movimentos.",
+          "tipo": "espada",
+          "dano": 200,
+          "custoStamina": 150,
+          "cooldown": 3,
+          "stun": false
+        },
+        {
+          "nome": "Lótus Congelante",
+          "descricao": "Os leques criam uma flor de gelo ao redor do inimigo que colapsa instantaneamente, prendendo e lacerando com pétalas de gelo cristalizado.",
+          "tipo": "espada",
+          "dano": 320,
+          "custoStamina": 250,
+          "cooldown": 5,
+          "stun": true
+        },
+        {
+          "nome": "Avalanche Demoníaca",
+          "descricao": "Douma invoca uma tempestade de gelo demoníaco que cobre todo o campo em cristais mortíferos. Temperatura desce a níveis letais.",
+          "tipo": "ofensiva",
+          "dano": 400,
+          "custoStamina": 300,
+          "cooldown": 7,
+          "stun": true
+        }
+      ],
+      "bonus": {
+        "velocidade": 28,
+        "critico": 22
+      },
+      "descricao": "Os leques de gelo criados pelos braços de Douma, Demônio da Lua Superior Dois. Capazes de gerar temperaturas absolutas, congelar órgãos vivos e criar tempestades de gelo que devoram tudo ao redor.",
+      "preco": 0,
+      "durabilidade": 450,
+      "durabilidadeMax": 450,
+      "nivel": 1,
+      "nivelMax": 10,
+      "custo": 0,
+      "mecanicaPassiva": "gelido_douma",
+      "weaponType": "sword"
+    },
+    {
+      "id": "inosuke_blades",
+      "nome": "Lâminas Serrilhadas de Inosuke",
+      "categoria": "espada",
+      "raridade": "limitado",
+      "rank": "SS",
+      "dano": 82,
+      "loja": false,
+      "habilidades": [
+        {
+          "nome": "Respiração da Besta — Segunda Forma: Rugido",
+          "descricao": "Inosuke desfere um corte frontal violento com ambas as lâminas simultaneamente, canalizando o instinto selvagem da besta.",
+          "tipo": "espada",
+          "dano": 80,
+          "custoStamina": 50,
+          "cooldown": 2,
+          "stun": false
+        },
+        {
+          "nome": "Respiração da Besta — Sétima Forma: Presas Gêmeas",
+          "descricao": "Inosuke cruza as duas lâminas em alta velocidade criando uma tessitura de cortes que aumenta exponencialmente.",
+          "tipo": "espada",
+          "dano": 150,
+          "custoStamina": 120,
+          "cooldown": 4,
+          "stun": true
+        },
+        {
+          "nome": "Respiração da Besta — Décima Forma: Instinto Selvagem",
+          "descricao": "Inosuke libera completamente seu instinto animal, sentindo os movimentos antes que aconteçam. Ataque inescapável que ignora esquivas.",
+          "tipo": "ofensiva",
+          "dano": 345,
+          "custoStamina": 200,
+          "cooldown": 5,
+          "stun": false,
+          "ignoraDefesa": true
+        }
+      ],
+      "bonus": {
+        "velocidade": 22,
+        "critico": 18
+      },
+      "descricao": "As duas katanas serrilhadas de Hashibira Inosuke. Ele mesmo serrilhou as lâminas com pedras para torná-las mais devastadoras. A Respiração da Besta com dois gumes cria padrões de ataque completamente imprevisíveis.",
+      "preco": 0,
+      "durabilidade": 380,
+      "durabilidadeMax": 380,
+      "nivel": 1,
+      "nivelMax": 10,
+      "custo": 0,
+      "mecanicaPassiva": "instinto_animal_inosuke",
+      "weaponType": "sword"
+    },
+    {
+      "id": "katana_cacador",
+      "nome": "Katana Simples de Caçador",
+      "categoria": "espada",
+      "raridade": "épica",
+      "rank": "A",
+      "dano": 65,
+      "loja": true,
+      "habilidades": [
+        {
+          "nome": "Corte de Caçador",
+          "descricao": "Um corte preciso ensinado no treinamento básico dos Caçadores de Demônios. Simples mas letal quando executado com perfeição.",
+          "tipo": "espada",
+          "dano": 95,
+          "custoStamina": 20,
+          "cooldown": 2,
+          "stun": false
+        },
+        {
+          "nome": "Fenda de Nichirin",
+          "descricao": "A katana Nichirin usa a luz solar absorvida para inflamar o corte, causando dano adicional que impede a regeneração demoníaca.",
+          "tipo": "ofensiva",
+          "dano": 130,
+          "custoStamina": 30,
+          "cooldown": 3,
+          "stun": false
+        },
+        {
+          "nome": "Golpe Final do Caçador",
+          "descricao": "O Caçador canaliza todo o treinamento em um único golpe definitivo, mirando o pescoço do Demônio com precisão cirúrgica.",
+          "tipo": "espada",
+          "dano": 160,
+          "custoStamina": 45,
+          "cooldown": 5,
+          "stun": true
+        }
+      ],
+      "bonus": {
+        "velocidade": 10,
+        "critico": 12
+      },
+      "descricao": "A katana padrão forjada com aço Nichirin para Caçadores de Demônios. Simples, confiável e mortal nas mãos certas — capaz de decapitar qualquer Demônio ao absorver luz solar na lâmina.",
+      "preco": 3500,
+      "durabilidade": 300,
+      "durabilidadeMax": 300,
+      "nivel": 1,
+      "nivelMax": 8,
+      "custo": 110,
+      "mecanicaPassiva": "treinamento_cacador",
+      "weaponType": "sword"
+    },
+    {
+      "id": "rengoku_blade",
+      "nome": "Katana da Respiração do Fogo — Rengoku",
+      "descricao": "A lâmina de Kyojuro Rengoku, o Hashira de Chama. Forjada em aço Nichirin de coloração laranja-avermelhada, queima com a chama do determinado coração de Rengoku.",
+      "raridade": "epico",
+      "rank": "SS",
+      "dano": 80,
+      "durabilidade": 400,
+      "durabilidadeMax": 400,
+      "nivel": 1,
+      "nivelMax": 10,
+      "preco": 0,
+      "custo": 0,
+      "categoria": "espada",
+      "loja": false,
+      "bonus": {
+        "ataque": 20,
+        "critico": 15
+      },
+      "mecanicaPassiva": "chama_hashira",
+      "habilidades": [
+        {
+          "nome": "Respiração do Fogo — Primeira Forma: Pulmão Inabalável",
+          "dano": 220,
+          "descricao": "Um corte flamejante que incendeia o alvo.",
+          "custoStamina": 80,
+          "cooldown": 2,
+          "stun": false,
+          "tipo": "espada"
+        },
+        {
+          "nome": "Respiração do Fogo — Nona Forma: Filhos da Chama do Dragão",
+          "dano": 320,
+          "descricao": "A técnica suprema de Rengoku. Golpes que libertam dragões de chama.",
+          "custoStamina": 150,
+          "cooldown": 5,
+          "stun": true,
+          "tipo": "espada"
+        },
+        {
+          "nome": "Coração de Chama",
+          "dano": 0,
+          "descricao": "Rengoku canaliza sua determinação inabalável, aumentando seu ataque em 30% por 3 turnos.",
+          "custoStamina": 35,
+          "cooldown": 4,
+          "stun": false,
+          "tipo": "suporte"
+        }
+      ],
+      "weaponType": "sword"
+    },
+    {
+      "id": "giyuu_blade",
+      "nome": "Katana da Respiração da Água — Tomioka",
+      "descricao": "A lâmina de Giyuu Tomioka, o Hashira da Água. Coloração azul-escura que reflete a profundidade da água. Cada golpe flui com a força de um rio imparável.",
+      "raridade": "epico",
+      "rank": "S+",
+      "dano": 78,
+      "durabilidade": 420,
+      "durabilidadeMax": 420,
+      "nivel": 1,
+      "nivelMax": 10,
+      "preco": 0,
+      "custo": 0,
+      "categoria": "espada",
+      "loja": false,
+      "bonus": {
+        "ataque": 18,
+        "velocidade": 20
+      },
+      "mecanicaPassiva": "fluxo_agua_hashira",
+      "habilidades": [
+        {
+          "nome": "Respiração da Água — Décima Primeira Forma: Tranquilidade do Morto",
+          "dano": 190,
+          "descricao": "A técnica exclusiva de Giyuu. Um corte circular que encerra qualquer combate.",
+          "custoStamina": 45,
+          "cooldown": 5,
+          "stun": true,
+          "ignoraDefesa": true,
+          "tipo": "espada"
+        },
+        {
+          "nome": "Respiração da Água — Oitava Forma: Flor de Névoa Invertida",
+          "dano": 240,
+          "descricao": "Um giro invertido que cria um vórtice de cortes.",
+          "custoStamina": 30,
+          "cooldown": 3,
+          "stun": false,
+          "tipo": "espada"
+        },
+        {
+          "nome": "Fluxo Constante",
+          "dano": 0,
+          "descricao": "Giyuu entra em estado de fluxo, aumentando sua esquiva em 40% por 2 turnos.",
+          "custoStamina": 30,
+          "cooldown": 4,
+          "stun": false,
+          "tipo": "suporte"
+        }
+      ],
+      "weaponType": "sword"
+    },
+    {
+      "id": "shinobu_blade",
+      "nome": "Agulha Venenosa — Shinobu Kocho",
+      "descricao": "A lâmina única de Shinobu Kocho, a Hashira do Inseto. Fina como uma agulha com a ponta repleta de veneno wisteria — a substância mais letal para demônios.",
+      "raridade": "epico",
+      "rank": "A",
+      "dano": 60,
+      "durabilidade": 300,
+      "durabilidadeMax": 300,
+      "nivel": 1,
+      "nivelMax": 10,
+      "preco": 0,
+      "custo": 0,
+      "categoria": "espada",
+      "loja": false,
+      "weaponType": "sword",
+      "bonus": {
+        "critico": 30,
+        "velocidade": 25
+      },
+      "mecanicaPassiva": "veneno_wisteria",
+      "habilidades": [
+        {
+          "nome": "Respiração do Inseto — Injeção de Veneno",
+          "dano": 90,
+          "descricao": "Shinobu injeta veneno wisteria no alvo causando dano por turno.",
+          "custoStamina": 25,
+          "cooldown": 2,
+          "stun": false,
+          "tipo": "espada"
+        },
+        {
+          "nome": "Respiração do Inseto — Picada da Morte",
+          "dano": 140,
+          "descricao": "Uma picada precisa no ponto vital que envenena severamente.",
+          "custoStamina": 45,
+          "cooldown": 5,
+          "stun": true,
+          "tipo": "espada"
+        },
+        {
+          "nome": "Antídoto de Shinobu",
+          "dano": 0,
+          "descricao": "Shinobu aplica um antídoto especial em si mesma, imunizando-se a venenos e curando 20% do HP.",
+          "custoStamina": 35,
+          "cooldown": 5,
+          "stun": false,
+          "tipo": "suporte"
+        }
+      ]
+    },
+    {
+      "id": "mitsuri_blade",
+      "nome": "Lâmina Flexível de Mitsuri Kanroji",
+      "descricao": "A lâmina única de Mitsuri Kanroji, a Hashira do Amor. Oito vezes mais fina que uma katana normal e extremamente flexível, criada especialmente para seus músculos únicos.",
+      "raridade": "epico",
+      "rank": "S+",
+      "dano": 75,
+      "durabilidade": 350,
+      "durabilidadeMax": 350,
+      "nivel": 1,
+      "nivelMax": 10,
+      "preco": 0,
+      "custo": 0,
+      "categoria": "espada",
+      "loja": false,
+      "bonus": {
+        "ataque": 15,
+        "critico": 20
+      },
+      "mecanicaPassiva": "lamina_imprevisivel",
+      "habilidades": [
+        {
+          "nome": "Respiração do Amor — Corte Sinuoso",
+          "dano": 120,
+          "descricao": "A lâmina flexível atinge ângulos impossíveis para uma katana comum.",
+          "custoStamina": 30,
+          "cooldown": 3,
+          "stun": false,
+          "tipo": "espada"
+        },
+        {
+          "nome": "Respiração do Amor — Nona Forma: Paixão Ardente",
+          "dano": 160,
+          "descricao": "Uma série de golpes em redemoinho que não deixa brechas.",
+          "custoStamina": 50,
+          "cooldown": 5,
+          "stun": true,
+          "tipo": "espada"
+        },
+        {
+          "nome": "Vitalidade da Hashira",
+          "dano": 0,
+          "descricao": "Mitsuri usa sua força muscular única para absorver o próximo ataque, recuperando HP igual ao dano recebido.",
+          "custoStamina": 40,
+          "cooldown": 5,
+          "stun": false,
+          "tipo": "suporte"
+        }
+      ],
+      "weaponType": "sword"
+    },
+    {
+      "id": "sanemi_blade",
+      "nome": "Katana da Respiração do Vento — Sanemi",
+      "descricao": "A lâmina de Sanemi Shinazugawa, o Hashira do Vento. Coloração verde-clara como o vento. Carrega as cicatrizes de incontáveis batalhas e a raiva de um guerreiro que nunca recuou.",
+      "raridade": "epico",
+      "rank": "SS",
+      "dano": 82,
+      "durabilidade": 400,
+      "durabilidadeMax": 400,
+      "nivel": 1,
+      "nivelMax": 10,
+      "preco": 0,
+      "custo": 0,
+      "categoria": "espada",
+      "loja": false,
+      "bonus": {
+        "ataque": 22,
+        "critico": 10
+      },
+      "mecanicaPassiva": "sangue_mutante_sanemi",
+      "habilidades": [
+        {
+          "nome": "Respiração do Vento — Segunda Forma: Furacão de Nove Cortes",
+          "dano": 320,
+          "descricao": "Uma série furiosa de cortes que não dá chance de defesa.",
+          "custoStamina": 150,
+          "cooldown": 3,
+          "stun": false,
+          "tipo": "espada"
+        },
+        {
+          "nome": "Respiração do Vento — Nona Forma: Cataclismo",
+          "dano": 650,
+          "descricao": "Um tufão de lâminas que destrói qualquer barreira.",
+          "custoStamina": 350,
+          "cooldown": 6,
+          "stun": true,
+          "tipo": "espada"
+        },
+        {
+          "nome": "Fúria do Hashira",
+          "dano": 0,
+          "descricao": "Sanemi entra em fúria total, aumentando ataque em 50% e ignorando 20% da defesa por 2 turnos.",
+          "custoStamina": 40,
+          "cooldown": 5,
+          "stun": false,
+          "tipo": "suporte"
+        }
+      ],
+      "weaponType": "sword"
+    },
+    {
+      "id": "obanai_blade",
+      "nome": "Katana da Respiração da Serpente — Obanai",
+      "descricao": "A lâmina sinuosa de Obanai Iguro, o Hashira da Serpente. A lâmina é torta como uma cobra, tornando seus movimentos completamente imprevisíveis.",
+      "raridade": "epico",
+      "rank": "S+",
+      "dano": 77,
+      "durabilidade": 380,
+      "durabilidadeMax": 380,
+      "nivel": 1,
+      "nivelMax": 10,
+      "preco": 0,
+      "custo": 0,
+      "categoria": "espada",
+      "loja": false,
+      "bonus": {
+        "critico": 35,
+        "velocidade": 15
+      },
+      "mecanicaPassiva": "golpe_sinuoso_obanai",
+      "habilidades": [
+        {
+          "nome": "Respiração da Serpente — Terceira Forma: Escama Cortante",
+          "dano": 189,
+          "descricao": "A lâmina ondula como escamas, criando cortes de múltiplos ângulos.",
+          "custoStamina": 50,
+          "cooldown": 3,
+          "stun": false,
+          "tipo": "espada"
+        },
+        {
+          "nome": "Respiração da Serpente — Sétima Forma: Ascensão da Cobra",
+          "dano": 230,
+          "descricao": "O golpe final de Obanai — a cobra ascende e não pode ser bloqueada.",
+          "custoStamina": 50,
+          "cooldown": 5,
+          "stun": true,
+          "ignoraDefesa": true,
+          "tipo": "espada"
+        },
+        {
+          "nome": "Olhos de Serpente",
+          "dano": 0,
+          "descricao": "Obanai analisa os padrões do inimigo, aumentando sua esquiva em 50% e crítico em 30% por 2 turnos.",
+          "custoStamina": 35,
+          "cooldown": 4,
+          "stun": false,
+          "tipo": "suporte"
+        }
+      ],
+      "weaponType": "sword"
+    },
+    {
+      "id": "tanjiro_blade",
+      "nome": "Lâmina Negra de Tanjiro Kamado",
+      "descricao": "A rara lâmina Nichirin de coloração negra de Tanjiro Kamado. A cor negra é dita trazer azar, mas nas mãos de Tanjiro se tornou o símbolo da Respiração do Sol.",
+      "raridade": "lendário",
+      "rank": "SS",
+      "dano": 85,
+      "durabilidade": 450,
+      "durabilidadeMax": 450,
+      "nivel": 1,
+      "nivelMax": 10,
+      "preco": 0,
+      "custo": 0,
+      "categoria": "espada",
+      "loja": false,
+      "bonus": {
+        "ataque": 25,
+        "critico": 20
+      },
+      "mecanicaPassiva": "lamina_negra_sol",
+      "habilidades": [
+        {
+          "nome": "Respiração da Água — Décima Forma: Constante Fluxo",
+          "dano": 165,
+          "descricao": "Um ataque ininterrupto como um rio em plena força.",
+          "custoStamina": 35,
+          "cooldown": 3,
+          "stun": false,
+          "tipo": "espada"
+        },
+        {
+          "nome": "Dança Kagura — Décimo Segundo Kata: Hana-e-Kagura",
+          "dano": 220,
+          "descricao": "A dança do fogo solar com a lâmina negra — poder inigualável.",
+          "custoStamina": 60,
+          "cooldown": 6,
+          "stun": true,
+          "tipo": "espada"
+        },
+        {
+          "nome": "Marca do Caçador",
+          "dano": 0,
+          "descricao": "Tanjiro manifesta a Marca do Caçador, aumentando todos os seus stats em 40% por 2 turnos.",
+          "custoStamina": 50,
+          "cooldown": 7,
+          "stun": false,
+          "tipo": "suporte"
+        }
+      ],
+      "weaponType": "sword"
+    },
+    {
+      "id": "zenitsu_blade",
+      "nome": "Lâmina do Trovão — Zenitsu Agatsuma",
+      "descricao": "A lâmina Nichirin de coloração amarelo-dourada de Zenitsu Agatsuma. No momento que seu medo se converte em coragem, a velocidade desta lâmina supera o trovão.",
+      "raridade": "lendário",
+      "rank": "SS",
+      "dano": 88,
+      "durabilidade": 400,
+      "durabilidadeMax": 400,
+      "nivel": 1,
+      "nivelMax": 10,
+      "preco": 0,
+      "custo": 0,
+      "categoria": "espada",
+      "loja": false,
+      "bonus": {
+        "velocidade": 40,
+        "critico": 25
+      },
+      "mecanicaPassiva": "trovao_zenitsu",
+      "habilidades": [
+        {
+          "nome": "Respiração do Trovão — Primeira Forma: Trovão e Relâmpago",
+          "dano": 150,
+          "descricao": "Um único passo ultrarrápido. A lâmina atinge antes do alvo piscar.",
+          "custoStamina": 100,
+          "cooldown": 3,
+          "stun": false,
+          "ignoraDefesa": true,
+          "tipo": "espada"
+        },
+        {
+          "nome": "Respiração do Trovão — Sétima Forma: Forma do Deus-Aranha",
+          "dano": 320,
+          "descricao": "A técnica criada por Zenitsu — oito golpes simultâneos em velocidade inacreditável.",
+          "custoStamina": 150,
+          "cooldown": 6,
+          "stun": true,
+          "tipo": "espada"
+        },
+        {
+          "nome": "Coragem Relampejante",
+          "dano": 0,
+          "descricao": "Zenitsu supera seu medo e entra em modo de concentração máxima — esquiva perfeita do próximo ataque.",
+          "custoStamina": 30,
+          "cooldown": 4,
+          "stun": false,
+          "tipo": "suporte"
+        }
+      ],
+      "weaponType": "sword"
+    },
+    {
+      "id": "kanao_blade",
+      "nome": "Katana da Respiração da Flor — Kanao",
+      "descricao": "A lâmina de Kanao Tsuyuri, discípula da Hashira do Inseto. Coloração rosa-sakura com precisão cirúrgica. Seus olhos captam cada movimento antes de acontecer.",
+      "raridade": "epico",
+      "rank": "S+",
+      "dano": 76,
+      "durabilidade": 370,
+      "durabilidadeMax": 370,
+      "nivel": 1,
+      "nivelMax": 10,
+      "preco": 0,
+      "custo": 0,
+      "categoria": "espada",
+      "loja": false,
+      "bonus": {
+        "critico": 30,
+        "velocidade": 20
+      },
+      "mecanicaPassiva": "olhos_previsao_kanao",
+      "habilidades": [
+        {
+          "nome": "Respiração da Flor — Quarta Forma: Flor Espinhosa",
+          "dano": 120,
+          "descricao": "Uma flor de espinhos que corta de todas as direções.",
+          "custoStamina": 30,
+          "cooldown": 3,
+          "stun": false,
+          "tipo": "espada"
+        },
+        {
+          "nome": "Respiração da Flor — Forma Final: Sakura Carmesim",
+          "dano": 165,
+          "descricao": "O golpe que usou contra Doma — velocidade sobrehumana que ignora defesa.",
+          "custoStamina": 55,
+          "cooldown": 6,
+          "stun": true,
+          "ignoraDefesa": true,
+          "tipo": "espada"
+        },
+        {
+          "nome": "Previsão Total",
+          "dano": 0,
+          "descricao": "Kanao foca seus olhos especiais, contra-atacando o próximo golpe automaticamente com 100% do dano.",
+          "custoStamina": 40,
+          "cooldown": 5,
+          "stun": false,
+          "tipo": "suporte"
+        }
+      ],
+      "weaponType": "sword"
+    },
+    {
+      "id": "lamina_de_ki",
+      "nome": "Lâmina de Ki",
+      "categoria": "espada",
+      "raridade": "mítico",
+      "rank": "SS+",
+      "dano": 92,
+      "loja": false,
+      "weaponType": "sword",
+      "mecanicaPassiva": "corte_divino_ki",
+      "bonus": {
+        "velocidade": 25,
+        "critico": 25,
+        "forca": 20
+      },
+      "descricao": "Lâmina moldada em Ki rosé puro na própria mão. Transpassa defesas com corte divino de energia concentrada.",
+      "preco": 0,
+      "durabilidade": 500,
+      "durabilidadeMax": 500,
+      "nivel": 1,
+      "nivelMax": 10,
+      "custo": 0,
+      "habilidades": [
+        {
+          "nome": "Corte Afilado de Ki",
+          "descricao": "Um rápido talho transversal de Ki rosé que rasga o ar e a carne.",
+          "tipo": "espada",
+          "dano": 180,
+          "custoStamina": 30,
+          "cooldown": 2,
+          "stun": false
+        },
+        {
+          "nome": "Perfuração Divina",
+          "descricao": "Estoca a Lâmina de Ki direto no peito do alvo, ignorando qualquer barreira ou armadura.",
+          "tipo": "espada",
+          "dano": 240,
+          "custoStamina": 45,
+          "cooldown": 3,
+          "stun": true,
+          "ignoraDefesa": true
+        },
+        {
+          "nome": "Corte Fissura Espaço-Tempo",
+          "descricao": "Balança a Lâmina de Ki com tanta intensidade que fende o espaço-tempo em múltiplos retalhos de energia.",
+          "tipo": "espada",
+          "dano": 330,
+          "custoStamina": 70,
+          "cooldown": 5,
+          "stun": true
+        }
+      ]
+    },
+    {
+      "id": "foice_de_ki",
+      "nome": "Foice de Ki (Goku Black)",
+      "categoria": "espada",
+      "raridade": "mítico",
+      "rank": "SS+",
+      "dano": 105,
+      "loja": false,
+      "weaponType": "sword",
+      "mecanicaPassiva": "furia_foice_de_ki",
+      "bonus": {
+        "velocidade": 30,
+        "critico": 35,
+        "forca": 25
+      },
+      "descricao": "Uma foice colossal moldada com Ki Rosé puro por Goku Black. Capaz de rasgar o tecido do espaço-tempo e ceifar as almas de seres mortais.",
+      "preco": 0,
+      "durabilidade": 600,
+      "durabilidadeMax": 600,
+      "nivel": 1,
+      "nivelMax": 10,
+      "custo": 0,
+      "habilidades": [
+        {
+          "nome": "Foice do Julgamento",
+          "descricao": "Um golpe devastador em área com a foice de Ki.",
+          "tipo": "espada",
+          "dano": 200,
+          "custoStamina": 35,
+          "cooldown": 2,
+          "stun": false
+        },
+        {
+          "nome": "Fenda Dimensional",
+          "descricao": "Rasga o espaço com a foice, causando dano massivo e ignorando parte da defesa.",
+          "tipo": "espada",
+          "tipoAlvo": "area",
+          "dano": 350,
+          "custoStamina": 50,
+          "cooldown": 4,
+          "stun": true
+        },
+        {
+          "nome": "Ceifador Divino",
+          "descricao": "O golpe final de Goku Black com a foice, canalizando todo o ódio pelos mortais.",
+          "tipo": "espada",
+          "tipoAlvo": "area",
+          "dano": 500,
+          "custoStamina": 75,
+          "cooldown": 6,
+          "stun": false
+        }
+      ]
+    },
+    {
+      "id": "elucidator",
+      "nome": "Elucidator (A Iluminadora)",
+      "categoria": "espada",
+      "raridade": "mitico",
+      "rank": "SS+",
+      "dano": 92,
+      "loja": false,
+      "weaponType": "sword",
+      "mecanicaPassiva": "sao_elucidator",
+      "bonus": {
+        "velocidade": 25,
+        "critico": 20,
+        "forca": 15
+      },
+      "descricao": "Uma espada demoníaca forjada de obsidiana, outrora empunhada pelo Espadachim Negro. Extremamente pesada, mas fatal nas mãos certas.",
+      "preco": 0,
+      "durabilidade": 500,
+      "durabilidadeMax": 500,
+      "nivel": 1,
+      "nivelMax": 10,
+      "custo": 0,
+      "habilidades": [
+        {
+          "nome": "Corte Rápido (Slant)",
+          "descricao": "Um corte diagonal rápido que surpreende o inimigo.",
+          "tipo": "espada",
+          "dano": 160,
+          "custoStamina": 25,
+          "cooldown": 2,
+          "stun": false
+        },
+        {
+          "nome": "Chuva Sônica (Sonic Leap)",
+          "descricao": "Uma investida veloz vinda de cima que esmaga as defesas.",
+          "tipo": "espada",
+          "dano": 220,
+          "custoStamina": 40,
+          "cooldown": 3,
+          "stun": false
+        },
+        {
+          "nome": "Eclipse Demoníaco",
+          "descricao": "Um corte devastador e massivo em área que oblitera os alvos ao redor.",
+          "tipo": "ofensiva",
+          "tipoAlvo": "area",
+          "dano": 310,
+          "custoStamina": 60,
+          "cooldown": 5,
+          "stun": true
+        }
+      ]
+    },
+    {
+      "id": "dark_repulser",
+      "nome": "Dark Repulser (A Repulsora Sombria)",
+      "categoria": "espada",
+      "raridade": "mitico",
+      "rank": "SS+",
+      "dano": 88,
+      "loja": false,
+      "weaponType": "sword",
+      "mecanicaPassiva": "sao_dark_repulser",
+      "bonus": {
+        "velocidade": 30,
+        "critico": 25,
+        "agilidade": 15
+      },
+      "descricao": "Forjada do lingote de cristal de um dragão branco, esta espada leve e extremamente resistente é feita para combos contínuos.",
+      "preco": 0,
+      "durabilidade": 550,
+      "durabilidadeMax": 550,
+      "nivel": 1,
+      "nivelMax": 10,
+      "custo": 0,
+      "habilidades": [
+        {
+          "nome": "Corte Linear",
+          "descricao": "Uma estocada precisa que ignora pequenas defesas e armaduras.",
+          "tipo": "espada",
+          "dano": 150,
+          "custoStamina": 20,
+          "cooldown": 2,
+          "ignoraDefesa": true,
+          "stun": false
+        },
+        {
+          "nome": "Ciclone Cortante (Spinning Shield)",
+          "descricao": "Um giro em alta velocidade que não só repele ataques como fere múltiplos oponentes.",
+          "tipo": "defensiva",
+          "tipoAlvo": "area",
+          "dano": 120,
+          "custoStamina": 45,
+          "cooldown": 4,
+          "escudo": 100,
+          "stun": false
+        },
+        {
+          "nome": "Starburst Stream (Metade)",
+          "descricao": "A famosa skill de 16 hits usada pelo Espadachim Negro, rasgando o oponente.",
+          "tipo": "espada",
+          "dano": 350,
+          "custoStamina": 65,
+          "cooldown": 6,
+          "stun": true
+        }
+      ]
+    },
+    {
+      "id": "night_sky_sword",
+      "nome": "Night Sky Sword (Espada do Céu Noturno)",
+      "categoria": "espada",
+      "raridade": "mitico",
+      "rank": "SSS",
+      "dano": 100,
+      "loja": false,
+      "weaponType": "sword",
+      "mecanicaPassiva": "sao_night_sky",
+      "bonus": {
+        "velocidade": 35,
+        "critico": 30,
+        "forca": 25,
+        "energia_maldita": 30
+      },
+      "descricao": "Forjada do galho do Cedro Gigante do Underworld. Armazena e absorve as energias e os recursos vitais e espirituais da natureza.",
+      "preco": 0,
+      "durabilidade": 600,
+      "durabilidadeMax": 600,
+      "nivel": 1,
+      "nivelMax": 10,
+      "custo": 0,
+      "habilidades": [
+        {
+          "nome": "Armament Full Control Art (Liberação)",
+          "descricao": "Libera espinhos das sombras que drenam a vitalidade do alvo e enredam os oponentes na área.",
+          "tipo": "espada",
+          "tipoAlvo": "area",
+          "dano": 190,
+          "custoStamina": 40,
+          "cooldown": 4,
+          "roubaStaminaPct": 0.15,
+          "stun": true
+        },
+        {
+          "nome": "Corte Celestial de Vör",
+          "descricao": "Um corte absoluto e contínuo que rasga defesas divinas e reduz o alvo a pó.",
+          "tipo": "espada",
+          "dano": 280,
+          "custoStamina": 55,
+          "cooldown": 3,
+          "ignoraDefesa": true,
+          "stun": false
+        },
+        {
+          "nome": "Memória da Madeira (Absorção Estelar)",
+          "descricao": "A espada absorve a energia do ambiente. Causa dano massivo na área e cura o usuário com a força do mundo.",
+          "tipo": "ofensiva",
+          "tipoAlvo": "area",
+          "dano": 380,
+          "custoStamina": 80,
+          "cooldown": 7,
+          "cura": 80,
+          "stun": false
+        }
+      ]
+    },
+    {
+      "id": "starburst_stream",
+      "nome": "Starburst Stream (Dual Wield)",
+      "categoria": "espada",
+      "raridade": "mitico",
+      "rank": "SSS",
+      "dano": 120,
+      "loja": false,
+      "weaponType": "sword",
+      "mecanicaPassiva": "sao_dual_wield",
+      "bonus": {
+        "velocidade": 40,
+        "critico": 35,
+        "agilidade": 25,
+        "forca": 20
+      },
+      "descricao": "O pináculo do Dual Wielding. Apenas o mais rápido de todos os jogadores poderia despertar a verdadeira Starburst Stream.",
+      "preco": 0,
+      "durabilidade": 700,
+      "durabilidadeMax": 700,
+      "nivel": 1,
+      "nivelMax": 10,
+      "custo": 0,
+      "habilidades": [
+        {
+          "nome": "Corte Duplo (Double Circular)",
+          "descricao": "Uma investida veloz e letal usando duas lâminas.",
+          "tipo": "espada",
+          "dano": 200,
+          "tipoAlvo": "area",
+          "custoStamina": 30,
+          "cooldown": 2,
+          "ignoraDefesa": false,
+          "stun": false
+        },
+        {
+          "nome": "Starburst Stream (Completo)",
+          "descricao": "O lendário ataque de 16 hits simultâneos, sem chance de esquiva.",
+          "tipo": "espada",
+          "dano": 300,
+          "custoStamina": 100,
+          "cooldown": 8,
+          "ignoraDefesa": true,
+          "stun": true
+        },
+        {
+          "nome": "Eclipse",
+          "descricao": "Um ataque supremo de 27 hits criado para destruir completamente o alvo.",
+          "tipo": "espada",
+          "tipoAlvo": "area",
+          "dano": 650,
+          "custoStamina": 150,
+          "cooldown": 12,
+          "ignoraDefesa": true,
+          "stun": true
+        }
+      ]
+    },
+    {
+      "id": "venuzdonoa",
+      "nome": "Venuzdonoa — A Espada da Tirania",
+      "categoria": "espada",
+      "raridade": "mitico",
+      "rank": "SSS+",
+      "dano": 180,
+      "loja": false,
+      "weaponType": "sword",
+      "mecanicaPassiva": "anos_lamina_tirania",
+      "bonus": {
+        "forca": 50,
+        "critico": 30,
+        "energia_maldita": 40
+      },
+      "descricao": "Uma espada que destrói toda a razão, mágica e leis. Aqueles que se opõem à Venuzdonoa não podem nem mesmo usar a lógica para se defender.",
+      "preco": 0,
+      "durabilidade": 9999,
+      "durabilidadeMax": 9999,
+      "nivel": 1,
+      "nivelMax": 10,
+      "custo": 0,
+      "habilidades": [
+        {
+          "nome": "Anulação da Razão",
+          "descricao": "A espada destrói a lógica por trás da habilidade inimiga, anulando defesas mágicas, barreiras e efeitos de proteção.",
+          "tipo": "espada",
+          "dano": 180,
+          "custoStamina": 30,
+          "cooldown": 5,
+          "ignoraDefesa": true,
+          "stun": false
+        },
+        {
+          "nome": "Corte da Destruição Absoluta",
+          "descricao": "Um golpe que corta não apenas o corpo, mas também a essência mágica do alvo, reduzindo drasticamente sua capacidade de combate.",
+          "tipo": "espada",
+          "dano": 230,
+          "custoStamina": 45,
+          "cooldown": 3,
+          "ignoraDefesa": false,
+          "stun": false
+        },
+        {
+          "nome": "Julgamento do Rei Demônio",
+          "descricao": "Anos ergue a espada e libera uma onda de energia que atinge todos os inimigos no campo, atravessando defesas comuns.",
+          "tipo": "espada",
+          "tipoAlvo": "area",
+          "dano": 350,
+          "custoStamina": 70,
+          "cooldown": 6,
+          "ignoraDefesa": true,
+          "stun": false
+        },
+        {
+          "nome": "Fim de Toda a Razão",
+          "descricao": "A Venuzdonoa manifesta seu poder absoluto e desfere um golpe que desafia as leis da realidade, destruindo as proteções e os efeitos mágicos do alvo.",
+          "tipo": "espada",
+          "dano": 450,
+          "custoStamina": 100,
+          "cooldown": 8,
+          "ignoraDefesa": true,
+          "stun": true
+        }
+      ]
+    },
+    {
+      "id": "bastao_dourado_enel",
+      "nome": "Bastão Dourado (Golden Staff)",
+      "categoria": "espada",
+      "raridade": "mítica",
+      "rank": "SS+",
+      "dano": 85,
+      "loja": false,
+      "habilidades": [
+        {
+          "nome": "Golpe Dourado",
+          "descricao": "Um golpe contundente utilizando o pesado bastão de ouro maciço infundido com eletricidade.",
+          "tipo": "espada",
+          "dano": 300,
+          "custoStamina": 20,
+          "cooldown": 2,
+          "stun": false
+        },
+        {
+          "nome": "Condução Relampejante",
+          "descricao": "O usuário aquece o bastão com eletricidade em altíssima voltagem, causando queimaduras graves e paralisia ao contato. Atordoa por 1 turno.",
+          "tipo": "espada",
+          "dano": 450,
+          "custoStamina": 35,
+          "cooldown": 4,
+          "stun": true
+        },
+        {
+          "nome": "Forja do Trovão: Tridente",
+          "descricao": "Enel remodela o bastão em um tridente elétrico usando metalurgia relâmpago, perfurando o alvo e ignorando parcialmente suas defesas.",
+          "tipo": "espada",
+          "dano": 550,
+          "custoStamina": 45,
+          "cooldown": 5,
+          "stun": false,
+          "ignoraDefesaTotal": true
+        }
+      ],
+      "bonus": {
+        "velocidade": 30,
+        "critico": 25,
+        "resistencia": 10
+      },
+      "descricao": "O bastão de ouro maciço de Enel, o 'Deus' de Skypiea. Além de ser uma excelente arma contundente, sua condutividade dourada permite a canalização perfeita de eletricidade, aumentando letalidade e precisão.",
+      "preco": 0,
+      "durabilidade": 350,
+      "durabilidadeMax": 350,
+      "nivel": 1,
+      "nivelMax": 10,
+      "custo": 0,
+      "mecanicaPassiva": "enel_golden_staff",
+      "weaponType": "sword"
+    }
+  ]
+}

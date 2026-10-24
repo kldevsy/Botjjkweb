@@ -1,0 +1,1123 @@
+{
+  "npcs": [
+    {
+      "id": "npc_001",
+      "nome": "Espírito Amaldiçoado Grau 4",
+      "vida": 100,
+      "dano": 20,
+      "descricao": "Um espírito amaldiçoado de baixo grau nascido do ódio e medo humanos.",
+      "xpfruit": 23,
+      "anti": false,
+      "defesa": 5,
+      "velocidadeAtaque": 1,
+      "imunidades": [],
+      "resistencias": {},
+      "fraquezas": {},
+      "ia": {
+        "nivel": 1,
+        "tipo": "basico",
+        "aprende": false,
+        "memoria": 0
+      },
+      "passivas": [
+        {
+          "tipo": "regen",
+          "valor": 3,
+          "descricao": "Regenera 3 HP por turno com energia maldita"
+        }
+      ],
+      "debuffs": [
+        {
+          "tipo": "cooldown_increase",
+          "valor": 1,
+          "chance": 0.25,
+          "duracao": 2,
+          "descricao": "25% de chance de interferir nas técnicas aumentando cooldowns"
+        }
+      ],
+      "habilidades": [
+        {
+          "nome": "Golpe Amaldiçoado",
+          "descricao": "Golpe físico infundido com energia maldita.",
+          "tipo": "ofensiva",
+          "dano": 20,
+          "custoStamina": 10,
+          "cooldown": 1,
+          "stun": false
+        }
+      ],
+      "recompensa": {
+        "xp": 6,
+        "berries": 23
+      },
+      "questId": "quest_001",
+      "falaInicio": "Humano fraco... você vai me alimentar!",
+      "falaAtaque": "Sua alma será minha!",
+      "falaDerrota": "Impossível... um feiticeiro como você...!",
+      "balance": {
+        "dificuldade": "normal"
+      }
+    },
+    {
+      "id": "npc_002",
+      "nome": "Espírito Amaldiçoado Grau 3",
+      "vida": 300,
+      "dano": 35,
+      "descricao": "Um espírito de grau médio com inteligência básica e técnicas próprias.",
+      "xpfruit": 35,
+      "anti": false,
+      "defesa": 15,
+      "velocidadeAtaque": 1.2,
+      "imunidades": [],
+      "resistencias": {
+        "stun": 0.3
+      },
+      "fraquezas": {},
+      "ia": {
+        "nivel": 2,
+        "tipo": "enhanced",
+        "aprende": true,
+        "memoria": 3,
+        "padroes": [],
+        "mecanicasEspeciais": true,
+        "perfil": "tatico",
+        "agressividade": 0.72,
+        "dificuldade": "intermediario"
+      },
+      "passivas": [
+        {
+          "tipo": "counter",
+          "chance": 0.15,
+          "dano": 15,
+          "descricao": "15% de chance de contra-atacar com explosão de energia"
+        }
+      ],
+      "debuffs": [
+        {
+          "tipo": "defesa_reduction",
+          "valor": 15,
+          "chance": 0.3,
+          "duracao": 3,
+          "descricao": "30% de chance de corroer a defesa em 15% por 3 turnos"
+        },
+        {
+          "tipo": "critico_reduction",
+          "valor": 10,
+          "chance": 0.2,
+          "duracao": 2,
+          "descricao": "20% de chance de perturbar o foco reduzindo crítico"
+        }
+      ],
+      "habilidades": [
+        {
+          "nome": "Projétil de Maldição",
+          "descricao": "Dispara um projétil de energia amaldiçoada concentrada.",
+          "tipo": "ofensiva",
+          "dano": 45,
+          "custoStamina": 15,
+          "cooldown": 2,
+          "stun": 1
+        }
+      ],
+      "recompensa": {
+        "xp": 17,
+        "berries": 52
+      },
+      "questId": "quest_002",
+      "frutaId": "goro_goro",
+      "falaInicio": "Outro feiticeiro fraco para me divertir...",
+      "falaAtaque": "Sua energia maldita é minha agora!",
+      "falaDerrota": "Como... como um feiticeiro comum conseguiu...?",
+      "balance": {
+        "dificuldade": "normal"
+      }
+    },
+    {
+      "id": "npc_003",
+      "nome": "Feiticeiro Renegado",
+      "vida": 700,
+      "dano": 65,
+      "descricao": "Um feiticeiro que abandonou a Grade e usa técnicas proibidas sem restrições.",
+      "xpfruit": 57,
+      "anti": false,
+      "defesa": 35,
+      "velocidadeAtaque": 0.9,
+      "imunidades": [
+        "burn"
+      ],
+      "resistencias": {
+        "stun": 0.5,
+        "fisico": 0.2
+      },
+      "fraquezas": {
+        "energia_positiva": 0.3
+      },
+      "escudo": 60,
+      "ia": {
+        "nivel": 3,
+        "tipo": "inteligente",
+        "aprende": true,
+        "memoria": 5,
+        "padroes": [],
+        "evolucao": {
+          "ativo": true,
+          "geracoes": 0,
+          "fitness": 0
+        }
+      },
+      "passivas": [
+        {
+          "tipo": "thorns",
+          "valor": 10,
+          "descricao": "Reflete 10 de dano com barreira de energia"
+        },
+        {
+          "tipo": "enrage",
+          "threshold": 0.4,
+          "bonusDano": 0.5,
+          "descricao": "Aumenta dano em 50% ao ativar técnica proibida abaixo de 40% de vida"
+        }
+      ],
+      "debuffs": [
+        {
+          "tipo": "cooldown_increase",
+          "valor": 2,
+          "chance": 0.35,
+          "duracao": 3,
+          "descricao": "35% de chance de usar barreira para aumentar cooldowns em 2 turnos"
+        },
+        {
+          "tipo": "stamina_regen_reduction",
+          "valor": 50,
+          "chance": 0.3,
+          "duracao": 4,
+          "descricao": "30% de chance de drenar energia reduzindo recuperação de stamina"
+        },
+        {
+          "tipo": "combo_reduction",
+          "valor": 30,
+          "chance": 0.25,
+          "duracao": 2,
+          "descricao": "25% de chance de quebrar sequências de combos"
+        }
+      ],
+      "fases": [
+        {
+          "vida_threshold": 0.5,
+          "modificadores": {
+            "velocidadeAtaque": 1.3,
+            "dano": 1.2
+          },
+          "novasHabilidades": [
+            {
+              "nome": "Técnica Proibida",
+              "descricao": "Libera uma técnica amaldiçoada proibida com poder devastador",
+              "tipo": "ofensiva",
+              "dano": 100,
+              "custoStamina": 30,
+              "cooldown": 3,
+              "tipoAlvo": "area"
+            }
+          ],
+          "fala": "Você me forçou a usar isso! Agora verá o verdadeiro poder das técnicas proibidas!"
+        }
+      ],
+      "habilidades": [
+        {
+          "nome": "Corte Amaldiçoado",
+          "descricao": "Corta o inimigo com uma lâmina de energia maldita",
+          "tipo": "ofensiva",
+          "dano": 60,
+          "custoStamina": 15,
+          "cooldown": 1,
+          "stun": 0
+        },
+        {
+          "nome": "Explosão de Maldição",
+          "descricao": "Libera um pulso explosivo de energia amaldiçoada",
+          "tipo": "ofensiva",
+          "dano": 80,
+          "custoStamina": 25,
+          "cooldown": 2,
+          "stun": 0
+        }
+      ],
+      "recompensa": {
+        "xp": 35,
+        "berries": 69
+      },
+      "questId": "quest_003",
+      "falaInicio": "A Grade me enviou para me capturar? Que insulto!",
+      "falaAtaque": "Você é fraco demais para isso!",
+      "falaDerrota": "Como um feiticeiro da Grade conseguiu me superar...?",
+      "balance": {
+        "dificuldade": "normal",
+        "fases": {
+          "1": {}
+        }
+      }
+    },
+    {
+      "id": "npc_004",
+      "nome": "Espírito Amaldiçoado Especial",
+      "vida": 1000,
+      "dano": 90,
+      "descricao": "Um espírito amaldiçoado de grau especial com inteligência e técnicas avançadas.",
+      "xpfruit": 92,
+      "anti": false,
+      "defesa": 35,
+      "velocidadeAtaque": 1.1,
+      "imunidades": [],
+      "resistencias": {
+        "veneno": 0.4
+      },
+      "fraquezas": {
+        "energia_positiva": 0.2
+      },
+      "ia": {
+        "nivel": 2,
+        "tipo": "tatico",
+        "aprende": true,
+        "memoria": 4,
+        "padroes": [],
+        "personalidade": "agressivo"
+      },
+      "passivas": [
+        {
+          "tipo": "lifesteal",
+          "valor": 0.15,
+          "descricao": "Absorve 15% do dano causado como vida"
+        },
+        {
+          "tipo": "shield_regen",
+          "valor": 10,
+          "cooldown": 3,
+          "descricao": "Regenera 10 de barreira a cada 3 turnos"
+        }
+      ],
+      "debuffs": [
+        {
+          "tipo": "vida_regen_reduction",
+          "valor": 100,
+          "chance": 0.2,
+          "duracao": 3,
+          "descricao": "20% de chance de bloquear regeneração de vida por 3 turnos"
+        },
+        {
+          "tipo": "esquiva_reduction",
+          "valor": 20,
+          "chance": 0.3,
+          "duracao": 2,
+          "descricao": "30% de chance de reduzir esquiva em 20%"
+        }
+      ],
+      "escudo": 30,
+      "habilidades": [
+        {
+          "nome": "Ataque Transfigurado",
+          "descricao": "Remolda parte do próprio corpo para criar um ataque traiçoeiro.",
+          "tipo": "ofensiva",
+          "dano": 80,
+          "custoStamina": 15,
+          "cooldown": 2,
+          "stun": 1,
+          "efeitoEspecial": {
+            "tipo": "bleed",
+            "danoPorTurno": 5,
+            "turnos": 3
+          }
+        },
+        {
+          "nome": "Barreira de Maldição",
+          "descricao": "Cria uma barreira temporária de energia amaldiçoada.",
+          "tipo": "defensiva",
+          "dano": 0,
+          "custoStamina": 20,
+          "cooldown": 4,
+          "buffDefesa": 20,
+          "duracao": 2
+        }
+      ],
+      "recompensa": {
+        "xp": 35,
+        "berries": 75
+      },
+      "questId": "quest_004",
+      "falaInicio": "Um feiticeiro... prepare-se para ser consumido!",
+      "falaAtaque": "Sua energia amaldiçoada pertence a mim!",
+      "falaDerrota": "Impossível... como você é tão forte...?",
+      "balance": {
+        "dificuldade": "normal"
+      }
+    },
+    {
+      "id": "npc_005",
+      "nome": "Espírito Líder do Cemitério",
+      "vida": 1300,
+      "dano": 105,
+      "descricao": "Um espírito de grau intermediário que se alimenta da energia residual dos mortos. Controla os espíritos menores ao seu redor como um general.",
+      "xpfruit": 109,
+      "anti": false,
+      "defesa": 10,
+      "velocidadeAtaque": 1.1,
+      "imunidades": [],
+      "resistencias": {
+        "stun": 0.2
+      },
+      "fraquezas": {
+        "energia_positiva": 0.25
+      },
+      "ia": {
+        "nivel": 2,
+        "tipo": "adaptativo",
+        "aprende": true,
+        "memoria": 3,
+        "padroes": []
+      },
+      "passivas": [
+        {
+          "tipo": "regen",
+          "valor": 8,
+          "descricao": "Regenera 8 HP por turno absorvendo energia dos mortos ao redor"
+        }
+      ],
+      "debuffs": [
+        {
+          "tipo": "defesa_reduction",
+          "valor": 10,
+          "chance": 0.3,
+          "duracao": 2,
+          "descricao": "30% de chance de corroer a defesa com miasma de maldição"
+        }
+      ],
+      "habilidades": [
+        {
+          "nome": "Garra das Sombras",
+          "descricao": "Lança garras invisíveis de energia maldita em direção ao inimigo.",
+          "tipo": "ofensiva",
+          "dano": 50,
+          "custoStamina": 12,
+          "cooldown": 1,
+          "stun": 0
+        },
+        {
+          "nome": "Invocação de Ossos",
+          "descricao": "Convoca fragmentos de energia dos mortos formando um projétil denso.",
+          "tipo": "ofensiva",
+          "dano": 70,
+          "custoStamina": 20,
+          "cooldown": 3,
+          "stun": 1
+        }
+      ],
+      "recompensa": {
+        "xp": 21,
+        "berries": 57
+      },
+      "questId": "quest_005",
+      "falaInicio": "Ouse profanar este lugar sagrado da morte... e eu te consumirei junto com eles.",
+      "falaAtaque": "Sua alma alimentará meus subordinados!",
+      "falaDerrota": "Os mortos... irão... me vingar...",
+      "balance": {
+        "dificuldade": "normal"
+      }
+    },
+    {
+      "id": "npc_006",
+      "nome": "Traficante de Ferramentas Amaldiçoadas",
+      "vida": 1600,
+      "dano": 130,
+      "descricao": "Um ex-feiticeiro da Grade que trocou seus ideais por lucro. Usa ferramentas amaldiçoadas roubadas e conhece os pontos fracos dos treinamentos oficiais.",
+      "xpfruit": 138,
+      "anti": false,
+      "defesa": 18,
+      "velocidadeAtaque": 1,
+      "imunidades": [],
+      "resistencias": {
+        "fisico": 0.15
+      },
+      "fraquezas": {},
+      "escudo": 30,
+      "ia": {
+        "nivel": 3,
+        "tipo": "inteligente",
+        "aprende": true,
+        "memoria": 4,
+        "padroes": []
+      },
+      "passivas": [
+        {
+          "tipo": "counter",
+          "chance": 0.2,
+          "dano": 20,
+          "descricao": "20% de chance de usar uma ferramenta escondida para contra-atacar"
+        }
+      ],
+      "debuffs": [
+        {
+          "tipo": "cooldown_increase",
+          "valor": 1,
+          "chance": 0.3,
+          "duracao": 2,
+          "descricao": "30% de chance de usar armadilha amaldiçoada que aumenta cooldowns"
+        },
+        {
+          "tipo": "stamina_regen_reduction",
+          "valor": 40,
+          "chance": 0.25,
+          "duracao": 3,
+          "descricao": "25% de chance de drenar stamina com gás amaldiçoado"
+        }
+      ],
+      "habilidades": [
+        {
+          "nome": "Arremesso de Ferramenta",
+          "descricao": "Lança uma ferramenta amaldiçoada roubada com alta velocidade.",
+          "tipo": "ofensiva",
+          "dano": 65,
+          "custoStamina": 15,
+          "cooldown": 1,
+          "stun": 0
+        },
+        {
+          "nome": "Bomba de Maldição",
+          "descricao": "Detona uma ferramenta amaldiçoada experimental próxima ao inimigo.",
+          "tipo": "ofensiva",
+          "dano": 90,
+          "custoStamina": 25,
+          "cooldown": 3,
+          "stun": 1
+        }
+      ],
+      "recompensa": {
+        "xp": 29,
+        "berries": 81
+      },
+      "questId": "quest_006",
+      "falaInicio": "A Grade me expulsou... agora vou arrancar de você tudo que ela tem de valor.",
+      "falaAtaque": "Você não é melhor que eu. Só teve mais sorte!",
+      "falaDerrota": "Feiticeiros da Grade... sempre vencendo no final... que ironia...",
+      "balance": {
+        "dificuldade": "normal"
+      }
+    },
+    {
+      "id": "npc_007",
+      "nome": "Anomalia do Receptáculo",
+      "vida": 2000,
+      "dano": 165,
+      "descricao": "Uma entidade formada pela corrupção de energia de um dedo de Sukuna. Não é um espírito comum — é uma massa instável de maldição que imita o poder do Rei das Maldições.",
+      "xpfruit": 155,
+      "anti": false,
+      "defesa": 20,
+      "velocidadeAtaque": 1.15,
+      "imunidades": [
+        "burn"
+      ],
+      "resistencias": {
+        "stun": 0.35,
+        "fisico": 0.1
+      },
+      "fraquezas": {
+        "energia_positiva": 0.3
+      },
+      "escudo": 40,
+      "ia": {
+        "nivel": 3,
+        "tipo": "inteligente",
+        "aprende": true,
+        "memoria": 5,
+        "padroes": [],
+        "personalidade": "imprevisivel"
+      },
+      "passivas": [
+        {
+          "tipo": "lifesteal",
+          "valor": 0.12,
+          "descricao": "Absorve 12% do dano causado, alimentando-se da energia maldita do oponente"
+        },
+        {
+          "tipo": "enrage",
+          "threshold": 0.35,
+          "bonusDano": 0.4,
+          "descricao": "Ao atingir 35% de vida, a anomalia pulsa com o poder de Sukuna causando +40% de dano"
+        }
+      ],
+      "debuffs": [
+        {
+          "tipo": "defesa_reduction",
+          "valor": 20,
+          "chance": 0.3,
+          "duracao": 2,
+          "descricao": "30% de chance de corroer defesa com a energia instável do receptáculo"
+        },
+        {
+          "tipo": "vida_regen_reduction",
+          "valor": 100,
+          "chance": 0.2,
+          "duracao": 3,
+          "descricao": "20% de chance de bloquear regeneração de vida por 3 turnos"
+        }
+      ],
+      "fases": [
+        {
+          "vida_threshold": 0.35,
+          "modificadores": {
+            "velocidadeAtaque": 1.3,
+            "dano": 1.2
+          },
+          "novasHabilidades": [
+            {
+              "nome": "Pulso de Sukuna",
+              "descricao": "Imita o poder do Rei das Maldições liberando uma onda devastadora de energia",
+              "tipo": "ofensiva",
+              "dano": 120,
+              "custoStamina": 30,
+              "cooldown": 4,
+              "tipoAlvo": "area"
+            }
+          ],
+          "fala": "DEVOUR... DEVOUR... DEVOUR EVERYTHING...!"
+        }
+      ],
+      "habilidades": [
+        {
+          "nome": "Pulso Corrompido",
+          "descricao": "Emite uma onda de energia instável misturada com o poder do receptáculo.",
+          "tipo": "ofensiva",
+          "dano": 75,
+          "custoStamina": 18,
+          "cooldown": 2,
+          "stun": 0
+        },
+        {
+          "nome": "Distorção de Maldição",
+          "descricao": "Distorce o espaço ao redor com energia amaldiçoada corrompida, dificultando ataques.",
+          "tipo": "defensiva",
+          "dano": 0,
+          "custoStamina": 20,
+          "cooldown": 4,
+          "buffDefesa": 25,
+          "duracao": 2
+        }
+      ],
+      "recompensa": {
+        "xp": 35,
+        "berries": 92
+      },
+      "questId": "quest_007",
+      "falaInicio": "...consume... tudo... será consumido...",
+      "falaAtaque": "...sua energia... deliciosa...",
+      "falaDerrota": "...o rei... ainda vai... despertar...",
+      "balance": {
+        "dificuldade": "normal",
+        "fases": {
+          "1": {}
+        }
+      }
+    },
+    {
+      "id": "npc_008",
+      "nome": "Agente do Clã Sombrio",
+      "vida": 2300,
+      "dano": 180,
+      "descricao": "Um feiticeiro de elite que atua nas sombras para um clã que opera fora da Grade. Treinado para eliminar alvos de forma eficiente, utiliza técnicas de emboscada e supressão de energia.",
+      "xpfruit": 167,
+      "anti": false,
+      "defesa": 25,
+      "velocidadeAtaque": 1.2,
+      "imunidades": [],
+      "resistencias": {
+        "stun": 0.4,
+        "veneno": 0.3
+      },
+      "fraquezas": {},
+      "escudo": 60,
+      "ia": {
+        "nivel": 3,
+        "tipo": "tatico",
+        "aprende": true,
+        "memoria": 6,
+        "padroes": [],
+        "personalidade": "calculista"
+      },
+      "passivas": [
+        {
+          "tipo": "thorns",
+          "valor": 15,
+          "descricao": "Reflete 15 de dano com barreira de contramedida amaldiçoada"
+        },
+        {
+          "tipo": "shield_regen",
+          "valor": 15,
+          "cooldown": 3,
+          "descricao": "Regenera 15 de escudo a cada 3 turnos com técnica de restauração"
+        }
+      ],
+      "debuffs": [
+        {
+          "tipo": "critico_reduction",
+          "valor": 20,
+          "chance": 0.35,
+          "duracao": 3,
+          "descricao": "35% de chance de usar técnica de supressão que reduz crítico em 20%"
+        },
+        {
+          "tipo": "combo_reduction",
+          "valor": 25,
+          "chance": 0.3,
+          "duracao": 2,
+          "descricao": "30% de chance de quebrar combos com contramedida de emboscada"
+        }
+      ],
+      "habilidades": [
+        {
+          "nome": "Golpe de Emboscada",
+          "descricao": "Ataque rápido aplicado com técnica de aproximação furtiva. Difícil de defender.",
+          "tipo": "espada",
+          "dano": 90,
+          "custoStamina": 18,
+          "cooldown": 2,
+          "stun": 0
+        },
+        {
+          "nome": "Supressão de Energia",
+          "descricao": "Usa uma técnica de supressão que drena a energia maldita do oponente e fortalece a própria defesa.",
+          "tipo": "defensiva",
+          "dano": 40,
+          "custoStamina": 22,
+          "cooldown": 3,
+          "buffDefesa": 20,
+          "duracao": 2
+        },
+        {
+          "nome": "Golpe das Sombras",
+          "descricao": "Ativado apenas por agentes veteranos — um corte que atravessa parcialmente as defesas de energia maldita.",
+          "tipo": "espada",
+          "dano": 120,
+          "custoStamina": 30,
+          "cooldown": 4,
+          "stun": 1
+        }
+      ],
+      "recompensa": {
+        "xp": 40,
+        "berries": 103
+      },
+      "questId": "quest_008",
+      "falaInicio": "Você foi indicado como ameaça ao Clã. A eliminação começa agora.",
+      "falaAtaque": "Cada movimento seu já foi calculado.",
+      "falaDerrota": "...o Clã saberá desta derrota. Isso não acaba aqui.",
+      "balance": {
+        "dificuldade": "normal"
+      }
+    },
+    {
+      "id": "npc_009",
+      "nome": "Espírito Semi-Especial Devorador",
+      "vida": 2650,
+      "dano": 220,
+      "descricao": "Um espírito amaldiçoado de nível semi-especial que evoluiu absorvendo a Energia Maldita de feiticeiros que eliminou. Cada combate o torna ligeiramente mais forte.",
+      "xpfruit": 184,
+      "anti": false,
+      "defesa": 28,
+      "velocidadeAtaque": 1.25,
+      "imunidades": [
+        "veneno"
+      ],
+      "resistencias": {
+        "stun": 0.5,
+        "fisico": 0.2
+      },
+      "fraquezas": {
+        "energia_positiva": 0.35
+      },
+      "escudo": 50,
+      "ia": {
+        "nivel": 4,
+        "tipo": "inteligente",
+        "aprende": true,
+        "memoria": 7,
+        "padroes": [],
+        "personalidade": "agressivo",
+        "evolucao": {
+          "ativo": true,
+          "geracoes": 0,
+          "fitness": 0
+        }
+      },
+      "passivas": [
+        {
+          "tipo": "lifesteal",
+          "valor": 0.2,
+          "descricao": "Absorve 20% do dano causado — o espírito se alimenta ativamente de Energia Maldita"
+        },
+        {
+          "tipo": "enrage",
+          "threshold": 0.4,
+          "bonusDano": 0.5,
+          "descricao": "Abaixo de 40% de vida, entra em modo de devoração — +50% de dano"
+        }
+      ],
+      "debuffs": [
+        {
+          "tipo": "defesa_reduction",
+          "valor": 25,
+          "chance": 0.35,
+          "duracao": 3,
+          "descricao": "35% de chance de corroer defesa com ácido de maldição"
+        },
+        {
+          "tipo": "vida_regen_reduction",
+          "valor": 100,
+          "chance": 0.3,
+          "duracao": 4,
+          "descricao": "30% de chance de bloquear regeneração de vida ao absorver energia vital"
+        }
+      ],
+      "fases": [
+        {
+          "vida_threshold": 0.4,
+          "modificadores": {
+            "velocidadeAtaque": 1.4,
+            "dano": 1.3
+          },
+          "novasHabilidades": [
+            {
+              "nome": "Devoração Total",
+              "descricao": "Abre uma boca amaldiçoada gigante que consome a Energia Maldita ao redor em área",
+              "tipo": "ofensiva",
+              "dano": 140,
+              "custoStamina": 35,
+              "cooldown": 4,
+              "tipoAlvo": "area"
+            }
+          ],
+          "fala": "MAIS! Dê-me MAIS energia! Sou faminto DEMAIS!"
+        }
+      ],
+      "habilidades": [
+        {
+          "nome": "Mordida Amaldiçoada",
+          "descricao": "Ataca com uma mandíbula de energia maldita que drena vida do inimigo.",
+          "tipo": "ofensiva",
+          "dano": 100,
+          "custoStamina": 20,
+          "cooldown": 2,
+          "stun": 0,
+          "efeitoEspecial": {
+            "tipo": "bleed",
+            "danoPorTurno": 8,
+            "turnos": 3
+          }
+        },
+        {
+          "nome": "Pulso Devorador",
+          "descricao": "Emite um pulso que absorve a Energia Maldita ao redor, curando levemente.",
+          "tipo": "ofensiva",
+          "dano": 75,
+          "custoStamina": 25,
+          "cooldown": 3,
+          "stun": 1
+        }
+      ],
+      "recompensa": {
+        "xp": 46,
+        "berries": 115
+      },
+      "questId": "quest_009",
+      "falaInicio": "Mais um feiticeiro veio até mim... que conveniente. Fico com fome facilmente.",
+      "falaAtaque": "Delicioso! Sua energia tem um sabor especial!",
+      "falaDerrota": "Não... ainda... com fome... tão... faminto...",
+      "balance": {
+        "dificuldade": "normal",
+        "fases": {
+          "1": {}
+        }
+      }
+    },
+    {
+      "id": "npc_010",
+      "nome": "Discípulo das Técnicas Sombrias",
+      "vida": 2950,
+      "dano": 250,
+      "descricao": "Aprendeu com um mestre renegado já eliminado e herdou técnicas ainda mais sombrias. Mistura conhecimentos proibidos com habilidade de combate refinada por anos de treinamento ilegal.",
+      "xpfruit": 201,
+      "anti": false,
+      "defesa": 30,
+      "velocidadeAtaque": 1.1,
+      "imunidades": [
+        "burn",
+        "veneno"
+      ],
+      "resistencias": {
+        "stun": 0.5,
+        "fisico": 0.25
+      },
+      "fraquezas": {
+        "energia_positiva": 0.2
+      },
+      "escudo": 80,
+      "ia": {
+        "nivel": 4,
+        "tipo": "inteligente",
+        "aprende": true,
+        "memoria": 8,
+        "padroes": [],
+        "personalidade": "calculista",
+        "evolucao": {
+          "ativo": true,
+          "geracoes": 0,
+          "fitness": 0
+        }
+      },
+      "passivas": [
+        {
+          "tipo": "thorns",
+          "valor": 20,
+          "descricao": "Reflete 20 de dano com barreira de maldição sombria"
+        },
+        {
+          "tipo": "enrage",
+          "threshold": 0.5,
+          "bonusDano": 0.45,
+          "descricao": "Abaixo de 50% de vida ativa modo de vingança — +45% de dano"
+        }
+      ],
+      "debuffs": [
+        {
+          "tipo": "cooldown_increase",
+          "valor": 2,
+          "chance": 0.4,
+          "duracao": 3,
+          "descricao": "40% de chance de usar técnica sombria que aumenta cooldowns em 2 turnos"
+        },
+        {
+          "tipo": "critico_reduction",
+          "valor": 25,
+          "chance": 0.35,
+          "duracao": 2,
+          "descricao": "35% de chance de reduzir crítico com névoa de maldição"
+        },
+        {
+          "tipo": "combo_reduction",
+          "valor": 30,
+          "chance": 0.3,
+          "duracao": 2,
+          "descricao": "30% de chance de quebrar combos com supressão de energia"
+        }
+      ],
+      "fases": [
+        {
+          "vida_threshold": 0.5,
+          "modificadores": {
+            "velocidadeAtaque": 1.35,
+            "dano": 1.25
+          },
+          "novasHabilidades": [
+            {
+              "nome": "Herança Proibida",
+              "descricao": "Libera a técnica mais poderosa do mestre morto — devastadora e impossível de prever",
+              "tipo": "ofensiva",
+              "dano": 150,
+              "custoStamina": 40,
+              "cooldown": 5,
+              "tipoAlvo": "area"
+            }
+          ],
+          "fala": "Meu mestre foi derrotado por feiticeiros como você. Mas EU não serei!"
+        }
+      ],
+      "habilidades": [
+        {
+          "nome": "Corte da Sombra",
+          "descricao": "Usa uma lâmina de sombra imbuída com energia maldita proibida.",
+          "tipo": "espada",
+          "dano": 110,
+          "custoStamina": 22,
+          "cooldown": 2,
+          "stun": 0
+        },
+        {
+          "nome": "Explosão Proibida",
+          "descricao": "Detona uma explosão de energia maldita sombria aprendida de técnicas ilegais.",
+          "tipo": "ofensiva",
+          "dano": 130,
+          "custoStamina": 30,
+          "cooldown": 3,
+          "stun": 1
+        },
+        {
+          "nome": "Escudo das Sombras",
+          "descricao": "Forma uma barreira com energia roubada de vítimas anteriores.",
+          "tipo": "defensiva",
+          "dano": 0,
+          "custoStamina": 25,
+          "cooldown": 4,
+          "buffDefesa": 35,
+          "duracao": 2
+        }
+      ],
+      "recompensa": {
+        "xp": 52,
+        "berries": 126
+      },
+      "questId": "quest_010",
+      "falaInicio": "Você veio me deter? Igual ao que fizeram com meu mestre. Não vai funcionar desta vez.",
+      "falaAtaque": "Aprendi com os erros dele. Você não me pegará desprevenido!",
+      "falaDerrota": "Sensei... me perdoe... falhei com o seu legado...",
+      "balance": {
+        "dificuldade": "normal",
+        "fases": {
+          "1": {}
+        }
+      }
+    },
+    {
+      "id": "npc_011",
+      "nome": "Espírito Amaldiçoado Grau 1",
+      "vida": 3200,
+      "dano": 265,
+      "descricao": "Um espírito amaldiçoado de Grau 1 — raramente encontrado fora de missões de alto risco. Possui inteligência comparável a um humano e técnicas amaldiçoadas próprias altamente desenvolvidas.",
+      "xpfruit": 213,
+      "anti": false,
+      "defesa": 22,
+      "velocidadeAtaque": 1.3,
+      "imunidades": [],
+      "resistencias": {
+        "stun": 0.55,
+        "fisico": 0.3,
+        "veneno": 0.5
+      },
+      "fraquezas": {
+        "energia_positiva": 0.4
+      },
+      "escudo": 70,
+      "ia": {
+        "nivel": 4,
+        "tipo": "tatico",
+        "aprende": true,
+        "memoria": 8,
+        "padroes": [],
+        "personalidade": "agressivo",
+        "evolucao": {
+          "ativo": true,
+          "geracoes": 0,
+          "fitness": 0
+        }
+      },
+      "passivas": [
+        {
+          "tipo": "lifesteal",
+          "valor": 0.18,
+          "descricao": "Absorve 18% do dano causado com cada ataque"
+        },
+        {
+          "tipo": "counter",
+          "chance": 0.25,
+          "dano": 35,
+          "descricao": "25% de chance de contra-atacar com explosão de energia maldita"
+        },
+        {
+          "tipo": "shield_regen",
+          "valor": 20,
+          "cooldown": 4,
+          "descricao": "Regenera 20 de escudo a cada 4 turnos"
+        }
+      ],
+      "debuffs": [
+        {
+          "tipo": "defesa_reduction",
+          "valor": 30,
+          "chance": 0.35,
+          "duracao": 3,
+          "descricao": "35% de chance de corroer defesa com técnica de dissolução"
+        },
+        {
+          "tipo": "esquiva_reduction",
+          "valor": 25,
+          "chance": 0.3,
+          "duracao": 2,
+          "descricao": "30% de chance de reduzir esquiva com campo de pressão maldita"
+        },
+        {
+          "tipo": "vida_regen_reduction",
+          "valor": 100,
+          "chance": 0.25,
+          "duracao": 4,
+          "descricao": "25% de chance de bloquear regeneração de vida"
+        }
+      ],
+      "fases": [
+        {
+          "vida_threshold": 0.45,
+          "modificadores": {
+            "velocidadeAtaque": 1.5,
+            "dano": 1.35
+          },
+          "novasHabilidades": [
+            {
+              "nome": "Técnica Máxima de Grau 1",
+              "descricao": "O espírito libera sua técnica mais poderosa — energia maldita concentrada ao máximo",
+              "tipo": "ofensiva",
+              "dano": 160,
+              "custoStamina": 40,
+              "cooldown": 5,
+              "tipoAlvo": "area"
+            }
+          ],
+          "fala": "Você não é como os outros. Vou me esforçar a sério!"
+        }
+      ],
+      "habilidades": [
+        {
+          "nome": "Golpe de Grau 1",
+          "descricao": "Um ataque concentrado com energia maldita de alta densidade.",
+          "tipo": "ofensiva",
+          "dano": 110,
+          "custoStamina": 20,
+          "cooldown": 2,
+          "stun": 0
+        },
+        {
+          "nome": "Técnica Amaldiçoada Própria",
+          "descricao": "Usa sua técnica exclusiva desenvolvida ao longo de séculos de existência.",
+          "tipo": "ofensiva",
+          "dano": 135,
+          "custoStamina": 28,
+          "cooldown": 3,
+          "stun": 1,
+          "efeitoEspecial": {
+            "tipo": "bleed",
+            "danoPorTurno": 12,
+            "turnos": 3
+          }
+        },
+        {
+          "nome": "Barreira de Grau 1",
+          "descricao": "Erige uma barreira densa de energia maldita de alta qualidade.",
+          "tipo": "defensiva",
+          "dano": 0,
+          "custoStamina": 30,
+          "cooldown": 5,
+          "buffDefesa": 40,
+          "duracao": 2
+        }
+      ],
+      "recompensa": {
+        "xp": 57,
+        "berries": 150
+      },
+      "questId": "quest_011",
+      "falaInicio": "Humm... você tem Energia Maldita considerável. Isso torna o combate mais interessante.",
+      "falaAtaque": "Bom. Você sobreviveu a isso. Me surpreenda mais.",
+      "falaDerrota": "Notável... um feiticeiro que pode derrotar um Grau 1... você será observado.",
+      "balance": {
+        "dificuldade": "normal",
+        "fases": {
+          "1": {}
+        }
+      }
+    }
+  ]
+}

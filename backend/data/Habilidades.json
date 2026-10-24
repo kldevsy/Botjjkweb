@@ -1,0 +1,95 @@
+{
+  "habilidades": [
+    {
+      "id": "reforco_amaldicado",
+      "nome": "Reforço Amaldiçoado",
+      "categoria": "habilidade",
+      "raridade": "raro",
+      "nivel": 1,
+      "hab": [
+        {
+          "nome": "Reforço Amaldiçoado",
+          "tipo": "ofensiva",
+          "dano": 50,
+          "custoStamina": 15,
+          "cooldown": 10,
+          "stun": 0,
+          "descricao": "Reveste o corpo com energia amaldiçoada, aumentando o ataque físico em 3% por nível.",
+          "nivel": 1
+        },
+        {
+          "nome": "Técnica de Cura",
+          "tipo": "suporte",
+          "dano": 0,
+          "cura": 15,
+          "custoStamina": 15,
+          "cooldown": 5,
+          "stun": 0,
+          "descricao": "Inverte o fluxo de energia amaldiçoada para regenerar células e recuperar vida.",
+          "nivel": 1
+        }
+      ]
+    },
+    {
+      "id": "cura_invertida",
+      "nome": "Técnica de Cura Invertida",
+      "categoria": "habilidade",
+      "raridade": "raro",
+      "nivel": 1,
+      "hab": [
+        {
+          "nome": "Cura Invertida",
+          "tipo": "suporte",
+          "dano": 0,
+          "cura": 40,
+          "custoStamina": 30,
+          "cooldown": 8,
+          "stun": 0,
+          "descricao": "Inverte a energia amaldiçoada para criar energia positiva que regenera vida em grande quantidade.",
+          "nivel": 1
+        },
+        {
+          "nome": "Escudo Positivo",
+          "tipo": "suporte",
+          "dano": 0,
+          "defesa": 25,
+          "custoStamina": 20,
+          "cooldown": 6,
+          "stun": 0,
+          "descricao": "Cria uma barreira de energia positiva que absorve dano.",
+          "nivel": 1
+        }
+      ]
+    },
+    {
+      "id": "energia_maldita_base",
+      "nome": "Energia Maldita",
+      "categoria": "haki",
+      "raridade": "comum",
+      "nivel": 1,
+      "hab": [
+        {
+          "nome": "Reforço Básico",
+          "tipo": "ofensiva",
+          "dano": 0,
+          "custoStamina": 10,
+          "cooldown": 2,
+          "stun": 0,
+          "descricao": "Reforça o corpo, aumentando o dano geral (passiva aplicável ao ativar)",
+          "nivel": 1
+        },
+        {
+          "nome": "Fluxo Maldito",
+          "tipo": "suporte",
+          "dano": 0,
+          "cura": 0,
+          "custoStamina": 15,
+          "cooldown": 4,
+          "stun": 0,
+          "descricao": "Melhora a esquiva e reduz dano tomado",
+          "nivel": 3
+        }
+      ]
+    }
+  ]
+}

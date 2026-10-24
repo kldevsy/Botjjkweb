@@ -1,0 +1,2853 @@
+{
+  "bosses": [
+    {
+      "id": "ichigo",
+      "nome": "Ichigo Kurosaki",
+      "titulo": "O Shinigami Substituto",
+      "descricao": "Um jovem de cabelo laranja com uma pressão espiritual colossal. Carrega uma Zanpakutou enorme e seu poder Hollow ameaça consumir tudo.",
+      "vida": 600000,
+      "dano": 3000,
+      "defesa": 45,
+      "resistencia": 0.25,
+      "tempoLimite": 7200,
+      "chanceAparicao": 1,
+      "notificavel": true,
+      "thumbnail": "https://media.tenor.com/m/Z1FhV5cW-94AAAAd/ichigo-bleach.gif",
+      "corEmbed": "0x000000",
+      "habilidades": [
+        {
+          "nome": "Getsuga Tenshou",
+          "dano": 2200,
+          "descricao": "Ichigo concentra sua Reiatsu na lâmina e dispara uma rajada cortante em forma de lua crescente.",
+          "cooldown": 2,
+          "stun": false
+        },
+        {
+          "nome": "Passo Flash (Shunpo)",
+          "dano": 1000,
+          "descricao": "Ataque extremamente rápido que confunde o adversário, garantindo vantagem tática.",
+          "cooldown": 3,
+          "stun": true
+        }
+      ],
+      "formaAlternativa": {
+        "nome": "Ichigo — Bankai (Tensa Zangetsu) & Máscara Hollow",
+        "vidaGatilho": 0.4,
+        "vidaExtra": 300000,
+        "descricao": "Sua Zanpakutou diminui, focando toda a energia em super velocidade. O poder Hollow de sua máscara assume o controle temporariamente.",
+        "danoBonus": 1.6,
+        "habilidades": [
+          {
+            "nome": "Getsuga Tenshou Negro (Kuroi Getsuga)",
+            "dano": 3500,
+            "descricao": "Uma rajada massiva e negra que oblitera defesas.",
+            "cooldown": 3,
+            "stun": false,
+            "debuff": {
+              "tipo": "sangramento",
+              "duracao": 3,
+              "valor": 150
+            }
+          }
+        ]
+      },
+      "falaInicio": "Se eu não posso te proteger, então qual é o sentido da minha espada?!",
+      "falaDerrota": "Inoue... Rukia... Sado... Ishida... Me desculpem...",
+      "drops": {
+        "berries": {
+          "min": 40000,
+          "max": 60000
+        },
+        "xp": {
+          "min": 4500,
+          "max": 7000
+        },
+        "xpfruit": {
+          "min": 1500,
+          "max": 3000
+        },
+        "tecnicas": [
+          {
+            "id": "heranca_transcendente_ichigo",
+            "chance": 0.001
+          }
+        ],
+        "equipamentos": [
+          {
+            "id": "mascara_hollow",
+            "chance": 0.01
+          }
+        ],
+        "baus": [
+          "bau_mitico",
+          "bau_epico"
+        ]
+      },
+      "ataquesTelegrafados": [
+        {
+          "nome": "Getsuga Tenshou Gran Rey Cero",
+          "aviso": "Ichigo combina o poder máximo Shinigami com um ataque colossal Hollow! Defenda com tudo que tiver!",
+          "turnosPreparacao": 1,
+          "dano": 7000,
+          "efeito": "ruptura espiritual",
+          "counter": {
+            "defenderReducao": 0.6,
+            "esquivaBonus": 0.2,
+            "elementosInterrupcao": [
+              "kidou",
+              "luz"
+            ],
+            "danoMinimo": 60000
+          }
+        }
+      ]
+    },
+    {
+      "id": "itachi",
+      "nome": "Itachi Uchiha",
+      "titulo": "O Corvo de Sangue",
+      "descricao": "O gênio do clã Uchiha, que carrega as trevas em seus olhos. Seu Genjutsu é praticamente inescapável e suas chamas negras nunca se apagam.",
+      "vida": 350000,
+      "dano": 2600,
+      "defesa": 35,
+      "resistencia": 0.15,
+      "tempoLimite": 7200,
+      "chanceAparicao": 8,
+      "notificavel": true,
+      "thumbnail": "https://media.tenor.com/m/t1zX5i8tY_UAAAAC/itachi-uchiha.gif",
+      "corEmbed": "0x8B0000",
+      "habilidades": [
+        {
+          "nome": "Katon: Goukakyuu no Jutsu",
+          "dano": 1400,
+          "descricao": "Itachi sopra uma enorme bola de fogo.",
+          "cooldown": 2,
+          "stun": false,
+          "debuff": {
+            "tipo": "queimadura",
+            "duracao": 2
+          }
+        },
+        {
+          "nome": "Tsukuyomi",
+          "dano": 2200,
+          "descricao": "Um genjutsu supremo que prende a mente do alvo em um mundo de agonia ilusória.",
+          "cooldown": 5,
+          "stun": true,
+          "debuff": {
+            "tipo": "ilusoes",
+            "duracao": 3
+          }
+        },
+        {
+          "nome": "Amaterasu",
+          "dano": 2800,
+          "descricao": "Chamas negras que queimam continuamente até transformar o alvo em cinzas.",
+          "cooldown": 4,
+          "stun": false,
+          "debuff": {
+            "tipo": "chamas_negras",
+            "duracao": 4,
+            "valor": 100
+          }
+        }
+      ],
+      "formaAlternativa": {
+        "nome": "Itachi — Susanoo",
+        "vidaGatilho": 0.35,
+        "vidaExtra": 150000,
+        "descricao": "Itachi invoca o guerreiro espectral flamejante, portando a Espada de Totsuka e o Espelho de Yata.",
+        "danoBonus": 1.4,
+        "habilidades": [
+          {
+            "nome": "Espada de Totsuka",
+            "dano": 3500,
+            "descricao": "Ataque veloz que pode selar a alma do adversário.",
+            "cooldown": 3,
+            "stun": true
+          }
+        ]
+      },
+      "falaInicio": "Vocês estão presos em meu genjutsu. Vocês não têm como vencer.",
+      "falaDerrota": "Me desculpe, Sasuke... Não haverá uma próxima vez.",
+      "drops": {
+        "berries": {
+          "min": 15000,
+          "max": 25000
+        },
+        "xp": {
+          "min": 2000,
+          "max": 3500
+        },
+        "xpfruit": {
+          "min": 800,
+          "max": 1500
+        },
+        "tecnicas": [
+          {
+            "id": "lua_de_corvos",
+            "chance": 0.1
+          }
+        ],
+        "equipamentos": [
+          {
+            "id": "manto_akatsuki",
+            "chance": 0.05
+          }
+        ],
+        "baus": [
+          "bau_epico",
+          "bau_raro"
+        ]
+      },
+      "ataquesTelegrafados": [
+        {
+          "nome": "Izanami",
+          "aviso": "Itachi ativa o Jutsu proibido que decide o destino! Tente escapar ou ficará preso em um loop eterno!",
+          "turnosPreparacao": 1,
+          "dano": 5000,
+          "efeito": "loop temporal",
+          "counter": {
+            "defenderReducao": 0.8,
+            "esquivaBonus": 0.3,
+            "elementosInterrupcao": [
+              "ilusao",
+              "chakra"
+            ],
+            "danoMinimo": 35000
+          }
+        }
+      ]
+    },
+    {
+      "id": "madara",
+      "nome": "Madara Uchiha",
+      "titulo": "O Fantasma dos Uchiha",
+      "descricao": "Um dos fundadores de Konoha e um ninja lendário, dotado de poder avassalador, Mangekyou Sharingan Eterno, e a força dos Seis Caminhos.",
+      "vida": 800000,
+      "dano": 3500,
+      "defesa": 60,
+      "resistencia": 0.3,
+      "tempoLimite": 7200,
+      "chanceAparicao": 1,
+      "notificavel": true,
+      "thumbnail": "https://media.tenor.com/m/h9X3hE3_c1kAAAAd/madara-uchiha.gif",
+      "corEmbed": "0x4B0082",
+      "habilidades": [
+        {
+          "nome": "Katon: Gouka Mekkyaku",
+          "dano": 2000,
+          "descricao": "Madara expira uma muralha de chamas devastadora.",
+          "cooldown": 2,
+          "stun": false,
+          "debuff": {
+            "tipo": "queimadura",
+            "duracao": 3
+          }
+        },
+        {
+          "nome": "Yasaka no Magatama",
+          "dano": 3000,
+          "descricao": "Lança projéteis de chakra do Susanoo que causam explosões destrutivas.",
+          "cooldown": 4,
+          "stun": true
+        },
+        {
+          "nome": "Susanoo Perfeito",
+          "dano": 4000,
+          "descricao": "Madara manifesta o seu Susanoo em forma perfeita e atinge os inimigos com espadas gigantes que cortam montanhas.",
+          "cooldown": 6,
+          "stun": true
+        }
+      ],
+      "formaAlternativa": {
+        "nome": "Madara Uchiha — Rikudou Sennin",
+        "vidaGatilho": 0.4,
+        "vidaExtra": 400000,
+        "descricao": "Madara se torna o Jinchuuriki do Juubi!",
+        "danoBonus": 1.8,
+        "habilidades": [
+          {
+            "nome": "Chibaku Tensei",
+            "dano": 4500,
+            "descricao": "Madara usa suas esferas negras para atrair rochas e arremessar meteoros no campo de batalha.",
+            "cooldown": 5,
+            "stun": true
+          }
+        ]
+      },
+      "falaInicio": "Este mundo não precisa mais de falsas esperanças... Tudo acabará aqui.",
+      "falaDerrota": "Hashirama... Eu... falhei de novo...",
+      "drops": {
+        "berries": {
+          "min": 50000,
+          "max": 80000
+        },
+        "xp": {
+          "min": 6000,
+          "max": 10000
+        },
+        "xpfruit": {
+          "min": 2000,
+          "max": 4000
+        },
+        "tecnicas": [
+          {
+            "id": "madara_edo",
+            "chance": 0.02
+          },
+          {
+            "id": "madara_rikudou",
+            "chance": 0.001
+          }
+        ],
+        "equipamentos": [
+          {
+            "id": "traje_ninja_madara",
+            "chance": 0.03
+          }
+        ],
+        "baus": [
+          "bau_mitico",
+          "bau_epico"
+        ]
+      },
+      "ataquesTelegrafados": [
+        {
+          "nome": "Tengai Shinsei",
+          "aviso": "Madara realiza selos e invoca dois meteoros cósmicos para destruir completamente o campo! Sobreviva se puder!",
+          "turnosPreparacao": 1,
+          "dano": 8000,
+          "efeito": "esmagamento",
+          "counter": {
+            "defenderReducao": 0.5,
+            "esquivaBonus": 0.1,
+            "elementosInterrupcao": [
+              "vento",
+              "susanoo"
+            ],
+            "danoMinimo": 80000
+          }
+        }
+      ]
+    },
+    {
+      "id": "enel",
+      "nome": "Enel",
+      "titulo": "O Deus do Trovão",
+      "descricao": "Um ser divino que domina o relâmpago. Enel se considera um deus e julga todos com sua Goro Goro no Mi.",
+      "vida": 450000,
+      "dano": 2800,
+      "defesa": 40,
+      "resistencia": 0.2,
+      "tempoLimite": 7200,
+      "chanceAparicao": 4,
+      "notificavel": true,
+      "thumbnail": "https://media.tenor.com/m/Z6uWvJ8kYxgAAAAC/enel.gif",
+      "corEmbed": "0xF1C40F",
+      "habilidades": [
+        {
+          "nome": "Sango (Relâmpago)",
+          "dano": 1500,
+          "descricao": "Enel dispara um poderoso raio de suas mãos.",
+          "cooldown": 2,
+          "stun": false
+        },
+        {
+          "nome": "El Thor",
+          "dano": 2500,
+          "descricao": "Um pilar gigantesco de raio desce dos céus dizimando tudo na área.",
+          "cooldown": 4,
+          "stun": true,
+          "debuff": {
+            "tipo": "paralisia",
+            "duracao": 2
+          }
+        },
+        {
+          "nome": "Kari",
+          "dano": 0,
+          "descricao": "Enel vira relâmpago, curando suas feridas através de estímulos elétricos.",
+          "cooldown": 5,
+          "stun": false,
+          "lifesteal": 0.5
+        },
+        {
+          "nome": "Raigo",
+          "dano": 3500,
+          "descricao": "Cria uma enorme esfera de nuvens de tempestade carregada de eletricidade, lançando sobre o alvo.",
+          "cooldown": 6,
+          "stun": true
+        }
+      ],
+      "formaAlternativa": {
+        "nome": "Enel — Amaru (Deus do Trovão)",
+        "vidaGatilho": 0.3,
+        "vidaExtra": 250000,
+        "descricao": "Enel se transforma em um deus colossal de pura eletricidade!",
+        "danoBonus": 1.5,
+        "habilidades": [
+          {
+            "nome": "Julgamento Divino",
+            "dano": 2000,
+            "descricao": "Amaru ataca com força esmagadora elétrica.",
+            "cooldown": 2,
+            "stun": true
+          }
+        ]
+      },
+      "falaInicio": "Vocês ousam se erguer contra um Deus? O meu julgamento cairá sobre vocês!",
+      "falaDerrota": "Eu sou um Deus... Eu sou imortal... Eu irei para a Fairy Vearth...",
+      "drops": {
+        "berries": {
+          "min": 25000,
+          "max": 40000
+        },
+        "xp": {
+          "min": 3000,
+          "max": 5000
+        },
+        "xpfruit": {
+          "min": 1000,
+          "max": 2000
+        },
+        "espadas": [
+          {
+            "id": "bastao_dourado_enel",
+            "chance": 0.05
+          }
+        ],
+        "tecnicas": [
+          {
+            "id": "goro_goro_enel",
+            "chance": 0.03
+          }
+        ],
+        "equipamentos": [
+          {
+            "id": "tambores_taiko_enel",
+            "chance": 0.07
+          }
+        ],
+        "baus": [
+          "bau_epico",
+          "bau_raro"
+        ]
+      },
+      "ataquesTelegrafados": [
+        {
+          "nome": "Julgamento de Kami",
+          "aviso": "Enel carrega toda a tensão elétrica da atmosfera em um único ponto! Defenda, esquive ou sinta a ira divina!",
+          "turnosPreparacao": 1,
+          "dano": 6000,
+          "efeito": "paralisia suprema",
+          "counter": {
+            "defenderReducao": 0.7,
+            "esquivaBonus": 0.2,
+            "elementosInterrupcao": [
+              "borracha",
+              "pedra",
+              "terra"
+            ],
+            "danoMinimo": 40000
+          }
+        }
+      ]
+    },
+    {
+      "id": "muzan_kimetsu",
+      "nome": "Muzan Kibutsuji",
+      "titulo": "O Rei dos Demônios",
+      "descricao": "O progenitor de todos os Demônios. Transformou-se por mais de 1000 anos buscando superar a luz solar. Sua simples presença esmaga a vontade dos mais fortes.",
+      "vida": 400000,
+      "dano": 2525,
+      "defesa": 36,
+      "resistencia": 0.15,
+      "tempoLimite": 7200,
+      "chanceAparicao": 2,
+      "horarioFixo": "23:00",
+      "notificavel": true,
+      "thumbnail": "https://www.google.com/imgres?q=muzan%20wallpaper&imgurl=https%3A%2F%2Fimages.steamusercontent.com%2Fugc%2F2501268517249336142%2FE64A023CA27A255DEC38E914878B1FB7A8DF6CB9%2F%3Fimw%3D637%26imh%3D358%26ima%3Dfit%26impolicy%3DLetterbox%26imcolor%3D%2523000000%26letterbox%3Dtrue&imgrefurl=https%3A%2F%2Fsteamcommunity.com%2Fsharedfiles%2Ffiledetails%2F%3Fl%3Dportuguese%26id%3D3285081958&docid=FXmj7m50c6yqTM&tbnid=uTZx0hR9ltlLQM&vet=12ahUKEwjN7I6i5OGUAxX_pZUCHVc1CKEQnPAOegQIFBAB..i&w=637&h=358&hcb=2&ved=2ahUKEwjN7I6i5OGUAxX_pZUCHVc1CKEQnPAOegQIFBAB",
+      "corEmbed": "0x8B0000",
+      "habilidades": [
+        {
+          "nome": "Expansão Biológica",
+          "dano": 1100,
+          "descricao": "Muzan altera sua estrutura celular e lança tentáculos de carne que perfuram o alvo.",
+          "cooldown": 2,
+          "stun": false,
+          "debuff": {
+            "tipo": "sangramento",
+            "valor": 20,
+            "duracao": 3
+          }
+        },
+        {
+          "nome": "Vira-Mundo: Infinidade",
+          "dano": 1150,
+          "descricao": "Dispersa células demoníacas em toda a área, atingindo múltiplos pontos do corpo do adversário.",
+          "cooldown": 4,
+          "stun": true
+        },
+        {
+          "nome": "Absorção Demoníaca",
+          "dano": 1350,
+          "descricao": "Muzan drena a energia vital do adversário para se fortalecer.",
+          "cooldown": 3,
+          "stun": false,
+          "lifesteal": 0.4
+        },
+        {
+          "nome": "Membrana de Luz Negra",
+          "dano": 1700,
+          "descricao": "Uma barreira de luz negra que explode causando dano em área.",
+          "cooldown": 5,
+          "stun": true,
+          "debuff": {
+            "tipo": "defesa_reduction",
+            "valor": 30,
+            "duracao": 3
+          }
+        }
+      ],
+      "formaAlternativa": {
+        "nome": "Muzan — Forma Infantil: Poder Máximo",
+        "vidaGatilho": 0.4,
+        "vidaExtra": 200000,
+        "descricao": "Muzan revela sua verdadeira forma e libera poder além dos limites conhecidos!",
+        "danoBonus": 1.5,
+        "habilidades": [
+          {
+            "nome": "Luz do Demônio: Total",
+            "dano": 1250,
+            "descricao": "Muzan emite raios de energia demoníaca pura que dissolvem tudo.",
+            "cooldown": 3,
+            "stun": true
+          }
+        ]
+      },
+      "falaInicio": "Esses insignificantes... Demônios não choram. Mas vocês, humanos, vão chorar muito.",
+      "falaDerrota": "Impossível... Eu sou Muzan Kibutsuji...",
+      "drops": {
+        "berries": {
+          "min": 20000,
+          "max": 35000
+        },
+        "xp": {
+          "min": 2500,
+          "max": 4000
+        },
+        "xpfruit": {
+          "min": 900,
+          "max": 1500
+        },
+        "tokens_cacador": {
+          "min": 5,
+          "max": 10,
+          "chance": 1
+        },
+        "espadas": [
+          {
+            "id": "yorichi_blade",
+            "chance": 0.02
+          },
+          {
+            "id": "kokushibo_blade",
+            "chance": 0.01
+          }
+        ],
+        "tecnicas": [
+          {
+            "id": "muzan_sangue_negro",
+            "chance": 0.05
+          },
+          {
+            "id": "tanjiro_oni",
+            "chance": 0.003
+          }
+        ],
+        "equipamentos": [
+          "equipamento_011",
+          "equipamento_010",
+          "armadura_kokushibo_limitado",
+          "brincos_hanafuda_limitado",
+          "manto_nezuko_limitado"
+        ],
+        "baus": [
+          "bau_epico",
+          "bau_epico",
+          "bau_raro"
+        ]
+      },
+      "oni": true,
+      "ataquesTelegrafados": [
+        {
+          "nome": "Cataclismo Celular",
+          "aviso": "Muzan comprime o próprio sangue em lâminas negras. Prepare uma defesa, esquiva ou técnica solar!",
+          "turnosPreparacao": 1,
+          "dano": 5200,
+          "efeito": "sangramento severo",
+          "counter": {
+            "defenderReducao": 0.82,
+            "esquivaBonus": 0.2,
+            "elementosInterrupcao": [
+              "sol",
+              "chama",
+              "fogo",
+              "respiracao_sol",
+              "respiracao_chama",
+              "sangue_flamejante_nezuko"
+            ],
+            "danoMinimo": 30000
+          }
+        }
+      ]
+    },
+    {
+      "id": "kokushibo_kimetsu",
+      "nome": "Kokushibo — Lua Superior Um",
+      "titulo": "Lua Superior Um",
+      "descricao": "Michikatsu Tsugikuni, o irmão mais velho de Yorichi. Um ser que trocou sua humanidade por poder. A Respiração da Lua que ele criou corta a própria realidade.",
+      "vida": 450000,
+      "dano": 2100,
+      "defesa": 30,
+      "resistencia": 0.12,
+      "tempoLimite": 5400,
+      "chanceAparicao": 5,
+      "horarioFixo": null,
+      "notificavel": true,
+      "thumbnail": null,
+      "corEmbed": "0x4B0082",
+      "habilidades": [
+        {
+          "nome": "Respiração da Lua — Corte Crescente",
+          "dano": 1800,
+          "descricao": "Kokushibo desfere um corte em arco que cria lâminas astrais.",
+          "cooldown": 2,
+          "stun": false,
+          "debuff": {
+            "tipo": "sangramento",
+            "valor": 25,
+            "duracao": 3
+          }
+        },
+        {
+          "nome": "Visão dos Seis Olhos",
+          "dano": 1400,
+          "descricao": "Com seus seis olhos demoníacos, Kokushibo vê além dos movimentos humanos.",
+          "cooldown": 3,
+          "stun": true
+        },
+        {
+          "nome": "Plenilúnio Sanguinário",
+          "dano": 1400,
+          "descricao": "Converte sangue demoníaco em lâminas de lua que cortam de dentro.",
+          "cooldown": 5,
+          "stun": true,
+          "debuff": {
+            "tipo": "defesa_reduction",
+            "valor": 40,
+            "duracao": 2
+          }
+        }
+      ],
+      "falaInicio": "A lua cheia ilumina o campo de batalha. Prepare-se para encarar minha Respiração da Lua.",
+      "falaDerrota": "Meu corpo... Meu estilo de respiração... Terminando assim...",
+      "drops": {
+        "berries": {
+          "min": 12000,
+          "max": 20000
+        },
+        "xp": {
+          "min": 1800,
+          "max": 3000
+        },
+        "xpfruit": {
+          "min": 600,
+          "max": 1000
+        },
+        "tokens_cacador": {
+          "min": 3,
+          "max": 6,
+          "chance": 1
+        },
+        "espadas": [
+          {
+            "id": "kokushibo_blade",
+            "chance": 0.03
+          },
+          {
+            "id": "yorichi_blade",
+            "chance": 0.02
+          }
+        ],
+        "tecnicas": [
+          {
+            "id": "lua_crescente",
+            "chance": 0.03
+          }
+        ],
+        "equipamentos": [
+          "equipamento_010",
+          "armadura_kokushibo_limitado",
+          "haori_tanjiro_limitado",
+          "rosario_gyomei_limitado"
+        ],
+        "baus": [
+          "bau_epico",
+          "bau_raro"
+        ]
+      },
+      "oni": true
+    },
+    {
+      "id": "douma_kimetsu",
+      "nome": "Douma — Lua Superior Dois",
+      "titulo": "Lua Superior Dois",
+      "descricao": "O Paraíso do Gelo. Douma fundou um culto religioso enquanto devorava seguidores. Seus leques de gelo criam tempestades que congelam até a alma.",
+      "vida": 390000,
+      "dano": 1875,
+      "defesa": 30,
+      "resistencia": 0.1,
+      "tempoLimite": 5400,
+      "chanceAparicao": 8,
+      "horarioFixo": "01:00",
+      "notificavel": true,
+      "thumbnail": null,
+      "corEmbed": "0x87CEEB",
+      "habilidades": [
+        {
+          "nome": "Ventania de Gelo Demoníaco",
+          "dano": 1500,
+          "descricao": "Douma gira os leques criando uma blizzard que perfura a carne.",
+          "cooldown": 2,
+          "stun": false,
+          "debuff": {
+            "tipo": "stamina_regen_reduction",
+            "valor": 50,
+            "duracao": 2
+          }
+        },
+        {
+          "nome": "Lótus Congelante",
+          "dano": 1700,
+          "descricao": "Uma flor de gelo colapsa prendendo e laceramando o alvo.",
+          "cooldown": 3,
+          "stun": true
+        },
+        {
+          "nome": "Avalanche Demoníaca",
+          "dano": 2000,
+          "descricao": "Uma tempestade de gelo que cobre todo o campo em cristais mortíferos.",
+          "cooldown": 5,
+          "stun": true,
+          "debuff": {
+            "tipo": "paralisia",
+            "valor": 50,
+            "duracao": 2
+          }
+        }
+      ],
+      "falaInicio": "Que delicioso... Mais um humano veio até mim. Seja bem-vindo ao meu Paraíso.",
+      "falaDerrota": "Que curioso... Sinto algo pela primeira vez... Medo?",
+      "drops": {
+        "berries": {
+          "min": 10000,
+          "max": 18000
+        },
+        "xp": {
+          "min": 1500,
+          "max": 2500
+        },
+        "xpfruit": {
+          "min": 500,
+          "max": 900
+        },
+        "tokens_cacador": {
+          "min": 2,
+          "max": 5,
+          "chance": 1
+        },
+        "espadas": [
+          {
+            "id": "douma_fans",
+            "chance": 0.07
+          }
+        ],
+        "tecnicas": [
+          {
+            "id": "sem_emocao",
+            "chance": 0.08
+          }
+        ],
+        "equipamentos": [
+          "equipamento_009",
+          "kimono_douma_limitado",
+          "manto_nezuko_limitado",
+          "colar_mitsuri_limitado"
+        ],
+        "baus": [
+          "bau_epico",
+          "bau_raro"
+        ]
+      },
+      "oni": true
+    },
+    {
+      "id": "akaza_kimetsu",
+      "nome": "Akaza — Lua Superior Três",
+      "titulo": "Lua Superior Três",
+      "descricao": "O guerreiro eterno que rejeita a fraqueza. Akaza lutou por séculos buscando o oponente que pudesse derrotá-lo. Sua técnica de combate corpo-a-corpo é incomparável.",
+      "vida": 350000,
+      "dano": 1650,
+      "defesa": 28,
+      "resistencia": 0.1,
+      "tempoLimite": 4800,
+      "chanceAparicao": 12,
+      "horarioFixo": null,
+      "notificavel": true,
+      "thumbnail": null,
+      "corEmbed": "0xFF4500",
+      "habilidades": [
+        {
+          "nome": "Destruição Total — Forma Zero",
+          "dano": 1350,
+          "descricao": "Um soco que concentra toda a força destruidora em um único ponto.",
+          "cooldown": 2,
+          "stun": false
+        },
+        {
+          "nome": "Estilo Marcial de Diabo: Oito Trigramas",
+          "dano": 1950,
+          "descricao": "Uma série de golpes em pontos vitais que destroem a estrutura corporal.",
+          "cooldown": 3,
+          "stun": true,
+          "debuff": {
+            "tipo": "defesa_reduction",
+            "valor": 35,
+            "duracao": 3
+          }
+        },
+        {
+          "nome": "Destruição Total — Forma de Aniquilação",
+          "dano": 1500,
+          "descricao": "A técnica mais poderosa de Akaza. Concentra toda destruição em um único golpe devastador.",
+          "cooldown": 6,
+          "stun": true
+        }
+      ],
+      "falaInicio": "Você tem o olhar de um verdadeiro guerreiro. Mas fraqueza não tem lugar aqui!",
+      "falaDerrota": "Forte... Você é forte de verdade... Finalmente encontrei...",
+      "drops": {
+        "berries": {
+          "min": 8000,
+          "max": 15000
+        },
+        "xp": {
+          "min": 1200,
+          "max": 2200
+        },
+        "xpfruit": {
+          "min": 400,
+          "max": 800
+        },
+        "tokens_cacador": {
+          "min": 2,
+          "max": 4,
+          "chance": 1
+        },
+        "espadas": [
+          {
+            "id": "gyomei_flail",
+            "chance": 0.09
+          },
+          {
+            "id": "tengen_blades",
+            "chance": 0.1
+          }
+        ],
+        "tecnicas": [
+          {
+            "id": "numero_3",
+            "chance": 0.1
+          }
+        ],
+        "equipamentos": [
+          "equipamento_008",
+          "luvas_akaza_limitado",
+          "capa_rengoku_limitado",
+          "haori_giyuu_limitado"
+        ],
+        "baus": [
+          "bau_raro",
+          "bau_epico"
+        ]
+      },
+      "oni": true
+    },
+    {
+      "id": "hantengu_kimetsu",
+      "nome": "Hantengu — Lua Superior Quatro",
+      "titulo": "Lua Superior Quatro",
+      "descricao": "O demônio que divide sua própria emoção em clones. Cada clone representa uma emoção diferente e possui poder de Lua Superior. Para derrotá-lo, é preciso atingir o corpo verdadeiro.",
+      "vida": 800000,
+      "dano": 1500,
+      "defesa": 26,
+      "resistencia": 0.08,
+      "tempoLimite": 4800,
+      "chanceAparicao": 15,
+      "horarioFixo": null,
+      "notificavel": true,
+      "thumbnail": null,
+      "corEmbed": "0x228B22",
+      "habilidades": [
+        {
+          "nome": "Criação de Clones — Ódio",
+          "dano": 1200,
+          "descricao": "O clone Sekido lança raios que atingem todos os inimigos próximos.",
+          "cooldown": 2,
+          "stun": false,
+          "debuff": {
+            "tipo": "stamina_drain",
+            "valor": 20,
+            "duracao": 2
+          }
+        },
+        {
+          "nome": "Clone da Alegria — Aizetsu",
+          "dano": 1650,
+          "descricao": "Aizetsu perfura com sua lança sagitária, causando dano profundo.",
+          "cooldown": 3,
+          "stun": false,
+          "debuff": {
+            "tipo": "sangramento",
+            "valor": 20,
+            "duracao": 3
+          }
+        },
+        {
+          "nome": "Clone da Alegria — Zohakuten",
+          "dano": 2400,
+          "descricao": "O clone mais poderoso que comanda as madeiras e destrói tudo ao redor.",
+          "cooldown": 5,
+          "stun": true
+        }
+      ],
+      "falaInicio": "Por favor... não me mate... Eu não fiz nada de errado!",
+      "falaDerrota": "Injusto... Injusto!",
+      "drops": {
+        "berries": {
+          "min": 7000,
+          "max": 13000
+        },
+        "xp": {
+          "min": 1000,
+          "max": 1800
+        },
+        "xpfruit": {
+          "min": 350,
+          "max": 700
+        },
+        "tokens_cacador": {
+          "min": 1,
+          "max": 3,
+          "chance": 0.9
+        },
+        "espadas": [
+          {
+            "id": "tengen_blades",
+            "chance": 0.1
+          },
+          {
+            "id": "inosuke_blades",
+            "chance": 0.1
+          }
+        ],
+        "tecnicas": [
+          {
+            "id": "rancor_hantengu",
+            "chance": 0.1
+          }
+        ],
+        "equipamentos": [
+          "equipamento_007",
+          "brincos_hanafuda_limitado",
+          "haori_zenitsu_limitado",
+          "casulo_rui_limitado"
+        ],
+        "baus": [
+          "bau_raro"
+        ]
+      },
+      "oni": true
+    },
+    {
+      "id": "gyutaro_kimetsu",
+      "nome": "Gyutaro & Daki — Lua Superior Seis",
+      "titulo": "Lua Superior Seis",
+      "descricao": "Um par de irmãos unidos pela sobrevivência desde a infância. Gyutaro usa foices de sangue venenoso enquanto Daki ataca com faixas de obi demoníacas. Derrotar um sem o outro é quase impossível.",
+      "vida": 720000,
+      "dano": 1350,
+      "defesa": 22,
+      "resistencia": 0.08,
+      "tempoLimite": 4200,
+      "chanceAparicao": 18,
+      "horarioFixo": null,
+      "notificavel": true,
+      "thumbnail": null,
+      "corEmbed": "0x8B0000",
+      "habilidades": [
+        {
+          "nome": "Foice de Sangue Envenenado",
+          "dano": 1125,
+          "descricao": "Gyutaro projeta foices de sangue venenoso em trajetórias impossíveis de desviar.",
+          "cooldown": 2,
+          "stun": false,
+          "debuff": {
+            "tipo": "sangramento",
+            "valor": 30,
+            "duracao": 4
+          }
+        },
+        {
+          "nome": "Faixas de Obi de Daki",
+          "dano": 1350,
+          "descricao": "Daki usa suas faixas de obi demoníacas para prender e laceramar o alvo.",
+          "cooldown": 3,
+          "stun": true
+        },
+        {
+          "nome": "Rotação Infernal",
+          "dano": 1950,
+          "descricao": "Gyutaro gira os dois kamas criando um redemoinho letal de veneno.",
+          "cooldown": 5,
+          "stun": false,
+          "debuff": {
+            "tipo": "all_stats_reduction",
+            "valor": 20,
+            "duracao": 3
+          }
+        }
+      ],
+      "formaAlternativa": {
+        "nome": "Daki — Forma Liberada",
+        "vidaGatilho": 0.5,
+        "vidaExtra": 0,
+        "descricao": "Daki revela seu verdadeiro poder! As faixas de obi cobrem todo o campo!",
+        "danoBonus": 1.3,
+        "habilidades": [
+          {
+            "nome": "Tempestade de Obi",
+            "dano": 2400,
+            "descricao": "Daki envolve o campo em faixas que laceraham tudo ao redor.",
+            "cooldown": 4,
+            "stun": true
+          }
+        ]
+      },
+      "falaInicio": "Otouto... Vamos eliminar esses humanos insolentes.",
+      "falaDerrota": "Onee-chan... Eu quero ir... onde você for...",
+      "drops": {
+        "berries": {
+          "min": 6000,
+          "max": 11000
+        },
+        "xp": {
+          "min": 900,
+          "max": 1600
+        },
+        "xpfruit": {
+          "min": 300,
+          "max": 600
+        },
+        "tokens_cacador": {
+          "min": 1,
+          "max": 3,
+          "chance": 0.85
+        },
+        "espadas": [
+          {
+            "id": "gyutaro_kama",
+            "chance": 0.2
+          },
+          {
+            "id": "inosuke_blades",
+            "chance": 0.13
+          }
+        ],
+        "tecnicas": [],
+        "equipamentos": [
+          "equipamento_006",
+          "obi_daki_gyutaro_limitado",
+          "manto_nezuko_limitado",
+          "tambor_tengen_limitado"
+        ],
+        "baus": [
+          "bau_raro"
+        ]
+      },
+      "oni": true
+    },
+    {
+      "id": "enmu_kimetsu",
+      "nome": "Enmu — Lua Inferior Um",
+      "titulo": "Lua Inferior Um",
+      "descricao": "O único sobrevivente das Luas Inferiores. Enmu controla o sono e os sonhos de suas vítimas, prendendo-as em pesadelos eternos enquanto as devora.",
+      "vida": 280000,
+      "dano": 1125,
+      "defesa": 18,
+      "resistencia": 0.05,
+      "tempoLimite": 3600,
+      "chanceAparicao": 25,
+      "horarioFixo": "00:00",
+      "notificavel": true,
+      "thumbnail": null,
+      "corEmbed": "0x483D8B",
+      "habilidades": [
+        {
+          "nome": "Sono Profundo Forçado",
+          "dano": 900,
+          "descricao": "Enmu força o inimigo a adormecer, roubando sua força vital durante o sono.",
+          "cooldown": 2,
+          "stun": true,
+          "debuff": {
+            "tipo": "controle",
+            "valor": 100,
+            "duracao": 1
+          }
+        },
+        {
+          "nome": "Pesadelo Carnal",
+          "dano": 1350,
+          "descricao": "Cria um pesadelo vívido que corrói a mente e o corpo simultaneamente.",
+          "cooldown": 3,
+          "stun": false,
+          "debuff": {
+            "tipo": "stamina_drain",
+            "valor": 30,
+            "duracao": 2
+          }
+        },
+        {
+          "nome": "Domínio do Trem Infinito",
+          "dano": 2100,
+          "descricao": "Enmu controla todo o campo de batalha através dos sonhos, distorcendo a realidade.",
+          "cooldown": 5,
+          "stun": true
+        }
+      ],
+      "falaInicio": "Durma... Durma profundamente... e nunca mais acorde.",
+      "falaDerrota": "Que pesadelo... Sou eu quem está no pesadelo...",
+      "drops": {
+        "berries": {
+          "min": 4500,
+          "max": 8000
+        },
+        "xp": {
+          "min": 700,
+          "max": 1200
+        },
+        "xpfruit": {
+          "min": 200,
+          "max": 450
+        },
+        "tokens_cacador": {
+          "min": 1,
+          "max": 2,
+          "chance": 0.7
+        },
+        "espadas": [
+          {
+            "id": "katana_cacador",
+            "chance": 0.35
+          }
+        ],
+        "tecnicas": [
+          {
+            "id": "sono_profundo",
+            "chance": 0.14
+          }
+        ],
+        "equipamentos": [
+          "equipamento_005",
+          "haori_zenitsu_limitado",
+          "casulo_rui_limitado"
+        ],
+        "baus": [
+          "bau_raro",
+          "bau_comum"
+        ]
+      },
+      "oni": true
+    },
+    {
+      "id": "rui_kimetsu",
+      "nome": "Rui — Demônio da Montanha da Aranha",
+      "titulo": "Demônio da Lua Inferior Cinco",
+      "descricao": "Rui criou uma família de demônios que respeita seus laços por medo. Seus fios de aranha são tão finos que cortam aço como manteiga.",
+      "vida": 360000,
+      "dano": 900,
+      "defesa": 14,
+      "resistencia": 0.05,
+      "tempoLimite": 3600,
+      "chanceAparicao": 35,
+      "horarioFixo": "12:00",
+      "notificavel": true,
+      "thumbnail": null,
+      "corEmbed": "0xFF69B4",
+      "habilidades": [
+        {
+          "nome": "Fios de Aranha Cortantes",
+          "dano": 675,
+          "descricao": "Rui dispara fios que cortam qualquer coisa em seu caminho.",
+          "cooldown": 1,
+          "stun": false,
+          "debuff": {
+            "tipo": "sangramento",
+            "valor": 15,
+            "duracao": 3
+          }
+        },
+        {
+          "nome": "Teia de Armadilha",
+          "dano": 1050,
+          "descricao": "Uma rede de fios que prende e lacerama o alvo progressivamente.",
+          "cooldown": 3,
+          "stun": true
+        },
+        {
+          "nome": "Laços de Sangue — Família",
+          "dano": 1500,
+          "descricao": "Rui usa o poder dos laços sangüíneos para amplificar seus fios a nível letal.",
+          "cooldown": 4,
+          "stun": false,
+          "debuff": {
+            "tipo": "defesa_reduction",
+            "valor": 25,
+            "duracao": 2
+          }
+        }
+      ],
+      "falaInicio": "Família... Só quero ter uma família de verdade. Mas você veio destruir meu sonho.",
+      "falaDerrota": "Mãe... Pai... Me perdoem... Eu só queria...",
+      "drops": {
+        "berries": {
+          "min": 3000,
+          "max": 6000
+        },
+        "xp": {
+          "min": 500,
+          "max": 1000
+        },
+        "xpfruit": {
+          "min": 150,
+          "max": 350
+        },
+        "tokens_cacador": {
+          "min": 1,
+          "max": 1,
+          "chance": 0.5
+        },
+        "espadas": [
+          {
+            "id": "katana_cacador",
+            "chance": 0.2
+          },
+          {
+            "id": "inosuke_blades",
+            "chance": 0.08
+          }
+        ],
+        "tecnicas": [
+          {
+            "id": "rui_teia",
+            "chance": 0.15
+          }
+        ],
+        "equipamentos": [
+          "equipamento_004",
+          "casulo_rui_limitado",
+          "mascara_inosuke_limitado"
+        ],
+        "baus": [
+          "bau_raro",
+          "bau_comum"
+        ]
+      },
+      "oni": true
+    },
+    {
+      "id": "tamayo_kimetsu",
+      "nome": "Tamayo — A Médica Demoníaca",
+      "titulo": "Aliada dos Caçadores",
+      "descricao": "Uma demônia milenar que rejeitou o controle de Muzan e busca uma cura para a maldição dos demônios. Sua Arte do Sangue é poderosa o suficiente para dissolver demônios poderosos.",
+      "vida": 240000,
+      "dano": 750,
+      "defesa": 16,
+      "resistencia": 0.05,
+      "tempoLimite": 3000,
+      "chanceAparicao": 30,
+      "horarioFixo": null,
+      "notificavel": true,
+      "thumbnail": null,
+      "corEmbed": "0xFF69B4",
+      "habilidades": [
+        {
+          "nome": "Névoa Sedativa",
+          "dano": 600,
+          "descricao": "Libera névoa de sangue que desacelera o alvo.",
+          "cooldown": 2,
+          "stun": false,
+          "debuff": {
+            "tipo": "stamina_regen_reduction",
+            "valor": 40,
+            "duracao": 2
+          }
+        },
+        {
+          "nome": "Composto Dissolvente",
+          "dano": 825,
+          "descricao": "Injeta composto que dissolve regeneração e causa dano interno.",
+          "cooldown": 3,
+          "stun": false,
+          "debuff": {
+            "tipo": "defesa_reduction",
+            "valor": 25,
+            "duracao": 3
+          }
+        },
+        {
+          "nome": "Sangue Explosivo",
+          "dano": 1200,
+          "descricao": "Detona todos os compostos injetados em uma explosão de dano em área.",
+          "cooldown": 5,
+          "stun": true
+        }
+      ],
+      "falaInicio": "Perdoe-me... Não tenho escolha senão lutar. Mas prometo que não vou matá-lo.",
+      "falaDerrota": "...Você é forte. Espero que use essa força para combater Muzan.",
+      "drops": {
+        "berries": {
+          "min": 4000,
+          "max": 7000
+        },
+        "xp": {
+          "min": 600,
+          "max": 1000
+        },
+        "xpfruit": {
+          "min": 200,
+          "max": 400
+        },
+        "tokens_cacador": {
+          "min": 1,
+          "max": 2,
+          "chance": 0.6
+        },
+        "espadas": [],
+        "tecnicas": [
+          {
+            "id": "arte_sangue_tamayo",
+            "chance": 0.2
+          }
+        ],
+        "equipamentos": [
+          "equipamento_005",
+          "manto_nezuko_limitado",
+          "kimono_douma_limitado"
+        ],
+        "baus": [
+          "bau_raro",
+          "bau_comum"
+        ]
+      },
+      "oni": true
+    },
+    {
+      "id": "rengoku_kimetsu",
+      "nome": "Kyojuro Rengoku — Hashira de Chama",
+      "titulo": "Pilar das Chamas",
+      "descricao": "O Hashira de Chama de espírito inabalável. Rengoku brilha como uma chama eterna, com um coração que nunca recua. Sua Respiração do Fogo incendeia tudo em seu caminho.",
+      "vida": 440000,
+      "dano": 1200,
+      "defesa": 22,
+      "resistencia": 0.08,
+      "tempoLimite": 3600,
+      "chanceAparicao": 18,
+      "horarioFixo": null,
+      "notificavel": true,
+      "thumbnail": null,
+      "corEmbed": "0xFF4500",
+      "habilidades": [
+        {
+          "nome": "Respiração do Fogo — Primeira Forma",
+          "dano": 975,
+          "descricao": "Um corte flamejante de velocidade brutal.",
+          "cooldown": 2,
+          "stun": false,
+          "debuff": {
+            "tipo": "sangramento",
+            "valor": 15,
+            "duracao": 2
+          }
+        },
+        {
+          "nome": "Respiração do Fogo — Quinta Forma: Deus da Chama",
+          "dano": 1350,
+          "descricao": "Uma investida flamejante de potência devastadora.",
+          "cooldown": 3,
+          "stun": true
+        },
+        {
+          "nome": "Respiração do Fogo — Nona Forma: Filhos da Chama do Dragão",
+          "dano": 1800,
+          "descricao": "A técnica suprema de Rengoku. Dragões de chama que incineram tudo.",
+          "cooldown": 5,
+          "stun": true,
+          "debuff": {
+            "tipo": "all_stats_reduction",
+            "valor": 15,
+            "duracao": 2
+          }
+        }
+      ],
+      "falaInicio": "Acenda seu coração! Não vou me conter — você merece ver a chama de um Hashira!",
+      "falaDerrota": "...Que chama extraordinária você tem. Meu coração está em chamas de satisfação!",
+      "drops": {
+        "berries": {
+          "min": 6000,
+          "max": 10000
+        },
+        "xp": {
+          "min": 900,
+          "max": 1500
+        },
+        "xpfruit": {
+          "min": 300,
+          "max": 600
+        },
+        "tokens_cacador": {
+          "min": 1,
+          "max": 3,
+          "chance": 0.8
+        },
+        "espadas": [
+          {
+            "id": "rengoku_blade",
+            "chance": 0.15
+          }
+        ],
+        "tecnicas": [
+          {
+            "id": "respiracao_chama",
+            "chance": 0.18
+          }
+        ],
+        "equipamentos": [
+          "equipamento_007",
+          "capa_rengoku_limitado",
+          "haori_tanjiro_limitado",
+          "brincos_hanafuda_limitado"
+        ],
+        "baus": [
+          "bau_raro",
+          "bau_epico"
+        ]
+      }
+    },
+    {
+      "id": "giyuu_kimetsu",
+      "nome": "Giyuu Tomioka — Hashira da Água",
+      "titulo": "Pilar da Água",
+      "descricao": "O Hashira da Água de poucas palavras e poder imenso. Tomioka criou sozinho a Décima Primeira Forma da Respiração da Água — uma proeza que nenhum outro conseguiu.",
+      "vida": 460000,
+      "dano": 1163,
+      "defesa": 24,
+      "resistencia": 0.08,
+      "tempoLimite": 3600,
+      "chanceAparicao": 16,
+      "horarioFixo": null,
+      "notificavel": true,
+      "thumbnail": null,
+      "corEmbed": "0x1E90FF",
+      "habilidades": [
+        {
+          "nome": "Respiração da Água — Quarta Forma: Maré Quiescente",
+          "dano": 938,
+          "descricao": "Um golpe que paralisa o alvo por um instante antes de explodir.",
+          "cooldown": 2,
+          "stun": true
+        },
+        {
+          "nome": "Respiração da Água — Sétima Forma: Giro da Gota",
+          "dano": 1200,
+          "descricao": "Um giro que cria vórtice de cortes ao redor.",
+          "cooldown": 3,
+          "stun": false,
+          "debuff": {
+            "tipo": "defesa_reduction",
+            "valor": 20,
+            "duracao": 2
+          }
+        },
+        {
+          "nome": "Respiração da Água — Décima Primeira Forma: Tranquilidade do Morto",
+          "dano": 1650,
+          "descricao": "A técnica exclusiva de Tomioka. Ignora completamente qualquer defesa.",
+          "cooldown": 5,
+          "stun": true
+        }
+      ],
+      "falaInicio": "...",
+      "falaDerrota": "...Você tem talento.",
+      "drops": {
+        "berries": {
+          "min": 6500,
+          "max": 11000
+        },
+        "xp": {
+          "min": 950,
+          "max": 1600
+        },
+        "xpfruit": {
+          "min": 320,
+          "max": 620
+        },
+        "tokens_cacador": {
+          "min": 1,
+          "max": 3,
+          "chance": 0.8
+        },
+        "espadas": [
+          {
+            "id": "giyuu_blade",
+            "chance": 0.15
+          }
+        ],
+        "tecnicas": [
+          {
+            "id": "respiracao_agua",
+            "chance": 0.18
+          }
+        ],
+        "equipamentos": [
+          "equipamento_007",
+          "haori_giyuu_limitado",
+          "haori_tanjiro_limitado"
+        ],
+        "baus": [
+          "bau_raro",
+          "bau_epico"
+        ]
+      }
+    },
+    {
+      "id": "shinobu_kimetsu",
+      "nome": "Shinobu Kocho — Hashira do Inseto",
+      "titulo": "Pilar do Inseto",
+      "descricao": "A única Hashira que não consegue decapitar demônios pela força. Mas seu veneno wisteria ultra-concentrado é capaz de matar até Luas Superiores. Sua dança parece suave — até você perceber que está envenenado.",
+      "vida": 280000,
+      "dano": 825,
+      "defesa": 14,
+      "resistencia": 0.06,
+      "tempoLimite": 3000,
+      "chanceAparicao": 22,
+      "horarioFixo": null,
+      "notificavel": true,
+      "thumbnail": null,
+      "corEmbed": "0x9B59B6",
+      "habilidades": [
+        {
+          "nome": "Picada da Borboleta",
+          "dano": 638,
+          "descricao": "Uma picada precisa que injeta veneno e reduz regeneração.",
+          "cooldown": 1,
+          "stun": false,
+          "debuff": {
+            "tipo": "stamina_regen_reduction",
+            "valor": 50,
+            "duracao": 3
+          }
+        },
+        {
+          "nome": "Nuvem de Veneno",
+          "dano": 900,
+          "descricao": "Libera névoa de veneno wisteria em área.",
+          "cooldown": 3,
+          "stun": false,
+          "debuff": {
+            "tipo": "all_stats_reduction",
+            "valor": 20,
+            "duracao": 2
+          }
+        },
+        {
+          "nome": "Respiração do Inseto — Picada da Morte",
+          "dano": 1350,
+          "descricao": "Uma picada no ponto vital com veneno letal concentrado.",
+          "cooldown": 5,
+          "stun": true,
+          "debuff": {
+            "tipo": "defesa_reduction",
+            "valor": 35,
+            "duracao": 3
+          }
+        }
+      ],
+      "falaInicio": "Eu estaria sorrindo mesmo agora... mas você parece forte o suficiente para merecer seriedade!",
+      "falaDerrota": "Fui eu quem perdeu? Ane-san... desculpe...",
+      "drops": {
+        "berries": {
+          "min": 4500,
+          "max": 8000
+        },
+        "xp": {
+          "min": 700,
+          "max": 1100
+        },
+        "xpfruit": {
+          "min": 230,
+          "max": 460
+        },
+        "tokens_cacador": {
+          "min": 1,
+          "max": 2,
+          "chance": 0.65
+        },
+        "espadas": [
+          {
+            "id": "shinobu_blade",
+            "chance": 0.16
+          }
+        ],
+        "tecnicas": [
+          {
+            "id": "respiracao_inseto",
+            "chance": 0.2
+          }
+        ],
+        "equipamentos": [
+          "equipamento_006",
+          "kimono_douma_limitado",
+          "manto_nezuko_limitado"
+        ],
+        "baus": [
+          "bau_raro",
+          "bau_comum"
+        ]
+      }
+    },
+    {
+      "id": "mitsuri_kimetsu",
+      "nome": "Mitsuri Kanroji — Hashira do Amor",
+      "titulo": "Pilar do Amor",
+      "descricao": "A Hashira com músculos oito vezes mais densos que o humano normal. Sua lâmina flexível única e sua Respiração do Amor criam ataques impossíveis de prever — como o próprio sentimento.",
+      "vida": 360000,
+      "dano": 975,
+      "defesa": 20,
+      "resistencia": 0.08,
+      "tempoLimite": 3300,
+      "chanceAparicao": 20,
+      "horarioFixo": null,
+      "notificavel": true,
+      "thumbnail": null,
+      "corEmbed": "0xFF69B4",
+      "habilidades": [
+        {
+          "nome": "Respiração do Amor — Corte Sinuoso",
+          "dano": 788,
+          "descricao": "A lâmina flexível atinge ângulos impossíveis.",
+          "cooldown": 2,
+          "stun": false
+        },
+        {
+          "nome": "Respiração do Amor — Quinta Forma: Agilidade Amorosa",
+          "dano": 1050,
+          "descricao": "Usa flexibilidade extrema para atacar de ângulos impossíveis.",
+          "cooldown": 3,
+          "stun": true,
+          "debuff": {
+            "tipo": "defesa_reduction",
+            "valor": 25,
+            "duracao": 2
+          }
+        },
+        {
+          "nome": "Respiração do Amor — Nona Forma: Paixão Ardente",
+          "dano": 1500,
+          "descricao": "Uma série de golpes em redemoinho inesquecível.",
+          "cooldown": 5,
+          "stun": true
+        }
+      ],
+      "falaInicio": "Eu não quero lutar! Mas vou dar tudo de mim! Isso é... meu amor pelo combate?",
+      "falaDerrota": "Você é incrível! Fiquei apaixonada pela sua força!",
+      "drops": {
+        "berries": {
+          "min": 5000,
+          "max": 9000
+        },
+        "xp": {
+          "min": 800,
+          "max": 1300
+        },
+        "xpfruit": {
+          "min": 270,
+          "max": 540
+        },
+        "tokens_cacador": {
+          "min": 1,
+          "max": 3,
+          "chance": 0.7
+        },
+        "espadas": [
+          {
+            "id": "mitsuri_blade",
+            "chance": 0.16
+          }
+        ],
+        "tecnicas": [
+          {
+            "id": "respiracao_amor",
+            "chance": 0.19
+          }
+        ],
+        "equipamentos": [
+          "equipamento_006",
+          "colar_mitsuri_limitado",
+          "tambor_tengen_limitado"
+        ],
+        "baus": [
+          "bau_raro",
+          "bau_comum"
+        ]
+      }
+    },
+    {
+      "id": "gyomei_kimetsu",
+      "nome": "Gyomei Himejima — Hashira da Pedra",
+      "titulo": "Pilar da Pedra — O Mais Forte",
+      "descricao": "O Hashira mais forte de toda a história moderna. Um gigante que chora enquanto reza, mas que é uma força da natureza em combate. Sua Respiração da Pedra com correntes e machado é devastadora.",
+      "vida": 600000,
+      "dano": 1425,
+      "defesa": 32,
+      "resistencia": 0.12,
+      "tempoLimite": 4200,
+      "chanceAparicao": 10,
+      "horarioFixo": null,
+      "notificavel": true,
+      "thumbnail": null,
+      "corEmbed": "0x708090",
+      "habilidades": [
+        {
+          "nome": "Respiração da Pedra — Primeira Forma: Avalanche Furiosa",
+          "dano": 1200,
+          "descricao": "Gyomei lança correntes com força de avalanche.",
+          "cooldown": 2,
+          "stun": false,
+          "debuff": {
+            "tipo": "defesa_reduction",
+            "valor": 20,
+            "duracao": 2
+          }
+        },
+        {
+          "nome": "Respiração da Pedra — Terceira Forma: Trituração",
+          "dano": 1575,
+          "descricao": "As correntes envolvem e trituram o alvo.",
+          "cooldown": 3,
+          "stun": true
+        },
+        {
+          "nome": "Respiração da Pedra — Quinta Forma: Raiva da Divindade",
+          "dano": 2250,
+          "descricao": "O golpe mais poderoso de Gyomei. Uma tempestade de correntes e machado.",
+          "cooldown": 6,
+          "stun": true,
+          "debuff": {
+            "tipo": "all_stats_reduction",
+            "valor": 25,
+            "duracao": 3
+          }
+        }
+      ],
+      "falaInicio": "...*rezando em silêncio*... Que Deus proteja sua alma após esta batalha.",
+      "falaDerrota": "*chora*... Você tem a força de uma montanha. Que Deus te abençoe.",
+      "drops": {
+        "berries": {
+          "min": 8000,
+          "max": 14000
+        },
+        "xp": {
+          "min": 1200,
+          "max": 2000
+        },
+        "xpfruit": {
+          "min": 400,
+          "max": 750
+        },
+        "tokens_cacador": {
+          "min": 2,
+          "max": 4,
+          "chance": 0.85
+        },
+        "espadas": [
+          {
+            "id": "gyomei_flail",
+            "chance": 0.14
+          }
+        ],
+        "tecnicas": [
+          {
+            "id": "respiracao_pedra",
+            "chance": 0.16
+          }
+        ],
+        "equipamentos": [
+          "equipamento_009",
+          "rosario_gyomei_limitado",
+          "armadura_kokushibo_limitado"
+        ],
+        "baus": [
+          "bau_epico",
+          "bau_raro"
+        ]
+      }
+    },
+    {
+      "id": "sanemi_kimetsu",
+      "nome": "Sanemi Shinazugawa — Hashira do Vento",
+      "titulo": "Pilar do Vento",
+      "descricao": "O Hashira mais agressivo e brutal. Seu corpo repleto de cicatrizes conta a história de batalhas incontáveis. Seu sangue mutante atrai e enlouquece demônios — o que ele usa como arma.",
+      "vida": 480000,
+      "dano": 1275,
+      "defesa": 26,
+      "resistencia": 0.1,
+      "tempoLimite": 3600,
+      "chanceAparicao": 14,
+      "horarioFixo": null,
+      "notificavel": true,
+      "thumbnail": null,
+      "corEmbed": "0x90EE90",
+      "habilidades": [
+        {
+          "nome": "Respiração do Vento — Rajada Furiosa",
+          "dano": 1050,
+          "descricao": "Um corte com força de rajada de vento.",
+          "cooldown": 2,
+          "stun": false,
+          "debuff": {
+            "tipo": "stamina_drain",
+            "valor": 20,
+            "duracao": 2
+          }
+        },
+        {
+          "nome": "Respiração do Vento — Furacão de Nove Cortes",
+          "dano": 1425,
+          "descricao": "Uma série furiosa de cortes que não dá chance de defesa.",
+          "cooldown": 3,
+          "stun": false
+        },
+        {
+          "nome": "Respiração do Vento — Nona Forma: Cataclismo",
+          "dano": 1950,
+          "descricao": "O cataclismo de Sanemi. Um tufão de lâminas que destrói tudo.",
+          "cooldown": 5,
+          "stun": true,
+          "debuff": {
+            "tipo": "defesa_reduction",
+            "valor": 30,
+            "duracao": 2
+          }
+        }
+      ],
+      "falaInicio": "Não me venha com papo. Vou te mostrar o que significa enfrentar um Hashira de verdade!",
+      "falaDerrota": "...Tcha. Você é forte. Mas não pense que admiti isso facilmente.",
+      "drops": {
+        "berries": {
+          "min": 7000,
+          "max": 12000
+        },
+        "xp": {
+          "min": 1000,
+          "max": 1700
+        },
+        "xpfruit": {
+          "min": 350,
+          "max": 650
+        },
+        "tokens_cacador": {
+          "min": 1,
+          "max": 3,
+          "chance": 0.82
+        },
+        "espadas": [
+          {
+            "id": "sanemi_blade",
+            "chance": 0.14
+          }
+        ],
+        "tecnicas": [
+          {
+            "id": "respiracao_vento",
+            "chance": 0.17
+          }
+        ],
+        "equipamentos": [
+          "equipamento_008",
+          "haori_zenitsu_limitado",
+          "luvas_akaza_limitado"
+        ],
+        "baus": [
+          "bau_epico",
+          "bau_raro"
+        ]
+      }
+    },
+    {
+      "id": "obanai_kimetsu",
+      "nome": "Obanai Iguro — Hashira da Serpente",
+      "titulo": "Pilar da Serpente",
+      "descricao": "O Hashira de olhos bicolores e sua serpente branca Kaburamaru. Sua lâmina torta se move como uma cobra, atacando de ângulos que desafiam a física. Implacável com demônios.",
+      "vida": 340000,
+      "dano": 1013,
+      "defesa": 21,
+      "resistencia": 0.07,
+      "tempoLimite": 3300,
+      "chanceAparicao": 20,
+      "horarioFixo": null,
+      "notificavel": true,
+      "thumbnail": null,
+      "corEmbed": "0x2E8B57",
+      "habilidades": [
+        {
+          "nome": "Respiração da Serpente — Língua Envenenada",
+          "dano": 788,
+          "descricao": "Um corte sinuoso que chega de onde menos se espera.",
+          "cooldown": 2,
+          "stun": false,
+          "debuff": {
+            "tipo": "sangramento",
+            "valor": 20,
+            "duracao": 3
+          }
+        },
+        {
+          "nome": "Respiração da Serpente — Escama Cortante",
+          "dano": 1088,
+          "descricao": "A lâmina ondula como escamas, criando múltiplos ângulos.",
+          "cooldown": 3,
+          "stun": false
+        },
+        {
+          "nome": "Respiração da Serpente — Sétima Forma: Ascensão da Cobra",
+          "dano": 1575,
+          "descricao": "O golpe final de Obanai — impossível de bloquear.",
+          "cooldown": 5,
+          "stun": true
+        }
+      ],
+      "falaInicio": "Não merece estar diante de mim. Mas... mostrarei o poder da Serpente.",
+      "falaDerrota": "Kaburamaru... você viu? Esse guerreiro... é digno.",
+      "drops": {
+        "berries": {
+          "min": 5500,
+          "max": 9500
+        },
+        "xp": {
+          "min": 850,
+          "max": 1400
+        },
+        "xpfruit": {
+          "min": 285,
+          "max": 565
+        },
+        "tokens_cacador": {
+          "min": 1,
+          "max": 2,
+          "chance": 0.72
+        },
+        "espadas": [
+          {
+            "id": "obanai_blade",
+            "chance": 0.15
+          }
+        ],
+        "tecnicas": [
+          {
+            "id": "respiracao_serpente",
+            "chance": 0.18
+          }
+        ],
+        "equipamentos": [
+          "equipamento_007",
+          "casulo_rui_limitado",
+          "haori_giyuu_limitado"
+        ],
+        "baus": [
+          "bau_raro",
+          "bau_comum"
+        ]
+      }
+    },
+    {
+      "id": "tengen_kimetsu",
+      "nome": "Tengen Uzui — Hashira do Som",
+      "titulo": "Pilar do Som — O Mais Extravagante",
+      "descricao": "O Hashira mais flamboyant e extravagante. Ex-ninja da mais alta classe, Tengen analisa o combate como uma partitura musical e ataca no exato momento do intervalo.",
+      "vida": 400000,
+      "dano": 1088,
+      "defesa": 22,
+      "resistencia": 0.08,
+      "tempoLimite": 3600,
+      "chanceAparicao": 18,
+      "horarioFixo": null,
+      "notificavel": true,
+      "thumbnail": null,
+      "corEmbed": "0xFFD700",
+      "habilidades": [
+        {
+          "nome": "Respiração do Som — Explosão Dupla",
+          "dano": 863,
+          "descricao": "Tengen detona as cargas de suas lâminas em dois pontos.",
+          "cooldown": 2,
+          "stun": false
+        },
+        {
+          "nome": "Respiração do Som — Partitura Contínua",
+          "dano": 1163,
+          "descricao": "Uma série de golpes em ritmo que não dá espaço para defesa.",
+          "cooldown": 3,
+          "stun": false,
+          "debuff": {
+            "tipo": "stamina_drain",
+            "valor": 25,
+            "duracao": 2
+          }
+        },
+        {
+          "nome": "Respiração do Som — Acorde Máximo",
+          "dano": 1725,
+          "descricao": "A detonação final de luz e som — cega e esmaga simultaneamente.",
+          "cooldown": 5,
+          "stun": true,
+          "debuff": {
+            "tipo": "defesa_reduction",
+            "valor": 30,
+            "duracao": 2
+          }
+        }
+      ],
+      "falaInicio": "É FLAMBOYANT! Prepare-se para um combate de tirar o fôlego — estilo ninja!",
+      "falaDerrota": "Que combate magnífico! Você é flamboyant demais!",
+      "drops": {
+        "berries": {
+          "min": 6000,
+          "max": 10000
+        },
+        "xp": {
+          "min": 900,
+          "max": 1500
+        },
+        "xpfruit": {
+          "min": 300,
+          "max": 580
+        },
+        "tokens_cacador": {
+          "min": 1,
+          "max": 3,
+          "chance": 0.78
+        },
+        "espadas": [
+          {
+            "id": "tengen_blades",
+            "chance": 0.14
+          }
+        ],
+        "tecnicas": [
+          {
+            "id": "respiracao_som",
+            "chance": 0.17
+          }
+        ],
+        "equipamentos": [
+          "equipamento_008",
+          "tambor_tengen_limitado",
+          "obi_daki_gyutaro_limitado"
+        ],
+        "baus": [
+          "bau_raro",
+          "bau_epico"
+        ]
+      }
+    },
+    {
+      "id": "kanao_kimetsu",
+      "nome": "Kanao Tsuyuri — Discípula das Flores",
+      "titulo": "Caçadora Elite",
+      "descricao": "Discípula de Shinobu Kocho com olhos que captam cada micro-movimento. Kanao pode prever ataques antes de acontecerem, tornando-a quase impossível de acertar.",
+      "vida": 300000,
+      "dano": 863,
+      "defesa": 18,
+      "resistencia": 0.06,
+      "tempoLimite": 3000,
+      "chanceAparicao": 24,
+      "horarioFixo": null,
+      "notificavel": true,
+      "thumbnail": null,
+      "corEmbed": "0xFF91A4",
+      "habilidades": [
+        {
+          "nome": "Respiração da Flor — Pétala Dançante",
+          "dano": 675,
+          "descricao": "Kanao imita o movimento errático das pétalas para confundir.",
+          "cooldown": 2,
+          "stun": false
+        },
+        {
+          "nome": "Respiração da Flor — Flor Espinhosa",
+          "dano": 900,
+          "descricao": "Uma flor de espinhos que envolve o alvo em cortes de todas as direções.",
+          "cooldown": 3,
+          "stun": false,
+          "debuff": {
+            "tipo": "sangramento",
+            "valor": 20,
+            "duracao": 3
+          }
+        },
+        {
+          "nome": "Respiração da Flor — Forma Final: Sakura Carmesim",
+          "dano": 1350,
+          "descricao": "O golpe que usou contra Doma. Velocidade sobrehumana que ignora defesa.",
+          "cooldown": 5,
+          "stun": true
+        }
+      ],
+      "falaInicio": "...*observa em silêncio*... Começamos.",
+      "falaDerrota": "Você... conseguiu acertar. Impressionante.",
+      "drops": {
+        "berries": {
+          "min": 4500,
+          "max": 7500
+        },
+        "xp": {
+          "min": 700,
+          "max": 1100
+        },
+        "xpfruit": {
+          "min": 235,
+          "max": 470
+        },
+        "tokens_cacador": {
+          "min": 1,
+          "max": 2,
+          "chance": 0.65
+        },
+        "espadas": [
+          {
+            "id": "kanao_blade",
+            "chance": 0.16
+          }
+        ],
+        "tecnicas": [
+          {
+            "id": "respiracao_flor",
+            "chance": 0.2
+          }
+        ],
+        "equipamentos": [
+          "equipamento_006",
+          "colar_mitsuri_limitado",
+          "kimono_douma_limitado"
+        ],
+        "baus": [
+          "bau_raro",
+          "bau_comum"
+        ]
+      }
+    },
+    {
+      "id": "tanjiro_kimetsu",
+      "nome": "Tanjiro Kamado — O Caçador de Coração Solar",
+      "titulo": "Portador da Respiração do Sol",
+      "descricao": "O único portador vivo da Respiração do Sol, a técnica original de respiração. Tanjiro carrega a bondade inquebrável de seu coração aliada ao poder do Sol — a força máxima contra demônios.",
+      "vida": 320000,
+      "dano": 938,
+      "defesa": 19,
+      "resistencia": 0.07,
+      "tempoLimite": 3300,
+      "chanceAparicao": 22,
+      "horarioFixo": null,
+      "notificavel": true,
+      "thumbnail": null,
+      "corEmbed": "0x228B22",
+      "habilidades": [
+        {
+          "nome": "Respiração da Água — Décima Forma",
+          "dano": 713,
+          "descricao": "Um fluxo ininterrupto de cortes como um rio em plena força.",
+          "cooldown": 2,
+          "stun": false
+        },
+        {
+          "nome": "Dança Kagura — Sétimo Kata: Alba",
+          "dano": 975,
+          "descricao": "O corte que imita o amanhecer, trazendo luz devastadora.",
+          "cooldown": 3,
+          "stun": false,
+          "debuff": {
+            "tipo": "defesa_reduction",
+            "valor": 20,
+            "duracao": 2
+          }
+        },
+        {
+          "nome": "Dança Kagura — Ciclo Total: Respiração do Sol Plena",
+          "dano": 1500,
+          "descricao": "Tanjiro executa todos os 13 katas em sequência. O poder do Sol incarnado.",
+          "cooldown": 6,
+          "stun": true
+        }
+      ],
+      "falaInicio": "Não tenho inimigos — só adversários que preciso superar! Mas não vou me segurar!",
+      "falaDerrota": "Você é incrível... Aprendi muito com essa batalha. Obrigado!",
+      "drops": {
+        "berries": {
+          "min": 5000,
+          "max": 8500
+        },
+        "xp": {
+          "min": 800,
+          "max": 1300
+        },
+        "xpfruit": {
+          "min": 270,
+          "max": 540
+        },
+        "tokens_cacador": {
+          "min": 1,
+          "max": 3,
+          "chance": 0.75
+        },
+        "espadas": [
+          {
+            "id": "tanjiro_blade",
+            "chance": 0.13
+          }
+        ],
+        "tecnicas": [
+          {
+            "id": "respiracao_sol",
+            "chance": 0.00001
+          },
+          {
+            "id": "tanjiro_oni",
+            "chance": 0.0001
+          },
+          {
+            "id": "respiracao_agua_tanjiro",
+            "chance": 0.07
+          },
+          {
+            "id": "respiracao_agua",
+            "chance": 0.08
+          }
+        ],
+        "equipamentos": [
+          "equipamento_007",
+          "haori_tanjiro_limitado",
+          "brincos_hanafuda_limitado",
+          "manto_nezuko_limitado"
+        ],
+        "baus": [
+          "bau_raro",
+          "bau_epico"
+        ]
+      }
+    },
+    {
+      "id": "zenitsu_kimetsu",
+      "nome": "Zenitsu Agatsuma — O Trovão Adormecido",
+      "titulo": "A Velocidade do Trovão",
+      "descricao": "Zenitsu só consegue usar uma técnica de respiração, mas a dominou além dos limites humanos. Quando o medo vira coragem, ele se torna o ser mais rápido em campo.",
+      "vida": 280000,
+      "dano": 900,
+      "defesa": 16,
+      "resistencia": 0.06,
+      "tempoLimite": 3000,
+      "chanceAparicao": 26,
+      "horarioFixo": null,
+      "notificavel": true,
+      "thumbnail": null,
+      "corEmbed": "0xFFD700",
+      "habilidades": [
+        {
+          "nome": "Respiração do Trovão — Primeira Forma: Trovão e Relâmpago",
+          "dano": 825,
+          "descricao": "Um único passo ultrarrápido. Atinge antes do alvo piscar.",
+          "cooldown": 1,
+          "stun": false
+        },
+        {
+          "nome": "Raio Perfurante",
+          "dano": 1050,
+          "descricao": "Um golpe que atravessa qualquer defesa como raio atravessa o céu.",
+          "cooldown": 3,
+          "stun": true
+        },
+        {
+          "nome": "Respiração do Trovão — Sétima Forma: Forma do Deus-Aranha",
+          "dano": 1575,
+          "descricao": "A técnica criada por Zenitsu. Oito golpes simultâneos de velocidade inacreditável.",
+          "cooldown": 5,
+          "stun": true
+        }
+      ],
+      "falaInicio": "N-não quero lutar! Por favor... AHHHHH! (dorme e acorda com olhos focados)",
+      "falaDerrota": "Que velocidade... você era mais rápido que o trovão.",
+      "drops": {
+        "berries": {
+          "min": 4500,
+          "max": 7500
+        },
+        "xp": {
+          "min": 700,
+          "max": 1150
+        },
+        "xpfruit": {
+          "min": 240,
+          "max": 480
+        },
+        "tokens_cacador": {
+          "min": 1,
+          "max": 2,
+          "chance": 0.68
+        },
+        "espadas": [
+          {
+            "id": "zenitsu_blade",
+            "chance": 0.14
+          }
+        ],
+        "tecnicas": [
+          {
+            "id": "respiracao_trovao",
+            "chance": 0.19
+          }
+        ],
+        "equipamentos": [
+          "equipamento_006",
+          "haori_zenitsu_limitado",
+          "brincos_hanafuda_limitado"
+        ],
+        "baus": [
+          "bau_raro",
+          "bau_comum"
+        ]
+      }
+    },
+    {
+      "id": "nezuko_kimetsu",
+      "nome": "Nezuko Kamado — Sangue Flamejante",
+      "titulo": "Demônio Protetor dos Humanos",
+      "descricao": "Nezuko desperta sua Arte Demoníaca de Sangue: chamas seletivas que queimam veneno demoníaco, explodem sangue preparado e protegem humanos no campo de batalha.",
+      "vida": 360000,
+      "dano": 1025,
+      "defesa": 22,
+      "resistencia": 0.08,
+      "tempoLimite": 3600,
+      "chanceAparicao": 18,
+      "horarioFixo": null,
+      "notificavel": true,
+      "thumbnail": null,
+      "corEmbed": "0xFF4D6D",
+      "habilidades": [
+        {
+          "nome": "Corte de Unhas Incandescentes",
+          "dano": 900,
+          "descricao": "Nezuko rasga o ar com unhas cobertas por sangue ardente, espalhando Ignições no alvo.",
+          "cooldown": 1,
+          "stun": false,
+          "debuff": {
+            "tipo": "queimadura",
+            "valor": 18,
+            "duracao": 3
+          }
+        },
+        {
+          "nome": "Casulo da Irmã Demoníaca",
+          "dano": 575,
+          "descricao": "Um casulo flamejante explode em defesa e regenera parte do dano causado.",
+          "cooldown": 3,
+          "stun": false,
+          "lifesteal": 0.25
+        },
+        {
+          "nome": "Rastilho de Sangue Explosivo",
+          "dano": 1375,
+          "descricao": "Gotas de sangue se acendem em cadeia, rompendo a defesa inimiga.",
+          "cooldown": 4,
+          "stun": true,
+          "debuff": {
+            "tipo": "defesa_reduction",
+            "valor": 25,
+            "duracao": 2
+          }
+        },
+        {
+          "nome": "Explosão que Protege Humanos",
+          "dano": 1800,
+          "descricao": "A chama seletiva de Nezuko detona todo o campo sem ferir aliados humanos.",
+          "cooldown": 6,
+          "stun": true
+        }
+      ],
+      "falaInicio": "Eu vou proteger os humanos... mesmo que meu sangue vire chama!",
+      "falaDerrota": "Tanjiro... eu ainda consigo proteger todos...",
+      "drops": {
+        "berries": {
+          "min": 6500,
+          "max": 11000
+        },
+        "xp": {
+          "min": 900,
+          "max": 1500
+        },
+        "xpfruit": {
+          "min": 350,
+          "max": 700
+        },
+        "tokens_cacador": {
+          "min": 1,
+          "max": 3,
+          "chance": 0.75
+        },
+        "tecnicas": [
+          {
+            "id": "sangue_flamejante_nezuko",
+            "chance": 0.06
+          }
+        ],
+        "equipamentos": [
+          "manto_nezuko_limitado",
+          "brincos_hanafuda_limitado",
+          "equipamento_010"
+        ],
+        "baus": [
+          "bau_epico",
+          "bau_raro",
+          "bau_comum"
+        ]
+      },
+      "oni": true
+    },
+    {
+      "id": "kaigaku_kimetsu",
+      "nome": "Kaigaku — Oni do Trovão Dark",
+      "titulo": "Discípulo Corrompido do Trovão",
+      "descricao": "Kaigaku abandonou a luz da Respiração do Trovão e renasceu como oni. Seus raios negros deixam cicatrizes vivas e castigam qualquer um que hesite diante do trovão corrompido.",
+      "vida": 520000,
+      "dano": 1325,
+      "defesa": 26,
+      "resistencia": 0.1,
+      "tempoLimite": 4200,
+      "chanceAparicao": 14,
+      "horarioFixo": null,
+      "notificavel": true,
+      "thumbnail": null,
+      "corEmbed": "0x2C2C54",
+      "habilidades": [
+        {
+          "nome": "Primeira Forma Impura: Passo Rachado",
+          "dano": 1050,
+          "descricao": "Kaigaku some em um passo quebrado e risca o alvo com raio negro.",
+          "cooldown": 1,
+          "stun": false
+        },
+        {
+          "nome": "Arrozal Relampejante Negro",
+          "dano": 1275,
+          "descricao": "Cinco cortes em leque semeiam condutores sombrios pelo campo.",
+          "cooldown": 3,
+          "stun": false,
+          "debuff": {
+            "tipo": "sangramento",
+            "valor": 20,
+            "duracao": 3
+          }
+        },
+        {
+          "nome": "Rugido do Trovão Celeste",
+          "dano": 1675,
+          "descricao": "Raios negros explodem em área e drenam a vitalidade do inimigo.",
+          "cooldown": 4,
+          "stun": true,
+          "lifesteal": 0.2
+        },
+        {
+          "nome": "Nona Forma Oni: Julgamento do Trovão Negro",
+          "dano": 2250,
+          "descricao": "Kaigaku transforma todas as cicatrizes de raio em uma sentença final.",
+          "cooldown": 6,
+          "stun": true,
+          "debuff": {
+            "tipo": "defesa_reduction",
+            "valor": 35,
+            "duracao": 2
+          }
+        }
+      ],
+      "falaInicio": "Eu sobrevivi porque escolhi o poder. Agora ajoelhem-se diante do trovão negro!",
+      "falaDerrota": "Eu... não podia perder... eu escolhi viver...",
+      "drops": {
+        "berries": {
+          "min": 9000,
+          "max": 15000
+        },
+        "xp": {
+          "min": 1200,
+          "max": 2000
+        },
+        "xpfruit": {
+          "min": 450,
+          "max": 850
+        },
+        "tokens_cacador": {
+          "min": 2,
+          "max": 4,
+          "chance": 0.82
+        },
+        "tecnicas": [
+          {
+            "id": "respiracao_trovao_dark_kaigaku",
+            "chance": 0.055
+          }
+        ],
+        "espadas": [
+          {
+            "id": "zenitsu_blade",
+            "chance": 0.04
+          }
+        ],
+        "equipamentos": [
+          "haori_zenitsu_limitado",
+          "brincos_hanafuda_limitado",
+          "equipamento_006"
+        ],
+        "baus": [
+          "bau_epico",
+          "bau_raro"
+        ]
+      },
+      "oni": true
+    },
+    {
+      "id": "inosuke_kimetsu",
+      "nome": "Inosuke Hashibira — O Rei da Montanha",
+      "titulo": "Criado pelos Javalis",
+      "descricao": "Criado por javalis nas montanhas, Inosuke criou sua própria técnica de respiração sem nunca ter tido um mestre. Seu instinto selvagem e suas lâminas serrilhadas fazem dele um predador imprevisível.",
+      "vida": 260000,
+      "dano": 863,
+      "defesa": 18,
+      "resistencia": 0.06,
+      "tempoLimite": 3000,
+      "chanceAparicao": 28,
+      "horarioFixo": null,
+      "notificavel": true,
+      "thumbnail": null,
+      "corEmbed": "0x8FBC8F",
+      "habilidades": [
+        {
+          "nome": "Respiração da Besta — Garra Furiosa",
+          "dano": 675,
+          "descricao": "Um ataque imprevisível com as duas lâminas em simultâneo.",
+          "cooldown": 1,
+          "stun": false,
+          "debuff": {
+            "tipo": "sangramento",
+            "valor": 15,
+            "duracao": 2
+          }
+        },
+        {
+          "nome": "Respiração da Besta — Furacão Selvagem",
+          "dano": 938,
+          "descricao": "Inosuke gira em frenesi cortando tudo ao redor.",
+          "cooldown": 3,
+          "stun": false
+        },
+        {
+          "nome": "Respiração da Besta — Décima Primeira Pinça: Garra Máxima",
+          "dano": 1425,
+          "descricao": "O golpe final — 20 cortes em velocidade máxima sem dar tempo de reagir.",
+          "cooldown": 5,
+          "stun": true
+        }
+      ],
+      "falaInicio": "EU SOU O MAIOR! Quem ousa desafiar o Rei da Montanha?! VAMOS LÁ!",
+      "falaDerrota": "Grr... Você é forte. Mas eu também sou! Da próxima vez vou ganhar!",
+      "drops": {
+        "berries": {
+          "min": 4000,
+          "max": 7000
+        },
+        "xp": {
+          "min": 650,
+          "max": 1050
+        },
+        "xpfruit": {
+          "min": 220,
+          "max": 450
+        },
+        "tokens_cacador": {
+          "min": 1,
+          "max": 2,
+          "chance": 0.65
+        },
+        "espadas": [
+          {
+            "id": "inosuke_blades",
+            "chance": 0.16
+          }
+        ],
+        "tecnicas": [
+          {
+            "id": "respiracao_besta",
+            "chance": 0.2
+          }
+        ],
+        "equipamentos": [
+          "equipamento_005",
+          "mascara_inosuke_limitado",
+          "obi_daki_gyutaro_limitado"
+        ],
+        "baus": [
+          "bau_raro",
+          "bau_comum"
+        ]
+      }
+    },
+    {
+      "id": "rei_abobora",
+      "nome": "Rei Abóbora",
+      "titulo": "O Soberano do Halloween",
+      "descricao": "Um gigante feito de trepadeiras e abóboras amaldiçoadas.",
+      "vida": 2500000,
+      "dano": 15000,
+      "defesa": 200,
+      "resistencia": 0.5,
+      "tempoLimite": 7200,
+      "chanceAparicao": 3,
+      "notificavel": true,
+      "thumbnail": "https://media.tenor.com/zWzHqN_X9eYAAAAC/pumpkin-king-halloween.gif",
+      "corEmbed": "#FF7518",
+      "habilidades": [
+        {
+          "nome": "Chuva de Abóboras",
+          "dano": 12000,
+          "descricao": "Lança abóboras explosivas em todos os adversários.",
+          "cooldown": 3,
+          "stun": false
+        },
+        {
+          "nome": "Grito Sombrio",
+          "dano": 5000,
+          "descricao": "Um grito que paralisa a alma.",
+          "cooldown": 5,
+          "stun": true
+        }
+      ],
+      "tecnicas": [
+        {
+          "id": "heranca_setimo",
+          "chance": 0.05
+        }
+      ],
+      "espadas": [
+        {
+          "id": "foice_ceifador",
+          "chance": 0.05
+        }
+      ],
+      "equipamentos": [
+        {
+          "id": "abobora_amaldicoada",
+          "chance": 0.1
+        }
+      ],
+      "berries": 15000,
+      "xp": 12000,
+      "xpfruit": 2000,
+      "tokens_cacador": 10,
+      "isGlobal": true,
+      "fases": []
+    },
+    {
+      "id": "ceifador_sombrio",
+      "nome": "Ceifador Sombrio",
+      "titulo": "O Colecionador de Almas",
+      "descricao": "A própria morte manifestada em forma física para coletar almas neste Halloween.",
+      "vida": 3500000,
+      "dano": 22000,
+      "defesa": 150,
+      "resistencia": 0.4,
+      "tempoLimite": 7200,
+      "chanceAparicao": 2,
+      "notificavel": true,
+      "thumbnail": "https://media.tenor.com/uR2e47t6Wf0AAAAC/grim-reaper-scary.gif",
+      "corEmbed": "#2C3E50",
+      "habilidades": [
+        {
+          "nome": "Corte da Foice",
+          "dano": 25000,
+          "descricao": "Um corte oblíquo que atravessa qualquer defesa.",
+          "cooldown": 2,
+          "stun": false
+        },
+        {
+          "nome": "Colheita de Almas",
+          "dano": 8000,
+          "descricao": "Drena a força vital de seus inimigos.",
+          "cooldown": 6,
+          "stun": true
+        }
+      ],
+      "tecnicas": [
+        {
+          "id": "olhos_destino",
+          "chance": 0.05
+        }
+      ],
+      "espadas": [
+        {
+          "id": "foice_ceifador",
+          "chance": 0.15
+        }
+      ],
+      "equipamentos": [
+        {
+          "id": "manto_vampiro",
+          "chance": 0.1
+        }
+      ],
+      "berries": 20000,
+      "xp": 15000,
+      "xpfruit": 2500,
+      "tokens_cacador": 15,
+      "isGlobal": true,
+      "fases": []
+    },
+    {
+      "id": "bruxa_almas",
+      "nome": "Bruxa das Almas",
+      "titulo": "Mestra das Maldições",
+      "descricao": "Uma feiticeira ancestral que despertou na Noite das Almas.",
+      "vida": 1800000,
+      "dano": 18000,
+      "defesa": 100,
+      "resistencia": 0.6,
+      "tempoLimite": 7200,
+      "chanceAparicao": 3,
+      "notificavel": true,
+      "thumbnail": "https://media.tenor.com/z1q1j3P7FQQAAAAC/witch-halloween.gif",
+      "corEmbed": "#9B59B6",
+      "habilidades": [
+        {
+          "nome": "Fogo Amaldiçoado",
+          "dano": 15000,
+          "descricao": "Lança chamas roxas que queimam a essência.",
+          "cooldown": 3,
+          "stun": false
+        },
+        {
+          "nome": "Transformação Grotesca",
+          "dano": 5000,
+          "descricao": "Lança uma maldição que impede o inimigo de reagir.",
+          "cooldown": 4,
+          "stun": true
+        }
+      ],
+      "tecnicas": [
+        {
+          "id": "heranca_setimo",
+          "chance": 0.03
+        }
+      ],
+      "espadas": [
+        {
+          "id": "kunai_evento",
+          "chance": 0.1
+        }
+      ],
+      "equipamentos": [
+        {
+          "id": "amuleto_bruxa",
+          "chance": 0.2
+        }
+      ],
+      "berries": 12000,
+      "xp": 10000,
+      "xpfruit": 1800,
+      "tokens_cacador": 8,
+      "isGlobal": true,
+      "fases": []
+    },
+    {
+      "id": "cavaleiro_sem_cabeca",
+      "nome": "Cavaleiro Sem Cabeça",
+      "titulo": "O Vingador Silencioso",
+      "descricao": "Um espectro montado em um cavalo infernal, empunhando uma lâmina flamejante.",
+      "vida": 2800000,
+      "dano": 20000,
+      "defesa": 250,
+      "resistencia": 0.3,
+      "tempoLimite": 7200,
+      "chanceAparicao": 2.5,
+      "notificavel": true,
+      "thumbnail": "https://media.tenor.com/X2W-VfA0zS4AAAAC/headless-horseman-halloween.gif",
+      "corEmbed": "#E74C3C",
+      "habilidades": [
+        {
+          "nome": "Investida Infernal",
+          "dano": 18000,
+          "descricao": "Atropela os inimigos com seu cavalo.",
+          "cooldown": 3,
+          "stun": true
+        },
+        {
+          "nome": "Lâmina Fantasma",
+          "dano": 22000,
+          "descricao": "Corte rápido que ignora esquivas.",
+          "cooldown": 4,
+          "stun": false
+        }
+      ],
+      "tecnicas": [
+        {
+          "id": "olhos_destino",
+          "chance": 0.04
+        }
+      ],
+      "espadas": [
+        {
+          "id": "chokuto_sasuke",
+          "chance": 0.05
+        }
+      ],
+      "equipamentos": [
+        {
+          "id": "armadura_susano_evento",
+          "chance": 0.08
+        }
+      ],
+      "berries": 18000,
+      "xp": 14000,
+      "xpfruit": 2200,
+      "tokens_cacador": 12,
+      "isGlobal": true,
+      "fases": []
+    }
+  ]
+}

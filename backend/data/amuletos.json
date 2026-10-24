@@ -1,0 +1,984 @@
+{
+  "config": {
+    "equipagem": {
+      "tecnica": {
+        "maxEquipado": 1,
+        "descricao": "Pode equipar 1 amuleto de técnica por vez"
+      },
+      "espada": {
+        "maxEquipado": 1,
+        "descricao": "Pode equipar 1 amuleto de espada por vez"
+      },
+      "outros": {
+        "maxEquipado": 2,
+        "tipos": ["especial", "combate", "pvp"],
+        "descricao": "Pode equipar 2 amuletos ao total entre especial, combate e PvP"
+      }
+    },
+    "limite_total": 4,
+    "descricao": "Limite total de 4 amuletos equipados (1 técnica + 1 espada + 2 outros)"
+  },
+  "amuletos": [
+    {
+      "id": "piedra_basica",
+      "nome": "Pedra Básica",
+      "tipo": "especial",
+      "raridade": "Comum",
+      "emoji": "🪨",
+      "descricao": "Amuleto elementar básico que fornece pequenos bônus.",
+      "upgrade": false,
+      "maxUpgrade": 1,
+      "efeitos": {
+        "1": { "bonusDano": "5%" }
+      },
+      "custos": {
+        "1": {
+          "ienes": 50000,
+          "amuletos": 0,
+          "fragmentos": 100,
+          "xp": 5000
+        }
+      }
+    },
+    {
+      "id": "amuleto_sorte",
+      "nome": "Amuleto da Sorte",
+      "tipo": "especial",
+      "raridade": "Comum",
+      "emoji": "🍀",
+      "descricao": "Traz um pouco de sorte para encontrar itens raros.",
+      "upgrade": true,
+      "maxUpgrade": 3,
+      "efeitos": {
+        "1": { "bonusDropRaro": "5%" },
+        "2": { "bonusDropRaro": "10%" },
+        "3": { "bonusDropRaro": "15%" }
+      },
+      "custos": {
+        "1": {
+          "ienes": 80000,
+          "amuletos": 3,
+          "fragmentos": 150,
+          "xp": 8000
+        },
+        "2": {
+          "ienes": 120000,
+          "amuletos": 4,
+          "fragmentos": 200,
+          "xp": 12000
+        },
+        "3": {
+          "ienes": 180000,
+          "amuletos": 5,
+          "fragmentos": 300,
+          "xp": 18000
+        }
+      }
+    },
+    {
+      "id": "cristal_elementar",
+      "nome": "Cristal Elementar",
+      "tipo": "combate",
+      "raridade": "Raro",
+      "build": ["dano"],
+      "emoji": "💎",
+      "descricao": "Cristal que canaliza energia elementar para aumentar poder.",
+      "upgrade": true,
+      "maxUpgrade": 4,
+      "efeitos": {
+        "1": { "bonusDano": "5%" },
+        "2": { "bonusDano": "10%" },
+        "3": { "bonusDano": "15%" },
+        "4": { "bonusDano": "20%" }
+      },
+      "custos": {
+        "1": {
+          "ienes": 150000,
+          "amuletos": 4,
+          "fragmentos": 400,
+          "xp": 15000
+        },
+        "2": {
+          "ienes": 220000,
+          "amuletos": 5,
+          "fragmentos": 550,
+          "xp": 22000
+        },
+        "3": {
+          "ienes": 300000,
+          "amuletos": 6,
+          "fragmentos": 700,
+          "xp": 30000
+        },
+        "4": {
+          "ienes": 420000,
+          "amuletos": 7,
+          "fragmentos": 900,
+          "xp": 42000
+        }
+      }
+    },
+    {
+      "id": "escama_dragao",
+      "nome": "Escama do Dragão",
+      "tipo": "combate",
+      "raridade": "Raro",
+      "build": ["tank"],
+      "emoji": "🐲",
+      "descricao": "Escama de dragão que fornece proteção extra.",
+      "upgrade": true,
+      "maxUpgrade": 4,
+      "efeitos": {
+        "1": { "bonusDefesa": "5%" },
+        "2": { "bonusDefesa": "12%" },
+        "3": { "bonusDefesa": "17%" },
+        "4": { "bonusDefesa": "20%" }
+      },
+      "custos": {
+        "1": {
+          "ienes": 160000,
+          "amuletos": 4,
+          "fragmentos": 450,
+          "xp": 16000
+        },
+        "2": {
+          "ienes": 240000,
+          "amuletos": 5,
+          "fragmentos": 600,
+          "xp": 24000
+        },
+        "3": {
+          "ienes": 320000,
+          "amuletos": 6,
+          "fragmentos": 800,
+          "xp": 32000
+        },
+        "4": {
+          "ienes": 450000,
+          "amuletos": 7,
+          "fragmentos": 1000,
+          "xp": 45000
+        }
+      }
+    },
+    {
+      "id": "olho_lince",
+      "nome": "Olho de Lince",
+      "tipo": "pvp",
+      "raridade": "Raro",
+      "build": ["controle"],
+      "emoji": "👁️",
+      "descricao": "Fornece melhor visão no combate PvP.",
+      "upgrade": true,
+      "maxUpgrade": 4,
+      "efeitos": {
+        "1": { "bonusDanoPvP": "8%", "bonusEsquiva": "10%" },
+        "2": { "bonusDanoPvP": "12%", "bonusEsquiva": "15%" },
+        "3": { "bonusDanoPvP": "16%", "bonusEsquiva": "20%" },
+        "4": { "bonusDanoPvP": "25%", "bonusEsquiva": "30%" }
+      },
+      "custos": {
+        "1": {
+          "ienes": 180000,
+          "amuletos": 4,
+          "fragmentos": 500,
+          "xp": 18000
+        },
+        "2": {
+          "ienes": 270000,
+          "amuletos": 5,
+          "fragmentos": 650,
+          "xp": 27000
+        },
+        "3": {
+          "ienes": 360000,
+          "amuletos": 6,
+          "fragmentos": 850,
+          "xp": 36000
+        },
+        "4": {
+          "ienes": 500000,
+          "amuletos": 7,
+          "fragmentos": 1100,
+          "xp": 50000
+        }
+      }
+    },
+    {
+      "id": "essence_arcana",
+      "nome": "Essência Arcana",
+      "tipo": "espada",
+      "raridade": "Épico",
+      "build": ["dano"],
+      "emoji": "✨",
+      "descricao": "Essência mágica que amplifica técnicas de espada.",
+      "upgrade": true,
+      "maxUpgrade": 5,
+      "efeitos": {
+        "1": { "bonusDanoEspada": "10%" },
+        "2": { "bonusDanoEspada": "15%" },
+        "3": { "bonusDanoEspada": "20%" },
+        "4": { "bonusDanoEspada": "30%" },
+        "5": { "bonusDanoEspada": "45%" }
+      },
+      "custos": {
+        "1": {
+          "ienes": 220000,
+          "amuletos": 5,
+          "fragmentos": 600,
+          "xp": 22000
+        },
+        "2": {
+          "ienes": 320000,
+          "amuletos": 6,
+          "fragmentos": 800,
+          "xp": 32000
+        },
+        "3": {
+          "ienes": 420000,
+          "amuletos": 7,
+          "fragmentos": 1000,
+          "xp": 42000
+        },
+        "4": {
+          "ienes": 580000,
+          "amuletos": 8,
+          "fragmentos": 1300,
+          "xp": 58000
+        },
+        "5": {
+          "ienes": 750000,
+          "amuletos": 9,
+          "fragmentos": 1600,
+          "xp": 75000
+        }
+      }
+    },
+    {
+      "id": "raivoso_berserker",
+      "nome": "Raivoso Berserker",
+      "tipo": "combate",
+      "raridade": "Épico",
+      "emoji": "😤",
+      "descricao": "Potência bruta que aumenta dano com baixa vida.",
+      "upgrade": true,
+      "maxUpgrade": 5,
+      "efeitos": {
+        "1": { "bonusDanoBaixaVida": "10%", "limitador": "50% HP" },
+        "2": { "bonusDanoBaixaVida": "15%", "limitador": "50% HP" },
+        "3": { "bonusDanoBaixaVida": "25%", "limitador": "40% HP" },
+        "4": { "bonusDanoBaixaVida": "35%", "limitador": "40% HP" },
+        "5": { "bonusDanoBaixaVida": "50%", "limitador": "30% HP" }
+      },
+      "custos": {
+        "1": {
+          "ienes": 240000,
+          "amuletos": 5,
+          "fragmentos": 650,
+          "xp": 24000
+        },
+        "2": {
+          "ienes": 340000,
+          "amuletos": 6,
+          "fragmentos": 850,
+          "xp": 34000
+        },
+        "3": {
+          "ienes": 450000,
+          "amuletos": 7,
+          "fragmentos": 1100,
+          "xp": 45000
+        },
+        "4": {
+          "ienes": 620000,
+          "amuletos": 8,
+          "fragmentos": 1400,
+          "xp": 62000
+        },
+        "5": {
+          "ienes": 800000,
+          "amuletos": 9,
+          "fragmentos": 1700,
+          "xp": 80000
+        }
+      }
+    },
+    {
+      "id": "coracao_ouro",
+      "nome": "Coração de Ouro",
+      "tipo": "especial",
+      "raridade": "Épico",
+      "emoji": "💛",
+      "descricao": "Aumenta a chance de encontrar moedas raras em missões.",
+      "upgrade": true,
+      "maxUpgrade": 5,
+      "efeitos": {
+        "1": { "bonusIenes": "1.2x" },
+        "2": { "bonusIenes": "1.4x" },
+        "3": { "bonusIenes": "1.6x" },
+        "4": { "bonusIenes": "1.8x" },
+        "5": { "bonusIenes": "2.0x" }
+      },
+      "custos": {
+        "1": {
+          "ienes": 260000,
+          "amuletos": 5,
+          "fragmentos": 700,
+          "xp": 26000
+        },
+        "2": {
+          "ienes": 370000,
+          "amuletos": 6,
+          "fragmentos": 900,
+          "xp": 37000
+        },
+        "3": {
+          "ienes": 480000,
+          "amuletos": 7,
+          "fragmentos": 1150,
+          "xp": 48000
+        },
+        "4": {
+          "ienes": 650000,
+          "amuletos": 8,
+          "fragmentos": 1450,
+          "xp": 65000
+        },
+        "5": {
+          "ienes": 850000,
+          "amuletos": 9,
+          "fragmentos": 1750,
+          "xp": 85000
+        }
+      }
+    },
+    {
+      "id": "jackpot_777",
+      "nome": "777 Jackpot",
+      "tipo": "tecnica",
+      "raridade": "Mítico",
+      "emoji": "🎰",
+      "descricao": "Amuleto que amplifica a técnica equipada, elevando seu nível ao máximo. Destruir o amuleto faz a técnica voltar ao nível 1.",
+      "upgrade": true,
+      "maxUpgrade": 5,
+      "efeitos": {
+        "1": { "nivelTecnica": 10 },
+        "2": { "nivelTecnica": 25 },
+        "3": { "nivelTecnica": 35 },
+        "4": { "nivelTecnica": 45 },
+        "5": { "nivelTecnica": 50 }
+      },
+      "custos": {
+        "1": {
+          "ienes": 300000,
+          "amuletos": 5,
+          "fragmentos": 1000,
+          "xp": 30000
+        },
+        "2": {
+          "ienes": 400000,
+          "amuletos": 6,
+          "fragmentos": 1200,
+          "xp": 40000
+        },
+        "3": {
+          "ienes": 500000,
+          "amuletos": 7,
+          "fragmentos": 1500,
+          "xp": 50000
+        },
+        "4": {
+          "ienes": 650000,
+          "amuletos": 8,
+          "fragmentos": 1800,
+          "xp": 60000
+        },
+        "5": {
+          "ienes": 800000,
+          "amuletos": 9,
+          "fragmentos": 2000,
+          "xp": 75000
+        }
+      }
+    },
+    {
+      "id": "imitacao_rika",
+      "nome": "Imitação de Rika",
+      "tipo": "tecnica",
+      "raridade": "Lendário",
+      "emoji": "👻",
+      "descricao": "Copia uma porcentagem do nível da sua técnica com maior nível e adiciona à técnica equipada. Cada upgrade aumenta a porcentagem copiada.",
+      "upgrade": true,
+      "maxUpgrade": 5,
+      "efeitos": {
+        "1": { "porcentagemCopiaLevel": "10%" },
+        "2": { "porcentagemCopiaLevel": "20%" },
+        "3": { "porcentagemCopiaLevel": "30%" },
+        "4": { "porcentagemCopiaLevel": "40%" },
+        "5": { "porcentagemCopiaLevel": "50%" }
+      },
+      "custos": {
+        "1": {
+          "ienes": 250000,
+          "amuletos": 4,
+          "fragmentos": 750,
+          "xp": 25000
+        },
+        "2": {
+          "ienes": 350000,
+          "amuletos": 5,
+          "fragmentos": 900,
+          "xp": 35000
+        },
+        "3": {
+          "ienes": 450000,
+          "amuletos": 6,
+          "fragmentos": 1100,
+          "xp": 45000
+        },
+        "4": {
+          "ienes": 550000,
+          "amuletos": 7,
+          "fragmentos": 1300,
+          "xp": 55000
+        },
+        "5": {
+          "ienes": 700000,
+          "amuletos": 8,
+          "fragmentos": 1500,
+          "xp": 70000
+        }
+      }
+    },
+    {
+      "id": "sem_limite",
+      "nome": "Sem Limite",
+      "tipo": "espada",
+      "raridade": "Mítico",
+      "emoji": "⚔️",
+      "descricao": "Amuleto que reduz o custo de stamina das skills de espada.",
+      "upgrade": true,
+      "maxUpgrade": 5,
+      "efeitos": {
+        "1": { "reducaoStamina": "10%" },
+        "2": { "reducaoStamina": "25%" },
+        "3": { "reducaoStamina": "45%" },
+        "4": { "reducaoStamina": "75%" },
+        "5": { "reducaoStamina": "100%" }
+      },
+      "custos": {
+        "1": {
+          "ienes": 350000,
+          "amuletos": 5,
+          "fragmentos": 1200,
+          "xp": 28000
+        },
+        "2": {
+          "ienes": 450000,
+          "amuletos": 6,
+          "fragmentos": 1400,
+          "xp": 38000
+        },
+        "3": {
+          "ienes": 550000,
+          "amuletos": 7,
+          "fragmentos": 1600,
+          "xp": 48000
+        },
+        "4": {
+          "ienes": 700000,
+          "amuletos": 8,
+          "fragmentos": 1900,
+          "xp": 58000
+        },
+        "5": {
+          "ienes": 900000,
+          "amuletos": 9,
+          "fragmentos": 2200,
+          "xp": 70000
+        }
+      }
+    },
+    {
+      "id": "corte_letal",
+      "nome": "Corte Letal",
+      "tipo": "espada",
+      "raridade": "Lendário",
+      "emoji": "🗡️",
+      "descricao": "Amuleto que diminui a chance de inimigos desviarem das skills de espada.",
+      "upgrade": true,
+      "maxUpgrade": 5,
+      "efeitos": {
+        "1": { "reducaoEsquiva": "15%" },
+        "2": { "reducaoEsquiva": "25%" },
+        "3": { "reducaoEsquiva": "35%" },
+        "4": { "reducaoEsquiva": "60%" },
+        "5": { "reducaoEsquiva": "80%" }
+      },
+      "custos": {
+        "1": {
+          "ienes": 400000,
+          "amuletos": 5,
+          "fragmentos": 1000,
+          "xp": 25000
+        },
+        "2": {
+          "ienes": 500000,
+          "amuletos": 6,
+          "fragmentos": 1200,
+          "xp": 35000
+        },
+        "3": {
+          "ienes": 600000,
+          "amuletos": 7,
+          "fragmentos": 1400,
+          "xp": 45000
+        },
+        "4": {
+          "ienes": 800000,
+          "amuletos": 8,
+          "fragmentos": 1700,
+          "xp": 55000
+        },
+        "5": {
+          "ienes": 1000000,
+          "amuletos": 9,
+          "fragmentos": 2000,
+          "xp": 70000
+        }
+      }
+    },
+    {
+      "id": "ganancia_recursos",
+      "nome": "Ganância de Recursos",
+      "tipo": "especial",
+      "raridade": "Lendário",
+      "emoji": "💰",
+      "descricao": "Amuleto que aumenta as recompensas de missões.",
+      "upgrade": true,
+      "maxUpgrade": 5,
+      "efeitos": {
+        "1": { "multiplicadorMissoes": "1.2x" },
+        "2": { "multiplicadorMissoes": "1.4x" },
+        "3": { "multiplicadorMissoes": "1.6x" },
+        "4": { "multiplicadorMissoes": "1.8x" },
+        "5": { "multiplicadorMissoes": "2.0x" }
+      },
+      "custos": {
+        "1": {
+          "ienes": 250000,
+          "amuletos": 5,
+          "fragmentos": 750,
+          "xp": 25000
+        },
+        "2": {
+          "ienes": 350000,
+          "amuletos": 6,
+          "fragmentos": 900,
+          "xp": 35000
+        },
+        "3": {
+          "ienes": 450000,
+          "amuletos": 7,
+          "fragmentos": 1100,
+          "xp": 45000
+        },
+        "4": {
+          "ienes": 550000,
+          "amuletos": 8,
+          "fragmentos": 1300,
+          "xp": 55000
+        },
+        "5": {
+          "ienes": 700000,
+          "amuletos": 9,
+          "fragmentos": 1500,
+          "xp": 70000
+        }
+      }
+    },
+    {
+      "id": "fortuna_critica",
+      "nome": "Fortuna Crítica",
+      "tipo": "combate",
+      "raridade": "Lendário",
+      "emoji": "⚡",
+      "descricao": "Amuleto que aumenta a chance crítica em combate.",
+      "upgrade": true,
+      "maxUpgrade": 5,
+      "efeitos": {
+        "1": { "bonusCritico": "15%" },
+        "2": { "bonusCritico": "25%" },
+        "3": { "bonusCritico": "35%" },
+        "4": { "bonusCritico": "50%" },
+        "5": { "bonusCritico": "75%" }
+      },
+      "custos": {
+        "1": {
+          "ienes": 300000,
+          "amuletos": 5,
+          "fragmentos": 800,
+          "xp": 26000
+        },
+        "2": {
+          "ienes": 400000,
+          "amuletos": 6,
+          "fragmentos": 1000,
+          "xp": 36000
+        },
+        "3": {
+          "ienes": 500000,
+          "amuletos": 7,
+          "fragmentos": 1200,
+          "xp": 46000
+        },
+        "4": {
+          "ienes": 650000,
+          "amuletos": 8,
+          "fragmentos": 1500,
+          "xp": 56000
+        },
+        "5": {
+          "ienes": 800000,
+          "amuletos": 9,
+          "fragmentos": 1800,
+          "xp": 68000
+        }
+      }
+    },
+    {
+      "id": "escudo_divino",
+      "nome": "Escudo Divino",
+      "tipo": "combate",
+      "raridade": "Lendário",
+      "emoji": "🛡️",
+      "descricao": "Amuleto que aumenta a defesa em combate.",
+      "upgrade": true,
+      "maxUpgrade": 5,
+      "efeitos": {
+        "1": { "bonusDefesa": "5%" },
+        "2": { "bonusDefesa": "10%" },
+        "3": { "bonusDefesa": "15%" },
+        "4": { "bonusDefesa": "30%" },
+        "5": { "bonusDefesa": "50%" }
+      },
+      "custos": {
+        "1": {
+          "ienes": 300000,
+          "amuletos": 5,
+          "fragmentos": 800,
+          "xp": 26000
+        },
+        "2": {
+          "ienes": 400000,
+          "amuletos": 6,
+          "fragmentos": 1000,
+          "xp": 36000
+        },
+        "3": {
+          "ienes": 500000,
+          "amuletos": 7,
+          "fragmentos": 1200,
+          "xp": 46000
+        },
+        "4": {
+          "ienes": 650000,
+          "amuletos": 8,
+          "fragmentos": 1500,
+          "xp": 56000
+        },
+        "5": {
+          "ienes": 800000,
+          "amuletos": 9,
+          "fragmentos": 1800,
+          "xp": 68000
+        }
+      }
+    },
+    {
+      "id": "vitalidade_dragao",
+      "nome": "Vitalidade do Dragão",
+      "tipo": "especial",
+      "raridade": "Mítico",
+      "emoji": "🐉",
+      "descricao": "Amuleto que aumenta a regeneração de HP em combate.",
+      "upgrade": true,
+      "maxUpgrade": 5,
+      "efeitos": {
+        "1": { "bonusRegen": "10%", "hpRecuperacao": "+15/turno" },
+        "2": { "bonusRegen": "20%", "hpRecuperacao": "+25/turno" },
+        "3": { "bonusRegen": "30%", "hpRecuperacao": "+40/turno" },
+        "4": { "bonusRegen": "40%", "hpRecuperacao": "+60/turno" },
+        "5": { "bonusRegen": "50%", "hpRecuperacao": "+100/turno" }
+      },
+      "custos": {
+        "1": {
+          "ienes": 320000,
+          "amuletos": 5,
+          "fragmentos": 900,
+          "xp": 28000
+        },
+        "2": {
+          "ienes": 420000,
+          "amuletos": 6,
+          "fragmentos": 1100,
+          "xp": 38000
+        },
+        "3": {
+          "ienes": 520000,
+          "amuletos": 7,
+          "fragmentos": 1300,
+          "xp": 48000
+        },
+        "4": {
+          "ienes": 680000,
+          "amuletos": 8,
+          "fragmentos": 1600,
+          "xp": 58000
+        },
+        "5": {
+          "ienes": 850000,
+          "amuletos": 9,
+          "fragmentos": 1900,
+          "xp": 70000
+        }
+      }
+    },
+    {
+      "id": "rapidez_ninja",
+      "nome": "Rapidez Ninja",
+      "tipo": "combate",
+      "raridade": "Lendário",
+      "emoji": "🥷",
+      "descricao": "Amuleto que reduz o cooldown das skills em combate.",
+      "upgrade": true,
+      "maxUpgrade": 5,
+      "efeitos": {
+        "1": { "reducaoCooldown": "10%" },
+        "2": { "reducaoCooldown": "20%" },
+        "3": { "reducaoCooldown": "30%" },
+        "4": { "reducaoCooldown": "45%" },
+        "5": { "reducaoCooldown": "60%" }
+      },
+      "custos": {
+        "1": {
+          "ienes": 280000,
+          "amuletos": 5,
+          "fragmentos": 850,
+          "xp": 27000
+        },
+        "2": {
+          "ienes": 380000,
+          "amuletos": 6,
+          "fragmentos": 1050,
+          "xp": 37000
+        },
+        "3": {
+          "ienes": 480000,
+          "amuletos": 7,
+          "fragmentos": 1250,
+          "xp": 47000
+        },
+        "4": {
+          "ienes": 620000,
+          "amuletos": 8,
+          "fragmentos": 1550,
+          "xp": 57000
+        },
+        "5": {
+          "ienes": 780000,
+          "amuletos": 9,
+          "fragmentos": 1850,
+          "xp": 69000
+        }
+      }
+    },
+    {
+      "id": "campeao_pvp",
+      "nome": "Campeão do PvP",
+      "tipo": "pvp",
+      "raridade": "Mítico",
+      "emoji": "👑",
+      "descricao": "Amuleto que aumenta poder em batalhas PvP.",
+      "upgrade": true,
+      "maxUpgrade": 5,
+      "efeitos": {
+        "1": { "bonusDanoPvP": "3%", "bonusDefesaPvP": "5%" },
+        "2": { "bonusDanoPvP": "7%", "bonusDefesaPvP": "10%" },
+        "3": { "bonusDanoPvP": "10%", "bonusDefesaPvP": "15%" },
+        "4": { "bonusDanoPvP": "15%", "bonusDefesaPvP": "25%" },
+        "5": { "bonusDanoPvP": "25%", "bonusDefesaPvP": "30%" }
+      },
+      "custos": {
+        "1": {
+          "ienes": 350000,
+          "amuletos": 5,
+          "fragmentos": 1000,
+          "xp": 30000
+        },
+        "2": {
+          "ienes": 450000,
+          "amuletos": 6,
+          "fragmentos": 1200,
+          "xp": 40000
+        },
+        "3": {
+          "ienes": 550000,
+          "amuletos": 7,
+          "fragmentos": 1400,
+          "xp": 50000
+        },
+        "4": {
+          "ienes": 700000,
+          "amuletos": 8,
+          "fragmentos": 1700,
+          "xp": 60000
+        },
+        "5": {
+          "ienes": 900000,
+          "amuletos": 9,
+          "fragmentos": 2000,
+          "xp": 75000
+        }
+      }
+    },
+    {
+      "id": "colhedor_xp",
+      "nome": "Colhedor de XP",
+      "tipo": "especial",
+      "raridade": "Lendário",
+      "emoji": "📈",
+      "descricao": "Amuleto que aumenta a quantidade de XP obtido.",
+      "upgrade": true,
+      "maxUpgrade": 5,
+      "efeitos": {
+        "1": { "multiplicadorXP": "1.2x" },
+        "2": { "multiplicadorXP": "1.4x" },
+        "3": { "multiplicadorXP": "1.6x" },
+        "4": { "multiplicadorXP": "1.8x" },
+        "5": { "multiplicadorXP": "2.0x" }
+      },
+      "custos": {
+        "1": {
+          "ienes": 240000,
+          "amuletos": 5,
+          "fragmentos": 700,
+          "xp": 24000
+        },
+        "2": {
+          "ienes": 340000,
+          "amuletos": 6,
+          "fragmentos": 850,
+          "xp": 34000
+        },
+        "3": {
+          "ienes": 440000,
+          "amuletos": 7,
+          "fragmentos": 1050,
+          "xp": 44000
+        },
+        "4": {
+          "ienes": 540000,
+          "amuletos": 8,
+          "fragmentos": 1250,
+          "xp": 54000
+        },
+        "5": {
+          "ienes": 680000,
+          "amuletos": 9,
+          "fragmentos": 1450,
+          "xp": 68000
+        }
+      }
+    },
+    {
+      "id": "besto_friendo",
+      "nome": "Besto Friendo",
+      "tipo": "especial",
+      "raridade": "Mítico",
+      "emoji": "💞",
+      "descricao": "Amuleto que reduz o cooldown de vínculo, permitindo vincular-se com alguém mais cedo após o fim de um vínculo.",
+      "upgrade": true,
+      "maxUpgrade": 5,
+      "efeitos": {
+        "1": { "reducaoCooldownVinculo": "10%" },
+        "2": { "reducaoCooldownVinculo": "15%" },
+        "3": { "reducaoCooldownVinculo": "20%" },
+        "4": { "reducaoCooldownVinculo": "30%" },
+        "5": { "reducaoCooldownVinculo": "45%" }
+      },
+      "custos": {
+        "1": { "ienes": 320000, "amuletos": 5, "fragmentos": 900,  "xp": 28000 },
+        "2": { "ienes": 420000, "amuletos": 6, "fragmentos": 1100, "xp": 38000 },
+        "3": { "ienes": 520000, "amuletos": 7, "fragmentos": 1300, "xp": 48000 },
+        "4": { "ienes": 680000, "amuletos": 8, "fragmentos": 1600, "xp": 58000 },
+        "5": { "ienes": 850000, "amuletos": 9, "fragmentos": 1900, "xp": 70000 }
+      }
+    },
+    {
+      "id": "amizade_beneficios",
+      "nome": "Amizade com Benefícios",
+      "tipo": "especial",
+      "raridade": "Mítico",
+      "emoji": "🤝",
+      "descricao": "Amuleto que aumenta o percentual de farm recebido do parceiro de vínculo.",
+      "upgrade": true,
+      "maxUpgrade": 5,
+      "efeitos": {
+        "1": { "bonusFarmVinculo": "1%" },
+        "2": { "bonusFarmVinculo": "2%" },
+        "3": { "bonusFarmVinculo": "3%" },
+        "4": { "bonusFarmVinculo": "4%" },
+        "5": { "bonusFarmVinculo": "5%" }
+      },
+      "custos": {
+        "1": { "ienes": 320000, "amuletos": 5, "fragmentos": 900,  "xp": 28000 },
+        "2": { "ienes": 420000, "amuletos": 6, "fragmentos": 1100, "xp": 38000 },
+        "3": { "ienes": 520000, "amuletos": 7, "fragmentos": 1300, "xp": 48000 },
+        "4": { "ienes": 680000, "amuletos": 8, "fragmentos": 1600, "xp": 58000 },
+        "5": { "ienes": 850000, "amuletos": 9, "fragmentos": 1900, "xp": 70000 }
+      }
+    },
+    {
+      "id": "chama_revolta",
+      "nome": "Chama Revolta",
+      "tipo": "especial",
+      "raridade": "Mítico",
+      "emoji": "🔥",
+      "descricao": "Amuleto lendário que concede giros extras ao rodar técnicas. Cada upgrade desbloqueará a ativação para raridades mais baixas.",
+      "upgrade": true,
+      "maxUpgrade": 3,
+      "efeitos": {
+        "1": {
+          "descrição": "Giro extra para técnicas Épicas"
+        },
+        "2": {
+          "descrição": "Giro extra para técnicas Épicas e Raras"
+        },
+        "3": {
+          "descrição": "Giro extra para técnicas Épicas, Raras e Comuns"
+        }
+      },
+      "custos": {
+        "1": {
+          "ienes": 320000,
+          "amuletos": 5,
+          "fragmentos": 1100,
+          "xp": 30000
+        },
+        "2": {
+          "ienes": 430000,
+          "amuletos": 6,
+          "fragmentos": 1300,
+          "xp": 42000
+        },
+        "3": {
+          "ienes": 550000,
+          "amuletos": 7,
+          "fragmentos": 1600,
+          "xp": 55000
+        }
+      }
+    }
+  ]
+}

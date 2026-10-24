@@ -1,0 +1,3508 @@
+{
+  "equipamentos": [
+    {
+      "id": "equipamento_001",
+      "nome": "Uniforme do Jujutsu High",
+      "categoria": "armadura",
+      "raridade": "rara",
+      "loja": true,
+      "stats": {
+        "vida": 10,
+        "defesa": 10,
+        "forca": 2,
+        "stamina": 0,
+        "regenTurno": 0,
+        "resistencia": 0
+      },
+      "multipliers": {
+        "critChance": 0,
+        "critDamage": 0,
+        "dodgeChance": 12,
+        "comboChance": 0,
+        "healing": 23,
+        "swordDamage": 0,
+        "frutaDamage": 0,
+        "xpGain": 0,
+        "masteryGain": 0,
+        "berryGain": 0,
+        "fragmentGain": 12,
+        "velocidade": 0,
+        "poderMaldito": 12
+      },
+      "special": {},
+      "descricao": "O uniforme padrão da Escola Superior de Feitiçaria de Tóquio. Resistente a ataques de espíritos amaldiçoados.",
+      "preco": 1800,
+      "durabilidade": 125,
+      "durabilidadeMax": 125,
+      "nivel": 1,
+      "nivelMax": 5,
+      "balanceVersion": 2
+    },
+    {
+      "id": "equipamento_002",
+      "nome": "Venda de Gojo",
+      "categoria": "capacete",
+      "raridade": "lendária",
+      "loja": true,
+      "stats": {
+        "vida": 31,
+        "defesa": 20,
+        "forca": 10,
+        "stamina": 15,
+        "regenTurno": 0,
+        "resistencia": 0
+      },
+      "multipliers": {
+        "critChance": 0,
+        "critDamage": 0,
+        "dodgeChance": 10,
+        "comboChance": 26,
+        "healing": 78,
+        "swordDamage": 0,
+        "frutaDamage": 0,
+        "xpGain": 0,
+        "masteryGain": 0,
+        "berryGain": 0,
+        "fragmentGain": 0,
+        "velocidade": 0,
+        "poderMaldito": 0
+      },
+      "special": {},
+      "descricao": "A venda sagrada que limita os Seis Olhos de Satoru Gojo. Com ela, a percepção se aguça além dos olhos — alta esquiva e stamina para quem domina o Infinito.",
+      "preco": 35200,
+      "durabilidade": 145,
+      "durabilidadeMax": 145,
+      "nivel": 1,
+      "nivelMax": 5,
+      "balanceVersion": 2
+    },
+    {
+      "id": "equipamento_003",
+      "nome": "Tênis de Corrida Amaldiçoado",
+      "categoria": "botas",
+      "raridade": "comum",
+      "loja": true,
+      "stats": {
+        "vida": 1,
+        "defesa": 1,
+        "forca": 1,
+        "stamina": 9,
+        "regenTurno": 0,
+        "resistencia": 0
+      },
+      "multipliers": {
+        "critChance": 0,
+        "critDamage": 0,
+        "dodgeChance": 18,
+        "comboChance": 6.1,
+        "healing": 0,
+        "swordDamage": 0,
+        "frutaDamage": 0,
+        "xpGain": 0,
+        "masteryGain": 0,
+        "berryGain": 0,
+        "fragmentGain": 0,
+        "velocidade": 1.5,
+        "poderMaldito": 0
+      },
+      "special": {},
+      "descricao": "Calçados reforçados com energia amaldiçoada que aumentam velocidade e esquiva.",
+      "preco": 2200,
+      "durabilidade": 92,
+      "durabilidadeMax": 92,
+      "nivel": 1,
+      "nivelMax": 3,
+      "balanceVersion": 2
+    },
+    {
+      "id": "equipamento_004",
+      "nome": "Armadura de Grade",
+      "categoria": "armadura",
+      "raridade": "lendária",
+      "loja": true,
+      "stats": {
+        "vida": 33,
+        "defesa": 20,
+        "forca": 3,
+        "stamina": 0,
+        "regenTurno": 0,
+        "resistencia": 0
+      },
+      "multipliers": {
+        "critChance": 0,
+        "critDamage": 0,
+        "dodgeChance": 4.4,
+        "comboChance": 0,
+        "healing": 66,
+        "swordDamage": 0,
+        "frutaDamage": 0,
+        "xpGain": 0,
+        "masteryGain": 0,
+        "berryGain": 0,
+        "fragmentGain": 17,
+        "velocidade": 0,
+        "poderMaldito": 17
+      },
+      "special": {
+        "shield": {
+          "value": 88,
+          "description": "Absorve 88 de dano no início de cada combate com barreira de energia"
+        }
+      },
+      "descricao": "⛨ Armadura forjada com ferramentas amaldiçoadas da Grade. Escudo protetor e bônus de cura.",
+      "preco": 23500,
+      "durabilidade": 218,
+      "durabilidadeMax": 218,
+      "nivel": 1,
+      "nivelMax": 10,
+      "balanceVersion": 2
+    },
+    {
+      "id": "equipamento_005",
+      "nome": "Luvas de Combate do Feiticeiro",
+      "categoria": "luvas",
+      "raridade": "épica",
+      "loja": true,
+      "stats": {
+        "vida": 8,
+        "defesa": 8,
+        "forca": 16,
+        "stamina": 2,
+        "regenTurno": 0,
+        "resistencia": 0
+      },
+      "multipliers": {
+        "critChance": 21,
+        "critDamage": 24,
+        "dodgeChance": 0,
+        "comboChance": 0,
+        "healing": 0,
+        "swordDamage": 45,
+        "frutaDamage": 0,
+        "xpGain": 0,
+        "masteryGain": 0,
+        "berryGain": 0,
+        "fragmentGain": 0,
+        "velocidade": 0,
+        "poderMaldito": 0
+      },
+      "special": {
+        "lifesteal": {
+          "value": 16,
+          "description": "Rouba 16% da vida causada com ataques de ferramenta amaldiçoada"
+        }
+      },
+      "descricao": "⚔️ Luvas imbuídas com energia amaldiçoada que amplificam golpes com ferramentas e críticos.",
+      "preco": 25200,
+      "durabilidade": 162,
+      "durabilidadeMax": 162,
+      "nivel": 1,
+      "nivelMax": 8,
+      "balanceVersion": 2
+    },
+    {
+      "id": "equipamento_006",
+      "nome": "Manto do Feiticeiro Especial",
+      "categoria": "manto",
+      "raridade": "épica",
+      "loja": true,
+      "stats": {
+        "vida": 10,
+        "defesa": 13,
+        "forca": 5,
+        "stamina": 5,
+        "regenTurno": 0,
+        "resistencia": 0
+      },
+      "multipliers": {
+        "critChance": 0,
+        "critDamage": 0,
+        "dodgeChance": 0.6,
+        "comboChance": 29,
+        "healing": 0,
+        "swordDamage": 0,
+        "frutaDamage": 54,
+        "xpGain": 0,
+        "masteryGain": 0,
+        "berryGain": 0,
+        "fragmentGain": 0,
+        "velocidade": 0,
+        "poderMaldito": 1.1
+      },
+      "special": {
+        "elementalResist": {
+          "value": 40,
+          "description": "Reduz 40% do dano de técnicas amaldiçoadas elementais"
+        }
+      },
+      "descricao": "🔮 Manto imbuído com proteção contra técnicas amaldiçoadas. Amplifica técnicas e combos.",
+      "preco": 25200,
+      "durabilidade": 162,
+      "durabilidadeMax": 162,
+      "nivel": 1,
+      "nivelMax": 8,
+      "balanceVersion": 2
+    },
+    {
+      "id": "equipamento_007",
+      "nome": "Amuleto do Curandeiro",
+      "categoria": "acessório",
+      "raridade": "rara",
+      "loja": true,
+      "stats": {
+        "vida": 10,
+        "defesa": 7,
+        "forca": 0,
+        "stamina": 1,
+        "regenTurno": 5,
+        "resistencia": 1
+      },
+      "multipliers": {
+        "critChance": 0,
+        "critDamage": 0,
+        "dodgeChance": 0,
+        "comboChance": 0,
+        "healing": 70,
+        "swordDamage": 0,
+        "frutaDamage": 0,
+        "xpGain": 0,
+        "masteryGain": 0,
+        "berryGain": 0,
+        "fragmentGain": 0,
+        "velocidade": 0,
+        "poderMaldito": 0
+      },
+      "special": {
+        "regen": {
+          "value": 29,
+          "description": "Regenera 29 HP no início de cada turno via técnica de cura invertida"
+        }
+      },
+      "descricao": "💚 Amuleto imbuído com cura invertida que amplifica regeneração constante.",
+      "preco": 11100,
+      "durabilidade": 125,
+      "durabilidadeMax": 125,
+      "nivel": 1,
+      "nivelMax": 6,
+      "balanceVersion": 2
+    },
+    {
+      "id": "equipamento_008",
+      "nome": "Chapéu do Negociante de Maldições",
+      "categoria": "capacete",
+      "raridade": "rara",
+      "loja": true,
+      "stats": {
+        "vida": 9,
+        "defesa": 7,
+        "forca": 2,
+        "stamina": 3,
+        "regenTurno": 0,
+        "resistencia": 2
+      },
+      "multipliers": {
+        "critChance": 0,
+        "critDamage": 0,
+        "dodgeChance": 0,
+        "comboChance": 0,
+        "healing": 0,
+        "swordDamage": 0,
+        "frutaDamage": 0,
+        "xpGain": 43,
+        "masteryGain": 26,
+        "berryGain": 70,
+        "fragmentGain": 52,
+        "velocidade": 0,
+        "poderMaldito": 0
+      },
+      "special": {},
+      "descricao": "💰 Chapéu usado pelo negociante de ferramentas amaldiçoadas. Aumenta ganhos de recursos.",
+      "preco": 18500,
+      "durabilidade": 112,
+      "durabilidadeMax": 112,
+      "nivel": 1,
+      "nivelMax": 5,
+      "balanceVersion": 2
+    },
+    {
+      "id": "equipamento_009",
+      "nome": "Cajado de Feiticeiro Gradual",
+      "categoria": "arma",
+      "raridade": "épica",
+      "loja": true,
+      "stats": {
+        "vida": 9,
+        "defesa": 7,
+        "forca": 7,
+        "stamina": 10,
+        "regenTurno": 0,
+        "resistencia": 0
+      },
+      "multipliers": {
+        "critChance": 27,
+        "critDamage": 25,
+        "dodgeChance": 0,
+        "comboChance": 0,
+        "healing": 0,
+        "swordDamage": 19,
+        "frutaDamage": 13,
+        "xpGain": 0,
+        "masteryGain": 0,
+        "berryGain": 0,
+        "fragmentGain": 0,
+        "velocidade": 0,
+        "poderMaldito": 0
+      },
+      "special": {
+        "cooldownReduction": {
+          "value": 2,
+          "description": "Reduz em 2 turnos de cooldown de todas as técnicas amaldiçoadas"
+        }
+      },
+      "descricao": "🎯 Cajado balanceado com redução de cooldown e bônus híbridos em combate.",
+      "preco": 29400,
+      "durabilidade": 176,
+      "durabilidadeMax": 176,
+      "nivel": 1,
+      "nivelMax": 8,
+      "balanceVersion": 2
+    },
+    {
+      "id": "equipamento_010",
+      "nome": "Capa do Assassino Amaldiçoado",
+      "categoria": "manto",
+      "raridade": "lendária",
+      "loja": true,
+      "stats": {
+        "vida": 20,
+        "defesa": 20,
+        "forca": 15,
+        "stamina": 5,
+        "regenTurno": 0,
+        "resistencia": 0
+      },
+      "multipliers": {
+        "critChance": 39,
+        "critDamage": 52,
+        "dodgeChance": 26,
+        "comboChance": 26,
+        "healing": 0,
+        "swordDamage": 26,
+        "frutaDamage": 0,
+        "xpGain": 0,
+        "masteryGain": 0,
+        "berryGain": 0,
+        "fragmentGain": 0,
+        "velocidade": 0,
+        "poderMaldito": 0
+      },
+      "special": {
+        "firstStrike": {
+          "value": 52,
+          "description": "Primeiro ataque do combate causa +52% de dano"
+        }
+      },
+      "descricao": "🗡️ Capa usada por assassinos da Grade. Alto crítico e desvio para ataques fulminantes.",
+      "preco": 47000,
+      "durabilidade": 203,
+      "durabilidadeMax": 203,
+      "nivel": 1,
+      "nivelMax": 10,
+      "balanceVersion": 2
+    },
+    {
+      "id": "equipamento_011",
+      "nome": "Armadura do Feiticeiro Especial Grau 1",
+      "categoria": "armadura",
+      "raridade": "mítica",
+      "loja": false,
+      "stats": {
+        "vida": 43,
+        "defesa": 26,
+        "forca": 14,
+        "stamina": 20,
+        "regenTurno": 0,
+        "resistencia": 0
+      },
+      "multipliers": {
+        "critChance": 0,
+        "critDamage": 0,
+        "dodgeChance": 20,
+        "comboChance": 0,
+        "healing": 64,
+        "swordDamage": 53,
+        "frutaDamage": 53,
+        "xpGain": 34,
+        "masteryGain": 34,
+        "berryGain": 51,
+        "fragmentGain": 43,
+        "velocidade": 0,
+        "poderMaldito": 0
+      },
+      "special": {
+        "battleLust": {
+          "value": 7.1,
+          "description": "A cada espírito amaldiçoado derrotado, ganha +7.1% de dano acumulativo"
+        }
+      },
+      "descricao": "👑 Armadura de feiticeiro especial grau 1. Bônus reduzidos em 25%.",
+      "preco": 140000,
+      "durabilidade": 310,
+      "durabilidadeMax": 310,
+      "nivel": 1,
+      "nivelMax": 15,
+      "balanceVersion": 2
+    },
+    {
+      "id": "equipamento_012",
+      "nome": "Luvas de Combate Básicas",
+      "categoria": "luvas",
+      "raridade": "comum",
+      "loja": true,
+      "stats": {
+        "vida": 4,
+        "defesa": 2,
+        "forca": 4,
+        "stamina": 2,
+        "regenTurno": 0,
+        "resistencia": 0
+      },
+      "multipliers": {
+        "critChance": 7.7,
+        "critDamage": 2.1,
+        "dodgeChance": 0,
+        "comboChance": 13,
+        "healing": 0,
+        "swordDamage": 3.1,
+        "frutaDamage": 0,
+        "xpGain": 0,
+        "masteryGain": 0,
+        "berryGain": 0,
+        "fragmentGain": 0,
+        "velocidade": 0,
+        "poderMaldito": 0
+      },
+      "special": {},
+      "descricao": "👊 Luvas simples para iniciantes. Pequeno bônus em combos.",
+      "preco": 2900,
+      "durabilidade": 80,
+      "durabilidadeMax": 80,
+      "nivel": 1,
+      "nivelMax": 3,
+      "balanceVersion": 2
+    },
+    {
+      "id": "equipamento_013",
+      "nome": "Óculos de Gojo Satoru",
+      "categoria": "armadura",
+      "raridade": "comum",
+      "loja": false,
+      "stats": {
+        "vida": 7,
+        "defesa": 9,
+        "forca": 5,
+        "stamina": 2,
+        "regenTurno": 4,
+        "resistencia": 0
+      },
+      "multipliers": {
+        "critChance": 11,
+        "critDamage": 3.7,
+        "dodgeChance": 0,
+        "comboChance": 11,
+        "healing": 0,
+        "swordDamage": 0,
+        "frutaDamage": 9.2,
+        "xpGain": 0,
+        "masteryGain": 0,
+        "berryGain": 0,
+        "fragmentGain": 0,
+        "velocidade": 0,
+        "poderMaldito": 0
+      },
+      "special": {
+        "regen": {
+          "value": 26,
+          "description": "Regenera 26 HP no início de cada turno"
+        }
+      },
+      "descricao": "🕶️ Os óculos do feiticeiro mais forte do mundo. Poder lendário.",
+      "preco": 0,
+      "durabilidade": 80,
+      "durabilidadeMax": 80,
+      "nivel": 1,
+      "nivelMax": 3,
+      "balanceVersion": 2
+    },
+    {
+      "id": "traje_zenin",
+      "nome": "Traje do Clã Zenin",
+      "categoria": "armadura",
+      "raridade": "lendária",
+      "loja": false,
+      "stats": {
+        "vida": 26,
+        "defesa": 23,
+        "forca": 15,
+        "stamina": 33,
+        "regenTurno": 0,
+        "resistencia": 0
+      },
+      "multipliers": {
+        "critChance": 23,
+        "critDamage": 23,
+        "dodgeChance": 26,
+        "comboChance": 26,
+        "healing": 0,
+        "swordDamage": 26,
+        "frutaDamage": 0,
+        "xpGain": 21,
+        "masteryGain": 21,
+        "berryGain": 0,
+        "fragmentGain": 0,
+        "velocidade": 0,
+        "poderMaldito": 0
+      },
+      "special": {
+        "battleLust": {
+          "value": 21,
+          "description": "A cada inimigo derrotado, o traje absorve poder — +21% de força acumulativo"
+        }
+      },
+      "descricao": "🏯 O traje formal de batalha do Clã Zenin. Carrega séculos de história de combate e reforça a força física com energia amaldiçoada herdada.",
+      "preco": 0,
+      "durabilidade": 232,
+      "durabilidadeMax": 232,
+      "nivel": 1,
+      "nivelMax": 10,
+      "balanceVersion": 2
+    },
+    {
+      "id": "veste_choso",
+      "nome": "Veste de Choso",
+      "categoria": "manto",
+      "raridade": "lendária",
+      "loja": false,
+      "stats": {
+        "vida": 0,
+        "defesa": 40,
+        "forca": 36,
+        "stamina": 64,
+        "regenTurno": 8,
+        "resistencia": 0
+      },
+      "multipliers": {
+        "critChance": 0,
+        "critDamage": 39,
+        "dodgeChance": 0,
+        "comboChance": 0,
+        "healing": 118,
+        "swordDamage": 0,
+        "frutaDamage": 52,
+        "xpGain": 0,
+        "masteryGain": 0,
+        "berryGain": 0,
+        "fragmentGain": 0,
+        "velocidade": 0,
+        "poderMaldito": 0
+      },
+      "special": {
+        "regen": {
+          "value": 52,
+          "description": "Regenera 52 HP por turno — o sangue amaldiçoado de Choso corre pela veste e se autorrepara"
+        }
+      },
+      "descricao": "🩸 A veste branca e vermelha de Choso, Executante das Técnicas Sanguíneas. Impregnada com energia maldita de sangue que cura ativamente o portador.",
+      "preco": 0,
+      "durabilidade": 203,
+      "durabilidadeMax": 203,
+      "nivel": 1,
+      "nivelMax": 10,
+      "balanceVersion": 2
+    },
+    {
+      "id": "botas_itadori",
+      "nome": "Botas Amaldiçoadas de Itadori",
+      "categoria": "botas",
+      "raridade": "épica",
+      "loja": true,
+      "stats": {
+        "vida": 6,
+        "defesa": 6,
+        "forca": 8,
+        "stamina": 13,
+        "regenTurno": 0,
+        "resistencia": 0
+      },
+      "multipliers": {
+        "critChance": 9.4,
+        "critDamage": 0,
+        "dodgeChance": 14,
+        "comboChance": 26,
+        "healing": 0,
+        "swordDamage": 14,
+        "frutaDamage": 0,
+        "xpGain": 0,
+        "masteryGain": 0,
+        "berryGain": 0,
+        "fragmentGain": 0,
+        "velocidade": 0.7,
+        "poderMaldito": 0
+      },
+      "special": {
+        "firstStrike": {
+          "value": 48,
+          "description": "O primeiro golpe do combate explode com +48% de dano — velocidade de reação de Itadori"
+        }
+      },
+      "descricao": "👟 As botas reforçadas de Yuji Itadori. Desenvolvidas para suportar corridas explosivas e combate físico de alta intensidade com corpo endurecido pelo Sukuna.",
+      "preco": 6300,
+      "durabilidade": 135,
+      "durabilidadeMax": 135,
+      "nivel": 1,
+      "nivelMax": 6,
+      "balanceVersion": 2
+    },
+    {
+      "id": "uniforme_kyoto",
+      "nome": "Uniforme da Escola de Kyoto",
+      "categoria": "armadura",
+      "raridade": "rara",
+      "loja": true,
+      "stats": {
+        "vida": 10,
+        "defesa": 12,
+        "forca": 4,
+        "stamina": 4,
+        "regenTurno": 0,
+        "resistencia": 0
+      },
+      "multipliers": {
+        "critChance": 0,
+        "critDamage": 0,
+        "dodgeChance": 0,
+        "comboChance": 6.4,
+        "healing": 13,
+        "swordDamage": 0,
+        "frutaDamage": 0,
+        "xpGain": 34,
+        "masteryGain": 26,
+        "berryGain": 17,
+        "fragmentGain": 0,
+        "velocidade": 0,
+        "poderMaldito": 0
+      },
+      "special": {},
+      "descricao": "🎌 O uniforme oficial da Escola Superior de Feitiçaria de Kyoto — rival de Tóquio. Tem enchimentos de proteção e aumenta o aprendizado de técnicas em campo.",
+      "preco": 4600,
+      "durabilidade": 125,
+      "durabilidadeMax": 125,
+      "nivel": 1,
+      "nivelMax": 5,
+      "balanceVersion": 2
+    },
+    {
+      "id": "gravata_nanami",
+      "nome": "Gravata de Nanami Kento",
+      "categoria": "acessório",
+      "raridade": "épica",
+      "loja": true,
+      "stats": {
+        "vida": 9,
+        "defesa": 8,
+        "forca": 9,
+        "stamina": 6,
+        "regenTurno": 1,
+        "resistencia": 1
+      },
+      "multipliers": {
+        "critChance": 7.1,
+        "critDamage": 12,
+        "dodgeChance": 0,
+        "comboChance": 14,
+        "healing": 0,
+        "swordDamage": 21,
+        "frutaDamage": 0,
+        "xpGain": 56,
+        "masteryGain": 47,
+        "berryGain": 47,
+        "fragmentGain": 38,
+        "velocidade": 0,
+        "poderMaldito": 0
+      },
+      "special": {
+        "cooldownReduction": {
+          "value": 2,
+          "description": "Reduz em 2 turnos de cooldown — 'Trabalho além do expediente exige eficiência máxima'"
+        }
+      },
+      "descricao": "👔 A gravata listrada de Kento Nanami, o Feiticeiro Assalariado. Símbolo de disciplina e profissionalismo. Quem a usa ganha recursos e experiência extras.",
+      "preco": 13600,
+      "durabilidade": 148,
+      "durabilidadeMax": 148,
+      "nivel": 1,
+      "nivelMax": 7,
+      "balanceVersion": 2
+    },
+    {
+      "id": "mascara_espirito",
+      "nome": "Máscara do Espírito Corrupto",
+      "categoria": "capacete",
+      "raridade": "épica",
+      "loja": true,
+      "stats": {
+        "vida": 9,
+        "defesa": 14,
+        "forca": 5,
+        "stamina": 5,
+        "regenTurno": 0,
+        "resistencia": 0
+      },
+      "multipliers": {
+        "critChance": 28,
+        "critDamage": 28,
+        "dodgeChance": 14,
+        "comboChance": 7.1,
+        "healing": 0,
+        "swordDamage": 0,
+        "frutaDamage": 14,
+        "xpGain": 0,
+        "masteryGain": 0,
+        "berryGain": 0,
+        "fragmentGain": 0,
+        "velocidade": 0,
+        "poderMaldito": 0
+      },
+      "special": {},
+      "descricao": "👺 A máscara usada por espíritos amaldiçoados de alto grau. Distorce a percepção do inimigo e aumenta drasticamente a chance de ataques críticos.",
+      "preco": 10500,
+      "durabilidade": 148,
+      "durabilidadeMax": 148,
+      "nivel": 1,
+      "nivelMax": 7,
+      "balanceVersion": 2
+    },
+    {
+      "id": "veste_toji",
+      "nome": "Veste de Toji Fushiguro",
+      "categoria": "manto",
+      "raridade": "lendária",
+      "loja": false,
+      "stats": {
+        "vida": 15,
+        "defesa": 2,
+        "forca": 27,
+        "stamina": 2,
+        "regenTurno": 0,
+        "resistencia": 1
+      },
+      "multipliers": {
+        "critChance": 0,
+        "critDamage": 0,
+        "dodgeChance": 15,
+        "comboChance": 26,
+        "healing": 0,
+        "swordDamage": 65,
+        "frutaDamage": 0,
+        "xpGain": 0,
+        "masteryGain": 0,
+        "berryGain": 0,
+        "fragmentGain": 0,
+        "velocidade": 0,
+        "poderMaldito": 0
+      },
+      "special": {
+        "firstStrike": {
+          "value": 131,
+          "description": "Toji nunca perdoa o primeiro descuido — primeiro golpe causa +131% de dano"
+        }
+      },
+      "descricao": "🥋 A veste desgastada de Toji Fushiguro, o Assassino de Feiticeiros. Carrega a essência de um homem sem Energia Maldita que derrotou todos usando apenas corpo e instinto.",
+      "preco": 0,
+      "durabilidade": 218,
+      "durabilidadeMax": 218,
+      "nivel": 1,
+      "nivelMax": 10,
+      "balanceVersion": 2
+    },
+    {
+      "id": "luvas_zenin",
+      "nome": "Luvas da Arte Marcial Zenin",
+      "categoria": "luvas",
+      "raridade": "lendária",
+      "loja": false,
+      "stats": {
+        "vida": 2,
+        "defesa": 2,
+        "forca": 41,
+        "stamina": 3,
+        "regenTurno": 0,
+        "resistencia": 0
+      },
+      "multipliers": {
+        "critChance": 0,
+        "critDamage": 35,
+        "dodgeChance": 0,
+        "comboChance": 31,
+        "healing": 0,
+        "swordDamage": 78,
+        "frutaDamage": 0,
+        "xpGain": 0,
+        "masteryGain": 0,
+        "berryGain": 0,
+        "fragmentGain": 0,
+        "velocidade": 0,
+        "poderMaldito": 0
+      },
+      "special": {
+        "lifesteal": {
+          "value": 35,
+          "description": "Rouba 35% da vida causada com ferramentas amaldiçoadas — arte marcial ancestral do Clã Zenin"
+        }
+      },
+      "descricao": "🥊 As luvas de combate da linhagem Zenin, transmitidas pela arte marcial do clã. Maximizam o dano com ferramentas amaldiçoadas e absorvem a vida dos inimigos.",
+      "preco": 0,
+      "durabilidade": 188,
+      "durabilidadeMax": 188,
+      "nivel": 1,
+      "nivelMax": 10,
+      "balanceVersion": 2
+    },
+    {
+      "id": "anel_rika",
+      "nome": "Anel de Rika — Yuta Okkotsu",
+      "categoria": "acessório",
+      "raridade": "lendária",
+      "loja": false,
+      "stats": {
+        "vida": 20,
+        "defesa": 8,
+        "forca": 15,
+        "stamina": 13,
+        "regenTurno": 8,
+        "resistencia": 0
+      },
+      "multipliers": {
+        "critChance": 16,
+        "critDamage": 23,
+        "dodgeChance": 7.8,
+        "comboChance": 31,
+        "healing": 31,
+        "swordDamage": 42,
+        "frutaDamage": 57,
+        "xpGain": 0,
+        "masteryGain": 0,
+        "berryGain": 0,
+        "fragmentGain": 0,
+        "velocidade": 0,
+        "poderMaldito": 0
+      },
+      "special": {
+        "regen": {
+          "value": 44,
+          "description": "Rika vela pelo portador — regenera 25 HP por turno com energia maldita ilimitada"
+        }
+      },
+      "descricao": "💍 O anel que conecta Yuta Okkotsu à espírita amaldiçoada Rika Orimoto. Sua energia maldita ilimitada flui pelo portador, amplificando todas as técnicas.",
+      "preco": 0,
+      "durabilidade": 174,
+      "durabilidadeMax": 174,
+      "nivel": 1,
+      "nivelMax": 10,
+      "balanceVersion": 2
+    },
+    {
+      "id": "jaqueta_hakari",
+      "nome": "Jaqueta de Hakari Kinji",
+      "categoria": "manto",
+      "raridade": "lendario",
+      "loja": true,
+      "stats": {
+        "vida": 28,
+        "defesa": 20,
+        "forca": 5,
+        "stamina": 5,
+        "regenTurno": 0,
+        "resistencia": 0
+      },
+      "multipliers": {
+        "critChance": 0,
+        "critDamage": 0,
+        "dodgeChance": 2.4,
+        "comboChance": 12,
+        "healing": 91,
+        "swordDamage": 0,
+        "frutaDamage": 7.3,
+        "xpGain": 0,
+        "masteryGain": 0,
+        "berryGain": 0,
+        "fragmentGain": 0,
+        "velocidade": 0,
+        "poderMaldito": 4.9
+      },
+      "special": {
+        "shield": {
+          "value": 88,
+          "description": "A resistência infinita do Jackpot 777 — escudo de 50 HP no início de cada combate."
+        }
+      },
+      "descricao": "🎰 A jaqueta de Hakari Kinji, forjada para resistir ao impossível. Alta vida e defesa para quem confia no Jackpot — porque se o jogo virar, nada vai parar.",
+      "preco": 70500,
+      "durabilidade": 188,
+      "durabilidadeMax": 188,
+      "nivel": 1,
+      "nivelMax": 8,
+      "balanceVersion": 2
+    },
+    {
+      "id": "armadura_corpo_celestial",
+      "nome": "Armadura do Corpo Celestial",
+      "categoria": "armadura",
+      "raridade": "mítica",
+      "loja": false,
+      "stats": {
+        "vida": 43,
+        "defesa": 37,
+        "forca": 23,
+        "stamina": 11,
+        "regenTurno": 0,
+        "resistencia": 0
+      },
+      "multipliers": {
+        "critChance": 26,
+        "critDamage": 28,
+        "dodgeChance": 26,
+        "comboChance": 26,
+        "healing": 34,
+        "swordDamage": 57,
+        "frutaDamage": 17,
+        "xpGain": 0,
+        "masteryGain": 57,
+        "berryGain": 34,
+        "fragmentGain": 0,
+        "velocidade": 0,
+        "poderMaldito": 0
+      },
+      "special": {
+        "battleLust": {
+          "value": 13,
+          "description": "A cada vitória, o Corpo Celestial se fortalece — +13% de dano acumulativo por combate"
+        }
+      },
+      "descricao": "⭐ A armadura nascida do Corpo Celestial de Maki Zenin após o despertar completo. Imune às limitações da Energia Maldita — só força pura e velocidade absoluta.",
+      "preco": 0,
+      "durabilidade": 388,
+      "durabilidadeMax": 388,
+      "nivel": 1,
+      "nivelMax": 15,
+      "balanceVersion": 2
+    },
+    {
+      "id": "carcaca_mechamaru",
+      "nome": "Carcaça de Mechamaru",
+      "categoria": "capacete",
+      "raridade": "épica",
+      "loja": true,
+      "stats": {
+        "vida": 14,
+        "defesa": 25,
+        "forca": 2,
+        "stamina": 2,
+        "regenTurno": 0,
+        "resistencia": 0
+      },
+      "multipliers": {
+        "critChance": 9,
+        "critDamage": 0,
+        "dodgeChance": -3,
+        "comboChance": 0,
+        "healing": 38,
+        "swordDamage": 0,
+        "frutaDamage": 0,
+        "xpGain": 24,
+        "masteryGain": 4.5,
+        "berryGain": 0,
+        "fragmentGain": 0,
+        "velocidade": 0,
+        "poderMaldito": 0
+      },
+      "special": {
+        "shield": {
+          "value": 135,
+          "description": "A carcaça de Mechamaru absorve 90 de dano no início de cada combate"
+        }
+      },
+      "descricao": "🤖 O capacete reforçado de Kokichi Muta, o Mechamaru. Feito de ligas especiais com proteção máxima — sacrifica velocidade por uma muralha de defesa e escudo.",
+      "preco": 15800,
+      "durabilidade": 216,
+      "durabilidadeMax": 216,
+      "nivel": 1,
+      "nivelMax": 7,
+      "balanceVersion": 2
+    },
+    {
+      "id": "botas_corpo_celestial",
+      "nome": "Botas do Corpo Celestial",
+      "categoria": "botas",
+      "raridade": "lendária",
+      "loja": false,
+      "stats": {
+        "vida": 6,
+        "defesa": 9,
+        "forca": 11,
+        "stamina": 20,
+        "regenTurno": 0,
+        "resistencia": 0
+      },
+      "multipliers": {
+        "critChance": 21,
+        "critDamage": 16,
+        "dodgeChance": 22,
+        "comboChance": 44,
+        "healing": 0,
+        "swordDamage": 0,
+        "frutaDamage": 0,
+        "xpGain": 0,
+        "masteryGain": 0,
+        "berryGain": 0,
+        "fragmentGain": 0,
+        "velocidade": 0,
+        "poderMaldito": 0
+      },
+      "special": {
+        "firstStrike": {
+          "value": 46,
+          "description": "Velocidade celestial — primeiro ataque causa +46% de dano antes do inimigo reagir"
+        }
+      },
+      "descricao": "⚡ As botas criadas para o Corpo Celestial de Maki. Velocidade e desvio além dos limites humanos — nenhum ataque comum consegue acertar o portador.",
+      "preco": 0,
+      "durabilidade": 203,
+      "durabilidadeMax": 203,
+      "nivel": 1,
+      "nivelMax": 10,
+      "balanceVersion": 2
+    },
+    {
+      "id": "talismas_gojo",
+      "nome": "Talismãs Amaldiçoados de Gojo",
+      "categoria": "acessório",
+      "raridade": "rara",
+      "loja": true,
+      "stats": {
+        "vida": 5,
+        "defesa": 9,
+        "forca": 2,
+        "stamina": 7,
+        "regenTurno": 0,
+        "resistencia": 0
+      },
+      "multipliers": {
+        "critChance": 0,
+        "critDamage": 0,
+        "dodgeChance": 6.4,
+        "comboChance": 13,
+        "healing": 0,
+        "swordDamage": 0,
+        "frutaDamage": 26,
+        "xpGain": 34,
+        "masteryGain": 26,
+        "berryGain": 0,
+        "fragmentGain": 17,
+        "velocidade": 0,
+        "poderMaldito": 0
+      },
+      "special": {
+        "cooldownReduction": {
+          "value": 1,
+          "description": "Os talismãs comprimem o fluxo de Energia Maldita — reduz 1 turno de cooldown de todas as técnicas"
+        }
+      },
+      "descricao": "📿 Os talismãs pessoais de Gojo Satoru usados para selar e amplificar técnicas amaldiçoadas. Reduzem o tempo de recarga e potencializam técnicas de energia.",
+      "preco": 6500,
+      "durabilidade": 125,
+      "durabilidadeMax": 125,
+      "nivel": 1,
+      "nivelMax": 6,
+      "balanceVersion": 2
+    },
+    {
+      "id": "terno_tribunal_higuruma",
+      "nome": "Terno do Tribunal de Higuruma",
+      "categoria": "armadura",
+      "raridade": "lendária",
+      "loja": false,
+      "stats": {
+        "vida": 18,
+        "defesa": 23,
+        "forca": 8,
+        "stamina": 8,
+        "regenTurno": 5,
+        "resistencia": 0
+      },
+      "multipliers": {
+        "critChance": 10,
+        "critDamage": 23,
+        "dodgeChance": 7,
+        "comboChance": 16,
+        "healing": 0,
+        "swordDamage": 0,
+        "frutaDamage": 49,
+        "xpGain": 31,
+        "masteryGain": 42,
+        "berryGain": 0,
+        "fragmentGain": 21,
+        "velocidade": 0,
+        "poderMaldito": 0
+      },
+      "special": {
+        "regen": {
+          "value": 35,
+          "description": "A autoridade do Tribunal regenera 20 HP no início de cada turno — o Julgador não sente dor, apenas ditava sentenças."
+        }
+      },
+      "descricao": "⚖️ O terno impecável de Hiromi Higuruma — o ex-advogado que se tornou o mais temido Promotor do Tribunal Amaldiçoado. Vesti-lo é declarar-se juiz supremo do campo de batalha. Amplifica técnicas de Energia Maldita e concede presença de autoridade implacável.",
+      "preco": 0,
+      "durabilidade": 218,
+      "durabilidadeMax": 218,
+      "nivel": 1,
+      "nivelMax": 8,
+      "balanceVersion": 2
+    },
+    {
+      "id": "martelo_tribunal",
+      "nome": "Martelo do Tribunal",
+      "categoria": "arma",
+      "raridade": "épica",
+      "loja": false,
+      "stats": {
+        "vida": 7,
+        "defesa": 7,
+        "forca": 16,
+        "stamina": 5,
+        "regenTurno": 0,
+        "resistencia": 0
+      },
+      "multipliers": {
+        "critChance": 19,
+        "critDamage": 40,
+        "dodgeChance": 0,
+        "comboChance": 19,
+        "healing": 0,
+        "swordDamage": 21,
+        "frutaDamage": 33,
+        "xpGain": 19,
+        "masteryGain": 28,
+        "berryGain": 0,
+        "fragmentGain": 14,
+        "velocidade": 0,
+        "poderMaldito": 0
+      },
+      "special": {
+        "cooldownReduction": {
+          "value": 2,
+          "description": "Cada golpe do Martelo reduz 2 turnos de cooldown das técnicas do Julgador — a pancada do tribunal é a lei."
+        }
+      },
+      "descricao": "🔨 O martelo de Hiromi Higuruma: ferramenta sagrada que sela vereditos no Tribunal Amaldiçoado. Cada golpe é uma sentença. Críticos poderosos e redução de cooldown fazem deste martelo a extensão da vontade do Julgador.",
+      "preco": 0,
+      "durabilidade": 182,
+      "durabilidadeMax": 182,
+      "nivel": 1,
+      "nivelMax": 8,
+      "balanceVersion": 2
+    },
+    {
+      "id": "balanca_justica",
+      "nome": "Balança da Justiça",
+      "categoria": "acessório",
+      "raridade": "lendária",
+      "loja": false,
+      "stats": {
+        "vida": 13,
+        "defesa": 15,
+        "forca": 10,
+        "stamina": 10,
+        "regenTurno": 0,
+        "resistencia": 0
+      },
+      "multipliers": {
+        "critChance": 16,
+        "critDamage": 29,
+        "dodgeChance": 7.8,
+        "comboChance": 21,
+        "healing": 0,
+        "swordDamage": 0,
+        "frutaDamage": 23,
+        "xpGain": 0,
+        "masteryGain": 21,
+        "berryGain": 0,
+        "fragmentGain": 31,
+        "velocidade": 0,
+        "poderMaldito": 0
+      },
+      "special": {
+        "shield": {
+          "value": 122,
+          "description": "A Balança gera um escudo de 70 HP no início do combate — a justiça protege seu portador do primeiro julgamento."
+        }
+      },
+      "descricao": "⚖️ A Balança Áurea do Tribunal Amaldiçoado — instrumento que pesa crimes e determina sentenças. Quem a porta equilibra poder destrutivo com proteção absoluta. Amplifica massivamente técnicas de Fruta e gera escudo automático no início de cada batalha.",
+      "preco": 0,
+      "durabilidade": 210,
+      "durabilidadeMax": 210,
+      "nivel": 1,
+      "nivelMax": 9,
+      "balanceVersion": 2
+    },
+    {
+      "id": "espada_executor",
+      "nome": "Espada do Executor",
+      "categoria": "arma",
+      "raridade": "mítica",
+      "loja": false,
+      "stats": {
+        "vida": 10,
+        "defesa": 7,
+        "forca": 35,
+        "stamina": 9,
+        "regenTurno": 0,
+        "resistencia": 0
+      },
+      "multipliers": {
+        "critChance": 31,
+        "critDamage": 30,
+        "dodgeChance": 8,
+        "comboChance": 11,
+        "healing": 0,
+        "swordDamage": 63,
+        "frutaDamage": 34,
+        "xpGain": 0,
+        "masteryGain": 0,
+        "berryGain": 0,
+        "fragmentGain": 46,
+        "velocidade": 0,
+        "poderMaldito": 0
+      },
+      "special": {
+        "lifesteal": {
+          "value": 34,
+          "description": "A Espada do Executor drena 34% do dano causado como vida — a lâmina se alimenta do julgado."
+        }
+      },
+      "descricao": "⚔️ A espada forjada para executar sentenças do Tribunal de Higuruma — a Pena de Morte em forma de aço. Seu fio nunca erra quando o veredicto é CULPADO. Críticos devastadores, lifesteal e dano de espada excepcional fazem desta arma a sentença final incarnada.",
+      "preco": 0,
+      "durabilidade": 186,
+      "durabilidadeMax": 186,
+      "nivel": 1,
+      "nivelMax": 10,
+      "balanceVersion": 2
+    },
+    {
+      "id": "oculos_gojo",
+      "nome": "Óculos de Gojo",
+      "categoria": "capacete",
+      "raridade": "lendária",
+      "loja": false,
+      "stats": {
+        "vida": 13,
+        "defesa": 13,
+        "forca": 5,
+        "stamina": 20,
+        "regenTurno": 13,
+        "resistencia": 0
+      },
+      "multipliers": {
+        "critChance": 26,
+        "critDamage": 13,
+        "dodgeChance": 22,
+        "comboChance": 0,
+        "healing": 0,
+        "swordDamage": 0,
+        "frutaDamage": 13,
+        "xpGain": 6.7,
+        "masteryGain": 6.7,
+        "berryGain": 0,
+        "fragmentGain": 0,
+        "velocidade": 0,
+        "poderMaldito": 0
+      },
+      "special": {
+        "regen": {
+          "value": 88,
+          "description": "Os óculos do Maior concedem visão além do comum — regenera 50 HP por turno"
+        }
+      },
+      "descricao": "🕶️ Os famosos óculos escuros de Satoru Gojo, exclusivos do evento Receptáculo Perfeito. Quem os veste carrega um pouco da aura do Maior Feiticeiro.",
+      "preco": 0,
+      "durabilidade": 290,
+      "durabilidadeMax": 290,
+      "nivel": 1,
+      "nivelMax": 5,
+      "balanceVersion": 2
+    },
+    {
+      "id": "traje_toji",
+      "nome": "Veste de Toji Fushiguro",
+      "categoria": "armadura",
+      "raridade": "lendária",
+      "loja": false,
+      "stats": {
+        "vida": 20,
+        "defesa": 15,
+        "forca": 20,
+        "stamina": 0,
+        "regenTurno": 0,
+        "resistencia": 0
+      },
+      "multipliers": {
+        "critChance": 26,
+        "critDamage": 39,
+        "dodgeChance": 21,
+        "comboChance": 0,
+        "healing": 0,
+        "swordDamage": 52,
+        "frutaDamage": 0,
+        "xpGain": 0,
+        "masteryGain": 0,
+        "berryGain": 0,
+        "fragmentGain": 0,
+        "velocidade": 0,
+        "poderMaldito": 0
+      },
+      "special": {
+        "firstStrike": 75
+      },
+      "descricao": "A veste do Assassino de Feiticeiros — Toji Fushiguro. Toji nunca perdoa o primeiro descuido: o primeiro golpe do combate causa +75% de dano extra. Recompensa do Evento Restrição Celestial.",
+      "preco": 0,
+      "durabilidade": 145,
+      "durabilidadeMax": 145,
+      "nivel": 1,
+      "nivelMax": 5,
+      "balanceVersion": 2
+    },
+    {
+      "id": "luva_maki",
+      "nome": "Luva de Maki Zenin",
+      "categoria": "luvas",
+      "raridade": "lendária",
+      "loja": false,
+      "stats": {
+        "vida": 9,
+        "defesa": 11,
+        "forca": 18,
+        "stamina": 9,
+        "regenTurno": 0,
+        "resistencia": 0
+      },
+      "multipliers": {
+        "critChance": 21,
+        "critDamage": 52,
+        "dodgeChance": 13,
+        "comboChance": 26,
+        "healing": 0,
+        "swordDamage": 39,
+        "frutaDamage": 0,
+        "xpGain": 0,
+        "masteryGain": 0,
+        "berryGain": 0,
+        "fragmentGain": 0,
+        "velocidade": 0,
+        "poderMaldito": 0
+      },
+      "special": {},
+      "descricao": "As luvas de combate de Maki Zenin — forjadas para maximizar cada golpe físico. +15% dano com espadas, +8% chance crítica, +20% dano crítico. Recompensa do Evento Restrição Celestial.",
+      "preco": 0,
+      "durabilidade": 145,
+      "durabilidadeMax": 145,
+      "nivel": 1,
+      "nivelMax": 5,
+      "balanceVersion": 2
+    },
+    {
+      "id": "roda_mahoraga",
+      "nome": "Roda do Mahoraga",
+      "categoria": "armadura",
+      "raridade": "mitico",
+      "loja": false,
+      "stats": {
+        "vida": 54,
+        "defesa": 31,
+        "forca": 86,
+        "stamina": 14,
+        "regenTurno": 3,
+        "resistencia": 0
+      },
+      "multipliers": {
+        "critChance": 5.7,
+        "critDamage": 34,
+        "dodgeChance": 46,
+        "comboChance": 14,
+        "healing": 41,
+        "swordDamage": -23,
+        "frutaDamage": 11,
+        "xpGain": 0,
+        "masteryGain": 0,
+        "berryGain": 0,
+        "fragmentGain": 0.3,
+        "velocidade": 0,
+        "poderMaldito": 0.3
+      },
+      "special": {
+        "shield": {
+          "value": 135,
+          "description": "A Roda das Dez Purificações de Mahoraga gera um escudo de 120 HP no início de cada combate — adaptando-se a qualquer ameaça."
+        },
+        "regen": {
+          "value": 23,
+          "description": "A adaptação contínua de Mahoraga regenera 12 HP por turno — cada dano recebido ensina o corpo a sobreviver."
+        }
+      },
+      "descricao": "A Roda das Oito Manipulações de Mahoraga — o espírito amaldiçoado que nunca cede. Absorve **162 HP** de dano como escudo e regenera **+12 HP** por turno pela adaptação infinita. Porém sacrifica potência ofensiva pela defesa suprema.",
+      "preco": 0,
+      "durabilidade": 310,
+      "durabilidadeMax": 310,
+      "nivel": 1,
+      "nivelMax": 5,
+      "balanceVersion": 2
+    },
+    {
+      "id": "marca_sukuna",
+      "nome": "Marca do Sukuna",
+      "categoria": "armadura",
+      "raridade": "mitico",
+      "loja": false,
+      "stats": {
+        "vida": 31,
+        "defesa": 23,
+        "forca": 26,
+        "stamina": 11,
+        "regenTurno": 0,
+        "resistencia": 0
+      },
+      "multipliers": {
+        "critChance": 37,
+        "critDamage": 57,
+        "dodgeChance": -14,
+        "comboChance": 28,
+        "healing": -23,
+        "swordDamage": 43,
+        "frutaDamage": 28,
+        "xpGain": 14,
+        "masteryGain": 14,
+        "berryGain": 14,
+        "fragmentGain": 14,
+        "velocidade": 0,
+        "poderMaldito": 0
+      },
+      "special": {
+        "cursedEnergy": {
+          "value": 19,
+          "description": "Quando acima de 85% de HP, todas as técnicas causam +19% de dano — o poder do Rei não admite fraqueza."
+        }
+      },
+      "descricao": "A maldição do Rei das Maldições gravada na sua pele — um poder que devora o hospedeiro. +45 Força, +30 Defesa, +10% Crítico, +20% Dano com Espadas. Porém dificulta esquivas e cura — você não pode depender de defesa passiva contra o Rei.",
+      "preco": 0,
+      "durabilidade": 232,
+      "durabilidadeMax": 232,
+      "nivel": 1,
+      "nivelMax": 5,
+      "balanceVersion": 2
+    },
+    {
+      "id": "olho_sukuna",
+      "nome": "Olho de Sukuna",
+      "categoria": "acessorio",
+      "raridade": "lendária",
+      "loja": false,
+      "stats": {
+        "vida": 15,
+        "defesa": 6,
+        "forca": 8,
+        "stamina": 11,
+        "regenTurno": 3,
+        "resistencia": 3
+      },
+      "multipliers": {
+        "critChance": 31,
+        "critDamage": 31,
+        "dodgeChance": 17,
+        "comboChance": 13,
+        "healing": 0,
+        "swordDamage": 0,
+        "frutaDamage": 0,
+        "xpGain": 0,
+        "masteryGain": 0,
+        "berryGain": 0,
+        "fragmentGain": 0,
+        "velocidade": 0,
+        "poderMaldito": 0
+      },
+      "special": {},
+      "descricao": "Um dos olhos do Rei das Maldições que vê através de qualquer ilusão maldita. +12% Crítico, +45% Esquiva. Recompensa lendária exclusiva do Evento Receptáculo Perfeito.",
+      "preco": 0,
+      "durabilidade": 145,
+      "durabilidadeMax": 145,
+      "nivel": 1,
+      "nivelMax": 5,
+      "balanceVersion": 2
+    },
+    {
+      "id": "equipamento_038",
+      "nome": "Armadura da Ascensão",
+      "categoria": "armadura",
+      "raridade": "rara",
+      "loja": false,
+      "stats": {
+        "vida": 14,
+        "defesa": 14,
+        "forca": 4,
+        "stamina": 4,
+        "regenTurno": 0,
+        "resistencia": 0
+      },
+      "multipliers": {
+        "critChance": 0,
+        "critDamage": 0,
+        "dodgeChance": 17,
+        "comboChance": 11,
+        "healing": 11,
+        "swordDamage": 11,
+        "frutaDamage": 11,
+        "xpGain": 0,
+        "masteryGain": 0,
+        "berryGain": 0,
+        "fragmentGain": 0,
+        "velocidade": 0,
+        "poderMaldito": 0
+      },
+      "special": {},
+      "descricao": "Uma armadura forjada com materiais de espíritos amaldiçoados de grau especial. Oferece equilíbrio entre defesa e dano.",
+      "preco": 6500,
+      "durabilidade": 125,
+      "durabilidadeMax": 125,
+      "nivel": 1,
+      "nivelMax": 5,
+      "balanceVersion": 2
+    },
+    {
+      "id": "equipamento_039",
+      "nome": "Botas da Velocidade",
+      "categoria": "botas",
+      "raridade": "rara",
+      "loja": false,
+      "stats": {
+        "vida": 1,
+        "defesa": 3,
+        "forca": 3,
+        "stamina": 15,
+        "regenTurno": 0,
+        "resistencia": 0
+      },
+      "multipliers": {
+        "critChance": 0,
+        "critDamage": 0,
+        "dodgeChance": 36,
+        "comboChance": 18,
+        "healing": 0,
+        "swordDamage": 0,
+        "frutaDamage": 0,
+        "xpGain": 0,
+        "masteryGain": 0,
+        "berryGain": 0,
+        "fragmentGain": 0,
+        "velocidade": 3.9,
+        "poderMaldito": 0
+      },
+      "special": {},
+      "descricao": "Botas infundidas com energia maldita primordial. Aumentam significativamente a velocidade e esquiva de quem as veste.",
+      "preco": 5200,
+      "durabilidade": 125,
+      "durabilidadeMax": 125,
+      "nivel": 1,
+      "nivelMax": 5,
+      "balanceVersion": 2
+    },
+    {
+      "id": "equipamento_040",
+      "nome": "Luvas de Força Concentrada",
+      "categoria": "luvas",
+      "raridade": "epica",
+      "loja": false,
+      "stats": {
+        "vida": 9,
+        "defesa": 7,
+        "forca": 15,
+        "stamina": 2,
+        "regenTurno": 0,
+        "resistencia": 0
+      },
+      "multipliers": {
+        "critChance": 28,
+        "critDamage": 0,
+        "dodgeChance": 0,
+        "comboChance": 35,
+        "healing": 0,
+        "swordDamage": 28,
+        "frutaDamage": 28,
+        "xpGain": 0,
+        "masteryGain": 0,
+        "berryGain": 0,
+        "fragmentGain": 0,
+        "velocidade": 0,
+        "poderMaldito": 0
+      },
+      "special": {},
+      "descricao": "Luvas que canalizam poder maldito concentrado. Amplificam todos os seus ataques e aumentam a chance de crítico.",
+      "preco": 10900,
+      "durabilidade": 135,
+      "durabilidadeMax": 135,
+      "nivel": 1,
+      "nivelMax": 5,
+      "balanceVersion": 2
+    },
+    {
+      "id": "equipamento_041",
+      "nome": "Anel da Perseverança",
+      "categoria": "acessorio",
+      "raridade": "rara",
+      "loja": false,
+      "stats": {
+        "vida": 8,
+        "defesa": 5,
+        "forca": 2,
+        "stamina": 7,
+        "regenTurno": 1,
+        "resistencia": 1
+      },
+      "multipliers": {
+        "critChance": 11,
+        "critDamage": 32,
+        "dodgeChance": 11,
+        "comboChance": 0,
+        "healing": 22,
+        "swordDamage": 0,
+        "frutaDamage": 0,
+        "xpGain": 0,
+        "masteryGain": 0,
+        "berryGain": 0,
+        "fragmentGain": 0,
+        "velocidade": 0,
+        "poderMaldito": 0
+      },
+      "special": {},
+      "descricao": "Um anel misterioso que amplifica críticos e cura gradual. Símbolo de resistência e determinação.",
+      "preco": 4400,
+      "durabilidade": 125,
+      "durabilidadeMax": 125,
+      "nivel": 1,
+      "nivelMax": 5,
+      "balanceVersion": 2
+    },
+    {
+      "id": "equipamento_042",
+      "nome": "Capa do Guardião",
+      "categoria": "capa",
+      "raridade": "epica",
+      "loja": false,
+      "stats": {
+        "vida": 21,
+        "defesa": 21,
+        "forca": 2,
+        "stamina": 7,
+        "regenTurno": 0,
+        "resistencia": 0
+      },
+      "multipliers": {
+        "critChance": 0,
+        "critDamage": 0,
+        "dodgeChance": 36,
+        "comboChance": 0,
+        "healing": 19,
+        "swordDamage": 12,
+        "frutaDamage": 12,
+        "xpGain": 0,
+        "masteryGain": 0,
+        "berryGain": 0,
+        "fragmentGain": 0,
+        "velocidade": 5.9,
+        "poderMaldito": 0
+      },
+      "special": {},
+      "descricao": "Uma capa majestosa que deflecte ataques. Oferece defesa superior e regeneração constante.",
+      "preco": 10100,
+      "durabilidade": 135,
+      "durabilidadeMax": 135,
+      "nivel": 1,
+      "nivelMax": 5,
+      "balanceVersion": 2
+    },
+    {
+      "id": "equipamento_043",
+      "nome": "Capacete da Visão Profunda",
+      "categoria": "capacete",
+      "raridade": "rara",
+      "loja": false,
+      "stats": {
+        "vida": 8,
+        "defesa": 12,
+        "forca": 4,
+        "stamina": 2,
+        "regenTurno": 0,
+        "resistencia": 0
+      },
+      "multipliers": {
+        "critChance": 22,
+        "critDamage": 17,
+        "dodgeChance": 17,
+        "comboChance": 11,
+        "healing": 6.4,
+        "swordDamage": 0,
+        "frutaDamage": 6.4,
+        "xpGain": 0,
+        "masteryGain": 0,
+        "berryGain": 0,
+        "fragmentGain": 0,
+        "velocidade": 0,
+        "poderMaldito": 0
+      },
+      "special": {},
+      "descricao": "Um capacete que amplia a percepção maldita do usuário. Aumenta crítico e compreensão tática.",
+      "preco": 5900,
+      "durabilidade": 125,
+      "durabilidadeMax": 125,
+      "nivel": 1,
+      "nivelMax": 5,
+      "balanceVersion": 2
+    },
+    {
+      "id": "equipamento_044",
+      "nome": "Peitoral Reforcado",
+      "categoria": "armadura",
+      "raridade": "comum",
+      "loja": true,
+      "stats": {
+        "vida": 10,
+        "defesa": 10,
+        "forca": 2,
+        "stamina": 2,
+        "regenTurno": 0,
+        "resistencia": 0
+      },
+      "multipliers": {
+        "critChance": 0,
+        "critDamage": 0,
+        "dodgeChance": 12,
+        "comboChance": 0,
+        "healing": 8.9,
+        "swordDamage": 0,
+        "frutaDamage": 0,
+        "xpGain": 0,
+        "masteryGain": 0,
+        "berryGain": 0,
+        "fragmentGain": 2.6,
+        "velocidade": 0,
+        "poderMaldito": 2.6
+      },
+      "special": {},
+      "descricao": "Um peitoral simples mas eficaz, reforçado com tiras de energia maldita. Bom custo-benefício para iniciantes.",
+      "preco": 2600,
+      "durabilidade": 115,
+      "durabilidadeMax": 115,
+      "nivel": 1,
+      "nivelMax": 5,
+      "balanceVersion": 2
+    },
+    {
+      "id": "equipamento_045",
+      "nome": "Braçadeiras do Combatente",
+      "categoria": "luvas",
+      "raridade": "rara",
+      "loja": false,
+      "stats": {
+        "vida": 6,
+        "defesa": 6,
+        "forca": 10,
+        "stamina": 4,
+        "regenTurno": 0,
+        "resistencia": 0
+      },
+      "multipliers": {
+        "critChance": 17,
+        "critDamage": 22,
+        "dodgeChance": 0,
+        "comboChance": 26,
+        "healing": 0,
+        "swordDamage": 17,
+        "frutaDamage": 17,
+        "xpGain": 0,
+        "masteryGain": 0,
+        "berryGain": 0,
+        "fragmentGain": 0,
+        "velocidade": 0,
+        "poderMaldito": 0
+      },
+      "special": {},
+      "descricao": "Braçadeiras de combatente que amplificam a força dos golpes. Aumentam dano crítico e combos.",
+      "preco": 5700,
+      "durabilidade": 125,
+      "durabilidadeMax": 125,
+      "nivel": 1,
+      "nivelMax": 5,
+      "balanceVersion": 2
+    },
+    {
+      "id": "equipamento_046",
+      "nome": "Tornozeleiras da Mobilidade",
+      "categoria": "botas",
+      "raridade": "comum",
+      "loja": true,
+      "stats": {
+        "vida": 0,
+        "defesa": 2,
+        "forca": 2,
+        "stamina": 8,
+        "regenTurno": 0,
+        "resistencia": 0
+      },
+      "multipliers": {
+        "critChance": 0,
+        "critDamage": 0,
+        "dodgeChance": 22,
+        "comboChance": 9.2,
+        "healing": 0,
+        "swordDamage": 0,
+        "frutaDamage": 0,
+        "xpGain": 0,
+        "masteryGain": 0,
+        "berryGain": 0,
+        "fragmentGain": 0,
+        "velocidade": 0,
+        "poderMaldito": 0
+      },
+      "special": {},
+      "descricao": "Tornozeleiras leves que aumentam mobilidade e esquiva. Essenciais para quem prefere velocidade.",
+      "preco": 2200,
+      "durabilidade": 115,
+      "durabilidadeMax": 115,
+      "nivel": 1,
+      "nivelMax": 5,
+      "balanceVersion": 2
+    },
+    {
+      "id": "equipamento_047",
+      "nome": "Colete Tático Superior",
+      "categoria": "armadura",
+      "raridade": "epica",
+      "loja": false,
+      "stats": {
+        "vida": 18,
+        "defesa": 18,
+        "forca": 7,
+        "stamina": 5,
+        "regenTurno": 0,
+        "resistencia": 0
+      },
+      "multipliers": {
+        "critChance": 14,
+        "critDamage": 12,
+        "dodgeChance": 28,
+        "comboChance": 19,
+        "healing": 14,
+        "swordDamage": 14,
+        "frutaDamage": 14,
+        "xpGain": 0,
+        "masteryGain": 0,
+        "berryGain": 0,
+        "fragmentGain": 0,
+        "velocidade": 0,
+        "poderMaldito": 0
+      },
+      "special": {},
+      "descricao": "Um colete tático de qualidade superior que oferece equilíbrio excepcional entre ofensiva e defensiva.",
+      "preco": 9400,
+      "durabilidade": 135,
+      "durabilidadeMax": 135,
+      "nivel": 1,
+      "nivelMax": 5,
+      "balanceVersion": 2
+    },
+    {
+      "id": "equipamento_048",
+      "nome": "Armadura Jogo da Maldição",
+      "categoria": "armadura",
+      "raridade": "lendária",
+      "loja": false,
+      "stats": {
+        "vida": 28,
+        "defesa": 28,
+        "forca": 15,
+        "stamina": 8,
+        "regenTurno": 0,
+        "resistencia": 0
+      },
+      "multipliers": {
+        "critChance": 21,
+        "critDamage": 31,
+        "dodgeChance": 13,
+        "comboChance": 26,
+        "healing": 0,
+        "swordDamage": 26,
+        "frutaDamage": 39,
+        "xpGain": 0,
+        "masteryGain": 0,
+        "berryGain": 0,
+        "fragmentGain": 0,
+        "velocidade": 0,
+        "poderMaldito": 0
+      },
+      "special": {},
+      "descricao": "Armadura feita da essência de um espírito amaldiçoado de grau especial. Amplifica técnicas de fruta e oferece defesa lendária.",
+      "preco": 0,
+      "durabilidade": 145,
+      "durabilidadeMax": 145,
+      "nivel": 1,
+      "nivelMax": 5,
+      "balanceVersion": 2
+    },
+    {
+      "id": "equipamento_049",
+      "nome": "Capa do Feiticeiro Supremo",
+      "categoria": "capa",
+      "raridade": "lendária",
+      "loja": false,
+      "stats": {
+        "vida": 33,
+        "defesa": 33,
+        "forca": 8,
+        "stamina": 10,
+        "regenTurno": 0,
+        "resistencia": 0
+      },
+      "multipliers": {
+        "critChance": 13,
+        "critDamage": 21,
+        "dodgeChance": 47,
+        "comboChance": 31,
+        "healing": 31,
+        "swordDamage": 0,
+        "frutaDamage": 0,
+        "xpGain": 0,
+        "masteryGain": 0,
+        "berryGain": 0,
+        "fragmentGain": 0,
+        "velocidade": 0,
+        "poderMaldito": 0
+      },
+      "special": {},
+      "descricao": "A capa icônica dos feiticeiros supremos. Oferece proteção incomparável e esquiva excepcional.",
+      "preco": 0,
+      "durabilidade": 145,
+      "durabilidadeMax": 145,
+      "nivel": 1,
+      "nivelMax": 5,
+      "balanceVersion": 2
+    },
+    {
+      "id": "equipamento_050",
+      "nome": "Gorma da Perdição",
+      "categoria": "acessorio",
+      "raridade": "lendária",
+      "loja": false,
+      "stats": {
+        "vida": 15,
+        "defesa": 13,
+        "forca": 18,
+        "stamina": 5,
+        "regenTurno": 0,
+        "resistencia": 0
+      },
+      "multipliers": {
+        "critChance": 47,
+        "critDamage": 65,
+        "dodgeChance": 21,
+        "comboChance": 52,
+        "healing": 0,
+        "swordDamage": 47,
+        "frutaDamage": 47,
+        "xpGain": 0,
+        "masteryGain": 0,
+        "berryGain": 0,
+        "fragmentGain": 0,
+        "velocidade": 0,
+        "poderMaldito": 0
+      },
+      "special": {},
+      "descricao": "Uma joia misteriousa que amplifica o poder destrutivo de todos os ataques. Crítico supremo garantido.",
+      "preco": 0,
+      "durabilidade": 145,
+      "durabilidadeMax": 145,
+      "nivel": 1,
+      "nivelMax": 5,
+      "balanceVersion": 2
+    },
+    {
+      "id": "equipamento_051",
+      "nome": "Veste da Reencarnação",
+      "categoria": "armadura",
+      "raridade": "lendária",
+      "loja": false,
+      "stats": {
+        "vida": 36,
+        "defesa": 26,
+        "forca": 10,
+        "stamina": 10,
+        "regenTurno": 0,
+        "resistencia": 0
+      },
+      "multipliers": {
+        "critChance": 26,
+        "critDamage": 26,
+        "dodgeChance": 26,
+        "comboChance": 39,
+        "healing": 39,
+        "swordDamage": 21,
+        "frutaDamage": 31,
+        "xpGain": 0,
+        "masteryGain": 0,
+        "berryGain": 0,
+        "fragmentGain": 0,
+        "velocidade": 0,
+        "poderMaldito": 0
+      },
+      "special": {},
+      "descricao": "A veste de um feiticeiro reencarnado. Oferece equilíbrio e regeneração contínua em batalha.",
+      "preco": 0,
+      "durabilidade": 145,
+      "durabilidadeMax": 145,
+      "nivel": 1,
+      "nivelMax": 5,
+      "balanceVersion": 2
+    },
+    {
+      "id": "equipamento_052",
+      "nome": "Sapatos da Velocidade Infinita",
+      "categoria": "botas",
+      "raridade": "lendária",
+      "loja": false,
+      "stats": {
+        "vida": 2,
+        "defesa": 7,
+        "forca": 7,
+        "stamina": 31,
+        "regenTurno": 0,
+        "resistencia": 0
+      },
+      "multipliers": {
+        "critChance": 0,
+        "critDamage": 0,
+        "dodgeChance": 18,
+        "comboChance": 47,
+        "healing": 0,
+        "swordDamage": 0,
+        "frutaDamage": 0,
+        "xpGain": 0,
+        "masteryGain": 0,
+        "berryGain": 0,
+        "fragmentGain": 0,
+        "velocidade": 0,
+        "poderMaldito": 0
+      },
+      "special": {},
+      "descricao": "Sapatos infundidos com o poder do infinito. Velocidade absoluta e esquiva impossível de alcançar.",
+      "preco": 0,
+      "durabilidade": 145,
+      "durabilidadeMax": 145,
+      "nivel": 1,
+      "nivelMax": 5,
+      "balanceVersion": 2
+    },
+    {
+      "id": "equipamento_053",
+      "nome": "Punhos do Rei das Maldições",
+      "categoria": "luvas",
+      "raridade": "mítico",
+      "loja": false,
+      "stats": {
+        "vida": 23,
+        "defesa": 17,
+        "forca": 31,
+        "stamina": 9,
+        "regenTurno": 0,
+        "resistencia": 0
+      },
+      "multipliers": {
+        "critChance": 27,
+        "critDamage": 16,
+        "dodgeChance": 0,
+        "comboChance": 71,
+        "healing": 0,
+        "swordDamage": 71,
+        "frutaDamage": 86,
+        "xpGain": 0,
+        "masteryGain": 0,
+        "berryGain": 0,
+        "fragmentGain": 0,
+        "velocidade": 0,
+        "poderMaldito": 0
+      },
+      "special": {},
+      "descricao": "Punhos forjados pela essência do Rei das Maldições. Poder destrutivo absoluto e críticos garantidos.",
+      "preco": 0,
+      "durabilidade": 155,
+      "durabilidadeMax": 155,
+      "nivel": 1,
+      "nivelMax": 5,
+      "balanceVersion": 2
+    },
+    {
+      "id": "equipamento_054",
+      "nome": "Coroa do Domínio Supremo",
+      "categoria": "capacete",
+      "raridade": "mítico",
+      "loja": false,
+      "stats": {
+        "vida": 31,
+        "defesa": 40,
+        "forca": 17,
+        "stamina": 14,
+        "regenTurno": 0,
+        "resistencia": 0
+      },
+      "multipliers": {
+        "critChance": 43,
+        "critDamage": 37,
+        "dodgeChance": 32,
+        "comboChance": 23,
+        "healing": 51,
+        "swordDamage": 34,
+        "frutaDamage": 43,
+        "xpGain": 0,
+        "masteryGain": 0,
+        "berryGain": 0,
+        "fragmentGain": 0,
+        "velocidade": 0,
+        "poderMaldito": 0
+      },
+      "special": {},
+      "descricao": "A coroa de um feiticeiro que domina o próprio domínio expandido. Poder e defesa supremos.",
+      "preco": 0,
+      "durabilidade": 155,
+      "durabilidadeMax": 155,
+      "nivel": 1,
+      "nivelMax": 5,
+      "balanceVersion": 2
+    },
+    {
+      "id": "equipamento_055",
+      "nome": "Veste da Técnica Inata",
+      "categoria": "armadura",
+      "raridade": "mítico",
+      "loja": false,
+      "stats": {
+        "vida": 43,
+        "defesa": 34,
+        "forca": 20,
+        "stamina": 17,
+        "regenTurno": 0,
+        "resistencia": 0
+      },
+      "multipliers": {
+        "critChance": 34,
+        "critDamage": 51,
+        "dodgeChance": 43,
+        "comboChance": 51,
+        "healing": 57,
+        "swordDamage": 43,
+        "frutaDamage": 71,
+        "xpGain": 0,
+        "masteryGain": 0,
+        "berryGain": 0,
+        "fragmentGain": 0,
+        "velocidade": 0,
+        "poderMaldito": 0
+      },
+      "special": {},
+      "descricao": "A veste de um feiticeiro com técnica inata suprema. Amplifica todo e qualquer poder maldito.",
+      "preco": 0,
+      "durabilidade": 155,
+      "durabilidadeMax": 155,
+      "nivel": 1,
+      "nivelMax": 5,
+      "balanceVersion": 2
+    },
+    {
+      "id": "equipamento_056",
+      "nome": "Colar das Dez Sombras",
+      "categoria": "acessorio",
+      "raridade": "mítico",
+      "loja": false,
+      "stats": {
+        "vida": 23,
+        "defesa": 23,
+        "forca": 23,
+        "stamina": 9,
+        "regenTurno": 0,
+        "resistencia": 0
+      },
+      "multipliers": {
+        "critChance": 46,
+        "critDamage": 63,
+        "dodgeChance": 34,
+        "comboChance": 57,
+        "healing": 23,
+        "swordDamage": 57,
+        "frutaDamage": 80,
+        "xpGain": 0,
+        "masteryGain": 0,
+        "berryGain": 0,
+        "fragmentGain": 0,
+        "velocidade": 0,
+        "poderMaldito": 0
+      },
+      "special": {},
+      "descricao": "Um colar que canaliza o poder de dez espíritos divinos. Poder maldito em sua forma mais pura.",
+      "preco": 0,
+      "durabilidade": 155,
+      "durabilidadeMax": 155,
+      "nivel": 1,
+      "nivelMax": 5,
+      "balanceVersion": 2
+    },
+    {
+      "id": "equipamento_057",
+      "nome": "Botas do Passo Celestial",
+      "categoria": "botas",
+      "raridade": "mítico",
+      "loja": false,
+      "stats": {
+        "vida": 17,
+        "defesa": 11,
+        "forca": 11,
+        "stamina": 28,
+        "regenTurno": 0,
+        "resistencia": 0
+      },
+      "multipliers": {
+        "critChance": 23,
+        "critDamage": 28,
+        "dodgeChance": 114,
+        "comboChance": 71,
+        "healing": 0,
+        "swordDamage": 14,
+        "frutaDamage": 14,
+        "xpGain": 0,
+        "masteryGain": 0,
+        "berryGain": 0,
+        "fragmentGain": 0,
+        "velocidade": 0,
+        "poderMaldito": 0
+      },
+      "special": {},
+      "descricao": "Botas que permitem movimento celestial. Esquiva quase impossível e stamina infinita em combate.",
+      "preco": 0,
+      "durabilidade": 155,
+      "durabilidadeMax": 155,
+      "nivel": 1,
+      "nivelMax": 5,
+      "balanceVersion": 2
+    },
+    {
+      "id": "manto_hokage_evento",
+      "nome": "Manto de Hokage",
+      "categoria": "armadura",
+      "raridade": "epica",
+      "loja": false,
+      "stats": {
+        "vida": 34,
+        "defesa": 18,
+        "forca": 9,
+        "stamina": 14,
+        "regenTurno": 0,
+        "resistencia": 0
+      },
+      "multipliers": {
+        "critChance": 0,
+        "critDamage": 0,
+        "dodgeChance": 0,
+        "comboChance": 0,
+        "healing": 0,
+        "swordDamage": 0,
+        "frutaDamage": 24,
+        "xpGain": 35,
+        "masteryGain": 24,
+        "berryGain": 19,
+        "fragmentGain": 0,
+        "velocidade": 0,
+        "poderMaldito": 0
+      },
+      "special": {},
+      "descricao": "O icônico manto branco com chamas vermelhas do Hokage. Símbolo máximo de poder e proteção da Aldeia da Folha. Aumenta XP e ienes obtidos em combate.",
+      "preco": 0,
+      "durabilidade": 135,
+      "durabilidadeMax": 135,
+      "nivel": 1,
+      "nivelMax": 5,
+      "eventoExclusivo": true,
+      "balanceVersion": 2
+    },
+    {
+      "id": "bandana_evento",
+      "nome": "Bandana da Folha",
+      "categoria": "capacete",
+      "raridade": "rara",
+      "loja": false,
+      "stats": {
+        "vida": 10,
+        "defesa": 6,
+        "forca": 3,
+        "stamina": 2,
+        "regenTurno": 0,
+        "resistencia": 1
+      },
+      "multipliers": {
+        "critChance": 12,
+        "critDamage": 0,
+        "dodgeChance": 12,
+        "comboChance": 11,
+        "healing": 0,
+        "swordDamage": 0,
+        "frutaDamage": 0,
+        "xpGain": 17,
+        "masteryGain": 6,
+        "berryGain": 0,
+        "fragmentGain": 0,
+        "velocidade": 0,
+        "poderMaldito": 0
+      },
+      "special": {},
+      "descricao": "A bandana metálica com o símbolo de Konoha. Todo ninja da Folha usa com orgulho. Leve e resistente, aumenta combo e XP.",
+      "preco": 0,
+      "durabilidade": 125,
+      "durabilidadeMax": 125,
+      "nivel": 1,
+      "nivelMax": 5,
+      "eventoExclusivo": true,
+      "balanceVersion": 2
+    },
+    {
+      "id": "bandana_riscada_evento",
+      "nome": "Bandana Riscada",
+      "categoria": "capacete",
+      "raridade": "epica",
+      "loja": false,
+      "stats": {
+        "vida": 14,
+        "defesa": 12,
+        "forca": 5,
+        "stamina": 0,
+        "regenTurno": 0,
+        "resistencia": 0
+      },
+      "multipliers": {
+        "critChance": 19,
+        "critDamage": 35,
+        "dodgeChance": 12,
+        "comboChance": 0,
+        "healing": 0,
+        "swordDamage": 24,
+        "frutaDamage": 24,
+        "xpGain": 0,
+        "masteryGain": 0,
+        "berryGain": 0,
+        "fragmentGain": 0,
+        "velocidade": 0,
+        "poderMaldito": 0
+      },
+      "special": {},
+      "descricao": "A bandana com o símbolo de Konoha riscado — usada por renegados como Pain e Itachi. Aumenta crítico e dano, pois nada a perder te torna mais perigoso.",
+      "preco": 0,
+      "durabilidade": 135,
+      "durabilidadeMax": 135,
+      "nivel": 1,
+      "nivelMax": 5,
+      "eventoExclusivo": true,
+      "balanceVersion": 2
+    },
+    {
+      "id": "cabaca_gara_evento",
+      "nome": "Cabaça do Gara",
+      "categoria": "armadura",
+      "raridade": "epica",
+      "loja": false,
+      "stats": {
+        "vida": 30,
+        "defesa": 30,
+        "forca": 5,
+        "stamina": 9,
+        "regenTurno": 0,
+        "resistencia": 0
+      },
+      "multipliers": {
+        "critChance": 0,
+        "critDamage": 0,
+        "dodgeChance": 39,
+        "comboChance": 0,
+        "healing": 22,
+        "swordDamage": 0,
+        "frutaDamage": 0,
+        "xpGain": 0,
+        "masteryGain": 0,
+        "berryGain": 0,
+        "fragmentGain": 11,
+        "velocidade": 0,
+        "poderMaldito": 11
+      },
+      "special": {},
+      "descricao": "A cabaça de areia do Gara do Deserto, preenchida com areia de defesa automática. Alta defesa e esquiva passiva contra ataques inesperados.",
+      "preco": 0,
+      "durabilidade": 135,
+      "durabilidadeMax": 135,
+      "nivel": 1,
+      "nivelMax": 5,
+      "eventoExclusivo": true,
+      "balanceVersion": 2
+    },
+    {
+      "id": "marca_kiba_evento",
+      "nome": "Marca de Kiba",
+      "categoria": "armadura",
+      "raridade": "rara",
+      "loja": false,
+      "stats": {
+        "vida": 16,
+        "defesa": 12,
+        "forca": 8,
+        "stamina": 6,
+        "regenTurno": 0,
+        "resistencia": 0
+      },
+      "multipliers": {
+        "critChance": 0,
+        "critDamage": 0,
+        "dodgeChance": 0,
+        "comboChance": 43,
+        "healing": 0,
+        "swordDamage": 32,
+        "frutaDamage": 0,
+        "xpGain": 0,
+        "masteryGain": 0,
+        "berryGain": 0,
+        "fragmentGain": 0,
+        "velocidade": 0,
+        "poderMaldito": 0
+      },
+      "special": {},
+      "descricao": "As marcas de bestas do clã Inuzuka, pintadas no rosto de Kiba. Aumenta a força bruta e a frequência de combos, espelhando o instinto selvagem do lutador.",
+      "preco": 0,
+      "durabilidade": 125,
+      "durabilidadeMax": 125,
+      "nivel": 1,
+      "nivelMax": 5,
+      "eventoExclusivo": true,
+      "balanceVersion": 2
+    },
+    {
+      "id": "armadura_susano_evento",
+      "nome": "Armadura de Susano",
+      "categoria": "armadura",
+      "raridade": "lendária",
+      "loja": false,
+      "stats": {
+        "vida": 54,
+        "defesa": 38,
+        "forca": 15,
+        "stamina": 20,
+        "regenTurno": 0,
+        "resistencia": 0
+      },
+      "multipliers": {
+        "critChance": 13,
+        "critDamage": 52,
+        "dodgeChance": 0,
+        "comboChance": 0,
+        "healing": 0,
+        "swordDamage": 65,
+        "frutaDamage": 39,
+        "xpGain": 0,
+        "masteryGain": 0,
+        "berryGain": 0,
+        "fragmentGain": 0,
+        "velocidade": 0,
+        "poderMaldito": 0
+      },
+      "special": {},
+      "descricao": "A armadura espectral do Susano de Sasuke Uchiha, manifestada em forma sólida. Um dos equipamentos mais poderosos do evento Festival Shinobi. Força e defesa absolutas.",
+      "preco": 0,
+      "durabilidade": 145,
+      "durabilidadeMax": 145,
+      "nivel": 1,
+      "nivelMax": 5,
+      "eventoExclusivo": true,
+      "balanceVersion": 2
+    },
+    {
+      "id": "haori_tanjiro_limitado",
+      "nome": "Haori Quadriculado de Tanjiro",
+      "categoria": "manto",
+      "raridade": "limitado",
+      "loja": false,
+      "stats": {
+        "vida": 19,
+        "defesa": 11,
+        "forca": 9,
+        "stamina": 8,
+        "regenTurno": 1,
+        "resistencia": 0
+      },
+      "multipliers": {
+        "critChance": 8.7,
+        "critDamage": 0,
+        "dodgeChance": 8,
+        "comboChance": 8,
+        "healing": 0,
+        "swordDamage": 26,
+        "frutaDamage": 41,
+        "xpGain": 0,
+        "masteryGain": 0,
+        "berryGain": 0,
+        "fragmentGain": 0,
+        "velocidade": 0,
+        "poderMaldito": 16
+      },
+      "special": {
+        "firstStrike": {
+          "value": 26,
+          "description": "O primeiro golpe do combate recebe +26% de dano como Dança Hinokami."
+        }
+      },
+      "descricao": "Haori limitado de Tanjiro Kamado. Equilibra resistência, dano de espada e uma abertura explosiva inspirada na Respiração do Sol.",
+      "preco": 0,
+      "durabilidade": 176,
+      "durabilidadeMax": 176,
+      "nivel": 1,
+      "nivelMax": 10,
+      "eventoExclusivo": true,
+      "limitado": true,
+      "colecao": "Demon Slayer",
+      "precoTokensCacador": 90,
+      "balanceVersion": 2
+    },
+    {
+      "id": "brincos_hanafuda_limitado",
+      "nome": "Brincos Hanafuda Solar",
+      "categoria": "acessório",
+      "raridade": "limitado",
+      "loja": false,
+      "stats": {
+        "vida": 14,
+        "defesa": 7,
+        "forca": 7,
+        "stamina": 16,
+        "regenTurno": 1,
+        "resistencia": 1
+      },
+      "multipliers": {
+        "critChance": 17,
+        "critDamage": 36,
+        "dodgeChance": 0,
+        "comboChance": 0,
+        "healing": 3.8,
+        "swordDamage": 0,
+        "frutaDamage": 26,
+        "xpGain": 3.8,
+        "masteryGain": 16,
+        "berryGain": 3.8,
+        "fragmentGain": 1.9,
+        "velocidade": 0,
+        "poderMaldito": 0
+      },
+      "special": {
+        "cooldownReduction": {
+          "value": 1,
+          "description": "Reduz em 1 turno o cooldown das habilidades usadas."
+        }
+      },
+      "descricao": "Brincos lendários ligados à Respiração do Sol. Favorecem técnicas rápidas, críticos e evolução de maestria.",
+      "preco": 0,
+      "durabilidade": 148,
+      "durabilidadeMax": 148,
+      "nivel": 1,
+      "nivelMax": 10,
+      "eventoExclusivo": true,
+      "limitado": true,
+      "colecao": "Demon Slayer",
+      "precoTokensCacador": 155,
+      "balanceVersion": 2
+    },
+    {
+      "id": "manto_nezuko_limitado",
+      "nome": "Manto de Sangue da Nezuko",
+      "categoria": "capa",
+      "raridade": "limitado",
+      "loja": false,
+      "stats": {
+        "vida": 24,
+        "defesa": 12,
+        "forca": 5,
+        "stamina": 7,
+        "regenTurno": 3,
+        "resistencia": 0
+      },
+      "multipliers": {
+        "critChance": 0,
+        "critDamage": 0,
+        "dodgeChance": 21,
+        "comboChance": 0,
+        "healing": 41,
+        "swordDamage": 11,
+        "frutaDamage": 31,
+        "xpGain": 0,
+        "masteryGain": 0,
+        "berryGain": 0,
+        "fragmentGain": 0,
+        "velocidade": 5.3,
+        "poderMaldito": 0
+      },
+      "special": {
+        "regen": {
+          "value": 41,
+          "description": "Regenera 41 HP no início de cada turno."
+        }
+      },
+      "descricao": "Manto demoníaco limitado com sangue explosivo da Nezuko. Sustenta o usuário com cura constante e técnicas ardentes.",
+      "preco": 0,
+      "durabilidade": 169,
+      "durabilidadeMax": 169,
+      "nivel": 1,
+      "nivelMax": 10,
+      "eventoExclusivo": true,
+      "limitado": true,
+      "colecao": "Demon Slayer",
+      "precoTokensCacador": 100,
+      "balanceVersion": 2
+    },
+    {
+      "id": "mascara_inosuke_limitado",
+      "nome": "Máscara do Rei da Montanha",
+      "categoria": "capacete",
+      "raridade": "limitado",
+      "loja": false,
+      "stats": {
+        "vida": 14,
+        "defesa": 8,
+        "forca": 16,
+        "stamina": 11,
+        "regenTurno": 0,
+        "resistencia": 0
+      },
+      "multipliers": {
+        "critChance": 17,
+        "critDamage": 26,
+        "dodgeChance": 5,
+        "comboChance": 26,
+        "healing": 0,
+        "swordDamage": 29,
+        "frutaDamage": 0,
+        "xpGain": 2.5,
+        "masteryGain": 2.5,
+        "berryGain": 0,
+        "fragmentGain": 0,
+        "velocidade": 0,
+        "poderMaldito": 0
+      },
+      "special": {
+        "staminaSteal": {
+          "value": 7.1,
+          "description": "Ataques de espada/ferramenta roubam 7.1% do dano causado em stamina."
+        }
+      },
+      "descricao": "Máscara limitada de Inosuke. Transforma instinto selvagem em combos frequentes e recuperação agressiva de stamina.",
+      "preco": 0,
+      "durabilidade": 155,
+      "durabilidadeMax": 155,
+      "nivel": 1,
+      "nivelMax": 9,
+      "eventoExclusivo": true,
+      "limitado": true,
+      "colecao": "Demon Slayer",
+      "precoTokensCacador": 65,
+      "balanceVersion": 2
+    },
+    {
+      "id": "haori_zenitsu_limitado",
+      "nome": "Haori do Trovão Adormecido",
+      "categoria": "manto",
+      "raridade": "limitado",
+      "loja": false,
+      "stats": {
+        "vida": 9,
+        "defesa": 5,
+        "forca": 9,
+        "stamina": 22,
+        "regenTurno": 0,
+        "resistencia": 0
+      },
+      "multipliers": {
+        "critChance": 17,
+        "critDamage": 29,
+        "dodgeChance": 27,
+        "comboChance": 1.4,
+        "healing": 0,
+        "swordDamage": 0,
+        "frutaDamage": 4.3,
+        "xpGain": 0,
+        "masteryGain": 0,
+        "berryGain": 0,
+        "fragmentGain": 0,
+        "velocidade": 26,
+        "poderMaldito": 2.9
+      },
+      "special": {
+        "firstStrike": {
+          "value": 35,
+          "description": "O primeiro ataque ganha +35% de dano com deslocamento relâmpago."
+        }
+      },
+      "descricao": "Haori amarelo limitado de Zenitsu. Especializado em velocidade, esquiva e um primeiro corte devastador.",
+      "preco": 0,
+      "durabilidade": 142,
+      "durabilidadeMax": 142,
+      "nivel": 1,
+      "nivelMax": 9,
+      "eventoExclusivo": true,
+      "limitado": true,
+      "colecao": "Demon Slayer",
+      "precoTokensCacador": 70,
+      "balanceVersion": 2
+    },
+    {
+      "id": "capa_rengoku_limitado",
+      "nome": "Capa Flamejante de Rengoku",
+      "categoria": "capa",
+      "raridade": "limitado",
+      "loja": false,
+      "stats": {
+        "vida": 20,
+        "defesa": 12,
+        "forca": 15,
+        "stamina": 7,
+        "regenTurno": 0,
+        "resistencia": 0
+      },
+      "multipliers": {
+        "critChance": 0,
+        "critDamage": 32,
+        "dodgeChance": 6.6,
+        "comboChance": 12,
+        "healing": 0,
+        "swordDamage": 48,
+        "frutaDamage": 6.6,
+        "xpGain": 0,
+        "masteryGain": 0,
+        "berryGain": 0,
+        "fragmentGain": 0,
+        "velocidade": 3.3,
+        "poderMaldito": 0
+      },
+      "special": {
+        "cursedEnergy": {
+          "value": 21,
+          "description": "Com mais de 85% de HP, aumenta o dano em 21% pela chama do coração."
+        }
+      },
+      "descricao": "Capa limitada do Hashira das Chamas. Recompensa jogo ofensivo em alta vida com dano de espada massivo.",
+      "preco": 0,
+      "durabilidade": 182,
+      "durabilidadeMax": 182,
+      "nivel": 1,
+      "nivelMax": 10,
+      "eventoExclusivo": true,
+      "limitado": true,
+      "colecao": "Demon Slayer",
+      "precoTokensCacador": 130,
+      "balanceVersion": 2
+    },
+    {
+      "id": "haori_giyuu_limitado",
+      "nome": "Haori Meio a Meio de Giyuu",
+      "categoria": "manto",
+      "raridade": "limitado",
+      "loja": false,
+      "stats": {
+        "vida": 22,
+        "defesa": 18,
+        "forca": 7,
+        "stamina": 9,
+        "regenTurno": 0,
+        "resistencia": 5
+      },
+      "multipliers": {
+        "critChance": 0,
+        "critDamage": 0,
+        "dodgeChance": 22,
+        "comboChance": 8.1,
+        "healing": 17,
+        "swordDamage": 20,
+        "frutaDamage": 24,
+        "xpGain": 0,
+        "masteryGain": 0,
+        "berryGain": 0,
+        "fragmentGain": 0,
+        "velocidade": 0,
+        "poderMaldito": 16
+      },
+      "special": {
+        "shield": {
+          "value": 112,
+          "description": "Concede 112 de escudo no início do combate como calmaria da água."
+        }
+      },
+      "descricao": "Haori limitado de Giyuu Tomioka. Focado em defesa, escudo inicial e contra-ataques precisos.",
+      "preco": 0,
+      "durabilidade": 196,
+      "durabilidadeMax": 196,
+      "nivel": 1,
+      "nivelMax": 10,
+      "eventoExclusivo": true,
+      "limitado": true,
+      "colecao": "Demon Slayer",
+      "precoTokensCacador": 120,
+      "balanceVersion": 2
+    },
+    {
+      "id": "luvas_akaza_limitado",
+      "nome": "Luvas da Bússola Destrutiva",
+      "categoria": "luvas",
+      "raridade": "limitado",
+      "loja": false,
+      "stats": {
+        "vida": 16,
+        "defesa": 9,
+        "forca": 19,
+        "stamina": 12,
+        "regenTurno": 0,
+        "resistencia": 0
+      },
+      "multipliers": {
+        "critChance": 21,
+        "critDamage": 45,
+        "dodgeChance": 0,
+        "comboChance": 23,
+        "healing": 0,
+        "swordDamage": 1.7,
+        "frutaDamage": 0,
+        "xpGain": 0,
+        "masteryGain": 0,
+        "berryGain": 0,
+        "fragmentGain": 0,
+        "velocidade": 0,
+        "poderMaldito": 17
+      },
+      "special": {
+        "lifesteal": {
+          "value": 11,
+          "description": "Ataques de espada recuperam 11% do dano causado como roubo de vida."
+        }
+      },
+      "descricao": "Luvas limitadas de Akaza. A bússola prevê aberturas e converte golpes certeiros em roubo de vida.",
+      "preco": 0,
+      "durabilidade": 162,
+      "durabilidadeMax": 162,
+      "nivel": 1,
+      "nivelMax": 10,
+      "eventoExclusivo": true,
+      "limitado": true,
+      "colecao": "Demon Slayer",
+      "precoTokensCacador": 140,
+      "balanceVersion": 2
+    },
+    {
+      "id": "kimono_douma_limitado",
+      "nome": "Kimono Gélido de Douma",
+      "categoria": "armadura",
+      "raridade": "limitado",
+      "loja": false,
+      "stats": {
+        "vida": 23,
+        "defesa": 15,
+        "forca": 5,
+        "stamina": 11,
+        "regenTurno": 1,
+        "resistencia": 0
+      },
+      "multipliers": {
+        "critChance": 10,
+        "critDamage": 0,
+        "dodgeChance": 6.8,
+        "comboChance": 0,
+        "healing": 40,
+        "swordDamage": 0,
+        "frutaDamage": 38,
+        "xpGain": 0,
+        "masteryGain": 0,
+        "berryGain": 0,
+        "fragmentGain": 6.8,
+        "velocidade": 0,
+        "poderMaldito": 6.8
+      },
+      "special": {
+        "cooldownReduction": {
+          "value": 1,
+          "description": "Reduz em 1 turno o cooldown, como lâminas de gelo sempre prontas."
+        }
+      },
+      "descricao": "Kimono limitado de Douma. Amplifica técnicas, cura e cadência de habilidades com frieza sobrenatural.",
+      "preco": 0,
+      "durabilidade": 169,
+      "durabilidadeMax": 169,
+      "nivel": 1,
+      "nivelMax": 10,
+      "eventoExclusivo": true,
+      "limitado": true,
+      "colecao": "Demon Slayer",
+      "precoTokensCacador": 140,
+      "balanceVersion": 2
+    },
+    {
+      "id": "armadura_kokushibo_limitado",
+      "nome": "Armadura Lunar de Kokushibo",
+      "categoria": "armadura",
+      "raridade": "limitado",
+      "loja": false,
+      "stats": {
+        "vida": 27,
+        "defesa": 19,
+        "forca": 16,
+        "stamina": 8,
+        "regenTurno": 0,
+        "resistencia": 7
+      },
+      "multipliers": {
+        "critChance": 14,
+        "critDamage": 41,
+        "dodgeChance": 1.8,
+        "comboChance": 0,
+        "healing": 3.6,
+        "swordDamage": 44,
+        "frutaDamage": 0,
+        "xpGain": 0,
+        "masteryGain": 0,
+        "berryGain": 0,
+        "fragmentGain": 1.8,
+        "velocidade": 0,
+        "poderMaldito": 1.8
+      },
+      "special": {
+        "firstStrike": {
+          "value": 21,
+          "description": "Primeiro golpe recebe +21% de dano pela lua crescente inicial."
+        }
+      },
+      "descricao": "Armadura limitada de Kokushibo. Poder lunar voltado para espadas, críticos e sobrevivência de elite.",
+      "preco": 0,
+      "durabilidade": 209,
+      "durabilidadeMax": 209,
+      "nivel": 1,
+      "nivelMax": 10,
+      "eventoExclusivo": true,
+      "limitado": true,
+      "colecao": "Demon Slayer",
+      "precoTokensCacador": 190,
+      "balanceVersion": 2
+    },
+    {
+      "id": "casulo_rui_limitado",
+      "nome": "Casulo de Fios de Rui",
+      "categoria": "acessório",
+      "raridade": "limitado",
+      "loja": false,
+      "stats": {
+        "vida": 17,
+        "defesa": 15,
+        "forca": 4,
+        "stamina": 9,
+        "regenTurno": 1,
+        "resistencia": 1
+      },
+      "multipliers": {
+        "critChance": 0,
+        "critDamage": 0,
+        "dodgeChance": 13,
+        "comboChance": 17,
+        "healing": 14,
+        "swordDamage": 0,
+        "frutaDamage": 0,
+        "xpGain": 14,
+        "masteryGain": 7.2,
+        "berryGain": 14,
+        "fragmentGain": 27,
+        "velocidade": 0,
+        "poderMaldito": 0
+      },
+      "special": {
+        "shield": {
+          "value": 83,
+          "description": "Inicia o combate com 70 de escudo tecido por fios demoníacos."
+        }
+      },
+      "descricao": "Casulo limitado de Rui. Uma defesa leve que protege no início e cria janelas de combo.",
+      "preco": 0,
+      "durabilidade": 135,
+      "durabilidadeMax": 135,
+      "nivel": 1,
+      "nivelMax": 8,
+      "eventoExclusivo": true,
+      "limitado": true,
+      "colecao": "Demon Slayer",
+      "precoTokensCacador": 55,
+      "balanceVersion": 2
+    },
+    {
+      "id": "obi_daki_gyutaro_limitado",
+      "nome": "Obi Venenoso dos Irmãos",
+      "categoria": "acessório",
+      "raridade": "limitado",
+      "loja": false,
+      "stats": {
+        "vida": 18,
+        "defesa": 9,
+        "forca": 12,
+        "stamina": 12,
+        "regenTurno": 1,
+        "resistencia": 0
+      },
+      "multipliers": {
+        "critChance": 13,
+        "critDamage": 0,
+        "dodgeChance": 0,
+        "comboChance": 20,
+        "healing": 13,
+        "swordDamage": 23,
+        "frutaDamage": 0,
+        "xpGain": 13,
+        "masteryGain": 6.5,
+        "berryGain": 13,
+        "fragmentGain": 6.5,
+        "velocidade": 0,
+        "poderMaldito": 0
+      },
+      "special": {
+        "staminaSteal": {
+          "value": 5.9,
+          "description": "Ataques de espada/ferramenta roubam 5.9% do dano em stamina."
+        },
+        "lifesteal": {
+          "value": 5.9,
+          "description": "Ataques de espada recuperam 5.9% do dano causado."
+        }
+      },
+      "descricao": "Obi limitado de Daki e Gyutaro. Mistura veneno, roubo de vida e drenagem de stamina para duelos longos.",
+      "preco": 0,
+      "durabilidade": 155,
+      "durabilidadeMax": 155,
+      "nivel": 1,
+      "nivelMax": 9,
+      "eventoExclusivo": true,
+      "limitado": true,
+      "colecao": "Demon Slayer",
+      "precoTokensCacador": 90,
+      "balanceVersion": 2
+    },
+    {
+      "id": "tambor_tengen_limitado",
+      "nome": "Braceletes Sonoros de Tengen",
+      "categoria": "luvas",
+      "raridade": "limitado",
+      "loja": false,
+      "stats": {
+        "vida": 12,
+        "defesa": 8,
+        "forca": 14,
+        "stamina": 19,
+        "regenTurno": 0,
+        "resistencia": 0
+      },
+      "multipliers": {
+        "critChance": 20,
+        "critDamage": 4.4,
+        "dodgeChance": 0,
+        "comboChance": 36,
+        "healing": 0,
+        "swordDamage": 33,
+        "frutaDamage": 0,
+        "xpGain": 0,
+        "masteryGain": 0,
+        "berryGain": 0,
+        "fragmentGain": 0,
+        "velocidade": 14,
+        "poderMaldito": 0
+      },
+      "special": {
+        "cooldownReduction": {
+          "value": 1,
+          "description": "Ritmo musical reduz em 1 turno o cooldown das habilidades."
+        }
+      },
+      "descricao": "Braceletes limitados do Hashira do Som. Feitos para combos chamativos, velocidade e rotação rápida de habilidades.",
+      "preco": 0,
+      "durabilidade": 675,
+      "durabilidadeMax": 675,
+      "nivel": 1,
+      "nivelMax": 9,
+      "eventoExclusivo": true,
+      "limitado": true,
+      "colecao": "Demon Slayer",
+      "precoTokensCacador": 80,
+      "balanceVersion": 2
+    },
+    {
+      "id": "colar_mitsuri_limitado",
+      "nome": "Colar Flexível de Mitsuri",
+      "categoria": "acessório",
+      "raridade": "limitado",
+      "loja": false,
+      "stats": {
+        "vida": 26,
+        "defesa": 8,
+        "forca": 11,
+        "stamina": 15,
+        "regenTurno": 3,
+        "resistencia": 0
+      },
+      "multipliers": {
+        "critChance": 0,
+        "critDamage": 0,
+        "dodgeChance": 12,
+        "comboChance": 23,
+        "healing": 51,
+        "swordDamage": 0,
+        "frutaDamage": 0,
+        "xpGain": 7.2,
+        "masteryGain": 3.6,
+        "berryGain": 7.2,
+        "fragmentGain": 3.6,
+        "velocidade": 0,
+        "poderMaldito": 0
+      },
+      "special": {
+        "regen": {
+          "value": 33,
+          "description": "Regenera 33 HP por turno graças à vitalidade do amor."
+        }
+      },
+      "descricao": "Colar limitado da Hashira do Amor. Excelente sustain, combos e mobilidade elástica.",
+      "preco": 0,
+      "durabilidade": 675,
+      "durabilidadeMax": 675,
+      "nivel": 1,
+      "nivelMax": 9,
+      "eventoExclusivo": true,
+      "limitado": true,
+      "colecao": "Demon Slayer",
+      "precoTokensCacador": 90,
+      "balanceVersion": 2
+    },
+    {
+      "id": "rosario_gyomei_limitado",
+      "nome": "Rosário da Pedra de Gyomei",
+      "categoria": "acessório",
+      "raridade": "limitado",
+      "loja": false,
+      "stats": {
+        "vida": 32,
+        "defesa": 49,
+        "forca": 27,
+        "stamina": 4,
+        "regenTurno": 0,
+        "resistencia": 8
+      },
+      "multipliers": {
+        "critChance": 0,
+        "critDamage": 26,
+        "dodgeChance": 0,
+        "comboChance": 0,
+        "healing": 24,
+        "swordDamage": 29,
+        "frutaDamage": 0,
+        "xpGain": 9.8,
+        "masteryGain": 4.9,
+        "berryGain": 9.8,
+        "fragmentGain": 4.9,
+        "velocidade": 0,
+        "poderMaldito": 0
+      },
+      "special": {
+        "shield": {
+          "value": 120,
+          "description": "Concede 120 de escudo inicial com a firmeza da pedra."
+        }
+      },
+      "descricao": "Rosário limitado de Gyomei. O equipamento mais defensivo da coleção Demon Slayer, feito para resistir a bosses.",
+      "preco": 0,
+      "durabilidade": 223,
+      "durabilidadeMax": 223,
+      "nivel": 1,
+      "nivelMax": 10,
+      "eventoExclusivo": true,
+      "limitado": true,
+      "colecao": "Demon Slayer",
+      "precoTokensCacador": 170,
+      "balanceVersion": 2
+    },
+    {
+      "id": "foice_tripla_jashin",
+      "nome": "Foice Tripla de Jashin",
+      "categoria": "arma",
+      "raridade": "mitica",
+      "loja": false,
+      "stats": {
+        "vida": 0,
+        "defesa": 6,
+        "forca": 42,
+        "stamina": 18,
+        "regenTurno": 0,
+        "resistencia": 8
+      },
+      "multipliers": {
+        "critChance": 12,
+        "critDamage": 35,
+        "dodgeChance": 0,
+        "comboChance": 18,
+        "healing": -10,
+        "swordDamage": 38,
+        "frutaDamage": 18,
+        "xpGain": 0,
+        "masteryGain": 12,
+        "berryGain": 0,
+        "fragmentGain": 0,
+        "velocidade": 6,
+        "poderMaldito": 28
+      },
+      "special": {
+        "tecnicaSinergia": "ritual_jashin_hidan",
+        "passiva": "Lâminas Famintas",
+        "descricao": "Acertos acumulam Fome de Sangue. Com Ritual Sangrento de Jashin equipado, coleta sangue mais rápido, fortalece o vínculo ritual e transforma dano de foice em progresso extra para o contrato.",
+        "skills": [
+          {
+            "nome": "Gancho do Herege",
+            "efeito": "Arremessa a foice para puxar o alvo ou puxar Hidan até ele; bônus contra Sangue Exposto."
+          },
+          {
+            "nome": "Dança das Três Lâminas",
+            "efeito": "Combo em área que aplica Hemorragia Ritual se múltiplas lâminas acertarem o mesmo alvo."
+          },
+          {
+            "nome": "Âncora Profana",
+            "efeito": "Crava a foice no terreno/alvo, reduz mobilidade e estabiliza o Selo de Jashin."
+          }
+        ]
+      },
+      "descricao": "Arma amaldiçoada de três lâminas feita para coleta de sangue, controle de distância e manutenção do ritual de Jashin.",
+      "preco": 0,
+      "durabilidade": 180,
+      "durabilidadeMax": 180,
+      "nivel": 1,
+      "nivelMax": 7,
+      "balanceVersion": 2
+    },
+    {
+      "id": "brinco_potara",
+      "nome": "Brinco Potara",
+      "categoria": "acessório",
+      "raridade": "mítico",
+      "loja": false,
+      "stats": {
+        "vida": 5,
+        "defesa": 3,
+        "forca": 3,
+        "stamina": 5,
+        "regenTurno": 0,
+        "resistencia": 0
+      },
+      "multipliers": {
+        "critChance": 0,
+        "critDamage": 0,
+        "dodgeChance": 0,
+        "comboChance": 0,
+        "healing": 0,
+        "swordDamage": 0,
+        "frutaDamage": 0,
+        "xpGain": 70,
+        "masteryGain": 70,
+        "berryGain": 70,
+        "fragmentGain": 0,
+        "velocidade": 0,
+        "poderMaldito": 0
+      },
+      "special": {},
+      "descricao": "Brinco sagrado dos Kaioshins. Concede +70% de XP, XP de Técnica (Maestria) e Ienes (Berries), mas possui atributos de combate (vida/defesa) extremamente baixos.",
+      "preco": 0,
+      "durabilidade": 300,
+      "durabilidadeMax": 300,
+      "nivel": 1,
+      "nivelMax": 5,
+      "balanceVersion": 2
+    },
+    {
+      "id": "mascara_hollow",
+      "nome": "Máscara de Hollow",
+      "categoria": "capacete",
+      "raridade": "mítica",
+      "loja": false,
+      "stats": {
+        "vida": 40,
+        "defesa": 25,
+        "forca": 35,
+        "stamina": 15,
+        "regenTurno": 0,
+        "resistencia": 10
+      },
+      "multipliers": {
+        "critChance": 15,
+        "critDamage": 25,
+        "dodgeChance": 5,
+        "comboChance": 10,
+        "healing": 0,
+        "swordDamage": 20,
+        "frutaDamage": 0,
+        "xpGain": 0,
+        "masteryGain": 0,
+        "berryGain": 0,
+        "fragmentGain": 0,
+        "velocidade": 15,
+        "poderMaldito": 25
+      },
+      "special": {
+        "passiva": "Poder Hollow"
+      },
+      "descricao": "Uma máscara de osso nascida da corrupção espiritual. Concede um poder brutal, aumentando o ataque dramaticamente quando sua vida está baixa.",
+      "preco": 0,
+      "durabilidade": 400,
+      "durabilidadeMax": 400,
+      "nivel": 1,
+      "nivelMax": 7,
+      "balanceVersion": 2
+    },
+    {
+      "id": "manto_akatsuki",
+      "nome": "Manto Akatsuki",
+      "categoria": "armadura",
+      "raridade": "lendária",
+      "loja": false,
+      "stats": {
+        "vida": 30,
+        "defesa": 25,
+        "forca": 15,
+        "stamina": 25,
+        "regenTurno": 5,
+        "resistencia": 10
+      },
+      "multipliers": {
+        "critChance": 5,
+        "critDamage": 10,
+        "dodgeChance": 15,
+        "comboChance": 0,
+        "healing": 10,
+        "swordDamage": 0,
+        "frutaDamage": 20,
+        "xpGain": 0,
+        "masteryGain": 15,
+        "berryGain": 0,
+        "fragmentGain": 0,
+        "velocidade": 10,
+        "poderMaldito": 20
+      },
+      "special": {
+        "passiva": "Nuvens de Sangue"
+      },
+      "descricao": "Um longo manto preto adornado com nuvens vermelhas. Usado pelos nukenins mais perigosos, confere evasão e resistência aos elementos.",
+      "preco": 0,
+      "durabilidade": 350,
+      "durabilidadeMax": 350,
+      "nivel": 1,
+      "nivelMax": 5,
+      "balanceVersion": 2
+    },
+    {
+      "id": "traje_ninja_madara",
+      "nome": "Traje Ninja do Madara",
+      "categoria": "armadura",
+      "raridade": "mítica",
+      "loja": false,
+      "stats": {
+        "vida": 45,
+        "defesa": 35,
+        "forca": 30,
+        "stamina": 20,
+        "regenTurno": 0,
+        "resistencia": 20
+      },
+      "multipliers": {
+        "critChance": 10,
+        "critDamage": 15,
+        "dodgeChance": 10,
+        "comboChance": 15,
+        "healing": 0,
+        "swordDamage": 15,
+        "frutaDamage": 15,
+        "xpGain": 0,
+        "masteryGain": 0,
+        "berryGain": 0,
+        "fragmentGain": 0,
+        "velocidade": 10,
+        "poderMaldito": 30
+      },
+      "special": {
+        "passiva": "Fantasma dos Uchiha"
+      },
+      "descricao": "A lendária armadura vermelha do Fantasma dos Uchiha. Concede grande defesa e força, além de amedrontar adversários em combate corpo a corpo.",
+      "preco": 0,
+      "durabilidade": 450,
+      "durabilidadeMax": 450,
+      "nivel": 1,
+      "nivelMax": 7,
+      "balanceVersion": 2
+    },
+    {
+      "id": "tambores_taiko_enel",
+      "nome": "Tambores Taiko",
+      "categoria": "acessório",
+      "raridade": "lendária",
+      "loja": false,
+      "stats": {
+        "vida": 15,
+        "defesa": 10,
+        "forca": 10,
+        "stamina": 30,
+        "regenTurno": 0,
+        "resistencia": 5
+      },
+      "multipliers": {
+        "critChance": 10,
+        "critDamage": 0,
+        "dodgeChance": 20,
+        "comboChance": 0,
+        "healing": 0,
+        "swordDamage": 0,
+        "frutaDamage": 25,
+        "xpGain": 0,
+        "masteryGain": 0,
+        "berryGain": 0,
+        "fragmentGain": 0,
+        "velocidade": 25,
+        "poderMaldito": 15
+      },
+      "special": {
+        "passiva": "Deus do Trovão"
+      },
+      "descricao": "Tambores carregados com energia de alta voltagem que ficam acoplados às costas. Concedem extrema velocidade e dano de técnicas, além de retaliar com choque.",
+      "preco": 0,
+      "durabilidade": 300,
+      "durabilidadeMax": 300,
+      "nivel": 1,
+      "nivelMax": 5,
+      "balanceVersion": 2
+    }
+  ]
+}
