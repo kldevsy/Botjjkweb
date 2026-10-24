@@ -40,7 +40,7 @@ const Row = ({ statKey, items }) => {
 export const CompareDialog = () => {
   const { compare, compareOpen, setCompareOpen, openDetail } = useGuide();
   const { t } = useI18n();
-  const keys = [...new Set(compare.flatMap((i) => Object.keys(i.stats)))];
+  const keys = [...new Set(compare.flatMap((i) => Object.keys(i.stats)))].filter((k) => compare.some((i) => i.stats[k]));
 
   return (
     <Dialog open={compareOpen && compare.length > 1} onOpenChange={setCompareOpen}>

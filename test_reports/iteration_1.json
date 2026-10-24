@@ -1,0 +1,32 @@
+{
+  "summary": "First full test of the read-only anime game guide (FastAPI in-memory JSON + React). Backend: 30/30 pytest pass (categories counts, list/filter/sort for all 9 categories, detail for EVERY item in every category, 404s, 422s, accent-insensitive search, /search, /dashboard). Frontend: dashboard (9 category cards, rarity chart, tech types, top lists -> modal), sidebar nav, category search/rarity/type/sort/order/clear/results-count/empty-state, card -> detail modal with overview/skills/mechanics/extra tabs and dmg/cooldown/stun pills, compare (max 3 toast, cross-category reset toast, compare dialog rows), global search via trigger and Ctrl+K, language PT/EN/ES with localStorage persistence, deep link ?item=ichigo, mobile menu nav — all working. Found 2 minor bugs.",
+  "backend_issues": {"critical": [], "minor": []},
+  "frontend_issues": {
+    "ui_bugs": [
+      {"component": "Dashboard rarity chart (mobile 390px)", "issue": "Page has horizontal overflow (document scrollWidth 475px vs 390 viewport). Cause: Dashboard.jsx line 99 `grid gap-5 lg:grid-cols-12` has no explicit mobile column template, so the implicit column sizes to the Recharts ResponsiveContainer content width. Fix: add `grid-cols-1` and/or `min-w-0` on the Panel children.", "selector": "[data-testid='rarity-chart']", "priority": "MEDIUM"},
+      {"component": "GuideContext.toggleCompare", "issue": "Cross-category reset toast 'A comparação foi reiniciada para esta categoria' appears TWICE. Cause: toast() side effects are called inside the setCompare state updater, which React.StrictMode double-invokes. Move toast calls outside the updater (compute next state from current `compare` then call setCompare + toast).", "selector": "[data-testid^='item-card-compare-button-']", "priority": "LOW"}
+    ],
+    "integration_issues": [],
+    "design_issues": [
+      {"screen": "Dashboard category cards", "issues": ["Card description text is very small (~10px) and low-contrast slate on dark bg; consider text-xs + slate-400"]},
+      {"screen": "Compare dialog (tecnicas)", "issues": ["'Chance' row shows 0 for items without chance and trophy is awarded to non-zero only; acceptable but rows where all values are 0 could be hidden"]}
+    ]
+  },
+  "test_report_links": ["/app/backend/tests/test_guide_api.py", "/app/test_reports/pytest/pytest_results.xml"],
+  "action_items": [
+    "Fix mobile horizontal overflow on dashboard: add grid-cols-1 / min-w-0 to the chart grid (Dashboard.jsx ~line 99)",
+    "Move toast() calls out of the setCompare updater in GuideContext.jsx to avoid duplicate toasts"
+  ],
+  "critical_code_review_comments": [
+    "GuideContext: side effects (toast) inside setState updater — not pure, double fires in StrictMode",
+    "CompareDialog/CompareTray use key={it.id} — fine since same-category enforced",
+    "server.py list sorting: items missing a stat treated as 0, OK; `limit` in /search has no upper bound validation (minor)"
+  ],
+  "updated_files": ["/app/backend/tests/test_guide_api.py"],
+  "success_rate": {"backend": "100%", "frontend": "95%"},
+  "test_credentials": "none - no auth",
+  "seed_data_creation": "none",
+  "retest_needed": false,
+  "should_main_agent_self_test": true,
+  "context_for_next_testing_agent": "Run: REACT_APP_BACKEND_URL=... pytest /app/backend/tests/test_guide_api.py. Bosses have no rarity so rarity-filter-select is not rendered on /c/bosses (expected); use /c/tecnicas for rarity tests. All lendario tecnicas are tipo Inata. Mobile nav renders duplicate nav-* testids (desktop hidden + sheet), pick the visible one."
+}

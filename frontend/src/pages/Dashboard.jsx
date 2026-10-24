@@ -89,14 +89,14 @@ export default function Dashboard() {
                 <Icon className="h-5 w-5" style={{ color }} />
                 <p className="font-display mt-3 text-3xl font-extrabold text-white">{d.counts[k]}</p>
                 <p className="text-sm font-semibold text-slate-200">{cat(k)}</p>
-                <p className="mt-1 line-clamp-2 text-[11px] text-slate-500">{catDesc(k)}</p>
+                <p className="mt-1 line-clamp-2 text-xs text-slate-400">{catDesc(k)}</p>
               </Link>
             </motion.div>
           );
         })}
       </div>
 
-      <div className="grid gap-5 lg:grid-cols-12">
+      <div className="grid grid-cols-1 gap-5 lg:grid-cols-12 [&>*]:min-w-0">
         <Panel i={3} className="lg:col-span-7" testId="rarity-chart">
           <PanelTitle>{t("rarityDist")}</PanelTitle>
           <div className="h-64">

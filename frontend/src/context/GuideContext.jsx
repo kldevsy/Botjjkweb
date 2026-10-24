@@ -13,22 +13,16 @@ export const GuideProvider = ({ children }) => {
 
   const toggleCompare = useCallback(
     (item) => {
-      setCompare((cur) => {
-        if (cur.some((c) => c.id === item.id && c.category === item.category)) {
-          return cur.filter((c) => !(c.id === item.id && c.category === item.category));
-        }
-        if (cur.length && cur[0].category !== item.category) {
-          toast(t("compareSameCat"));
-          return [item];
-        }
-        if (cur.length >= 3) {
-          toast.error(t("compareLimit"));
-          return cur;
-        }
-        return [...cur, item];
-      });
+      const same = (c) => c.id === item.id && c.category === item.category;
+      if (compare.some(same)) return setCompare(compare.filter((c) => !same(c)));
+      if (compare.length && compare[0].category !== item.category) {
+        toast(t("compareSameCat"));
+        return setCompare([item]);
+      }
+      if (compare.length >= 3) return toast.error(t("compareLimit"));
+      setCompare([...compare, item]);
     },
-    [t]
+    [t, compare]
   );
 
   const value = useMemo(
