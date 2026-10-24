@@ -14,7 +14,7 @@ const EMPTY = { q: "", raridade: "", tipo: "", sort: "", order: "desc" };
 export default function CategoryPage() {
   const { category } = useParams();
   const { cats } = useOutletContext();
-  const { cat, catDesc, t } = useI18n();
+  const { cat, catDesc, t, lang } = useI18n();
   const { openDetail } = useGuide();
   const [params, setParams] = useSearchParams();
   const [filters, setFilters] = useState(EMPTY);
@@ -37,7 +37,7 @@ export default function CategoryPage() {
       api.items(category, p).then(setItems);
     }, filters.q ? 200 : 0);
     return () => clearTimeout(h);
-  }, [category, filters]);
+  }, [category, filters, lang]);
 
   if (!CATEGORY_META[category]) return <Navigate to="/" replace />;
   const meta = cats.find((c) => c.key === category);

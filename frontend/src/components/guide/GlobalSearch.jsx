@@ -9,7 +9,7 @@ import { RarityBadge } from "./RarityBadge";
 
 export const GlobalSearch = () => {
   const { searchOpen, setSearchOpen, openDetail } = useGuide();
-  const { t, cat } = useI18n();
+  const { t, cat, lang } = useI18n();
   const [q, setQ] = useState("");
   const [results, setResults] = useState([]);
   const [active, setActive] = useState(0);
@@ -29,7 +29,7 @@ export const GlobalSearch = () => {
     if (!q.trim()) return setResults([]);
     const id = setTimeout(() => api.search(q.trim()).then((r) => { setResults(r); setActive(0); }), 180);
     return () => clearTimeout(id);
-  }, [q]);
+  }, [q, lang]);
 
   const choose = (it) => {
     setSearchOpen(false);

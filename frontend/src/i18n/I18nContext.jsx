@@ -11,9 +11,12 @@ const prettify = (k) =>
     .replace(/^./, (c) => c.toUpperCase());
 
 export const I18nProvider = ({ children }) => {
-  const [lang, setLang] = useState(() => localStorage.getItem("guide-lang") || "pt");
+  const [lang, setLangState] = useState(() => localStorage.getItem("guide-lang") || "pt");
+  const setLang = (l) => {
+    localStorage.setItem("guide-lang", l);
+    setLangState(l);
+  };
   useEffect(() => {
-    localStorage.setItem("guide-lang", lang);
     document.documentElement.lang = lang;
   }, [lang]);
 

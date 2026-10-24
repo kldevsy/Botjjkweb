@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import { LayoutDashboard } from "lucide-react";
+import { LayoutDashboard, Hammer, Calculator } from "lucide-react";
 import { useI18n } from "@/i18n/I18nContext";
 import { CATEGORY_META, CATEGORY_ORDER } from "@/lib/meta";
 
@@ -32,6 +32,13 @@ export const SidebarNav = ({ counts = {}, onNavigate }) => {
           </NavLink>
         );
       })}
+      <p className="font-mono-g mb-1 mt-5 px-3 text-[10px] uppercase tracking-[0.25em] text-slate-600">{t("navTools")}</p>
+      <NavLink to="/build" className={linkCls} onClick={onNavigate} data-testid="nav-build">
+        <Hammer className="h-4 w-4" /> {t("buildTitle")}
+      </NavLink>
+      <NavLink to="/calc" className={linkCls} onClick={onNavigate} data-testid="nav-calc">
+        <Calculator className="h-4 w-4" /> {t("calcTitle")}
+      </NavLink>
     </nav>
   );
 };

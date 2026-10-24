@@ -13,7 +13,7 @@ RARITY_MAP = {
     "exclusivo": "exclusivo", "exclusiva": "exclusivo",
 }
 RARITY_ORDER = ["comum", "incomum", "raro", "epico", "lendario", "mitico", "limitado", "exclusivo"]
-TYPE_FIX = {"Respiracao": "Respiração", "acessorio": "acessório", "tecnica": "Técnica"}
+TYPE_FIX = {"Respiracao": "Respiração", "acessorio": "Acessório", "acessório": "Acessório", "tecnica": "Técnica", "capa": "Manto", "pvp": "PvP"}
 
 
 def strip_accents(s):
@@ -93,6 +93,7 @@ def norm_skill(h):
         "imagem": h.get("imagem") if isinstance(h.get("imagem"), str) and h.get("imagem", "").startswith("http") else None,
         "tags": tags[:10],
         "debuff": flatten(h["debuff"]) if isinstance(h.get("debuff"), dict) else None,
+        "ignoraDefesa": any(h.get(k) is True for k in ("ignoraDefesa", "ignorarDefesa", "ignoraDefesaTotal", "antiDefesa")),
     }
 
 
@@ -365,6 +366,38 @@ def load_all():
             items.append(builders[c["key"]](r))
         data[c["key"]] = items
     return data
+
+
+TRANSLATABLE = {"nome", "subtitulo", "descricao", "text", "title"}
+
+
+def collect_strings(obj, out=None):
+    out = set() if out is None else out
+    if isinstance(obj, dict):
+        for k, v in obj.items():
+            if k in TRANSLATABLE and isinstance(v, str) and v.strip():
+                out.add(v)
+            else:
+                collect_strings(v, out)
+    elif isinstance(obj, list):
+        for x in obj:
+            collect_strings(x, out)
+    return out
+
+
+def translate(obj, table):
+    if not table:
+        return obj
+    if isinstance(obj, dict):
+        return {k: (table.get(v, v) if k in TRANSLATABLE and isinstance(v, str) else translate(v, table)) for k, v in obj.items()}
+    if isinstance(obj, list):
+        return [translate(x, table) for x in obj]
+    return obj
+
+
+def load_translations():
+    p = DATA_DIR / "translations.json"
+    return json.load(open(p, encoding="utf-8")) if p.exists() else {}
 
 
 def summary(item, highlight):

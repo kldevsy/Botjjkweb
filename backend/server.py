@@ -7,7 +7,7 @@ from pathlib import Path
 import os
 import logging
 
-from guide_data import load_all, summary, CATEGORIES, RARITY_ORDER, strip_accents
+from guide_data import load_all, summary, CATEGORIES, RARITY_ORDER, strip_accents, translate, load_translations
 
 ROOT_DIR = Path(__file__).parent
 load_dotenv(ROOT_DIR / '.env')
@@ -15,6 +15,12 @@ load_dotenv(ROOT_DIR / '.env')
 DATA = load_all()
 HIGHLIGHT = {c["key"]: c["highlight"] for c in CATEGORIES}
 INDEX = {(i["category"], i["id"]): i for items in DATA.values() for i in items}
+TRANSLATIONS = load_translations()
+Lang = Query("pt", pattern="^(pt|en|es)$")
+
+
+def tr(obj, lang):
+    return translate(obj, TRANSLATIONS.get(lang))
 
 app = FastAPI()
 api_router = APIRouter(prefix="/api")
@@ -49,46 +55,46 @@ async def categories():
 
 @api_router.get("/items/{category}")
 async def list_items(category: str, q: Optional[str] = None, raridade: Optional[str] = None, tipo: Optional[str] = None,
-                     sort: Optional[str] = None, order: str = Query("desc", pattern="^(asc|desc)$")):
+                     sort: Optional[str] = None, order: str = Query("desc", pattern="^(asc|desc)$"), lang: str = Lang):
     items = get_cat(category)
     if q:
         nq = norm(q)
-        items = [i for i in items if nq in norm(i["nome"]) or nq in norm(i["descricao"]) or nq in norm(i["subtitulo"])]
+        items = [i for i in items if any(nq in norm(x) for x in (i["nome"], i["descricao"], i["subtitulo"], tr(i["nome"] and {"nome": i["nome"]}, lang)["nome"]))]
     if raridade:
         items = [i for i in items if i["raridade"] == raridade]
     if tipo:
         items = [i for i in items if i["tipo"] == tipo]
     if sort == "nome":
-        items = sorted(items, key=lambda i: norm(i["nome"]), reverse=order == "desc")
+        items = sorted(items, key=lambda i: norm(tr({"nome": i["nome"]}, lang)["nome"]), reverse=order == "desc")
     elif sort == "raridade":
         items = sorted(items, key=lambda i: RARITY_ORDER.index(i["raridade"]) if i["raridade"] else -1, reverse=order == "desc")
     elif sort:
         items = sorted(items, key=lambda i: i["stats"].get(sort, 0) or 0, reverse=order == "desc")
-    return [summary(i, HIGHLIGHT[category]) for i in items]
+    return tr([summary(i, HIGHLIGHT[category]) for i in items], lang)
 
 
 @api_router.get("/items/{category}/{item_id}")
-async def get_item(category: str, item_id: str):
+async def get_item(category: str, item_id: str, lang: str = Lang):
     get_cat(category)
     item = INDEX.get((category, item_id))
     if not item:
         raise HTTPException(404, "Item não encontrado")
-    return item
+    return tr(item, lang)
 
 
 @api_router.get("/search")
-async def search(q: str = Query(..., min_length=1), limit: int = 30):
+async def search(q: str = Query(..., min_length=1), limit: int = Query(30, ge=1, le=100), lang: str = Lang):
     nq = norm(q)
     hits = []
     for items in DATA.values():
         for i in items:
-            n = norm(i["nome"])
+            n = norm(tr({"nome": i["nome"]}, lang)["nome"]) + " " + norm(i["nome"])
             if nq in n:
                 hits.append((0 if n.startswith(nq) else 1, i))
             elif nq in norm(i["descricao"]) or nq in norm(i["subtitulo"]):
                 hits.append((2, i))
     hits.sort(key=lambda x: x[0])
-    return [summary(i, HIGHLIGHT[i["category"]]) for _, i in hits[:limit]]
+    return tr([summary(i, HIGHLIGHT[i["category"]]) for _, i in hits[:limit]], lang)
 
 
 def top(category, stat, n=5):
@@ -97,10 +103,10 @@ def top(category, stat, n=5):
 
 
 @api_router.get("/dashboard")
-async def dashboard():
+async def dashboard(lang: str = Lang):
     rarity = Counter(i["raridade"] for items in DATA.values() for i in items if i["raridade"])
     total_skills = sum(len(s.get("skills", [])) for items in DATA.values() for i in items for s in i["sections"])
-    return {
+    return tr({
         "counts": {k: len(v) for k, v in DATA.items()},
         "total": sum(len(v) for v in DATA.values()),
         "totalSkills": total_skills,
@@ -109,7 +115,7 @@ async def dashboard():
         "topBosses": top("bosses", "vida"),
         "topEspadas": top("espadas", "dano"),
         "topTecnicas": top("tecnicas", "danoMax"),
-    }
+    }, lang)
 
 
 app.include_router(api_router)

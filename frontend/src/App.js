@@ -6,6 +6,8 @@ import { GuideProvider } from "@/context/GuideContext";
 import { Layout } from "@/components/guide/Layout";
 import Dashboard from "@/pages/Dashboard";
 import CategoryPage from "@/pages/CategoryPage";
+import BuildPage from "@/pages/BuildPage";
+import CalculatorPage from "@/pages/CalculatorPage";
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
               <Route element={<Layout />}>
                 <Route index element={<Dashboard />} />
                 <Route path="c/:category" element={<CategoryPage />} />
+                <Route path="build" element={<BuildPage />} />
+                <Route path="calc" element={<CalculatorPage />} />
                 <Route path="*" element={<Dashboard />} />
               </Route>
             </Routes>

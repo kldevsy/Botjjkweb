@@ -46,10 +46,10 @@ const ChartTip = ({ active, payload }) =>
   ) : null;
 
 export default function Dashboard() {
-  const { t, cat, catDesc, rarity } = useI18n();
+  const { t, cat, catDesc, rarity, lang } = useI18n();
   const { setSearchOpen } = useGuide();
   const [d, setD] = useState(null);
-  useEffect(() => { api.dashboard().then(setD); }, []);
+  useEffect(() => { api.dashboard().then(setD); }, [lang]);
   if (!d) return <div className="py-32 text-center text-sm text-slate-500">{t("loading")}</div>;
 
   const rarityData = d.rarity.filter((r) => r.count).map((r) => ({ name: rarity(r.raridade), value: r.count, color: RARITY_COLORS[r.raridade] }));

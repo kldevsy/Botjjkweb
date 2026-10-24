@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import { GitCompareArrows, Check, Link2 } from "lucide-react";
+import { GitCompareArrows, Check, Link2, Hammer } from "lucide-react";
+import { slotForItem, addToBuild } from "@/lib/build";
 import { toast } from "sonner";
 import { Dialog, DialogContent, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
@@ -49,14 +50,14 @@ const TabPanel = ({ value, sections, color }) => (
 
 export const DetailModal = () => {
   const { detail, closeDetail, toggleCompare, isComparing } = useGuide();
-  const { t, cat } = useI18n();
+  const { t, cat, lang } = useI18n();
   const [item, setItem] = useState(null);
 
   useEffect(() => {
     if (!detail) return;
     setItem(null);
     api.item(detail.category, detail.id).then(setItem).catch(() => closeDetail());
-  }, [detail]); // eslint-disable-line react-hooks/exhaustive-deps
+  }, [detail, lang]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const color = item ? itemColor(item) : "#a855f7";
   const g = item ? groupSections(item.sections) : null;
@@ -111,6 +112,12 @@ export const DetailModal = () => {
                   className="inline-flex items-center gap-1.5 rounded-full bg-white/5 px-4 py-2 text-xs font-semibold text-slate-300 transition-colors hover:bg-white/10">
                   <Link2 className="h-3.5 w-3.5" /> {t("copyLink")}
                 </button>
+                {slotForItem(item) && (
+                  <button data-testid="detail-add-build-button" onClick={() => { const s = addToBuild(item); toast.success(`${t("addedToBuild")}: ${t(`slot_${s}`)}`); }}
+                    className="inline-flex items-center gap-1.5 rounded-full bg-white/5 px-4 py-2 text-xs font-semibold text-slate-300 transition-colors hover:bg-white/10">
+                    <Hammer className="h-3.5 w-3.5" /> {t("addToBuild")}
+                  </button>
+                )}
               </div>
 
               <Tabs defaultValue="overview">
