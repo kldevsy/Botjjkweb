@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API = `${process.env.REACT_APP_BACKEND_URL}/api`;
+const API = `${process.env.REACT_APP_BACKEND_URL || ""}/api`;
 const http = axios.create({ baseURL: API });
 http.interceptors.request.use((cfg) => {
   cfg.params = { lang: localStorage.getItem("guide-lang") || "pt", ...(cfg.params || {}) };

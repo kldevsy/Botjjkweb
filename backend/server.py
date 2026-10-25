@@ -1,4 +1,5 @@
 from fastapi import FastAPI, APIRouter, HTTPException, Query
+from fastapi.responses import FileResponse
 from dotenv import load_dotenv
 from starlette.middleware.cors import CORSMiddleware
 from collections import Counter
@@ -10,6 +11,7 @@ import logging
 from guide_data import load_all, summary, CATEGORIES, RARITY_ORDER, strip_accents, translate, load_translations
 
 ROOT_DIR = Path(__file__).parent
+FRONTEND_BUILD_DIR = ROOT_DIR.parent / "frontend" / "build"
 load_dotenv(ROOT_DIR / '.env')
 
 DATA = load_all()
@@ -119,6 +121,33 @@ async def dashboard(lang: str = Lang):
 
 
 app.include_router(api_router)
+
+
+@app.get("/", include_in_schema=False)
+async def frontend_index():
+    index_file = FRONTEND_BUILD_DIR / "index.html"
+    if not index_file.is_file():
+        return {"message": "Guia API online"}
+    return FileResponse(index_file)
+
+
+@app.get("/{frontend_path:path}", include_in_schema=False)
+async def frontend_file(frontend_path: str):
+    if frontend_path == "api" or frontend_path.startswith("api/"):
+        raise HTTPException(404, "Não encontrado")
+
+    build_root = FRONTEND_BUILD_DIR.resolve()
+    requested_file = (build_root / frontend_path).resolve()
+    if not requested_file.is_relative_to(build_root):
+        raise HTTPException(404, "Não encontrado")
+    if requested_file.is_file():
+        return FileResponse(requested_file)
+
+    index_file = build_root / "index.html"
+    if index_file.is_file():
+        return FileResponse(index_file)
+    raise HTTPException(404, "Arquivo não encontrado")
+
 
 app.add_middleware(
     CORSMiddleware,
